@@ -1,0 +1,8302 @@
+{
+    "registryname": "large_scale_chicken_farm",
+    "localizedname": "§7大型养鸡场",
+    "requires-blueprint": false,
+    "color": "ffffff",
+    "has-factory": true,
+    "factory-only": true,
+    "modifiers": [
+        {
+            "elements": "contenttweaker:sacred_cinders_wood",
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "description": "产出x10",
+            "modifier": {
+                "io": "output",
+                "target": "modularmachinery:item",
+                "operation": 1,
+                "multiplier": 10
+            }
+        },
+        {
+            "elements": "contenttweaker:everloving_wood",
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "description": "产出x100",
+            "modifier": {
+                "io": "output",
+                "target": "modularmachinery:item",
+                "operation": 1,
+                "multiplier": 100
+            }
+        }
+    ],
+    "parts": [
+        {
+            "x": 2,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -10,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -9,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -7,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -7,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -7,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -7,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -6,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -12,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": -12,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": -12,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "erebus:stairs_petrified_wood@6"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -7,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -6,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -11,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -7,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -8,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -9,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 3,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -8,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -8,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -8,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 0,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 1,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -6,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -8,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 3,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "erebus:stairs_petrified_wood@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -6,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -6,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -8,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -11,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -11,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -9,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -9,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -13,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -9,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -9,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -11,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -10,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -7,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -11,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -10,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -8,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -10,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -10,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -10,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -13,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -6,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -10,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:stairs_petrified_wood@1"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -12,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "aoa3:ivory_rosite_lamp_off@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -9,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -9,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -7,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -6,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -10,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": -13,
+            "elements": [
+                "chisel:factory@8"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -7,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -12,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -6,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -11,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 0,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 1,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -10,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 2,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -9,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -14,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:stairs_petrified_wood@3"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -7,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -11,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -11,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -11,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -12,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -2,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "erebus:slab_planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -4,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": -12,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": -5,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": -12,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -6,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:stairs_petrified_wood@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -14,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -8,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -3,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -11,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -13,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -7,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:nightmare_machine_case@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -9,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": -12,
+            "elements": [
+                "natura:eucalyptus_fence@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": -10,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -10,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "chisel:futura@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -10,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -4,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": -13,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 3,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -13,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:iron@13"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -7,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": -1,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@6"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -8,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 5,
+            "z": -9,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -11,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -8,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -9,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -12,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": -9,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -11,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -6,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "generalized_input_item"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -2,
+            "z": -10,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -11,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": -8,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_stained_glass@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "minecraft:hay_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@15"
+            ]
+        },
+        {
+            "x": -7,
+            "y": 4,
+            "z": -8,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": -8,
+            "y": 4,
+            "z": -9,
+            "elements": [
+                "appliedenergistics2:smooth_sky_stone_stairs@5"
+            ]
+        },
+        {
+            "x": -6,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -6,
+            "y": -1,
+            "z": -10,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -6,
+            "elements": [
+                "erebus:planks_petrified_wood@0"
+            ]
+        }
+    ]
+}

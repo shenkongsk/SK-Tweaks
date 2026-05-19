@@ -1,0 +1,19 @@
+// var Recipe_Custom = [
+//     [ [<contenttweaker:jade_egg>*64], [<aoa3:jade>*32] ],
+//     [ [<contenttweaker:amethyst_egg>*64], [<aoa3:amethyst>*32] ],
+//     [ [<contenttweaker:runium_egg>*64], [<aoa3:runium_chunk>*32] ],
+//     [ [<contenttweaker:sapphire_egg>*64], [<aoa3:sapphire>*32] ],
+//     [ [<contenttweaker:limonite_egg>*64], [<aoa3:limonite_ingot>*32] ],
+//     [ [<contenttweaker:rosite_egg>*64], [<aoa3:rosite_ingot>*32] ],
+//     [ [<contenttweaker:realmite_egg>*64], [<divinerpg:realmite_ingot>*32] ],
+//     [ [<contenttweaker:arlemite_egg>*64], [<divinerpg:arlemite_ingot>*32] ],
+//     [ [<contenttweaker:rupee_egg>*64], [<divinerpg:rupee_ingot>*32] ],
+//     [ [<contenttweaker:bloodgem_egg>*64], [<divinerpg:bloodgem>*32] ],
+//     [ [<contenttweaker:netherite_egg>*64], [<divinerpg:netherite_ingot>*32] ],
+//     [ [<contenttweaker:emberstone_egg>*64], [<aoa3:emberstone_ingot>*32] ],
+//     [ [<contenttweaker:amber_egg>*64], [<thaumcraft:amber>*32] ],
+//     [ [<thermalfoundation:fertilizer:1>*64], [<thermalfoundation:fertilizer:2>*64] ],
+//     [ [<thermalfoundation:material:645>*64], [<contenttweaker:charged_signalum>*64] ],
+//     [ [<extracells:fluidfiller>*64], [<contenttweaker:irradiated_filler>*64] ],
+//     [ [<appliedenergistics2:material>*64], [<appliedenergistics2:material:1>*64] ]
+// ];

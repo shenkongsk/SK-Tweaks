@@ -1,0 +1,2742 @@
+{
+    "registryname": "large_scale_essentia_crystallizer",
+    "localizedname": "§5集成源质结晶工厂",
+    "requires-blueprint": false,
+    "has-factory": true,
+    "factory-only": true,
+    "color": "582078",
+    "modifiers": [
+        {
+            "elements": "contenttweaker:vibrating_stone@0",
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "description": "替换中间方块以获得产出x4",
+            "modifier": {
+                "io": "output",
+                "target": "modularmachinery:item",
+                "operation": 1,
+                "multiplier": 4
+            }
+        },
+        {
+            "elements": "contenttweaker:echo_warren_stone@0",
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "description": "替换中间方块以获得产出x20",
+            "modifier": {
+                "io": "output",
+                "target": "modularmachinery:item",
+                "operation": 1,
+                "multiplier": 20
+            }
+        }
+    ],
+    "parts": [
+        {
+            "x": 5,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:end_rod@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "generalized_input_item"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -6,
+            "elements": [
+                "botania:alchemycatalyst@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "generalized_input_item"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "bnkrblks:megelium_glass_pane@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": -7,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": -6,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aoa3:mystite_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -7,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "generalized_input_item"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": -6,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -7,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "generalized_input_item"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "appliedenergistics2:quartz_stairs@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "botania:alchemycatalyst@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aoa3:mystite_block@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bnkrblks:megelium_polished@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aoa3:mystite_block@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "appliedenergistics2:quartz_stairs@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": -6,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:end_rod@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "botania:alchemycatalyst@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:technicalnew@6"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": -7,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aoa3:mystite_block@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "nuclearcraft:heat_exchanger_wall@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": -7,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bnkrblks:megelium_polished@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": -6,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -7,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@4"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bnkrblks:megelium_polished@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": -6,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": -7,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aoa3:mystite_block@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "chisel:laboratory@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": -7,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": -6,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": -4,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -6,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -6,
+            "elements": [
+                "botania:alchemycatalyst@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -6,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -6,
+            "elements": [
+                "contenttweaker:chaotic_honey_3@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": -5,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": -4,
+            "elements": [
+                "chisel:technicalnew@6"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": -5,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 7,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -7,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": -4,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": -2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": -1,
+            "elements": [
+                "contenttweaker:linear_accelerator_tube@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -7,
+            "elements": [
+                "bloodmagic:demon_pillar_1@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -8,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": -5,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": -5,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aoa3:mystite_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bnkrblks:megelium_polished@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 3,
+            "z": -5,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 2,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_slab@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@2"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "chisel:futura@2"
+            ]
+        },
+        {
+            "x": 6,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -6,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -7,
+            "elements": [
+                "thaumcraft:metal_thaumium@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 1,
+            "z": -2,
+            "elements": [
+                "extrautils2:decorativeglass@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -6,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "chisel:factory@10"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": -6,
+            "elements": [
+                "bnkrblks:megelium_glass_pane@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -7,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "nuclearcraft:heat_exchanger_wall@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aoa3:mystite_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "actuallyadditions:block_crystal_empowered@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "chisel:futura@3"
+            ]
+        },
+        {
+            "x": 6,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "chisel:laboratory@10"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": -7,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bnkrblks:megelium_polished@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "chisel:factory1@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": -7,
+            "elements": [
+                "contenttweaker:shungite_casing@0"
+            ]
+        }
+    ]
+}
