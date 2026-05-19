@@ -82,7 +82,7 @@ Some extra tweaks for Minecraft Modpack:MeatballCraft, Dimensional Ascension.
 
 - 维度钻探器
 
-    ——多方块IE斗轮挖掘机
+    ——模块化IE斗轮挖掘机
 
 - 觉醒注能装置
 
