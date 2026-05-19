@@ -306,7 +306,7 @@ Currently the project is still under development.Inform me if there are suggesti
 - Pattern Provider (Credit: 忆昔)
 - Parallel Controller (Credit: 科科科胖 )
   
-      Not recommended for use, disabled by default.
+  Not recommended for use, disabled by default.
       Enable it via scripts/SKTweaks/Parallel_Controler.zs
 
 ## Modification Overview
