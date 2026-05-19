@@ -218,7 +218,7 @@ Installation: Extract all files directly into your .minecraft folder, replace ex
 
 - Tier 2 Mythic Resource Crucible
 
-    manufacture all types of **fluids** required by the Void Resources Miners in **Chapter 4**
+    manufacture all types of **fluids** required by the Void Resources Miners in **Chapter 5**
 
 - Fluix Reactor
 
