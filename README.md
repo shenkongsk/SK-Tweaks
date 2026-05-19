@@ -1,6 +1,6 @@
 # SK-Tweaks
 
-一些为我的世界整合包：肉丸工艺——次元飞升所制作的私货
+一些为我的世界整合包：肉丸工艺——次元飞升所制作的DLC（私货）
 
 Some extra tweaks for Minecraft Modpack:MeatballCraft, Dimensional Ascension.
 
