@@ -305,9 +305,9 @@ Currently the project is still under development.Inform me if there are suggesti
 ### 2. Added Custom Recipes
 - Pattern Provider (Credit: 忆昔)
 - Parallel Controller (Credit: 科科科胖 )
-- 
-  Not recommended for use, disabled by default.
-  Enable it via scripts/SKTweaks/Parallel_Controler.zs
+  
+      Not recommended for use, disabled by default.
+      Enable it via scripts/SKTweaks/Parallel_Controler.zs
 
 ## Modification Overview
 
