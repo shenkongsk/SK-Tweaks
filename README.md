@@ -20,6 +20,8 @@ Some extra tweaks for Minecraft Modpack:MeatballCraft, Dimensional Ascension.
 
 使用方法：解压在minecraft文件夹即可，部分文件需要点击“替换”。
 
+目前尚在开发，如有平衡问题或bug请反馈。
+
 ## 使用须知：
 1.这个只是肉丸工艺的一个私货（二次修改），请不要在不恰当的场合与原版玩家讨论私货问题。
 
@@ -183,6 +185,8 @@ Please read the full **Readme** before starting the game!!!
 **DO NOT install this tweak pack if you want get any of the Tooltip!!!**
 
 Installation: Extract all files directly into your .minecraft folder, replace existing files when prompted.
+
+Currently the project is still under development.Inform me if there are suggestions or bugs
 
 ## Rules & Notice
 1. This is addon/tweak pack for MeatballCraft. Please do not discuss this unofficial content with original pack players in inappropriate occasions.
