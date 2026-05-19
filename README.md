@@ -172,6 +172,7 @@ Some extra tweaks for Minecraft Modpack:MeatballCraft, Dimensional Ascension.
 
 Current compatible version: 0.18.5 Hotfix2
 
+***(Currently there's no English version for this tweak pack.I will make one if it's needed by many.)***
 Please read the full **Readme** before starting the game!!!
 
 **DO NOT install this tweak pack if you want get any of the Tooltip!!!**
