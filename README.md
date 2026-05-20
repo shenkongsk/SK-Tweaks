@@ -2,7 +2,11 @@
 
 一些为我的世界整合包：肉丸工艺——次元飞升所制作的DLC（私货）
 
+原整合包链接：https://www.mcmod.cn/modpack/840.html
+
 Some extra tweaks for Minecraft Modpack:MeatballCraft, Dimensional Ascension.
+
+Modpack: https://www.curseforge.com/minecraft/modpacks/meatballcraft
 
 [English Description](#english)
 
