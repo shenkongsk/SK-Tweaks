@@ -22,6 +22,8 @@ Some extra tweaks for Minecraft Modpack:MeatballCraft, Dimensional Ascension.
 
 目前尚在开发，如有平衡问题或bug请反馈。
 
+**交流QQ群：922521358**
+
 ## 使用须知：
 1.这个只是肉丸工艺的一个私货（二次修改），请不要在不恰当的场合与原版玩家讨论私货问题。
 
