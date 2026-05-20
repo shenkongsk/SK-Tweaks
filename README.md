@@ -329,3 +329,17 @@ Currently the project is still under development.Inform me if there are suggesti
 
 ### 2. Bug Fixes
 - Fixed abnormal recipe of **Whisper Of Right And Just Creation** 
+
+## 特别鸣谢/Special Acknowledgements
+
+    Alecsio
+    
+    流光通明/Circulate233
+    
+    梦瑞云/Evelia_Fate
+    
+    Puzitsa
+    
+    大S老师/Sainagh
+    
+    ZY
