@@ -340,6 +340,6 @@ Currently the project is still under development.Inform me if there are suggesti
     
     Puzitsa
     
-    大S老师/Sainagh
+    大S劳斯/Sainagh
     
     ZY
