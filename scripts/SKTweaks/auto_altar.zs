@@ -8,130 +8,130 @@ import mods.modularmachinery.MachineModifier;
 MachineModifier.setInternalParallelism("auto_altar", 4);
 <modularmachinery:auto_altar_controller>.addTooltip(format.gold("内置额外4并行！"));
 
-RecipeBuilder.newBuilder("auto_altar", "auto_altar", 20)
-    .addItemInputs(
-        <ore:runeWaterB>*1, 
-        <ore:runeFireB>*1, 
-        <ore:treeSapling>*3,
-        <ore:cropWheat>*1
-    )
-    .addManaInput(8000,false)
-    .addItemOutput(<botania:rune:4>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:runeWaterB>*1, 
+//         <ore:runeFireB>*1, 
+//         <ore:treeSapling>*3,
+//         <ore:cropWheat>*1
+//     )
+//     .addManaInput(8000,false)
+//     .addItemOutput(<botania:rune:4>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_0", "auto_altar", 20)
-    .addItemInputs(
-        <ore:runeEarthB>*1,
-        <ore:runeAirB>*1,
-        <minecraft:sand>*2,
-        <ore:slimeball>*1,
-        <minecraft:melon>*1
-    )
-    .addManaInput(8000, false)
-    .addItemOutput(<botania:rune:5>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_0", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:runeEarthB>*1,
+//         <ore:runeAirB>*1,
+//         <minecraft:sand>*2,
+//         <ore:slimeball>*1,
+//         <minecraft:melon>*1
+//     )
+//     .addManaInput(8000, false)
+//     .addItemOutput(<botania:rune:5>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_1", "auto_altar", 20)
-    .addItemInputs(
-        <ore:runeFireB>*1,
-        <ore:runeAirB>*1,
-        <ore:treeLeaves>*3,
-        <minecraft:spider_eye>*1
-    )
-    .addManaInput(8000, false)
-    .addItemOutput(<botania:rune:6>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_1", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:runeFireB>*1,
+//         <ore:runeAirB>*1,
+//         <ore:treeLeaves>*3,
+//         <minecraft:spider_eye>*1
+//     )
+//     .addManaInput(8000, false)
+//     .addItemOutput(<botania:rune:6>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_2", "auto_altar", 20)
-    .addItemInputs(
-        <ore:runeWaterB>*1,
-        <ore:runeEarthB>*1,
-        <minecraft:snow>*2,
-        <ore:blockWool>*1,
-        <minecraft:cake>*1
-    )
-    .addManaInput(8000, false)
-    .addItemOutput(<botania:rune:7>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_2", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:runeWaterB>*1,
+//         <ore:runeEarthB>*1,
+//         <minecraft:snow>*2,
+//         <ore:blockWool>*1,
+//         <minecraft:cake>*1
+//     )
+//     .addManaInput(8000, false)
+//     .addItemOutput(<botania:rune:7>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_3", "auto_altar", 20)
-    .addItemInputs(
-        <ore:ingotManasteel>*5,
-        <ore:manaPearl>*1
-    )
-    .addManaInput(8000, false)
-    .addItemOutput(<botania:rune:8>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_3", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:ingotManasteel>*5,
+//         <ore:manaPearl>*1
+//     )
+//     .addManaInput(8000, false)
+//     .addItemOutput(<botania:rune:8>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_4", "auto_altar", 20)
-    .addItemInputs(
-        <ore:manaDiamond>*2,
-        <ore:runeSummerB>*1,
-        <ore:runeAirB>*1
-    )
-    .addManaInput(12000, false)
-    .addItemOutput(<botania:rune:9>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_4", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:manaDiamond>*2,
+//         <ore:runeSummerB>*1,
+//         <ore:runeAirB>*1
+//     )
+//     .addManaInput(12000, false)
+//     .addItemOutput(<botania:rune:9>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_5", "auto_altar", 20)
-    .addItemInputs(
-        <ore:manaDiamond>*2,
-        <ore:runeWinterB>*1,
-        <ore:runeFireB>*1
-    )
-    .addManaInput(12000, false)
-    .addItemOutput(<botania:rune:10>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_5", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:manaDiamond>*2,
+//         <ore:runeWinterB>*1,
+//         <ore:runeFireB>*1
+//     )
+//     .addManaInput(12000, false)
+//     .addItemOutput(<botania:rune:10>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_6", "auto_altar", 20)
-    .addItemInputs(
-        <ore:manaDiamond>*2,
-        <ore:runeSpringB>*1,
-        <ore:runeWaterB>*1
-    )
-    .addManaInput(12000, false)
-    .addItemOutput(<botania:rune:11>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_6", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:manaDiamond>*2,
+//         <ore:runeSpringB>*1,
+//         <ore:runeWaterB>*1
+//     )
+//     .addManaInput(12000, false)
+//     .addItemOutput(<botania:rune:11>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_7", "auto_altar", 20)
-    .addItemInputs(
-        <ore:manaDiamond>*2,
-        <ore:runeAutumnB>*1,
-        <ore:runeAirB>*1
-    )
-    .addManaInput(12000, false)
-    .addItemOutput(<botania:rune:12>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_7", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:manaDiamond>*2,
+//         <ore:runeAutumnB>*1,
+//         <ore:runeAirB>*1
+//     )
+//     .addManaInput(12000, false)
+//     .addItemOutput(<botania:rune:12>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_8", "auto_altar", 20)
-    .addItemInputs(
-        <ore:manaDiamond>*2,
-        <ore:runeWinterB>*1,
-        <ore:runeEarthB>*1
-    )
-    .addManaInput(12000, false)
-    .addItemOutput(<botania:rune:13>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_8", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:manaDiamond>*2,
+//         <ore:runeWinterB>*1,
+//         <ore:runeEarthB>*1
+//     )
+//     .addManaInput(12000, false)
+//     .addItemOutput(<botania:rune:13>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_9", "auto_altar", 20)
-    .addItemInputs(
-        <ore:manaDiamond>*2,
-        <ore:runeWinterB>*1,
-        <ore:runeWaterB>*1
-    )
-    .addManaInput(12000, false)
-    .addItemOutput(<botania:rune:14>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_9", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:manaDiamond>*2,
+//         <ore:runeWinterB>*1,
+//         <ore:runeWaterB>*1
+//     )
+//     .addManaInput(12000, false)
+//     .addItemOutput(<botania:rune:14>*1)
+//     .build();
 
-RecipeBuilder.newBuilder("auto_altar_10", "auto_altar", 20)
-    .addItemInputs(
-        <ore:manaDiamond>*2,
-        <ore:runeSummerB>*1,
-        <ore:runeFireB>*1
-    )
-    .addManaInput(12000, false)
-    .addItemOutput(<botania:rune:15>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_10", "auto_altar", 20)
+//     .addItemInputs(
+//         <ore:manaDiamond>*2,
+//         <ore:runeSummerB>*1,
+//         <ore:runeFireB>*1
+//     )
+//     .addManaInput(12000, false)
+//     .addItemOutput(<botania:rune:15>*1)
+//     .build();
 
 // RecipeBuilder.newBuilder("auto_altar_11", "auto_altar", 20)
 //     .addItemInputs(
@@ -348,22 +348,22 @@ RecipeBuilder.newBuilder("auto_altar_28", "auto_altar", 20)
     .addItemOutput(<extrabotany:material:8>*1)
     .build();
 
-RecipeBuilder.newBuilder("auto_altar_29", "auto_altar", 20)
-    .addItemInputs(
-        <extrabotany:gildedmashedpotato>*1,
-        <extrabotany:excaliber>*1,
-        <extrabotany:buddhistrelics>*1,
-        <extrabotany:shadowkatana>*1,
-        <minecraft:wooden_sword>*1,
-        <botania:terrasword>*1,
-        <botania:starsword>*1,
-        <botania:elementiumsword>*1,
-        <botania:thundersword>*1,
-        <botania:manasteelsword>*1
-    )
-    .addManaInput(1000000, false)
-    .addItemOutput(<extrabotany:firstfractal>*1)
-    .build();
+// RecipeBuilder.newBuilder("auto_altar_29", "auto_altar", 20)
+//     .addItemInputs(
+//         <extrabotany:gildedmashedpotato>*1,
+//         <extrabotany:excaliber>*1,
+//         <extrabotany:buddhistrelics>*1,
+//         <extrabotany:shadowkatana>*1,
+//         <minecraft:wooden_sword>*1,
+//         <botania:terrasword>*1,
+//         <botania:starsword>*1,
+//         <botania:elementiumsword>*1,
+//         <botania:thundersword>*1,
+//         <botania:manasteelsword>*1
+//     )
+//     .addManaInput(1000000, false)
+//     .addItemOutput(<extrabotany:firstfractal>*1)
+//     .build();
 
 RecipeBuilder.newBuilder("auto_altar_30", "auto_altar", 20)
     .addItemInputs(

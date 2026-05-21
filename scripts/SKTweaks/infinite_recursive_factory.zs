@@ -63,17 +63,6 @@ for roman in romanNumerals {
     val thread = FactoryRecipeThread.createCoreThread("§e工作线程-§b" + roman);
     MachineModifier.addCoreThread(MACHINE, thread);
 }
- 
-// ===================== 配方定义 =====================
-// RecipeBuilder.newBuilder("enrichedalloy", MACHINE, 20)
-//     .addInput(<minecraft:iron_ingot> * 8)
-//     .addInput(<minecraft:redstone> * 1)
-//     .addEnergyPerTickInput(10240)
-//     .addItemOutput(<minecraft:bedrock> * 8)
-//     .addPreCheckHandler(function(event as RecipeCheckEvent) {        //关键：在配方开始前，动态读取最大并行数量
-//         SK_SyncParallelUpgrade(event.controller, event.activeRecipe);
-//     })
-//     .build();
 // ===================== 并行升级配方 =====================
 RecipeBuilder.newBuilder("parallel_upgrade", MACHINE, 1)
     .setParallelized(false)
