@@ -262,8 +262,10 @@ function Recipe_Builder_SK_Essentia(
  * @param manaOutputs                       魔力输出数组（单次）
  * @param starlightInputs                   星能输入数组（单次）
  * @param starlightOutputs                  星能输出数组（单次）
- * @param Aspects_or_Essentia_Name          要素/源质输入数组（字符串格式，如 "ignis"）
- * @param Aspects_or_Essentia_Amount        对应要素数量数组
+ * @param Input_Aspects_or_Essentia_Name    要素/源质输入数组（字符串格式，如 "ignis"）
+ * @param Input_Aspects_or_Essentia_Amount  对应要素数量数组
+ * @param Output_Aspects_or_Essentia_Name   要素/源质输出数组（字符串格式，如 "ignis"）
+ * @param Output_Aspects_or_Essentia_Amount 对应要素数量数组
  * @param gasInputs                         气体输入数组（IGasStack，需安装 Mekanism）
  * @param gasInputChances                   气体输入概率数组
  * @param gasOutputs                        气体输出数组
@@ -276,6 +278,7 @@ function Recipe_Builder_SK_Essentia(
  * @param fluxOutput                        咒波输出（long）
  * @param isParallelized                    是否允许并行（true/false）
  * @param recipeTooltips                    工具提示字符串数组（可选）
+ * @param MaxThreads                        一种配方占据的最大线程数
  */
 function Recipe_Builder_SK_Universal(
     recipeName as string,
@@ -301,8 +304,10 @@ function Recipe_Builder_SK_Universal(
     starlightInputs as long[],
     starlightOutputs as long[],
     // 神秘时代：要素或源质 (Aspect or Essentia)
-    Aspects_or_Essentia_Name as string[],
-    Aspects_or_Essentia_Amount as long[],
+    Input_Aspects_or_Essentia_Name as string[],
+    Input_Aspects_or_Essentia_Amount as long[],
+    Output_Aspects_or_Essentia_Name as string[],
+    Output_Aspects_or_Essentia_Amount as long[],
     // 气体（Mekanism）
     gasInputs as crafttweaker.gas.IGasStack[],
     gasInputChances as double[],
@@ -325,7 +330,7 @@ function Recipe_Builder_SK_Universal(
     
     // 并行化
     builder.setParallelized(isParallelized);
-    builder.setMaxThreads(Max);
+    builder.setMaxThreads(MaxThreads);
     // 工具提示
     for tooltip in recipeTooltips {
         builder.addRecipeTooltip(tooltip);
@@ -381,10 +386,16 @@ function Recipe_Builder_SK_Universal(
     }
     
     // 神秘时代要素
-    for i in 0 to aspectInputs.length {
-        if (i < aspectAmounts.length) {
-            builder.addAspectInput(Aspects_or_Essentia_Name[i], Aspects_or_Essentia_Amount[i]);
-            builder.addEssentiaInput(Aspects_or_Essentia_Name[i], essentiAspects_or_Essentia_AmountaAmounts[i]);
+    for i in 0 to Input_Aspects_or_Essentia_Name.length {
+        if (i < Input_Aspects_or_Essentia_Amount.length) {
+            builder.addAspectInput(Input_Aspects_or_Essentia_Name[i], Input_Aspects_or_Essentia_Amount[i]);
+            builder.addEssentiaInput(Input_Aspects_or_Essentia_Name[i], Input_Aspects_or_Essentia_Amount[i]);
+        }
+    }
+    for i in 0 to Output_Aspects_or_Essentia_Name.length {
+        if (i < Output_Aspects_or_Essentia_Amount.length) {
+            builder.addAspectOutput(Output_Aspects_or_Essentia_Name[i], Output_Aspects_or_Essentia_Amount[i]);
+            builder.addEssentiaOutput(Output_Aspects_or_Essentia_Name[i], Output_Aspects_or_Essentia_Amount[i]);
         }
     }
     // 气体（Mekanism）
