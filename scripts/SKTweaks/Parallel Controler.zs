@@ -1,3 +1,8 @@
+// ======================================================================================
+// 如果你真的想要使用这个超模功能，把下面所有代码取消注释即可
+// If you really want to use this overpowered feature, just uncomment all the code below
+// ======================================================================================
+
 // import crafttweaker.item.IItemStack;
 
 // recipes.remove(<modularmachinery:blockparallelcontroller:0>);
