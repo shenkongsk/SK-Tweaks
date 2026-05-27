@@ -298,8 +298,10 @@ function Recipe_Builder_SK_Universal(
     energyInput as long,
     energyOutput as long,
     // 魔力（植物魔法）
-    manaInputs as long[],
-    manaOutputs as long[],
+    manaInputs as int[],
+    manaInputs_bool as bool[],  //中断时是否吞材料？ 目前写false
+    manaOutputs as int[],
+    manaOutputs_bool as bool[], //中断时是否吞材料？ 目前写false
     // 星能（星辉魔法）
     starlightInputs as long[],
     starlightOutputs as long[],
@@ -309,13 +311,15 @@ function Recipe_Builder_SK_Universal(
     Output_Aspects_or_Essentia_Name as string[],
     Output_Aspects_or_Essentia_Amount as long[],
     // 气体（Mekanism）
-    gasInputs as crafttweaker.gas.IGasStack[],
-    gasInputChances as double[],
-    gasOutputs as crafttweaker.gas.IGasStack[],
-    gasOutputChances as double[],
+    // gasInputs as crafttweaker.gas.IGasStack[],
+    // gasInputChances as double[],
+    // gasOutputs as crafttweaker.gas.IGasStack[],
+    // gasOutputChances as double[],
     // 辐射（核科技）
     radiationInput as float,
+    radiationInput_Radis as int,
     radiationOutput as float,
+    radiationOutput_Radis as int,
     // 灵气与咒波（神秘时代）
     visInput as long,
     fluxInput as long,
@@ -370,11 +374,11 @@ function Recipe_Builder_SK_Universal(
     }
     
     // 魔力（植物魔法）
-    for mana in manaInputs {
-        builder.addManaInput(mana);
+    if{manaInputs>0} {
+        builder.addManaInput(mana,manaInputs_bool);
     }
-    for mana in manaOutputs {
-        builder.addManaOutput(mana);
+    if{manaOutputs>0} {
+        builder.addManaOutput(mana,manaOutputs_bool);
     }
     
     // 星能（星辉魔法）
@@ -399,23 +403,23 @@ function Recipe_Builder_SK_Universal(
         }
     }
     // 气体（Mekanism）
-    for i in 0 to gasInputs.length {
-        val gas = gasInputs[i];
-        val chance = (i < gasInputChances.length) ? gasInputChances[i] : 1.0;
-        builder.addGasInput(gas).setChance(chance);
-    }
-    for i in 0 to gasOutputs.length {
-        val gas = gasOutputs[i];
-        val chance = (i < gasOutputChances.length) ? gasOutputChances[i] : 1.0;
-        builder.addGasOutput(gas).setChance(chance);
-    }
+    // for i in 0 to gasInputs.length {
+    //     val gas = gasInputs[i];
+    //     val chance = (i < gasInputChances.length) ? gasInputChances[i] : 1.0;
+    //     builder.addGasInput(gas).setChance(chance);
+    // }
+    // for i in 0 to gasOutputs.length {
+    //     val gas = gasOutputs[i];
+    //     val chance = (i < gasOutputChances.length) ? gasOutputChances[i] : 1.0;
+    //     builder.addGasOutput(gas).setChance(chance);
+    // }
     
     // 辐射（核科技）
     if (radiationInput > 0) {
-        builder.addRadiationInput(radiationInput);
+        builder.addRadiationInput(radiationInput,radiationInput_Radis);
     }
     if (radiationOutput > 0) {
-        builder.addRadiationOutput(radiationOutput);
+        builder.addRadiationOutput(radiationOutput,radiationOutput_Radis);
     }
     
     // 灵气与咒波（神秘时代）
