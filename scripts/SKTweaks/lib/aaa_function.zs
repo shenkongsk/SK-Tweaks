@@ -271,7 +271,9 @@ function Recipe_Builder_SK_Essentia(
  * @param gasOutputs                        气体输出数组
  * @param gasOutputChances                  气体输出概率数组
  * @param radiationInput                    辐射输入（float）
+ * @param radiationInput_Radis              辐射输入区块半径(int)
  * @param radiationOutput                   辐射输出（float）
+ * @param radiationOutput_Radis             辐射输出区块半径(int)
  * @param visInput                          灵气输入（long）
  * @param fluxInput                         咒波输入（long）
  * @param visOutput                         灵气输出（long）
