@@ -21,6 +21,18 @@
                     "target": "modularmachinery:item",
                     "operation": 1,
                     "multiplier": 16
+                },
+                {
+                    "io": "input",
+                    "target": "modularmachinery:fluid",
+                    "operation": 1,
+                    "multiplier": 16
+                },
+                {
+                    "io": "output",
+                    "target": "modularmachinery:fluid",
+                    "operation": 1,
+                    "multiplier": 16
                 }
             ]
         },
@@ -40,6 +52,18 @@
                 {
                     "io": "input",
                     "target": "modularmachinery:item",
+                    "operation": 1,
+                    "multiplier": 64
+                },
+                {
+                    "io": "input",
+                    "target": "modularmachinery:fluid",
+                    "operation": 1,
+                    "multiplier": 64
+                },
+                {
+                    "io": "output",
+                    "target": "modularmachinery:fluid",
                     "operation": 1,
                     "multiplier": 64
                 }
