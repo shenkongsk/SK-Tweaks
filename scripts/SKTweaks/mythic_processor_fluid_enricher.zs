@@ -110,7 +110,10 @@ val itemInputs = [
     <contenttweaker:mythic_processor_centrifuge>,
     <contenttweaker:mythic_processor_centrifuge>,
     <contenttweaker:mythic_processor_centrifuge>,
-    <contenttweaker:quasar_charged_gem>
+    <contenttweaker:quasar_charged_gem>,
+    <contenttweaker:gilded_matter>,
+    <contenttweaker:infinity_fragment>*16,
+    <ore:dustSodiumFluoride>
 ];
 val fluidInputs = [
     <fluid:actualizing_fluid>*1000,
@@ -207,7 +210,10 @@ val fluidInputs = [
     <fluid:water>,
     <fluid:water>,
     <fluid:water>,
-    <fluid:pure_recursion>*100
+    <fluid:pure_recursion>*100,
+    <liquid:breath_of_actualization>*1000,
+    <liquid:strong_pearlized_essence>*8000,
+    <liquid:water>*1000
 ];
 val fluidOutputs = [
     <fluid:breath_of_actualization>*1000,
@@ -304,7 +310,10 @@ val fluidOutputs = [
     <fluid:lithium7>,
     <fluid:boron10>,
     <fluid:boron11>,
-    <fluid:doped_recursion>*100
+    <fluid:doped_recursion>*100,
+    <liquid:tale_of_actualization>*1000,
+    <liquid:strong_pearlized_catalyst>*8000,
+    <liquid:sodium_fluoride_solution>*666
 ];
 for i in 0 to itemInputs.length{
     scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
