@@ -133,7 +133,8 @@ val Machine_to_be_adpted = [
     "mythic_processor_crystallizer",
     "mythic_processor_fluid_enricher",
     "mythic_processor_grinder",
-    "mythic_processor_pulverizer"
+    "mythic_processor_pulverizer",
+    "aluminum_lathe"
 ];
 for i in 0 to Machine_to_be_adpted.length{
     RecipeAdapterBuilder.create("modularmachinery:infinite_recursive_factory", "modularmachinery:"+Machine_to_be_adpted[i])
@@ -164,10 +165,10 @@ RecipeAdapterBuilder.create("modularmachinery:infinite_recursive_factory", "mine
     .addModifier(RecipeModifierBuilder.create("modularmachinery:duration", "input", 0.02, 1, false).build())
     .addItemInput(<minecraft:furnace>).setChance(0.0).setParallelizeUnaffected(true)
         .addCatalystInput(<contenttweaker:flame_of_actualization>,
-            ["§c显化之焰§9--§a能量输入增加150%,速度提升100%"],
+            ["§c显化之焰§9--§a能量输入增加900%,速度提升400%"],
             [
-                RecipeModifierBuilder.create("modularmachinery:energy", "input", 1.5F, 1, false).build(),
-                RecipeModifierBuilder.create("modularmachinery:duration", "input", 0.5F, 1, false).build()
+                RecipeModifierBuilder.create("modularmachinery:energy", "input", 10.0F, 1, false).build(),
+                RecipeModifierBuilder.create("modularmachinery:duration", "input", 0.2F, 1, false).build()
             ]
         ).setParallelizeUnaffected(true).setChance(0)
     .addPreCheckHandler(function(event as RecipeCheckEvent) {
