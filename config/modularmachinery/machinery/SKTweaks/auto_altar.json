@@ -23,12 +23,12 @@
                 "y": 1,
                 "z": 4,
                 "elements": "botania:pool@1",
-                "description": "95%mana消耗减免",
+                "description": "99.9%mana消耗减免",
                 "modifier": {
                     "target": "modularmachinery:mana",
                     "io": "input",
                     "operation": 1,
-                    "multiplier": 0.05
+                    "multiplier": 0.001
                 }
             }
         ],

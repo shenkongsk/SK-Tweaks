@@ -276,7 +276,7 @@ RecipeBuilder.newBuilder("auto_altar_23", "auto_altar", 20)
         <extrabotany:gildedmashedpotato>*1,
         <botania:manaresource:5>*4
     )
-    .addManaInput(150000, false)
+    .addManaInput(15000, false)
     .addItemOutput(<extrabotany:material:1>*1)
     .build();
 RecipeBuilder.newBuilder("auto_altar_31", "auto_altar", 20)
@@ -286,7 +286,7 @@ RecipeBuilder.newBuilder("auto_altar_31", "auto_altar", 20)
         <contenttweaker:corrupted_aragonite>*1,
         <extrabotany:material:3>
     )
-    .addManaInput(150000, false)
+    .addManaInput(15000, false)
     .addItemOutput(<extrabotany:material:1>*4)
     .build();
 
