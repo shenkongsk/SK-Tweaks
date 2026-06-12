@@ -422,14 +422,14 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
 		<ae2enhanced:assembly_stabilizer>*16384,
 		<ae2enhanced:hyperdimensional_casing>*16384,
 		<ae2enhanced:causal_anchor_core>*16384,
-		<contenttweaker:miniature_black_hole>*8,
+		<contenttweaker:tardis_branch>*2,
 		<contenttweaker:everlasting_fusor>*4
 	],
     // fluid inputs
     [],
     // outputs
     [
-		<ae2enhanced:differential_form_stabilizer>*8
+		<ae2enhanced:differential_form_stabilizer>*12
 	],
     // fluid outputs
     [],
@@ -445,7 +445,7 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     [
 		<avaritiaitem:cosmic_balance>,
 		<ae2enhanced:stable_spacetime_manifold>,
-		<ae2enhanced:differential_form_stabilizer>*4,
+		<ae2enhanced:differential_form_stabilizer>*8,
 		<contenttweaker:catalyst_of_natural_law>,
 		<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 51, lvl: 1 as short}]})
 	],
@@ -460,7 +460,7 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
 	],
     // outputs
     [
-		<ae2enhanced:conformal_invariant_charge>*8
+		<ae2enhanced:conformal_invariant_charge>*2
 	],
     // fluid outputs
     [],
