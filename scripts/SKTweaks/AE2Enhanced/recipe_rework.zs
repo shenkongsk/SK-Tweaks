@@ -305,7 +305,12 @@ recipes.addShaped("ae2e_card_mag",<ae2enhanced:omni_upgrade_card>, [
 	[<ore:netherStar>, <appliedenergistics2:material:60>, <ore:netherStar>], 
 	[<ore:ingotIron>, <appliedenergistics2:material:47>, <ore:ingotIron>]
 ]);
-
+// 高级收集器
+recipes.addShaped("ae2e_collector", <ae2enhanced:advanced_me_collector>, [
+	[<appliedenergistics2:interface>, <openblocks:vacuum_hopper>, <appliedenergistics2:interface>], 
+	[<appliedenergistics2:material:27>, <appliedenergistics2:part:220>, <appliedenergistics2:material:27>], 
+	[<appliedenergistics2:interface>, <openblocks:vacuum_hopper>, <appliedenergistics2:interface>]
+]);
 
 // // 注册自定义速度升级卡
 // mods.ae2enhanced.AssemblyHub.registerSpeedUpgrade(
