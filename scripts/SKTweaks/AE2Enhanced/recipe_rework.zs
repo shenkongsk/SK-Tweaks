@@ -41,7 +41,8 @@ var recipe_remove as IItemStack[] = [
 	<ae2enhanced:upgrade_card>,
 	<ae2enhanced:compressed_chunk_power_node>,
 	<ae2enhanced:chunk_power_node>,
-	<ae2enhanced:central_me_interface>
+	<ae2enhanced:central_me_interface>,
+	<ae2enhanced:advanced_me_collector>
 ];
 for i in recipe_remove{
 	recipes.remove(i);
