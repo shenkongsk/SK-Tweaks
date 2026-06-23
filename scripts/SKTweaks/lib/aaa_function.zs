@@ -51,14 +51,21 @@ function Recipe_Builder_SK_Chance(
     for i in 0 to inputs.length{
         val item = inputs[i];
         val chance = (inputChances.length > i) ? inputChances[i] : 1.0;
-        builder.addItemInput(item).setChance(chance);
+        if chance == 0.0 {
+            builder.addItemInput(item).setChance(chance).setParallelizeUnaffected(true);
+        } else {
+            builder.addItemInput(item).setChance(chance);
+        }
     }
 
     // 流体输入
     for i in 0 to fluidInputs.length{
         val fluid = fluidInputs[i];
         val chance = (fluidInputChances.length > i) ? fluidInputChances[i] : 1.0;
-        builder.addFluidInput(fluid).setChance(chance);
+        if chance == 0.0{
+            builder.addFluidInput(fluid).setChance(chance).setParallelizeUnaffected(true);
+        }
+        // builder.addFluidInput(fluid).setChance(chance);
     }
 
     // 物品输出
@@ -79,6 +86,8 @@ function Recipe_Builder_SK_Chance(
     if (energyOutput > 0){
         builder.addEnergyPerTickOutput(energyOutput);
     }
+
+
 
     builder.build();
 }
@@ -121,7 +130,6 @@ function Recipe_Builder_SK(
     if(energyOutput > 0) {
         builder.addEnergyPerTickOutput(energyOutput);
     }
-
     builder.build();
 }
 //
@@ -152,7 +160,12 @@ function Recipe_Builder_SK_Chance_With_Mana(
     for i in 0 to inputs.length{
         val item = inputs[i];
         val chance = (inputChances.length > i) ? inputChances[i] : 1.0;
-        builder.addItemInput(item).setChance(chance);
+        if chance == 0.0 {
+            builder.addItemInput(item).setChance(chance).setParallelizeUnaffected(true);
+        } else {
+            builder.addItemInput(item).setChance(chance);
+        }
+        // builder.addItemInput(item).setChance(chance);
     }
 
     // 流体输入
@@ -271,9 +284,7 @@ function Recipe_Builder_SK_Essentia(
  * @param gasOutputs                        气体输出数组
  * @param gasOutputChances                  气体输出概率数组
  * @param radiationInput                    辐射输入（float）
- * @param radiationInput_Radis              辐射输入区块半径(int)
  * @param radiationOutput                   辐射输出（float）
- * @param radiationOutput_Radis             辐射输出区块半径(int)
  * @param visInput                          灵气输入（long）
  * @param fluxInput                         咒波输入（long）
  * @param visOutput                         灵气输出（long）
