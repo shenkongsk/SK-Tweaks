@@ -5,7 +5,7 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     "creation_altar",
     // inputs
     [
-        <contenttweaker:tardis_casing>*1,
+        <contenttweaker:tardis_polyp>*1,
         <contenttweaker:recursion_of_notbeinganoob>*1,
         <contenttweaker:recursion_of_worthiness>*1,
         <contenttweaker:ingot_of_infinite_wishes>*64,
