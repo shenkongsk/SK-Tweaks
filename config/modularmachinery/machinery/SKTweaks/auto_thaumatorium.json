@@ -13,7 +13,7 @@
             "description": "配方速度x5",
             "modifiers": [
                 {
-                    "io": "output",
+                    "io": "input",
                     "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.2
