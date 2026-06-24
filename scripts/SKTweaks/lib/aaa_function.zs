@@ -64,8 +64,10 @@ function Recipe_Builder_SK_Chance(
         val chance = (fluidInputChances.length > i) ? fluidInputChances[i] : 1.0;
         if chance == 0.0{
             builder.addFluidInput(fluid).setChance(chance).setParallelizeUnaffected(true);
+        }else{
+            builder.addFluidInput(fluid).setChance(chance);
         }
-        // builder.addFluidInput(fluid).setChance(chance);
+        
     }
 
     // 物品输出
@@ -172,7 +174,12 @@ function Recipe_Builder_SK_Chance_With_Mana(
     for i in 0 to fluidInputs.length{
         val fluid = fluidInputs[i];
         val chance = (fluidInputChances.length > i) ? fluidInputChances[i] : 1.0;
-        builder.addFluidInput(fluid).setChance(chance);
+        // builder.addFluidInput(fluid).setChance(chance);
+        if chance == 0.0{
+            builder.addFluidInput(fluid).setChance(chance).setParallelizeUnaffected(true);
+        }else{
+            builder.addFluidInput(fluid).setChance(chance);
+        }
     }
 
     // 物品输出
