@@ -136,7 +136,10 @@ val Machine_to_be_adpted = [
     "mythic_processor_pulverizer",
     "aluminum_lathe",
     "mythic_processor_drying_rack",
-    "mythic_processor_resonator"
+    "mythic_processor_resonator",
+    "mythic_processor_electrolyzer",
+    "mythic_processor_assembling_machine",
+    "mythic_processor_gearworking_die"
 ];
 for i in 0 to Machine_to_be_adpted.length{
     RecipeAdapterBuilder.create("modularmachinery:infinite_recursive_factory", "modularmachinery:"+Machine_to_be_adpted[i])
