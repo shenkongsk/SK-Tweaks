@@ -132,6 +132,11 @@ function Recipe_Builder_SK(
     if(energyOutput > 0) {
         builder.addEnergyPerTickOutput(energyOutput);
     }
+    // builder.addPreCheckHandler(function(event as RecipeCheckEvent){
+    //     scripts.SKTweaks.lib.Real_Parallels.SK_Real_Parallels(event.controller,event.activeRecipe);
+        
+    // });
+
     builder.build();
 }
 //

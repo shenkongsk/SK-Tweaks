@@ -2,11 +2,18 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.ae2enhanced.BlackHole;
 import crafttweaker.item.IItemStack;
 
+
 var bh_id =[
     "test_obsidian",
     "stable_spacetime_manifold",
     "differential_form_stabilizer",
-    "conformal_invariant_charge"
+    "conformal_invariant_charge",
+	"virtual_parallel_card_tier1",
+	"virtual_parallel_card_tier2",
+	"virtual_parallel_card_tier3",
+	"virtual_parallel_card_tier4",
+	"virtual_parallel_card_tier5",
+	"virtual_parallel_card_tier6"
 ];
 for i in bh_id {
     BlackHole.removeRecipe(i);
@@ -31,7 +38,7 @@ var recipe_remove as IItemStack[] = [
 	<ae2enhanced:upgrade_card:3>,
 	<ae2enhanced:upgrade_card:4>,
 	<ae2enhanced:smart_pattern_interface>,
-	<ae2enhanced:rf_access_node>,
+	<ae2enhanced:network_access_node>,
 	<ae2enhanced:omni_wireless_terminal>,
 	<ae2enhanced:part_stocking_bus>,
 	<ae2enhanced:universal_memory_card>,
@@ -42,12 +49,13 @@ var recipe_remove as IItemStack[] = [
 	<ae2enhanced:compressed_chunk_power_node>,
 	<ae2enhanced:chunk_power_node>,
 	<ae2enhanced:central_me_interface>,
-	<ae2enhanced:advanced_me_collector>
+	<ae2enhanced:advanced_me_collector>,
+	<ae2enhanced:yellow_stripes_block_b>
 ];
 for i in recipe_remove{
 	recipes.remove(i);
 }
-
+<ae2enhanced:central_me_interface>.addTooltip(format.green("用作合成拓展的合成时，自带8并行"));
 // 超维度存储
 val HDC = <ae2enhanced:hyperdimensional_controller>;
 val HDC_Casing = <ae2enhanced:hyperdimensional_casing>;
@@ -224,7 +232,7 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <ae2enhanced:smart_pattern_inte
 	[null, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, null]
 ]);
 // RF接口
-recipes.addShaped("ae2e_RF_node", <ae2enhanced:rf_access_node>, [
+recipes.addShaped("ae2e_RF_node", <ae2enhanced:network_access_node>, [
 	[<ore:ingotSednanite>, <appliedenergistics2:energy_acceptor>, <ore:ingotSednanite>], 
 	[<appliedenergistics2:energy_acceptor>, <appliedenergistics2:material:47>, <appliedenergistics2:energy_acceptor>], 
 	[<ore:ingotSednanite>, <appliedenergistics2:energy_acceptor>, <ore:ingotSednanite>]
@@ -250,6 +258,7 @@ BlackHole.addRecipe(
 		<contenttweaker:sympan_spirit>
 	]
 );
+// 压缩区块供电节点
 BlackHole.addRecipe(
 	<ae2enhanced:compressed_chunk_power_node>,
 	[
@@ -344,7 +353,8 @@ var parallelItems as IItemStack[] = [
     <contenttweaker:defined_engine>,
     <contenttweaker:material_part:317>,
     <contenttweaker:trinity_ingot>,
-    <avaritiaitem:cosmic_balance>
+    <avaritiaitem:cosmic_balance>,
+	<contenttweaker:black_hole_juice>
 ];
 var parallelMaxStacks as int[] = [
     1,
@@ -353,7 +363,8 @@ var parallelMaxStacks as int[] = [
     2,
     1,
     2,
-    4
+    4,
+	2
 ];
 var parallelLimits as int[][] = [
     [256],
@@ -362,7 +373,8 @@ var parallelLimits as int[][] = [
     [3840, 5120],
     [8192],
     [10240, 16384],
-    [32768, 65536, 102400, 163840]
+    [32768, 65536, 102400, 163840],
+	[327680,655360]
 ];
 
 // 用索引进行循环
@@ -386,16 +398,16 @@ for i, item in parallelItems {
 }
 // ME中枢接口
 // 哈哈哈不让你们用
-mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:central_me_interface>*32, [
-	[<contenttweaker:tardis_polyp>, <contenttweaker:tardis_polyp>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <contenttweaker:tardis_polyp>, <contenttweaker:tardis_polyp>], 
-	[<contenttweaker:tardis_polyp>, <ae2enhanced:differential_form_stabilizer>, <openblocks:tank>.withTag({tank: {FluidName: "black_hole_juice", Amount: 16000}}), <contenttweaker:construct_of_the_time_lords>, <minecraft:bedrock>, <contenttweaker:construct_of_the_time_lords>, <openblocks:tank>.withTag({tank: {FluidName: "black_hole_juice", Amount: 16000}}), <ae2enhanced:differential_form_stabilizer>, <contenttweaker:tardis_polyp>], 
-	[<ae2enhanced:conformal_invariant_charge>, <contenttweaker:construct_of_creative_freedom>, <contenttweaker:singular_fractal>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:infinite_processor>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:singular_fractal>, <contenttweaker:construct_of_creative_freedom>, <ae2enhanced:conformal_invariant_charge>], 
-	[<ae2enhanced:conformal_invariant_charge>, <contenttweaker:singular_fractal>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:infinite_processor>, <contenttweaker:unleashed_mithril_1>, <contenttweaker:infinite_processor>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:singular_fractal>, <ae2enhanced:conformal_invariant_charge>], 
-	[<ae2enhanced:conformal_invariant_charge>, <contenttweaker:singular_fractal>, <ae2enhanced:stable_spacetime_manifold>, <contenttweaker:eye_of_harmony_power_unit>, <contenttweaker:prayer_to_the_trinity_of_love>, <contenttweaker:eye_of_harmony_power_unit>, <ae2enhanced:stable_spacetime_manifold>, <contenttweaker:singular_fractal>, <ae2enhanced:conformal_invariant_charge>], 
-	[<ae2enhanced:conformal_invariant_charge>, <contenttweaker:singular_fractal>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:infinite_processor>, <contenttweaker:unleashed_mithril_2>, <contenttweaker:infinite_processor>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:singular_fractal>, <ae2enhanced:conformal_invariant_charge>], 
-	[<ae2enhanced:conformal_invariant_charge>, <contenttweaker:construct_of_creative_freedom>, <contenttweaker:singular_fractal>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:infinite_processor>, <contenttweaker:catalyst_of_universal_balance>, <contenttweaker:singular_fractal>, <contenttweaker:construct_of_creative_freedom>, <ae2enhanced:conformal_invariant_charge>], 
-	[<contenttweaker:tardis_polyp>, <ae2enhanced:differential_form_stabilizer>, <openblocks:tank>.withTag({tank: {FluidName: "black_hole_juice", Amount: 16000}}), <contenttweaker:construct_of_the_time_lords>, <minecraft:bedrock>, <contenttweaker:construct_of_the_time_lords>, <openblocks:tank>.withTag({tank: {FluidName: "black_hole_juice", Amount: 16000}}), <ae2enhanced:differential_form_stabilizer>, <contenttweaker:tardis_polyp>], 
-	[<contenttweaker:tardis_polyp>, <contenttweaker:tardis_polyp>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <ae2enhanced:differential_form_stabilizer>, <contenttweaker:tardis_polyp>, <contenttweaker:tardis_polyp>]
+mods.avaritia.ExtremeCrafting.addShaped("central_me_interface_sk",<ae2enhanced:central_me_interface>, [
+	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <appliedenergistics2:quartz_vibrant_glass>], 
+	[<contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>, <ore:blockEden>, <ore:blockEden>, <ore:blockEden>, <contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>], 
+	[<contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <contenttweaker:eden_star>, <contenttweaker:mythic_coil_t3>, <contenttweaker:holy_shimmer>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_star>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>], 
+	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_refined_gem>, <forge:bucketfilled>, <contenttweaker:eden_refined_gem>, <contenttweaker:mythic_coil_t3>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
+	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:holy_shimmer>, <contenttweaker:plasma_collider>, <contenttweaker:crown_of_the_energy_queen>, <contenttweaker:plasma_collider>, <contenttweaker:holy_shimmer>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
+	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_refined_gem>, <forge:bucketfilled>, <contenttweaker:eden_refined_gem>, <contenttweaker:mythic_coil_t3>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
+	[<contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <contenttweaker:eden_star>, <contenttweaker:mythic_coil_t3>, <contenttweaker:holy_shimmer>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_star>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>], 
+	[<contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>, <ore:blockEden>, <ore:blockEden>, <ore:blockEden>, <contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>], 
+	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <appliedenergistics2:quartz_vibrant_glass>]
 ]);
 scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
     "stable_spacetime_manifold_made",
@@ -475,3 +487,50 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     0,
     0
 );
+// 虚拟卡
+val VPC = [
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 0}),// 8x
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 1}),// 32x
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 2}),// 128x
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 3}),// 512x
+	// 下面不是黑洞合成
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 4}),// 32768x
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 5}),// 2097152x
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 6}),// 134217728x
+    <ae2enhanced:virtual_parallel_card>.withTag({Tier: 7}) // longmax
+];
+VPC[4].addTooltip(format.red("不许掏！"));
+VPC[5].addTooltip(format.red("不许掏！"));
+VPC[6].addTooltip(format.red("不许掏！"));
+VPC[7].addTooltip(format.red("不许掏！"));
+val BH_Inputs = [
+	[
+		<appliedenergistics2:material:27>*256,
+		<appliedenergistics2:material:30>*256,
+		<appliedenergistics2:material:47>*64,
+		<tce:tce_compressed_torch_lvl1>*2
+	],
+	[
+		VPC[0]*4,
+		<appliedenergistics2:creative_energy_cell>*8,
+		<contenttweaker:superconducting_heater>*256
+	],
+	[
+		VPC[1]*2,
+		<contenttweaker:third_order_mythic_fractal>*32,
+		<contenttweaker:perfected_gem_of_the_cosmos>*1
+	],
+	[
+		VPC[2]*16,
+		<contenttweaker:chaotic_sentient_meatball>*64,
+		<contenttweaker:living_infinity_fruit>*64
+	]
+];
+for i,itemstack in BH_Inputs {
+	BlackHole.addRecipe(
+		VPC[i],
+		itemstack
+	);
+}
+// 警示方块
+recipes.addShapeless("cautionblock_ae2e_sk", <ae2enhanced:yellow_stripes_block_b>*2, [<ore:blockBlackIron>,<forestry:bee_combs:5>,<ore:crystalLitherite>]);

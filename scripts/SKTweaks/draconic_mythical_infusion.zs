@@ -394,6 +394,8 @@ RecipeAdapterBuilder.create("modularmachinery:small_draconic_mythical_infusion",
     .build();
 // 继承充能台
 RecipeAdapterBuilder.create("modularmachinery:draconic_mythical_infusion", "modularmachinery:mythic_processor_empowerer")
+    .addModifier(RecipeModifierBuilder.create("modularmachinery:item", "input", 64, 1, false).build())
+    .addModifier(RecipeModifierBuilder.create("modularmachinery:item", "output", 64, 1, false).build())
     .addModifier(RecipeModifierBuilder.create("modularmachinery:duration", "input", 0.5, 1, true).build())
     .setMaxThreads(1)
     .build();
