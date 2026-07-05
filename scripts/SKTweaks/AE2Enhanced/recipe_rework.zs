@@ -55,7 +55,7 @@ var recipe_remove as IItemStack[] = [
 for i in recipe_remove{
 	recipes.remove(i);
 }
-<ae2enhanced:central_me_interface>.addTooltip(format.green("用作合成拓展的合成时，自带8并行"));
+
 // 超维度存储
 val HDC = <ae2enhanced:hyperdimensional_controller>;
 val HDC_Casing = <ae2enhanced:hyperdimensional_casing>;
@@ -398,13 +398,14 @@ for i, item in parallelItems {
 }
 // ME中枢接口
 // 哈哈哈不让你们用
+<ae2enhanced:central_me_interface>.addTooltip(format.green("用作合成拓展的合成时，自带8并行"));
 mods.avaritia.ExtremeCrafting.addShaped("central_me_interface_sk",<ae2enhanced:central_me_interface>, [
 	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>, <ore:blockEden>, <ore:blockEden>, <ore:blockEden>, <contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>], 
 	[<contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <contenttweaker:eden_star>, <contenttweaker:mythic_coil_t3>, <contenttweaker:holy_shimmer>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_star>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>], 
-	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_refined_gem>, <forge:bucketfilled>, <contenttweaker:eden_refined_gem>, <contenttweaker:mythic_coil_t3>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
+	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_refined_gem>, <forge:bucketfilled>.withTag({FluidName: "binnie.dna.raw", Amount: 1000}), <contenttweaker:eden_refined_gem>, <contenttweaker:mythic_coil_t3>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
 	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:holy_shimmer>, <contenttweaker:plasma_collider>, <contenttweaker:crown_of_the_energy_queen>, <contenttweaker:plasma_collider>, <contenttweaker:holy_shimmer>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
-	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_refined_gem>, <forge:bucketfilled>, <contenttweaker:eden_refined_gem>, <contenttweaker:mythic_coil_t3>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
+	[<contenttweaker:supertranslucent_catalyst>, <ore:blockEden>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_refined_gem>, <forge:bucketfilled>.withTag({FluidName: "binnie.dna.raw", Amount: 1000}), <contenttweaker:eden_refined_gem>, <contenttweaker:mythic_coil_t3>, <ore:blockEden>, <contenttweaker:supertranslucent_catalyst>], 
 	[<contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <contenttweaker:eden_star>, <contenttweaker:mythic_coil_t3>, <contenttweaker:holy_shimmer>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_star>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>], 
 	[<contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>, <ore:blockEden>, <ore:blockEden>, <ore:blockEden>, <contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <appliedenergistics2:quartz_vibrant_glass>]
