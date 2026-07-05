@@ -399,7 +399,8 @@ for i, item in parallelItems {
 // ME中枢接口
 // 哈哈哈不让你们用
 <ae2enhanced:central_me_interface>.addTooltip(format.green("用作合成拓展的合成时，自带8并行"));
-mods.avaritia.ExtremeCrafting.addShaped("central_me_interface_sk",<ae2enhanced:central_me_interface>, [
+mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:central_me_interface>, [
+// mods.avaritia.ExtremeCrafting.addShaped("central_me_interface_sk",<ae2enhanced:central_me_interface>, [
 	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>, <divinerpg:eden_block>, <divinerpg:eden_block>, <divinerpg:eden_block>, <contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>], 
 	[<contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <contenttweaker:eden_star>, <contenttweaker:mythic_coil_t3>, <contenttweaker:holy_shimmer>, <contenttweaker:mythic_coil_t3>, <contenttweaker:eden_star>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>], 
