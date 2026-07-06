@@ -8,6 +8,8 @@ import native.thaumcraft.api.ThaumcraftApiHelper;
 
 import crafttweaker.item.IItemStack;
 import thaumcraft.aspect.CTAspectStack;
+<modularmachinery:mechanized_essentia_smeltery_controller>.addTooltip(format.gold("使用此仓室时，请不要应用多方块升级"));
+<modularmachinery:mechanized_essentia_smeltery_controller>.addTooltip(format.gold("否则会导致亏输入"));
 <modularmachinery:mechanized_essentia_smeltery_controller>.addTooltip(format.gold("如果放置机械源质输出仓时显示 输入输出仓无效"));
 <modularmachinery:mechanized_essentia_smeltery_controller>.addTooltip(format.gold("请将对应仓室接通ME网络"));
 
