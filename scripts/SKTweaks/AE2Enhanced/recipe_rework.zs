@@ -164,7 +164,7 @@ val ASC_Stabilizer = <ae2enhanced:assembly_stabilizer>;
 val ASC_Interface = <ae2enhanced:assembly_me_interface>;
 ASC.addTooltip(format.green("多方块结构："));
 ASC.addTooltip(format.green("   装配枢纽 ME 接口 × 3"));
-ASC.addTooltip(format.green("   装配枢纽外壳 × 179"));
+ASC.addTooltip(format.green("   装配枢纽外壳 × 180"));
 ASC.addTooltip(format.green("   装配枢纽内壁 × 128"));
 ASC.addTooltip(format.green("   装配枢纽稳定器 × 32"));
 mods.extendedcrafting.TableCrafting.addShaped(2, ASC, [
@@ -411,84 +411,84 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:central_me_interfa
 	[<contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>, <divinerpg:eden_block>, <divinerpg:eden_block>, <divinerpg:eden_block>, <contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <appliedenergistics2:quartz_vibrant_glass>]
 ]);
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
-    "stable_spacetime_manifold_made",
-    "mythic_excavation_lattice",
-    // inputs - chances
-    [
-		<contenttweaker:gravitational_time_crystal>*4
-    ],
-    [],
-    // fluid inputs - chances
-    [<liquid:black_hole_juice>*1],
-    [],
-    // outputs - chances
-    [<ae2enhanced:stable_spacetime_manifold>],
-    [0.1],
-    // fluid outputs - chances
-    [],
-    [],
-    // time, energy input, energy output
-    10,
-    0,
-    0
-);
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
-    "differential_form_stabilizer_made",
-    "relativistic_collapser",
-    // inputs
-    [
-		<ae2enhanced:stable_spacetime_manifold>*8,
-		<ae2enhanced:assembly_stabilizer>*16384,
-		<ae2enhanced:hyperdimensional_casing>*16384,
-		<ae2enhanced:causal_anchor_core>*16384,
-		<contenttweaker:tardis_branch>*2,
-		<contenttweaker:everlasting_fusor>*4
-	],
-    // fluid inputs
-    [],
-    // outputs
-    [
-		<ae2enhanced:differential_form_stabilizer>*12
-	],
-    // fluid outputs
-    [],
-    // time, energy input, energy output
-    1000, // 50 秒
-    1000000000,
-    0
-);
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
-    "conformal_invariant_charge_made",
-    "dyson_abater",
-    // inputs
-    [
-		<avaritiaitem:cosmic_balance>,
-		<ae2enhanced:stable_spacetime_manifold>,
-		<ae2enhanced:differential_form_stabilizer>*8,
-		<contenttweaker:catalyst_of_natural_law>,
-		<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 51, lvl: 1 as short}]})
-	],
-    // fluid inputs
-    [
-		<liquid:nidhogg_dragonfire>*16000,
-		<liquid:whisper_of_right_and_just_creation>*16000,
-		<liquid:whisper_of_starvald_demelain>*16000,
-		<liquid:twilight_matter>*16000,
-		<liquid:copper>*16000,
-		<liquid:blockfluiddirt>*16000
-	],
-    // outputs
-    [
-		<ae2enhanced:conformal_invariant_charge>*2
-	],
-    // fluid outputs
-    [],
-    // time, energy input, energy output
-    20,
-    0,
-    0
-);
+// scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+//     "stable_spacetime_manifold_made",
+//     "mythic_excavation_lattice",
+//     // inputs - chances
+//     [
+// 		<contenttweaker:gravitational_time_crystal>*4
+//     ],
+//     [],
+//     // fluid inputs - chances
+//     [<liquid:black_hole_juice>*1],
+//     [],
+//     // outputs - chances
+//     [<ae2enhanced:stable_spacetime_manifold>],
+//     [0.1],
+//     // fluid outputs - chances
+//     [],
+//     [],
+//     // time, energy input, energy output
+//     10,
+//     0,
+//     0
+// );
+// scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+//     "differential_form_stabilizer_made",
+//     "relativistic_collapser",
+//     // inputs
+//     [
+// 		<ae2enhanced:stable_spacetime_manifold>*8,
+// 		<ae2enhanced:assembly_stabilizer>*16384,
+// 		<ae2enhanced:hyperdimensional_casing>*16384,
+// 		<ae2enhanced:causal_anchor_core>*16384,
+// 		<contenttweaker:tardis_branch>*2,
+// 		<contenttweaker:everlasting_fusor>*4
+// 	],
+//     // fluid inputs
+//     [],
+//     // outputs
+//     [
+// 		<ae2enhanced:differential_form_stabilizer>*12
+// 	],
+//     // fluid outputs
+//     [],
+//     // time, energy input, energy output
+//     1000, // 50 秒
+//     1000000000,
+//     0
+// );
+// scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+//     "conformal_invariant_charge_made",
+//     "dyson_abater",
+//     // inputs
+//     [
+// 		<avaritiaitem:cosmic_balance>,
+// 		<ae2enhanced:stable_spacetime_manifold>,
+// 		<ae2enhanced:differential_form_stabilizer>*8,
+// 		<contenttweaker:catalyst_of_natural_law>,
+// 		<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 51, lvl: 1 as short}]})
+// 	],
+//     // fluid inputs
+//     [
+// 		<liquid:nidhogg_dragonfire>*16000,
+// 		<liquid:whisper_of_right_and_just_creation>*16000,
+// 		<liquid:whisper_of_starvald_demelain>*16000,
+// 		<liquid:twilight_matter>*16000,
+// 		<liquid:copper>*16000,
+// 		<liquid:blockfluiddirt>*16000
+// 	],
+//     // outputs
+//     [
+// 		<ae2enhanced:conformal_invariant_charge>*2
+// 	],
+//     // fluid outputs
+//     [],
+//     // time, energy input, energy output
+//     20,
+//     0,
+//     0
+// );
 // 虚拟卡
 val VPC = [
     <ae2enhanced:virtual_parallel_card>.withTag({Tier: 0}),// 8x

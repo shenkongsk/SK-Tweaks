@@ -48,21 +48,23 @@ function SK_SyncParallelUpgrade(ctrl as IMachineController, recipe as ActiveMach
 val MACHINE = "infinite_recursive_factory";                        //机器ID
  
 // 设置最大线程数
-MachineModifier.setMaxThreads(MACHINE, 0);
+// MachineModifier.setMaxThreads(MACHINE, 0);
+MachineModifier.setMaxThreads(MACHINE, 32);
 MachineModifier.addCoreThread(MACHINE, FactoryRecipeThread.createCoreThread("并行安装").addRecipe("parallel_upgrade"));
 MachineModifier.addCoreThread(MACHINE, FactoryRecipeThread.createCoreThread("并行卸载").addRecipe("parallel_downgrade"));
 // 为每个配方创建独立的核心线程
-val romanNumerals = [
-    "I", "II", "III", "IV", "V", "VI", "VII", "VIII",
-    "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI",
-    "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV",
-    "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX", "XXXI", "XXXII"
-] as string[];
+// val romanNumerals = [
+//     "I", "II", "III", "IV", "V", "VI", "VII", "VIII",
+//     "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI",
+//     "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV",
+//     "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX", "XXXI", "XXXII"
+// ] as string[];
 
-for roman in romanNumerals {
-    val thread = FactoryRecipeThread.createCoreThread("§e工作线程-§b" + roman);
-    MachineModifier.addCoreThread(MACHINE, thread);
-}
+// for roman in romanNumerals {
+//     val thread = FactoryRecipeThread.createCoreThread("§e工作线程-§b" + roman);
+//     MachineModifier.addCoreThread(MACHINE, thread);
+// }
+
 // ===================== 并行升级配方 =====================
 RecipeBuilder.newBuilder("parallel_upgrade", MACHINE, 1)
     .setParallelized(false)

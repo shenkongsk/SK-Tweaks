@@ -17,15 +17,16 @@ import crafttweaker.item.IItemStack;
     作者：梦瑞云/Evelia_Fate
 */
 
-for item in loadedMods["modularmachinery"].items{
-    val id = item.definition.id;
-    if(id.endsWith("_controller")){
-        <ore:SK_controller>.add(item);
-    }
-}
+// for item in loadedMods["modularmachinery"].items{
+//     val id = item.definition.id;
+//     if(id.endsWith("_controller")){
+//         <ore:SK_controller>.add(item);
+//     }
+// }
+
 // 暂时用一下神话装配室
 RecipeBuilder.newBuilder("transcriber", "me_mythic_assembler", 5)
-    .addInput(<ore:SK_controller>).setChance(0)
+    .addInput(<ore:anyBlockController>).setChance(0)
     .setNBTChecker(function(ctrl as IMachineController, item as IItemStack) {
         var displayname = item.displayName;
         if (displayname.endsWith("集成控制器")) {
