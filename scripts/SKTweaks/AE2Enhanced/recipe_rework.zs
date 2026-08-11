@@ -39,7 +39,7 @@ var recipe_remove as IItemStack[] = [
 	<ae2enhanced:upgrade_card:4>,
 	<ae2enhanced:smart_pattern_interface>,
 	<ae2enhanced:network_access_node>,
-	<ae2enhanced:omni_wireless_terminal>,
+	// <ae2enhanced:omni_wireless_terminal>,
 	<ae2enhanced:part_stocking_bus>,
 	<ae2enhanced:universal_memory_card>,
 	<ae2enhanced:channel_receiver_card>,
@@ -253,13 +253,13 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:chunk_power_node>,
 ]);
 
 // 全能终端
-BlackHole.addRecipe(
-	<ae2enhanced:omni_wireless_terminal>,
-	[
-		<appliedenergistics2:wireless_terminal>,
-		<contenttweaker:sympan_spirit>
-	]
-);
+// BlackHole.addRecipe(
+// 	<ae2enhanced:omni_wireless_terminal>,
+// 	[
+// 		<appliedenergistics2:wireless_terminal>,
+// 		<contenttweaker:sympan_spirit>
+// 	]
+// );
 // 压缩区块供电节点
 BlackHole.addRecipe(
 	<ae2enhanced:compressed_chunk_power_node>,
