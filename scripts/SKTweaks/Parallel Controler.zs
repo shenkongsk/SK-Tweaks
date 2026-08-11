@@ -66,27 +66,6 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <modularmachinery:blockparallel
 //         [<modularmachinery:blockparallelcontroller:2>,<nae2:coprocessor_64x>,<modularmachinery:blockparallelcontroller:2>]
 //     ]
 // );
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
-    "parallelcontrollerx256",
-    "recursive_fusion_core",
-    [
-        <appliedenergistics2:crafting_accelerator>,<vajra:magnetron>*32,<appliedenergistics2:quartz_vibrant_glass>*64,<nae2:material>*4,
-        <modularmachinery:blockparallelcontroller>*512,<cells:singularity_processor>*64,<cells:hyper_density_component:10>,<contenttweaker:unleashed_star_ingot>*8,
-        <modularmachinery:blockparallelcontroller:1>*256,<cells:singularity_processor:1>*64,<cells:hyper_density_compacting_component:10>*1,<contenttweaker:tardis_casing>*1,
-        <modularmachinery:blockparallelcontroller:2>*128,<cells:singularity_processor:2>*64,<cells:hyper_density_fluid_component:10>*1,<avaritia:infinity_sword>*1
-    ],
-    [
-        <liquid:trinity_ingot>*14400,
-        <liquid:infinity>*14400,
-        <liquid:strings>*30000,
-        <liquid:naquadah_alloy>*14400
-    ],
-    [<modularmachinery:blockparallelcontroller:3>*64],
-    [],
-    600,
-    2147483647,
-    0
-);
 // recipes.addShaped("parallelcontrollerx512",
 //     <modularmachinery:blockparallelcontroller:4>,
 //     [
