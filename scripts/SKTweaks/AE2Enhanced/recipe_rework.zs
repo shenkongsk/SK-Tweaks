@@ -50,7 +50,9 @@ var recipe_remove as IItemStack[] = [
 	<ae2enhanced:chunk_power_node>,
 	<ae2enhanced:central_me_interface>,
 	<ae2enhanced:advanced_me_collector>,
-	<ae2enhanced:yellow_stripes_block_b>
+	<ae2enhanced:yellow_stripes_block_b>,
+	<ae2enhanced:chunk_mana_node>,
+	<ae2enhanced:compressed_chunk_mana_node>
 ];
 for i in recipe_remove{
 	recipes.remove(i);
@@ -536,3 +538,24 @@ for i,itemstack in BH_Inputs {
 }
 // 警示方块
 recipes.addShapeless("cautionblock_ae2e_sk", <ae2enhanced:yellow_stripes_block_b>*2, [<ore:blockBlackIron>,<forestry:bee_combs:5>,<ore:crystalLitherite>]);
+// 区块魔力节点
+var Terra_Shard = <tconstruct:shard>.withTag({Material: "terrasteel"});
+mods.extendedcrafting.TableCrafting.addShaped(4,<ae2enhanced:chunk_mana_node>, [
+	[null, null, null, null, <contenttweaker:blue_matter>, null, null, null, null], 
+	[null, null, null, null, <contenttweaker:blue_matter>, null, null, null, null], 
+	[null, null, null, null, <thaumicwonders:void_beacon>, null, null, null, null], 
+	[null, null, null, <contenttweaker:blue_matter>, <botania:pylon:2>, <contenttweaker:blue_matter>, null, null, null], 
+	[null, <contenttweaker:blue_matter>, <contenttweaker:blue_matter>, <ore:runeGreedB>, Terra_Shard, <ore:runeGreedB>, <contenttweaker:blue_matter>, <contenttweaker:blue_matter>, null], 
+	[<contenttweaker:blue_matter>, <botania:pylon:2>, <extrabotany:material:7>, Terra_Shard, <appliedenergistics2:material:47>, Terra_Shard, <extrabotany:material:7>, <botania:pylon:2>, <contenttweaker:blue_matter>], 
+	[null, <contenttweaker:blue_matter>, <ore:runeGreedB>, <extrabotany:material:7>, Terra_Shard, <extrabotany:material:7>, <ore:runeGreedB>, <contenttweaker:blue_matter>, null], 
+	[null, null, <contenttweaker:blue_matter>, <ore:runeGreedB>, <ore:runeGreedB>, <ore:runeGreedB>, <contenttweaker:blue_matter>, null, null], 
+	[null, null, null, <contenttweaker:blue_matter>, <botania:storage>, <contenttweaker:blue_matter>, null, null, null]
+]);
+// 压缩区块魔力节点
+BlackHole.addRecipe(
+	<ae2enhanced:compressed_chunk_mana_node>,
+	[
+		<extendedcrafting:material:13>,
+		<ae2enhanced:chunk_mana_node>*4
+	]
+);
