@@ -5,8 +5,8 @@ import crafttweaker.item.IItemStack;
 
 var bh_id =[
     "test_obsidian",
-    "stable_spacetime_manifold",
-    "differential_form_stabilizer",
+    // "stable_spacetime_manifold",
+    // "differential_form_stabilizer",
     "conformal_invariant_charge",
 	"virtual_parallel_card_tier1",
 	"virtual_parallel_card_tier2",
