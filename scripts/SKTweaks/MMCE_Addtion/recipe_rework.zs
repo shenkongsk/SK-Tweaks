@@ -38,7 +38,7 @@ recipes.addShaped("SK_me_pattern_assembly",<mmceaddition:me_pattern_assembly>, [
 	[<contenttweaker:everwondering_megelium>, <contenttweaker:infinite_loving_plate>, <contenttweaker:everwondering_megelium>]
 ]);
 // 虚拟并行仓
-recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hatch>, [
+recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hatch>*2, [
 	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>], 
 	[<appliedenergistics2:creative_energy_cell>, <modularmachinery:blockparallelcontroller>, <appliedenergistics2:creative_energy_cell>], 
 	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>]
