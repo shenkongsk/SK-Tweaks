@@ -1,4 +1,8 @@
 {
+    "modularmachinery:blockparallelcontroller": [
+        "modularmachinery:blockparallelcontroller",
+        "mmceaddition:virtual_parallel_hatch"
+    ],
     "casings_all": [
         "modularmachinery:blockcasing",
         "modularmachinery:blockinputbus",
@@ -72,7 +76,9 @@
     "generalized_input_item": [
         "modularmachinery:blockinputbus",
         "modularmachinery:blockmeiteminputbus",
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage"
     ],
@@ -84,6 +90,7 @@
         "modularmachinery:blockoutputbus",
         "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeitemoutputbus",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller"
     ],
     "generalized_output_fluid": [
@@ -95,7 +102,9 @@
     "generalized_input_fluid": [
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockmefluidinputbus",
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage"
     ],
@@ -108,7 +117,9 @@
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockinputbus",
         "modularmachinery:blockmeiteminputbus",
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage"
     ],
@@ -121,7 +132,9 @@
         "modularmachinery:blockinputbus",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockcasing",
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage",
         "modularmachinery:blockfluidinputhatch"
@@ -145,7 +158,9 @@
         "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockoutputbus",
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage"
     ],
@@ -166,7 +181,9 @@
         "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockmeiteminputbus",
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage",
         "modularmachinery:blockfluidinputhatch"
@@ -369,6 +386,7 @@
         "mmceaddition:me_async_fluid_output_hatch",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockcasing",
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage",
@@ -377,6 +395,7 @@
     "contenttweaker:mythic_coil_t1@0": [
         "contenttweaker:mythic_coil_t1@0",
         "contenttweaker:mythic_coil_t2@0",
+        "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller"
     ],
     "modularmachinery:blockaspectprovideroutput@0": [
@@ -394,6 +413,7 @@
         "mmce_complement:flux_output_hatch"
     ],
     "patterninputs": [
+        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
         "modularmachinery:blockmepatternmirrorimage"
     ]
