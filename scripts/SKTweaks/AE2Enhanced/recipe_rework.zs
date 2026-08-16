@@ -2,7 +2,9 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.ae2enhanced.BlackHole;
 import crafttweaker.item.IItemStack;
 
-
+<ae2enhanced:upgrade_card>.addTooltip(format.red("已被禁用"));
+<ae2enhanced:upgrade_card>.addTooltip(format.red("请搜索：装配枢纽并行升级"));
+<ae2enhanced:network_link_credential>.addTooltip(format.red("已被禁用"));
 var bh_id =[
     "test_obsidian",
     // "stable_spacetime_manifold",
@@ -19,6 +21,7 @@ for i in bh_id {
     BlackHole.removeRecipe(i);
 }
 var recipe_remove as IItemStack[] = [
+	<ae2enhanced:network_link_credential>,
 	<ae2enhanced:hyperdimensional_controller>,
 	<ae2enhanced:hyperdimensional_casing>,
 	<ae2enhanced:hyperdimensional_singularity_core>,
@@ -52,7 +55,8 @@ var recipe_remove as IItemStack[] = [
 	<ae2enhanced:advanced_me_collector>,
 	<ae2enhanced:yellow_stripes_block_b>,
 	<ae2enhanced:chunk_mana_node>,
-	<ae2enhanced:compressed_chunk_mana_node>
+	<ae2enhanced:compressed_chunk_mana_node>,
+	<ae2enhanced:singularity_chamber>
 ];
 for i in recipe_remove{
 	recipes.remove(i);
@@ -558,4 +562,29 @@ BlackHole.addRecipe(
 		<extendedcrafting:material:13>,
 		<ae2enhanced:chunk_mana_node>*4
 	]
+);
+// 奇点处理仓
+scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    "singularity_chamber_make",
+    "me_mythic_assembler",
+    // inputs
+    [
+		<ae2enhanced:singularity_constrictor>*8,
+		<projecte:item.pe_void_ring>*4,
+		<contenttweaker:naquadah_gear>*64,
+		<ae2enhanced:assembly_casing>*256,
+		<ae2enhanced:causal_anchor_core>*128
+    ],
+    // fluid inputs
+    [
+		<liquid:fluix_plasma>*160000
+    ],
+    // outputs
+    [<ae2enhanced:singularity_chamber>],
+    // fluid outputs
+    [],
+    // time, energy input, energy output
+    20, // 1 秒
+    800000,
+    0
 );
