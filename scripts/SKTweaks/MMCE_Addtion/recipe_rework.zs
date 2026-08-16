@@ -39,9 +39,9 @@ recipes.addShaped("SK_me_pattern_assembly",<mmceaddition:me_pattern_assembly>, [
 ]);
 // 虚拟并行仓
 recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hatch>, [
-	[<ore:plateIron>, <contenttweaker:sacred_cinders_honey>, <ore:plateIron>], 
-	[<contenttweaker:sacred_cinders_honey>, <modularmachinery:blockparallelcontroller>, <contenttweaker:sacred_cinders_honey>], 
-	[<ore:plateIron>, <contenttweaker:sacred_cinders_honey>, <ore:plateIron>]
+	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>], 
+	[<appliedenergistics2:creative_energy_cell>, <modularmachinery:blockparallelcontroller>, <appliedenergistics2:creative_energy_cell>], 
+	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>]
 ]);
 // 虚拟装配器
 scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
