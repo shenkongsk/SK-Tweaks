@@ -6,9 +6,8 @@
     "casings_all": [
         "modularmachinery:blockcasing",
         "modularmachinery:blockinputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockenergyinputhatch",
-        "modularmachinery:blockinputbus",
+        "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockenergyoutputhatch",
         "generalized_output_fluid",
@@ -26,6 +25,7 @@
         "modularmachinery:blockfluidoutputhatch",
         "modularmachinery:blockfluidinputhatch",
         "mmceaddition:me_async_fluid_output_hatch",
+        "mmceaddition:me_output_assembly",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockinputbus",
         "modularmachinery:blockmefluidinputbus"
@@ -37,6 +37,10 @@
     "generalized_input_essentia": [
         "modularmachinery:blockaspectproviderinput",
         "modularmachineryaddons:blockmeessentiainputbus"
+    ],
+    "single_item_input": [
+        "modularmachinery:blockinputbus@0",
+        "modularmachineryaddons:blocksingularityiteminputbus@0"
     ],
     "any_dragonforge_brick": [
         "iceandfire:dragonforge_lightning_brick",
@@ -56,7 +60,11 @@
         "twilightforest:molten_knightmetal",
         "tconstruct:molten_manyullyn",
         "tconstruct:molten_cobalt",
-        "tconstruct:molten_ardite"
+        "tconstruct:molten_ardite",
+        "contenttweaker:eternal_dragon_fire",
+        "contenttweaker:twilight_fire",
+        "contenttweaker:eleint_dragonfire",
+        "contenttweaker:nidhogg_dragonfire"
     ],
     "casings_energy": [
         "modularmachinery:blockenergyinputhatch",
@@ -68,10 +76,17 @@
     ],
     "casings_item": [
         "modularmachinery:blockoutputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
         "modularmachinery:blockmeitemoutputbus",
-        "modularmachinery:blockmeiteminputbus"
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "modularmachineryaddons:blocksingularityiteminputbus@1",
+        "modularmachineryaddons:blocksingularityiteminputbus@2",
+        "modularmachineryaddons:blocksingularityiteminputbus@3"
     ],
     "generalized_input_item": [
         "modularmachinery:blockinputbus",
@@ -82,20 +97,55 @@
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage"
     ],
+    "warren_extractor_output": [
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "modularmachineryaddons:blocksingularityitemoutputbus@2",
+        "modularmachineryaddons:blocksingularityitemoutputbus@3",
+        "mmceaddition:me_async_item_output_bus"
+    ],
     "generalized_output_will": [
         "modularmachinery:blockwillprovideroutput",
         "modularmachineryaddons:blockwillmultichunkprovideroutput"
     ],
+    "dml_output": [
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "modularmachineryaddons:blocksingularityitemoutputbus@2",
+        "modularmachineryaddons:blocksingularityitemoutputbus@3",
+        "mmceaddition:me_async_item_output_bus"
+    ],
     "generalized_output_item": [
         "modularmachinery:blockoutputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeitemoutputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller"
+    ],
+    "infusinator_output_item": [
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "modularmachineryaddons:blocksingularityitemoutputbus@2",
+        "modularmachineryaddons:blocksingularityitemoutputbus@3",
+        "mmceaddition:me_async_item_output_bus"
+    ],
+    "arkencrusher_output_item": [
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus",
+        "mmceaddition:me_async_item_output_bus"
     ],
     "generalized_output_fluid": [
         "modularmachinery:blockfluidoutputhatch",
         "mmceaddition:me_async_fluid_output_hatch",
+        "mmceaddition:me_output_assembly",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockparallelcontroller"
     ],
@@ -109,35 +159,38 @@
         "modularmachinery:blockmepatternmirrorimage"
     ],
     "excavation_matrix_hatches": [
-        "modularmachinery:blockinputbus",
-        "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockoutputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockinputbus",
         "modularmachinery:blockmeiteminputbus",
-        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
+        "modularmachinery:blockmepatternmirrorimage",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "mmceaddition:me_pattern_assembly",
         "mmceaddition:virtual_parallel_hatch",
-        "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockparallelcontroller"
     ],
     "infinity_furnace_hatches": [
-        "modularmachinery:blockinputbus",
+        "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockoutputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockinputbus",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockcasing",
-        "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
-        "mmceaddition:virtual_parallel_hatch",
-        "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage",
-        "modularmachinery:blockfluidinputhatch"
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "modularmachineryaddons:blocksingularityiteminputbus",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
+        "mmceaddition:me_pattern_assembly",
+        "mmceaddition:virtual_parallel_hatch",
+        "modularmachinery:blockparallelcontroller"
     ],
     "generalized_rainbow_leaves": [
         "twilightforest:twilight_leaves@7",
@@ -145,75 +198,143 @@
         "twilightforest:twilight_leaves@9"
     ],
     "berserker_forge_input": [
-        "modularmachinery:blockfluidinputhatch@2",
-        "modularmachinery:blockinputbus@0"
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockinputbus@0",
+        "modularmachineryaddons:blocksingularityiteminputbus@0"
     ],
     "divine_combiner_io": [
         "aoa3:dark_bricks",
-        "modularmachinery:blockinputbus",
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockinputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockoutputbus",
+        "modularmachinery:blockmepatternprovider",
+        "modularmachinery:blockmepatternmirrorimage",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "modularmachineryaddons:blocksingularityiteminputbus",
         "mmceaddition:me_pattern_assembly",
+        "mmceaddition:virtual_parallel_hatch",
+        "modularmachinery:blockparallelcontroller",
+        "mmceaddition:me_async_item_output_bus"
+    ],
+    "excavation_reactor_input": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachinery:blockmepatternprovider",
+        "modularmachinery:blockmepatternmirrorimage",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
+        "modularmachinery:blockmeitemoutputbus"
+    ],
+    "plasmatic_condenser_io": [
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage"
-    ],
-    "plasmatic_condenser_io": [
-        "modularmachinery:blockoutputbus",
-        "mmceaddition:me_async_item_output_bus",
-        "modularmachinery:blockinputbus",
-        "modularmachinery:blockmeitemoutputbus",
-        "modularmachinery:blockmeiteminputbus"
     ],
     "anyfloatingflower": [
         "botania:miniisland",
         "botania:floatingspecialflower"
     ],
     "both_item_fluid_input": [
+        "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockinputbus",
-        "modularmachinery:blockinputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockmeiteminputbus",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
         "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage",
-        "modularmachinery:blockfluidinputhatch"
+        "modularmachinery:blockmepatternmirrorimage"
     ],
     "both_item_fluid_output": [
         "modularmachinery:blockfluidoutputhatch",
-        "mmceaddition:me_async_fluid_output_hatch",
         "modularmachinery:blockoutputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockmeitemoutputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@1",
+        "mmceaddition:me_async_fluid_output_hatch",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
         "modularmachinery:blockfluidinputhatch"
+    ],
+    "creation_altar_output": [
+        "modularmachinery:blockfluidoutputhatch",
+        "modularmachinery:blockoutputbus",
+        "modularmachinery:blockmefluidoutputbus",
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachineryaddons:blocksingularityiteminputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus",
+        "mmceaddition:me_async_fluid_output_hatch",
+        "mmceaddition:me_output_assembly",
+        "mmceaddition:me_async_item_output_bus"
     ],
     "token_totem_output": [
         "modularmachinery:blockfluidoutputhatch",
-        "mmceaddition:me_async_fluid_output_hatch",
         "modularmachinery:blockenergyoutputhatch",
-        "modularmachinery:blockmefluidoutputbus"
+        "modularmachinery:blockmefluidoutputbus",
+        "mmceaddition:me_async_fluid_output_hatch"
     ],
     "thaumic_replicator_hatches": [
         "modularmachinery:blockfluidoutputhatch",
-        "mmceaddition:me_async_fluid_output_hatch",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockinputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeiteminputbus",
-        "modularmachinery:blockinputbus",
+        "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockaspectproviderinput",
-        "modularmachineryaddons:blockmeessentiainputbus"
+        "modularmachineryaddons:blockmeessentiainputbus",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
+        "mmceaddition:me_async_fluid_output_hatch"
+    ],
+    "mythic_processor_item_input": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "modularmachineryaddons:blocksingularityiteminputbus@1",
+        "modularmachineryaddons:blocksingularityiteminputbus@2",
+        "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
+        "modularmachinery:blockparallelcontroller",
+        "modularmachinery:blockmepatternmirrorimage"
+    ],
+    "terrestrial_cauldron_item_input": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachineryaddons:blocksingularityiteminputbus",
+        "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
+        "modularmachinery:blockparallelcontroller",
+        "modularmachinery:blockmepatternmirrorimage"
+    ],
+    "dragonfire_item_input": [
+        "modularmachinery:blockinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "modularmachineryaddons:blocksingularityiteminputbus@1",
+        "modularmachineryaddons:blocksingularityiteminputbus@2",
+        "modularmachineryaddons:blocksingularityiteminputbus@3",
+        "modularmachinery:blockmepatternprovider",
+        "mmceaddition:virtual_parallel_hatch",
+        "modularmachinery:blockparallelcontroller",
+        "modularmachinery:blockmepatternmirrorimage"
+    ],
+    "treeoflife_item_input": [
+        "modularmachinery:blockinputbus",
+        "modularmachineryaddons:blocksingularityiteminputbus"
     ],
     "apiary_decoration_soil": [
         "minecraft:grass",
@@ -380,12 +501,15 @@
     ],
     "wyvern_casing": [
         "modularmachinery:blockinputbus",
-        "mmceaddition:me_async_item_output_bus",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockfluidoutputhatch",
-        "mmceaddition:me_async_fluid_output_hatch",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockcasing",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
+        "mmceaddition:me_async_fluid_output_hatch",
         "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
         "modularmachinery:blockparallelcontroller",
