@@ -19,7 +19,7 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     ],
     // fluid inputs
     [
-        <liquid:dense_plasma>*2147483647
+        <liquid:dense_plasma>*50000000
     ],
     // outputs
     [<chickens:spawn_egg>.withTag({ChickenType: {id: "contenttweaker:defined_chicken"}})],
