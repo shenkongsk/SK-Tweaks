@@ -60,6 +60,7 @@ function Recipe_Builder_SK_Chicken(
     builder.build();
 }
 val Chicken_Input = [
+    [<chickens:spawn_egg>.withTag({ChickenType: {id: "contenttweaker:defined_chicken"}})*1],
     [<chickens:spawn_egg>.withTag({ChickenType: {id: "contenttweaker:polonium_chicken"}})*1],
     [<chickens:spawn_egg>.withTag({ChickenType: {id: "contenttweaker:brightsteel_chicken"}})*1],
     [<chickens:spawn_egg>.withTag({ChickenType: {id: "contenttweaker:ogerite_chicken"}})*1],
@@ -140,6 +141,7 @@ val Chicken_Input = [
 ];
 
 val Egg_Output = [
+    [<contenttweaker:defined_egg>],
     [<contenttweaker:polonium_egg>*16],
     [<contenttweaker:brightsteel_egg>*16],
     [<contenttweaker:ogerite_egg>*16],

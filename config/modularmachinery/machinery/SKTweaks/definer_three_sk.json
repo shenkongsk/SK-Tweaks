@@ -1,0 +1,2103 @@
+{
+    "registryname": "definer_three_sk",
+    "localizedname": "§a再定义器",
+    "color": "000000",
+    "requires-blueprint": false,
+    "has-factory": true,
+    "factory-only": true,
+    "modifiers": [
+        {
+            "elements": "contenttweaker:defined_block",
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "description": "机器运作时，大量定义出现导致堵塞，处理速度减慢90%",
+            "modifier": {
+                "io": "input",
+                "target": "modularmachinery:duration",
+                "operation": 1,
+                "multiplier": 10.0
+            }
+        },
+        {
+            "elements": "contenttweaker:defined_block",
+            "x": 0,
+            "y": 6,
+            "z": 4,
+            "description": "机器运作时，大量定义出现导致堵塞，处理速度减慢90%",
+            "modifier": {
+                "io": "input",
+                "target": "modularmachinery:duration",
+                "operation": 1,
+                "multiplier": 10.0
+            }
+        }
+    ],
+    "parts": [
+        {
+            "x": -1,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:chaos_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockoutputbus@0",
+                "modularmachineryaddons:blocksingularityitemoutputbus@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 9,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "generalized_output_fluid"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 9,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:defined_machine_case@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 9,
+            "z": 2,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 8,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 9,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 8,
+            "z": 4,
+            "elements": [
+                "contenttweaker:core_of_halite_definition@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:order_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 9,
+            "z": 0,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:chaos_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 9,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "contenttweaker:defined_machine_case@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "contenttweaker:chaos_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:order_wood@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "single_item_input"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "z": 8,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "modularmachineryaddons:blockdimensionproviderinput"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "contenttweaker:chaos_wood@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "contenttweaker:core_of_halite_definition@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "generalized_input_fluid"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "z": 6,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "generalized_input_fluid"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 9,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "contenttweaker:order_wood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 9,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 9,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "contenttweaker:chaos_wood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "extrautils2:decorativesolid@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "generalized_output_fluid"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "contenttweaker:order_wood@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 9,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "z": 0,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "contenttweaker:defined_machine_case@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:trimmed@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 9,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 9,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 9,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 9,
+            "z": 6,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 9,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 9,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 8,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "single_item_input"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 8,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:chaos_wood@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "contenttweaker:defined_machine_case@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "avaritia:block_resource@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 9,
+            "z": 8,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 9,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:miniature_pulsar@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "z": 2,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 8,
+            "elements": [
+                "extendedcrafting:storage@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:trimmed@4"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 10,
+            "z": 7,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "contenttweaker:septuple_compressed_aeternalis_fuel@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "extendedcrafting:storage@4"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 10,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "contenttweaker:fluid_matrix_conduit"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "botania:bifrostperm@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "extendedcrafting:trimmed@5"
+            ]
+        }
+    ]
+}

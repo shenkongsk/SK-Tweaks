@@ -4457,3 +4457,5 @@ item.contenttweaker.summon_xplodous_.name=xplodous_的召唤石
 item.contenttweaker.summon_origami10004.name=origami10004的召唤石
 item.contenttweaker.summon_NerdySpider_1.name=NerdySpider的召唤石 1/2
 item.contenttweaker.summon_NerdySpider_2.name=NerdySpider的召唤石 2/2
+item.contenttweaker.defined_egg.name=§d定义蛋
+entity.defined_chicken.name=§d定义鸡

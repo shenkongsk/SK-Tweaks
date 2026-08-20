@@ -38,6 +38,7 @@ simple_register_item("eezo_energy_unit");
 simple_register_item("etherium_plate");
 simple_register_item("eternal_glory");
 simple_register_item("unleashed_star_ingot");
+simple_register_item("defined_egg");
 // function SK_ITEM_REGISTER(
 //     name as string,
 //     stacksize as int,
@@ -89,3 +90,5 @@ simple_register_block("core_cosmos",false,true,true,9.0,"SOLID");
 simple_register_block("core_dark",false,true,true,9.0,"SOLID");
 simple_register_block("core_pure",false,true,true,9.0,"SOLID");
 simple_register_block("core_eternal",false,true,true,9.0,"SOLID");
+
+

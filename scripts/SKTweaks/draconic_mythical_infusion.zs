@@ -149,7 +149,8 @@ var Recipe_Inputs = [
     [<contenttweaker:quintuple_compressed_alchemical_condensate>*1, <draconicevolution:draconic_block>*6, <ore:ingotBloodInfusedIron>*1],
     [<contenttweaker:sextuple_compressed_alchemical_condensate>*1, <draconicevolution:draconic_block>*7, <ore:ingotBloodInfusedIron>*1],
     [<draconicevolution:draconic_ingot>*4,<draconicevolution:chaotic_core>,<draconicevolution:reactor_part:3>,<draconicevolution:reactor_part:4>,<draconicevolution:draconic_energy_core>],
-    [<aoa3:rune_shrine>*1,<contenttweaker:cuendillar_plate>*8,<contenttweaker:one_power_unleashed_emerald>*2]
+    [<aoa3:rune_shrine>*1,<contenttweaker:cuendillar_plate>*8,<contenttweaker:one_power_unleashed_emerald>*2],
+    [<contenttweaker:catalyst_of_universal_balance>,<contenttweaker:quasar_charged_core_of_definition>*2,<contenttweaker:threefold_stellar_ingot>*2,<contenttweaker:self_confined_neutrino_plasma>*4]
 ];
 var Recipe_Outputs = [
     [<draconicevolution:crafting_injector:2>*1],
@@ -240,7 +241,8 @@ var Recipe_Outputs = [
     [<contenttweaker:quintuple_compressed_alchemical_innervation>*2],
     [<contenttweaker:sextuple_compressed_alchemical_innervation>*2],
     [<draconicevolution:reactor_component>*1],
-    [<contenttweaker:cuendillar_seal>*4]
+    [<contenttweaker:cuendillar_seal>*4],
+    [<contenttweaker:time_lords_core_of_definition>]
 ];
 var Recipe_Energy as long[] = [
     256000 as long,     // 1. 注射器升级 (draconicevolution:crafting_injector,1,2)
@@ -331,7 +333,9 @@ var Recipe_Energy as long[] = [
     7000 as long,        // 86. quintuple_compressed_alchemical_innervation*2
     8000 as long,        // 87. sextuple_compressed_alchemical_innervation*2
     128000000 as long,    // 88. 反应堆稳定器
-    8000000000 as long    // 89. cuendillar_seal*4
+    8000000000 as long,    // 89. cuendillar_seal*4
+    8000000000 as long,    // 90. 时间领主定义核心
+
 ];
 // 上三个列表长度一样，下面循环读取时一起读取
 for i in 0 to Recipe_Inputs.length  {
