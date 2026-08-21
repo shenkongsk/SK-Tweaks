@@ -39,6 +39,7 @@ simple_register_item("etherium_plate");
 simple_register_item("eternal_glory");
 simple_register_item("unleashed_star_ingot");
 simple_register_item("defined_egg");
+simple_register_item("balanced_ingot");
 // function SK_ITEM_REGISTER(
 //     name as string,
 //     stacksize as int,
