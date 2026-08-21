@@ -20,21 +20,35 @@ MachineModifier.setMaxThreads(MACHINE, 0);
 var definer_sk_1 = RecipeBuilder.newBuilder("definer_sk_1_recipe",MACHINE,400);
 definer_sk_1
   .addEnergyPerTickInput(100000000)
+//   .addPreCheckHandler(function(event as RecipeCheckEvent) {
+//             val ctrl = event.controller;
+//             val world = ctrl.world;
+//             val pos = ctrl.pos;
+//             if (Math.random() < 0.2){
+//                 var offsetY = 0;
+//                 if (Math.random() < 0.5) {
+//                     offsetY = 4;
+//                 } else {
+//                     offsetY = 6;
+//                 }
+//                 val targetPos = pos.add(0, offsetY, 4);
+//                 world.setBlockState(<blockstate:contenttweaker:defined_block>,targetPos);
+//             }
+//         })
   .addPreCheckHandler(function(event as RecipeCheckEvent) {
-            val ctrl = event.controller;
-            val world = ctrl.world;
-            val pos = ctrl.pos;
-            if (Math.random() < 0.2){
-                var offsetY = 0;
-                if (Math.random() < 0.5) {
-                    offsetY = 4;
-                } else {
-                    offsetY = 6;
-                }
-                val targetPos = pos.add(0, offsetY, 4);
-                world.setBlockState(<blockstate:contenttweaker:defined_block>,targetPos);
-            }
-        })
+      val ctrl = event.controller;
+      val world = ctrl.world;
+      if (Math.random() < 0.2) {
+          var offsetY = 0;
+          if (Math.random() < 0.5) {
+              offsetY = 4;
+          } else {
+              offsetY = 6;
+          }
+          val targetPos = ctrl.pos.up(offsetY).getOffset(ctrl.facing.opposite, 4);
+          world.setBlockState(<blockstate:contenttweaker:defined_block>, targetPos);
+      }
+  })
   .addItemInput(<contenttweaker:defined_egg>*16)
   .addItemInput(<contenttweaker:defined_inferium_catalyst>*4)
   .addFluidInput(<liquid:molten_defined>*4608)
@@ -60,3 +74,4 @@ definer_sk_2
   .addRecipeTooltip("维度要求：§b叁壹界§r","§c配方§e不会§c导致机器堵塞！§r")
   .setMaxThreads(1)
   .build();
+
