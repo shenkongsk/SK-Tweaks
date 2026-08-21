@@ -11,6 +11,19 @@
             "y": 2,
             "z": 2,
             "elements": "contenttweaker:innerved_sky_stone",
+            "description": "配方速度x2",
+            "modifier": {
+                "io": "input",
+                "target": "modularmachinery:duration",
+                "operation": 1,
+                "multiplier": 0.5
+            }
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": "contenttweaker:ordered_eigenstate_condenser",
             "description": "配方速度x5",
             "modifier": {
                 "io": "input",
@@ -23,20 +36,7 @@
             "x": 0,
             "y": 2,
             "z": 2,
-            "elements": "contenttweaker:ordered_eigenstate_condenser",
-            "description": "配方速度x10",
-            "modifier": {
-                "io": "input",
-                "target": "modularmachinery:duration",
-                "operation": 1,
-                "multiplier": 0.1
-            }
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 2,
-            "elements": "contenttweaker:everburner",
+            "elements": "contenttweaker:screaming_blood_infused_glitch_block",
             "description": "配方速度x20",
             "modifier": {
                 "io": "input",
