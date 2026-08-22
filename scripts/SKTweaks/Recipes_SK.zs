@@ -46,6 +46,12 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <contenttweaker:balanced_machin
 	[<contenttweaker:hungering_machine_case>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:cuendillar_seal>, <contenttweaker:stone_of_universal_balance>, <contenttweaker:stone_of_universal_balance>, <contenttweaker:stone_of_universal_balance>, <contenttweaker:cuendillar_seal>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:hungering_machine_case>], 
 	[<contenttweaker:hungering_machine_case>, <contenttweaker:hungering_machine_case>, <minecraft:bedrock>, <minecraft:bedrock>, <minecraft:bedrock>, <minecraft:bedrock>, <minecraft:bedrock>, <contenttweaker:hungering_machine_case>, <contenttweaker:hungering_machine_case>]
 ]);
+// 升级总线
+recipes.addShaped("upgradebus_1",<modularmachinery:blockupgradebus>, [
+	[<modularmachinery:blockcasing:4>, <ore:plateSedna>, <modularmachinery:blockcasing:4>], 
+	[<ore:plateSedna>, <forge:bucketfilled>.withTag({FluidName: "erbium", Amount: 1000}), <ore:plateSedna>], 
+	[<modularmachinery:blockcasing:4>, <ore:plateSedna>, <modularmachinery:blockcasing:4>]
+]);
 // =====================================================================================================
 // 工作台合成	↑
 // =====================================================================================================
