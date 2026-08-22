@@ -439,9 +439,9 @@ function buildMinerRecipe(
 }
 
 // ===== 调用构建三个配方 =====
-buildMinerRecipe("ore_mining", MACHINE, oreMinerOutputs, <environmentaltech:void_ore_miner_cont_6>,150, 10000000);
-buildMinerRecipe("botanic_mining", MACHINE, botanicMinerOutputs, <environmentaltech:void_botanic_miner_cont_6>,150, 10000000);
-buildMinerRecipe("resource_mining", MACHINE, resourceMinerOutputs, <environmentaltech:void_res_miner_cont_6>,150, 10000000);
+buildMinerRecipe("ore_mining", MACHINE, oreMinerOutputs, <environmentaltech:void_ore_miner_cont_6>,75, 10000000);
+buildMinerRecipe("botanic_mining", MACHINE, botanicMinerOutputs, <environmentaltech:void_botanic_miner_cont_6>,75, 10000000);
+buildMinerRecipe("resource_mining", MACHINE, resourceMinerOutputs, <environmentaltech:void_res_miner_cont_6>,75, 10000000);
 
 // 0白 1橙 2品红 3淡蓝 4黄 5黄绿 6粉 7灰 8淡灰 9青 10紫 11蓝 12棕 13绿 14红 15黑 16水晶
 // 17原木 18树苗 19树叶 20花 21食物 22种子 23植物
