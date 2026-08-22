@@ -25,3 +25,6 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     2560000000,
     0
 );
+<modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.gold("用于存储能量"));
+<modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.gold("用智能数据接口来确定输入/输出速度"));
+<modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.gold("最大可存储9.2E+18RF"));
