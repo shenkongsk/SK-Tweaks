@@ -364,7 +364,7 @@ var parallelItems as IItemStack[] = [
 ];
 var parallelMaxStacks as int[] = [
     1,
-    2,
+    1,
     2,
     2,
     1,

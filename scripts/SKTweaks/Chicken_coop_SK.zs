@@ -12,8 +12,8 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     "plasmatic_condenser",
     // inputs
     [
-        <contenttweaker:defined_insanium_cluster>*32768,
-        <contenttweaker:self_actualizing_warren_rift>*32,
+        <contenttweaker:defined_insanium_cluster>*640,
+        <contenttweaker:self_actualizing_warren_rift>*1,
         <avaritia:resource:5>*65536,
         <contenttweaker:imperfect_gallifreyan_alloy>*128,
     ],

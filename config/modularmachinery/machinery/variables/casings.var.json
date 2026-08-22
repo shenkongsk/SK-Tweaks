@@ -6,6 +6,7 @@
     "casings_all": [
         "modularmachinery:blockcasing",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockenergyinputhatch",
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockoutputbus",
@@ -18,6 +19,7 @@
     ],
     "casings_fluid": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockfluidinputhatch",
         "generalized_output_fluid"
     ],
@@ -28,6 +30,7 @@
         "mmceaddition:me_output_assembly",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmefluidinputbus"
     ],
     "fluxormanainput": [
@@ -77,6 +80,7 @@
     "casings_item": [
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "mmceaddition:me_async_item_output_bus",
         "mmceaddition:me_output_assembly",
         "modularmachinery:blockmeitemoutputbus",
@@ -90,6 +94,7 @@
     ],
     "generalized_input_item": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
@@ -164,6 +169,7 @@
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockmepatternprovider",
         "modularmachinery:blockmepatternmirrorimage",
@@ -179,6 +185,7 @@
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockcasing",
         "modularmachinery:blockmepatternprovider",
@@ -208,6 +215,7 @@
         "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockmepatternprovider",
@@ -222,6 +230,7 @@
     ],
     "excavation_reactor_input": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockmepatternprovider",
         "modularmachinery:blockmepatternmirrorimage",
@@ -233,6 +242,7 @@
     "plasmatic_condenser_io": [
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockmepatternprovider",
@@ -247,6 +257,7 @@
     "both_item_fluid_input": [
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmefluidinputbus",
         "modularmachinery:blockmeiteminputbus",
         "modularmachineryaddons:blocksingularityiteminputbus@0",
@@ -291,6 +302,7 @@
         "modularmachinery:blockfluidoutputhatch",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockmefluidinputbus",
@@ -302,6 +314,7 @@
     ],
     "mythic_processor_item_input": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachineryaddons:blocksingularityiteminputbus@0",
         "modularmachineryaddons:blocksingularityiteminputbus@1",
@@ -313,6 +326,7 @@
     ],
     "terrestrial_cauldron_item_input": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachineryaddons:blocksingularityiteminputbus",
         "modularmachinery:blockmepatternprovider",
@@ -322,6 +336,7 @@
     ],
     "dragonfire_item_input": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachineryaddons:blocksingularityiteminputbus@0",
         "modularmachineryaddons:blocksingularityiteminputbus@1",
@@ -334,6 +349,7 @@
     ],
     "treeoflife_item_input": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachineryaddons:blocksingularityiteminputbus"
     ],
     "apiary_decoration_soil": [
@@ -501,6 +517,7 @@
     ],
     "wyvern_casing": [
         "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockfluidoutputhatch",
         "modularmachinery:blockmefluidoutputbus",

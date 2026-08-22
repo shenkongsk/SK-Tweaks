@@ -43,6 +43,20 @@ recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hat
 	[<appliedenergistics2:creative_energy_cell>, <modularmachinery:blockparallelcontroller>, <appliedenergistics2:creative_energy_cell>], 
 	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>]
 ]);
+// 输入总成
+// mods.extendedcrafting.TableCrafting.addShaped(4, <mmceaddition:input_assembly>*32, [
+// 	[<ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>, null, null, null, <ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>], 
+// 	[<ore:blockNetherStar>, <contenttweaker:fractallite_furnace_core>, <contenttweaker:well_defined_machine_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:well_defined_machine_case>, <contenttweaker:fractallite_furnace_core>, <ore:blockNetherStar>], 
+// 	[<ore:blockNetherStar>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ore:blockNetherStar>], 
+// 	[null, <contenttweaker:brightsteel_case>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:brightsteel_case>, null], 
+// 	[null, <contenttweaker:brightsteel_case>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:corrupted_aragonite>, <contenttweaker:self_actualizing_warren_rift>, <contenttweaker:corrupted_aragonite>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:brightsteel_case>, null], 
+// 	[null, <contenttweaker:brightsteel_case>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:brightsteel_case>, null], 
+// 	[<ore:blockNetherStar>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ore:blockNetherStar>], 
+// 	[<ore:blockNetherStar>, <contenttweaker:fractallite_furnace_core>, <contenttweaker:well_defined_machine_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:well_defined_machine_case>, <contenttweaker:fractallite_furnace_core>, <ore:blockNetherStar>], 
+// 	[<ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>, null, null, null, <ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>]
+// ]);
+// <mmceaddition:input_assembly>.addTooltip(format.gold("你可能好奇为什么这玩意阶段这么后"));
+// <mmceaddition:input_assembly>.addTooltip(format.gold("因为这玩意能让你多一个地方放并行仓"));
 // 虚拟装配器
 scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     "SK_virtual_assembler_make",
