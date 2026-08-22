@@ -332,31 +332,31 @@ function buildMinerRecipe(
             //================透镜判定================
             // 1.颜色透镜
             if (color>=0 && color<=15)&&(meta == color) {
-                weight = weight * 10;
+                weight = weight * 50;
             // 2.水晶透镜
             }else if (blockId=="environmentaltech:laser_lens_crystal")&&(color==16){
-                weight = weight * 10;
+                weight = weight * 50;
             // 3.原木透镜
             }else if (blockId=="divinerpg:mortum_log")&&(color==17){
-                weight = weight * 10;
+                weight = weight * 50;
             // 4.树苗透镜
             }else if (blockId=="botania:pylon:1")&&(color==18){
-                weight = weight * 10;
+                weight = weight * 50;
             // 5.树叶透镜
             }else if(blockId=="botania:pylon")&&(color==19){
-                weight = weight * 10;
+                weight = weight * 50;
             // 6.鲜花透镜
             }else if(blockId=="botania:bifrostperm")&&(color==20){
-                weight = weight * 10;
+                weight = weight * 50;
             // 7.食物透镜
             }else if(blockId=="minecraft:hay_block")&&(color==21){
-                weight = weight * 10;
+                weight = weight * 50;
             // 8.种子透镜
             }else if(blockId=="contenttweaker:alchemical_crystal")&&(color==22){
-                weight = weight * 10;
+                weight = weight * 50;
             // 9.植物透镜
             }else if(blockId=="minecraft:grass")&&(color==23){
-                weight = weight * 10;
+                weight = weight * 50;
             }
             //================透镜判定================
             weightedList += {
@@ -527,7 +527,7 @@ MMEvents.onControllerGUIRender(MACHINE, function(event as ControllerGUIRenderEve
     extra += "§a当前透镜：§f§l" + colorName;
     // 如果检测到有效透镜，显示加成提示
     if (hasLens) {
-        extra += "§a对应颜色水晶/矿石权重 §b× 10";
+        extra += "§a对应颜色水晶/矿石权重 §b× 50";
     } else {
         extra += "§a未放置有效透镜，无额外权重加成";
     }
