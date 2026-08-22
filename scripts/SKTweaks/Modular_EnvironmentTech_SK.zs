@@ -27,10 +27,10 @@ MachineModifier.addCoreThread(MACHINE, threadB);
 MachineModifier.setMaxThreads(MACHINE, 0);
 
 val oreMinerOutputs as IData[] = [
-    {color: 15, weight: 1000, id: "OD:oreCoal"},
-    {color: 0, weight: 750, id: "OD:oreIron"},
-    {color: 0, weight: 560, id: "OD:oreQuartz"},
-    {color: 14, weight: 515, id: "OD:oreRedstone"},
+    {color: 15, weight: 800, id: "OD:oreCoal"},
+    {color: 0, weight: 700, id: "OD:oreIron"},
+    {color: 0, weight: 500, id: "OD:oreQuartz"},
+    {color: 14, weight: 500, id: "OD:oreRedstone"},
     {color: 11, weight: 343, id: "OD:oreLapis"},
     {color: 4, weight: 311, id: "OD:oreGold"},
     {color: 9, weight: 218, id: "OD:oreDiamond"},
@@ -122,13 +122,13 @@ val oreMinerOutputs as IData[] = [
     {color: 0, weight: 200, id: "OD:oreAlexandrite"},
     {color: 0, weight: 200, id: "OD:oreChaos"},
     {color: 13, weight: 200, id: "OD:oreEnderEssence"},
-    {color: 16, weight: 200, id: "environmentaltech:litherite_crystal"},
-    {color: 16, weight: 150, id: "environmentaltech:erodium_crystal"},
-    {color: 16, weight: 120, id: "environmentaltech:kyronite_crystal"},
-    {color: 16, weight: 90, id: "environmentaltech:pladium_crystal"},
-    {color: 16, weight: 60, id: "environmentaltech:ionite_crystal"},
-    {color: 16, weight: 30, id: "environmentaltech:aethium_crystal"},
-    {color: 15, weight: 4, id: "environmentaltech:lonsdaleite_crystal"},
+    {color: 16, weight: 600, id: "environmentaltech:litherite_crystal"},
+    {color: 16, weight: 450, id: "environmentaltech:erodium_crystal"},
+    {color: 16, weight: 400, id: "environmentaltech:kyronite_crystal"},
+    {color: 16, weight: 350, id: "environmentaltech:pladium_crystal"},
+    {color: 16, weight: 200, id: "environmentaltech:ionite_crystal"},
+    {color: 16, weight: 100, id: "environmentaltech:aethium_crystal"},
+    {color: 15, weight: 100, id: "environmentaltech:lonsdaleite_crystal"},
     {color: 14, weight: 200, id: "OD:oreBopRuby"},
     {color: 11, weight: 200, id: "OD:oreBopSapphire"},
     {color: 13, weight: 200, id: "OD:oreBopPeridot"},
@@ -532,7 +532,7 @@ MMEvents.onControllerGUIRender(MACHINE, function(event as ControllerGUIRenderEve
         extra += "§a未放置有效透镜，无额外权重加成";
     }
     // extra += "§a速度升级数量：§b" + Upgrade_Speed_Amount + "/16";
-    extra += "§a时运升级数量：§b" + Upgrade_Fortune_Amount + "/32";
+    extra += "§a时运升级数量：§b" + Upgrade_Fortune_Amount + "/64";
     if(outputMultiplier==0){
         outputMultiplier=1;
     }
@@ -562,7 +562,7 @@ fortuneUpgradeRecipe
             // 没有该键，默认为 0
             return;
         }
-        if (fortune >= 32) {
+        if (fortune >= 64) {
             event.setFailed("§c时运升级已满！");
         }
     })
@@ -584,7 +584,7 @@ fortuneUpgradeRecipe
         
         ctrl.customData = data;
     })
-    .addRecipeTooltip("§a消耗一个§6幸运强化部件§a", "增加 §61§a 级时运升级", "最大 §616§a 级")
+    .addRecipeTooltip("§a消耗一个§6幸运强化部件§a", "增加 §61§a 级时运升级", "最大 §664§a 级")
     .setThreadName("升级核心")   // 可选，指定线程名
     .build();
 // val speedUpgradeRecipe = RecipeBuilder.newBuilder("upgrade_for_deep_miner_speed", MACHINE, 1);
