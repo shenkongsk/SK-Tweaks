@@ -17,8 +17,9 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 val MACHINE = "large_scale_chicken_farm";
+// MachineModifier.setMaxThreads(MACHINE, 16);
+// 怎么有人觉得16线程不够啊？
 MachineModifier.setMaxThreads(MACHINE, 32);
-
 // val romanNumerals = [
 //     "I", "II", "III", "IV", "V", "VI", "VII", "VIII",
 //     "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI"

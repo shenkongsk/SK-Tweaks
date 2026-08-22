@@ -33,9 +33,9 @@ recipes.addShaped("SK_me_output_assembly",<mmceaddition:me_output_assembly>, [
 ]);
 // 样板总成
 recipes.addShaped("SK_me_pattern_assembly",<mmceaddition:me_pattern_assembly>, [
-	[<contenttweaker:everwondering_megelium>, <contenttweaker:infinite_loving_plate>, <contenttweaker:everwondering_megelium>], 
-	[<contenttweaker:infinite_loving_plate>, <modularmachinery:blockmepatternprovider>, <contenttweaker:infinite_loving_plate>], 
-	[<contenttweaker:everwondering_megelium>, <contenttweaker:infinite_loving_plate>, <contenttweaker:everwondering_megelium>]
+	[<contenttweaker:superconducting_mithril>, <avaritia:resource>, <contenttweaker:superconducting_mithril>], 
+	[<avaritia:resource>, <modularmachinery:blockmepatternprovider>, <avaritia:resource>], 
+	[<contenttweaker:superconducting_mithril>, <avaritia:resource>, <contenttweaker:superconducting_mithril>]
 ]);
 // 虚拟并行仓
 recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hatch>*2, [

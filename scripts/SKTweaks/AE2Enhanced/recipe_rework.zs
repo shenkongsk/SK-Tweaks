@@ -370,17 +370,17 @@ var parallelMaxStacks as int[] = [
     1,
     2,
     4,
-	2
+	1
 ];
 var parallelLimits as int[][] = [
-    [256],
-    [512, 768],
-    [1024, 2048],
-    [3840, 5120],
-    [8192],
-    [10240, 16384],
-    [32768, 65536, 102400, 163840],
-	[327680,655360]
+    [512],
+    [1024],
+    [2048, 4096],
+    [5120, 7680],
+    [10240],
+    [16384, 32768],
+    [65536, 102400, 163840,327680],
+	[655360]
 ];
 
 // 用索引进行循环
@@ -513,8 +513,8 @@ VPC[6].addTooltip(format.red("不许掏！"));
 VPC[7].addTooltip(format.red("不许掏！"));
 val BH_Inputs = [
 	[
-		<appliedenergistics2:material:27>*256,
-		<appliedenergistics2:material:30>*256,
+		<appliedenergistics2:material:27>*512,
+		<appliedenergistics2:material:30>*512,
 		<appliedenergistics2:material:47>*64,
 		<tce:tce_compressed_torch_lvl1>*2
 	],
@@ -529,7 +529,7 @@ val BH_Inputs = [
 		<contenttweaker:perfected_gem_of_the_cosmos>*1
 	],
 	[
-		VPC[2]*16,
+		VPC[2]*8,
 		<contenttweaker:chaotic_sentient_meatball>*64,
 		<contenttweaker:living_infinity_fruit>*64
 	]
