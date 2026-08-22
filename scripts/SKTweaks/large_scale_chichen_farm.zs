@@ -17,7 +17,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 val MACHINE = "large_scale_chicken_farm";
-MachineModifier.setMaxThreads(MACHINE, 16);
+MachineModifier.setMaxThreads(MACHINE, 32);
 
 // val romanNumerals = [
 //     "I", "II", "III", "IV", "V", "VI", "VII", "VIII",
@@ -29,7 +29,7 @@ MachineModifier.setMaxThreads(MACHINE, 16);
 //     MachineModifier.addCoreThread(MACHINE, thread);
 // }
 // MachineModifier.setInternalParallelism("large_scale_chicken_farm", 4);
-<modularmachinery:large_scale_chicken_farm_factory_controller>.addTooltip(format.gold("内置额外16线程！"));
+<modularmachinery:large_scale_chicken_farm_factory_controller>.addTooltip(format.gold("内置额外32线程！"));
 
 
 
