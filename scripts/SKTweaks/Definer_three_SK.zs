@@ -96,7 +96,7 @@ definer_sk_3
   .addItemInput(<contenttweaker:defined_egg>*64)
   .addItemInput(<contenttweaker:recursive_quantum>*4)
   .addFluidInput(<liquid:molten_defined>*18432)
-  .addFluidInput(<liquid:ultimate_fractallite_essence>*8000)
+  .addFluidInput(<liquid:recursive_computing_matter>*1000)
   .addItemOutput(<contenttweaker:defined_ingot>*2048)
   .addFluidOutput(<liquid:fractallite_halite>*144)
   .addFluidOutput(<liquid:infinitely_unholy_radioactive_mix>*1000)
