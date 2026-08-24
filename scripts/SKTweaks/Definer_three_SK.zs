@@ -17,6 +17,8 @@ import crafttweaker.item.IItemStack;
 
 var MACHINE = "definer_three_sk";
 MachineModifier.setMaxThreads(MACHINE, 0);
+val threadA = FactoryRecipeThread.createCoreThread("§e再定义器");
+MachineModifier.addCoreThread(MACHINE, threadA);
 var definer_sk_1 = RecipeBuilder.newBuilder("definer_sk_1_recipe",MACHINE,200);
 definer_sk_1
   .addEnergyPerTickInput(100000000)
