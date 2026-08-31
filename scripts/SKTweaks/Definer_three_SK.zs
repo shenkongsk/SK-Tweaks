@@ -22,7 +22,7 @@ MachineModifier.addCoreThread(MACHINE, threadA);
 var definer_sk_1 = RecipeBuilder.newBuilder("definer_sk_1_recipe",MACHINE,200);
 definer_sk_1
   .addEnergyPerTickInput(100000000)
-//   .addPreCheckHandler(function(event as RecipeCheckEvent) {
+//   .addStartHandler(function(event as RecipeCheckEvent) {
 //             val ctrl = event.controller;
 //             val world = ctrl.world;
 //             val pos = ctrl.pos;
@@ -37,7 +37,7 @@ definer_sk_1
 //                 world.setBlockState(<blockstate:contenttweaker:defined_block>,targetPos);
 //             }
 //         })
-  .addPreCheckHandler(function(event as RecipeCheckEvent) {
+  .addStartHandler(function(event as RecipeCheckEvent) {
       val ctrl = event.controller;
       val world = ctrl.world;
       if (Math.random() < 0.1) {
@@ -66,7 +66,7 @@ var definer_sk_2 = RecipeBuilder.newBuilder("definer_sk_2_recipe",MACHINE,400);
 definer_sk_2
   .addDimensionInput(174)
   .addEnergyPerTickInput(400000000)
-  .addPreCheckHandler(function(event as RecipeCheckEvent) {
+  .addStartHandler(function(event as RecipeCheckEvent) {
       val ctrl = event.controller;
       val world = ctrl.world;
       if (Math.random() < 0.3) {

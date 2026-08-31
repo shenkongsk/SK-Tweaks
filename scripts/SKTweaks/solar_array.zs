@@ -5,7 +5,9 @@ import mods.modularmachinery.MMEvents;
 import mods.modularmachinery.ControllerGUIRenderEvent;
 import mods.modularmachinery.RecipeModifierBuilder;
 
-MachineModifier.setInternalParallelism("solar_array", 2147483647);
+// MachineModifier.setInternalParallelism("solar_array", 2147483647);
+// 都怪aedddd写的MMCE Addition改了不消耗物品逻辑
+MachineModifier.setInternalParallelism("solar_array", 16);
 <modularmachinery:solar_array_controller>.addTooltip(format.gold("可以放置太阳能发电机和加速配置"));
 <modularmachinery:solar_array_controller>.addTooltip(format.gold("太阳能发电机发电量可叠加"));
 <modularmachinery:solar_array_controller>.addTooltip(format.red("每tick发电过高可能不会工作！！"));
@@ -30,7 +32,7 @@ function solar_array_recipe_builder(
     val builder = RecipeBuilder.newBuilder(recipeName, Machine_Name, Process_Time);
     var Acutal_Energy = energyOutput*2;
     for item in inputs {
-        builder.addItemInput(item).setChance(0.0);
+        builder.addItemInput(item).setChance(0.0).setParallelizeUnaffected(false);
 
     }
     builder.addCatalystInput(Torch_lv1,

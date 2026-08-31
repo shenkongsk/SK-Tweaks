@@ -45,6 +45,10 @@
         "modularmachinery:blockinputbus@0",
         "modularmachineryaddons:blocksingularityiteminputbus@0"
     ],
+    "single_item_output": [
+        "modularmachinery:blockoutputbus@0",
+        "modularmachineryaddons:blocksingularityitemoutputbus@0"
+    ],
     "any_dragonforge_brick": [
         "iceandfire:dragonforge_lightning_brick",
         "iceandfire:dragonforge_fire_brick",

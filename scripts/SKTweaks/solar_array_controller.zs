@@ -4,8 +4,8 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     "me_mythic_assembler",
     // inputs
     [
-        <extendedcrafting:singularity_custom:650>,
-        <aether_legacy:zanite_gemstone>*102400,
+        <contenttweaker:arc_residue>*1024,
+        <aether_legacy:zanite_gemstone>*10240,
         <actuallyadditions:block_furnace_solar>*1024,
         <advancedrocketry:satellitepowersource:1>*16384,
         <contenttweaker:mythic_machine_case>*64,
@@ -14,9 +14,9 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     ],
     // fluid inputs
     [
-        <liquid:cryotheum>*16000000,
-        <liquid:pyrotheum>*16000000,
-        <liquid:evanescent_bifrost>*1600000
+        <liquid:cryotheum>*1600000,
+        <liquid:pyrotheum>*1600000,
+        <liquid:evanescent_bifrost>*160000
     ],
     // outputs
     [<modularmachinery:solar_array_controller>],

@@ -31,8 +31,8 @@ MachineModifier.setMaxThreads(MACHINE, 32);
 // }
 // MachineModifier.setInternalParallelism("large_scale_chicken_farm", 4);
 <modularmachinery:large_scale_chicken_farm_factory_controller>.addTooltip(format.gold("内置额外32线程！"));
-
-
+<modularmachinery:large_scale_chicken_farm_factory_controller>.addTooltip(format.red("若使用了MMCEAddition"));
+<modularmachinery:large_scale_chicken_farm_factory_controller>.addTooltip(format.red("那你大概不需要这个机器了..."));
 
 
 function Recipe_Builder_SK_Chicken(
@@ -50,7 +50,7 @@ function Recipe_Builder_SK_Chicken(
     for i in 0 to inputs.length{
         val item = inputs[i];
         val chance = (inputChances.length > i) ? inputChances[i] : 1.0;
-        builder.addItemInput(item).setChance(chance);
+        builder.addItemInput(item).setChance(chance).setParallelizeUnaffected(false);
     }
     // 物品输出
     for item in outputs {

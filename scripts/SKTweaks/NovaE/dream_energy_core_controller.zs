@@ -27,5 +27,5 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
 );
 <modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.gold("用于存储能量"));
 <modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.gold("用智能数据接口来确定输入/输出速度"));
-<modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.gold("最大可存储9.2E+18RF"));
+<modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.gold("存储近乎无限的RF！"));
 <modularmachinery:dream_energy_core_factory_controller>.addTooltip(format.green("感谢Hikari_Nova的授权！"));

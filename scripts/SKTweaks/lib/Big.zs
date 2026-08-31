@@ -1,8 +1,6 @@
-#priority 9999
+#priority 999999
 import native.java.math.BigInteger;
-
-#priority 6000
-#reloadable
+#loader crafttweaker reloadable
 
 zenClass Big_zs {
     var c as BigInteger;

@@ -3,6 +3,7 @@
 #priority 10000
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipePrimer;
+import crafttweaker.item.IItemStack;
 
 import mods.modularmachinery.IMachineController;
 import mods.modularmachinery.RecipeModifierBuilder;
@@ -16,7 +17,7 @@ import mods.modularmachinery.FactoryRecipeTickEvent;
 import mods.modularmachinery.FactoryRecipeFinishEvent;
 import mods.modularmachinery.RecipeCheckEvent;
 import mods.modularmachinery.ControllerGUIRenderEvent;
-
+import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 // 神秘时代相关
@@ -463,3 +464,91 @@ function Recipe_Builder_SK_Essentia(
 //     // 构建配方
 //     builder.build();
 // }
+function Sequenced_Assembler_Recipe_Builder(
+    recipeName as string,
+    machineName as string,
+    ItemTagName as string,
+    FluidTagName as string,
+    inputs as crafttweaker.item.IIngredient[],
+    fluidInputs as crafttweaker.liquid.ILiquidStack[],
+    outputs as crafttweaker.item.IIngredient[],
+    fluidOutputs as crafttweaker.liquid.ILiquidStack[],
+    time as long,
+    energyInput as long
+) as void 
+{
+    val builder = RecipeBuilder.newBuilder(recipeName, machineName, time);
+    var RealItemTagName = (ItemTagName == "") ? "sequenced_assembler_item_" : ItemTagName;
+    var RealFluidTagName = (FluidTagName == "") ? "sequenced_assembler_fluid_" : FluidTagName;
+    builder.setMaxThreads(1);
+    if(energyInput > 0) {
+        builder.addEnergyPerTickInput(energyInput);
+    }
+    for i,item in inputs {
+        builder.addItemInput(item).setTag(RealItemTagName+(i+1));
+    }
+
+    for i,fluid in fluidInputs {
+        builder.addFluidInput(fluid).setTag(RealFluidTagName+(i+1));
+    }
+
+    for item in outputs {
+        builder.addItemOutput(item);
+    }
+
+    for fluid in fluidOutputs {
+        builder.addFluidOutput(fluid);
+    }
+    builder.addRecipeTooltip("§c配方需要§6顺序输入§c！！§r");
+    builder.setMaxThreads(1);
+    builder.build();
+}
+
+// 读取 int 值
+function Get_CustomData_int(data as IData, key as string, default as int) as int {
+    if (isNull(data)) return default;
+    val value = data.memberGet(key);
+    if (isNull(value)) return default;
+    return value.asInt();
+}
+
+// 读取 long 值
+function Get_CustomData_long(data as IData, key as string, default as long) as long {
+    if (isNull(data)) return default;
+    val value = data.memberGet(key);
+    if (isNull(value)) return default;
+    return value.asLong();
+}
+
+// 读取 float 值
+function Get_CustomData_float(data as IData, key as string, default as float) as float {
+    if (isNull(data)) return default;
+    val value = data.memberGet(key);
+    if (isNull(value)) return default;
+    return value.asFloat();
+}
+
+// 读取 string 值
+function Get_CustomData_string(data as IData, key as string, default as string) as string {
+    if (isNull(data)) return default;
+    val value = data.memberGet(key);
+    if (isNull(value)) return default;
+    return value.asString();
+}
+
+// 读取 bool 值
+function Get_CustomData_bool(data as IData, key as string, default as bool) as bool {
+    if (isNull(data)) return default;
+    val value = data.memberGet(key);
+    if (isNull(value)) return default;
+    return value.asBool();
+}
+
+// 读取 double 值
+function Get_CustomData_double(data as IData, key as string, default as double) as double {
+    if (isNull(data)) return default;
+    val value = data.memberGet(key);
+    if (isNull(value)) return default;
+    return value.asDouble();
+}
+

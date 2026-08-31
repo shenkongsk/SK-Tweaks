@@ -14,15 +14,24 @@ MachineModifier.setMaxThreads("alfheim_portal", 0);
 val threadA = FactoryRecipeThread.createCoreThread("§a精灵老王");
 val threadB = FactoryRecipeThread.createCoreThread("§b精灵老李");
 val threadC = FactoryRecipeThread.createCoreThread("§c精灵老张");
+val threadD = FactoryRecipeThread.createCoreThread("? ? ?");
 MachineModifier.addCoreThread(MACHINE, threadA);
 MachineModifier.addCoreThread(MACHINE, threadB);
 MachineModifier.addCoreThread(MACHINE, threadC);
+MachineModifier.addCoreThread(MACHINE, threadD);
 MachineModifier.setInternalParallelism("alfheim_portal", 512);
 <modularmachinery:alfheim_portal_factory_controller>.addTooltip(format.gold("内置额外512并行！"));
 <modularmachinery:alfheim_portal_factory_controller>.addTooltip(format.gold("有3位精灵愿意和你交易！"));
 
 
 
+var elf_dimension = RecipeBuilder.newBuilder("elf_portal_activate",MACHINE,120000);
+elf_dimension
+    .addItemInput(<contenttweaker:triune_homunculus>*1)
+    .addItemOutput(PT_Lock)
+    .setParallelized(false)
+    .setThreadName("? ? ?")
+    .build();
 
 function alfheim_trade_recipe_builder(
     recipename as string,

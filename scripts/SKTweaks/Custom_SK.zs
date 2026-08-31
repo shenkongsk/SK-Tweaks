@@ -40,6 +40,16 @@ simple_register_item("eternal_glory");
 simple_register_item("unleashed_star_ingot");
 simple_register_item("defined_egg");
 simple_register_item("balanced_ingot");
+simple_register_item("harmonic_crystal");
+simple_register_item("taint_crystal");
+simple_register_item("harmonic_ingot");
+simple_register_item("taint_ingot");
+simple_register_item("binding_taint_ingot");
+simple_register_item("ingot_of_harmony");
+simple_register_item("eye_of_harmony_power_unit_hypercharged");
+simple_register_item("destined_ingot");
+simple_register_item("aerial_automaton");
+simple_register_item("triune_homunculus");
 // function SK_ITEM_REGISTER(
 //     name as string,
 //     stacksize as int,

@@ -8,7 +8,8 @@ var mmce_recipe_remove as IItemStack[]=[
     <mmceaddition:me_pattern_assembly>,
     <mmceaddition:me_output_assembly>,
     <mmceaddition:virtual_assembler>,
-    <mmceaddition:virtual_parallel_hatch>
+    <mmceaddition:virtual_parallel_hatch>,
+    <mmceaddition:input_assembly>
 ];
 for i in mmce_recipe_remove{
 	recipes.remove(i);
@@ -32,31 +33,27 @@ recipes.addShaped("SK_me_output_assembly",<mmceaddition:me_output_assembly>, [
 	[<modularmachinery:blockcasing:4>, <mmceaddition:me_async_fluid_output_hatch>, <modularmachinery:blockcasing:4>]
 ]);
 // 样板总成
-recipes.addShaped("SK_me_pattern_assembly",<mmceaddition:me_pattern_assembly>, [
-	[<contenttweaker:superconducting_mithril>, <avaritia:resource>, <contenttweaker:superconducting_mithril>], 
-	[<avaritia:resource>, <modularmachinery:blockmepatternprovider>, <avaritia:resource>], 
-	[<contenttweaker:superconducting_mithril>, <avaritia:resource>, <contenttweaker:superconducting_mithril>]
+mods.extendedcrafting.TableCrafting.addShaped(2,<mmceaddition:me_pattern_assembly>, [
+	[null, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, null], 
+	[<ae2enhanced:hyperdimensional_casing>, <mmce_complement:me_pattern_provider_ii>, <modularmachineryaddons:blockdimensionproviderinput>, <mmce_complement:me_pattern_provider_ii>, <ae2enhanced:hyperdimensional_casing>], 
+	[<ae2enhanced:hyperdimensional_casing>, <cells:singularity_processor:1>, <mmceaddition:input_assembly>, <cells:singularity_processor>, <ae2enhanced:hyperdimensional_casing>], 
+	[<ae2enhanced:hyperdimensional_casing>, <mmce_complement:me_pattern_provider_ii>, <modularmachineryaddons:blockdimensionproviderinput>, <mmce_complement:me_pattern_provider_ii>, <ae2enhanced:hyperdimensional_casing>], 
+	[null, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, null]
 ]);
 // 虚拟并行仓
-recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hatch>*2, [
+recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hatch>*8, [
 	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>], 
 	[<appliedenergistics2:creative_energy_cell>, <modularmachinery:blockparallelcontroller>, <appliedenergistics2:creative_energy_cell>], 
 	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>]
 ]);
 // 输入总成
-// mods.extendedcrafting.TableCrafting.addShaped(4, <mmceaddition:input_assembly>*32, [
-// 	[<ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>, null, null, null, <ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>], 
-// 	[<ore:blockNetherStar>, <contenttweaker:fractallite_furnace_core>, <contenttweaker:well_defined_machine_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:well_defined_machine_case>, <contenttweaker:fractallite_furnace_core>, <ore:blockNetherStar>], 
-// 	[<ore:blockNetherStar>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ore:blockNetherStar>], 
-// 	[null, <contenttweaker:brightsteel_case>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:brightsteel_case>, null], 
-// 	[null, <contenttweaker:brightsteel_case>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:corrupted_aragonite>, <contenttweaker:self_actualizing_warren_rift>, <contenttweaker:corrupted_aragonite>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:brightsteel_case>, null], 
-// 	[null, <contenttweaker:brightsteel_case>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <contenttweaker:corrupted_aragonite>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:brightsteel_case>, null], 
-// 	[<ore:blockNetherStar>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <ae2overclocked:molecular_assembler_tier_4>, <contenttweaker:well_defined_machine_case>, <contenttweaker:well_defined_machine_case>, <ore:blockNetherStar>], 
-// 	[<ore:blockNetherStar>, <contenttweaker:fractallite_furnace_core>, <contenttweaker:well_defined_machine_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:brightsteel_case>, <contenttweaker:well_defined_machine_case>, <contenttweaker:fractallite_furnace_core>, <ore:blockNetherStar>], 
-// 	[<ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>, null, null, null, <ore:blockNetherStar>, <ore:blockNetherStar>, <ore:blockNetherStar>]
-// ]);
-// <mmceaddition:input_assembly>.addTooltip(format.gold("你可能好奇为什么这玩意阶段这么后"));
-// <mmceaddition:input_assembly>.addTooltip(format.gold("因为这玩意能让你多一个地方放并行仓"));
+mods.extendedcrafting.TableCrafting.addShaped(2, <mmceaddition:input_assembly>, [
+	[null, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, null], 
+	[<ae2enhanced:assembly_stabilizer>, <cells:singularity_processor:2>, <cells:singularity_processor:1>, <cells:singularity_processor>, <ae2enhanced:assembly_stabilizer>], 
+	[<ae2enhanced:assembly_stabilizer>, <modularmachinery:blockmeiteminputbus>, <cells:hyper_density_component:2>, <modularmachinery:blockmefluidinputbus>, <ae2enhanced:assembly_stabilizer>], 
+	[<ae2enhanced:assembly_stabilizer>, <cells:singularity_processor:2>, <cells:singularity_processor:1>, <cells:singularity_processor>, <ae2enhanced:assembly_stabilizer>], 
+	[null, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, null]
+]);
 // 虚拟装配器
 scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     "SK_virtual_assembler_make",

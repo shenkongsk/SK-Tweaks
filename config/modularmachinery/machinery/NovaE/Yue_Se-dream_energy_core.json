@@ -926,7 +926,8 @@
             "z": 15,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -2447,7 +2448,8 @@
             "z": 7,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -2912,7 +2914,8 @@
             "z": 9,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -3257,7 +3260,8 @@
             "z": 17,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -4818,7 +4822,8 @@
             "z": 8,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -5995,7 +6000,8 @@
             "z": 10,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -6940,7 +6946,8 @@
             "z": 16,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -8813,7 +8820,8 @@
             "z": 18,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -11510,7 +11518,8 @@
             "z": 9,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -11663,7 +11672,8 @@
             "z": 10,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -12272,7 +12282,8 @@
             "z": 7,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -12969,7 +12980,8 @@
             "z": 17,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -14945,7 +14957,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "rftools:screen_controller@2"
+                "modularmachinery:blocksmartinterface@0"
             ]
         },
         {
@@ -15674,7 +15686,8 @@
             "z": 8,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -16347,7 +16360,8 @@
             "z": 16,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -16516,7 +16530,8 @@
             "z": 15,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {
@@ -17125,7 +17140,8 @@
             "z": 18,
             "elements": [
                 "minecraft:diamond_block@0",
-                "itembus"
+                "generalized_output_item",
+                "generalized_input_item"
             ]
         },
         {

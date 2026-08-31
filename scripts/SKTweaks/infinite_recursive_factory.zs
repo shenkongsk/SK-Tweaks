@@ -52,6 +52,10 @@ val MACHINE = "infinite_recursive_factory";                        //机器ID
 MachineModifier.setMaxThreads(MACHINE, 32);
 MachineModifier.addCoreThread(MACHINE, FactoryRecipeThread.createCoreThread("并行安装").addRecipe("parallel_upgrade"));
 MachineModifier.addCoreThread(MACHINE, FactoryRecipeThread.createCoreThread("并行卸载").addRecipe("parallel_downgrade"));
+// MachineModifier.addCoreThread(MACHINE, FactoryRecipeThread.createCoreThread("熔炼核心-I"));
+// MachineModifier.addCoreThread(MACHINE, FactoryRecipeThread.createCoreThread("熔炼核心-II"));
+// MachineModifier.addCoreThread(MACHINE, FactoryRecipeThread.createCoreThread("熔炼核心-III"));
+
 // 为每个配方创建独立的核心线程
 // val romanNumerals = [
 //     "I", "II", "III", "IV", "V", "VI", "VII", "VIII",
@@ -86,7 +90,7 @@ RecipeBuilder.newBuilder("parallel_upgrade", MACHINE, 1)
         map["parallelUpgrades"] = current + 1;
         ctrl.customData = data;
     })
-    .addRecipeTooltip("[并行安装]","消耗一个升级","为机器增加 256 层并行数量")
+    .addRecipeTooltip("§b[§6并行安装§b]§r","消耗一个升级","为机器增加 §c256 层并行数量")
     .setThreadName("并行安装")
     .build();
 // ===================== 并行升级配方 =====================
@@ -113,7 +117,7 @@ RecipeBuilder.newBuilder("parallel_downgrade", MACHINE, 1)
         ctrl.customData = data;
     })
     .addItemOutput(<avaritiaitem:cosmic_balance>*1)
-    .addRecipeTooltip("[并行卸载]","消耗一张纸","减少 256 并行数量","并返还一个升级")
+    .addRecipeTooltip("§b[§6并行卸载§b]§r","消耗一张纸","减少 §c256 并行数量","并返还一个升级")
     .setThreadName("并行卸载")
     .build();
 // ===================== 并行降级配方 =====================
@@ -182,6 +186,9 @@ RecipeAdapterBuilder.create("modularmachinery:infinite_recursive_factory", "mine
         SK_SyncParallelUpgrade(event.controller, event.activeRecipe);
     })
     .setMaxThreads(1)
+    // .setThreadName("熔炼核心-I")
+    // .setThreadName("熔炼核心-II")
+    // .setThreadName("熔炼核心-III")
     .build();
 // ========================== 继承 ==========================
 

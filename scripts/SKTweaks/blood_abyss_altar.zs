@@ -43,6 +43,7 @@ MachineModifier.addCoreThread(MACHINE, threadJ);
 MachineModifier.setInternalParallelism("blood_abyss_altar", 1024);
 <modularmachinery:blood_abyss_altar_factory_controller>.addTooltip(format.red("内置额外1024并行！"));
 <modularmachinery:blood_abyss_altar_factory_controller>.addTooltip(format.red("内置10线程！"));
+<modularmachinery:blood_abyss_altar_factory_controller>.addTooltip(format.gold("自动搭建时，混沌龙块可能会被龙块代替，导致不成型！"));
 //blood_abyss_altar_factory_controller
 function Blood_Alter_SK_Recipe_Builder(
     RecipeName as string,
