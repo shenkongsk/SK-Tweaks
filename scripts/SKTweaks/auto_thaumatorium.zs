@@ -26,7 +26,7 @@ function Thaumatorium_Recipe_Builder(
     Timeinput as int
 )as void{
     val MachineName = "auto_thaumatorium";
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Aspect(
+    Recipe_Builder_SK_Aspect(
         RecipeName + "_Aspect",
         MachineName,
         Inputs,
@@ -36,7 +36,7 @@ function Thaumatorium_Recipe_Builder(
         Aspects_Need,
         Aspects_Amount
     );
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Essentia(
+    Recipe_Builder_SK_Essentia(
         RecipeName + "_Essentia",
         MachineName,
         Inputs,

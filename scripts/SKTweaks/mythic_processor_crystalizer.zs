@@ -57,7 +57,7 @@ val itemOutputs = [
 
 // 同时遍历两个列表
 for i in 0 to fluidInputs.length{
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    Recipe_Builder_SK(
         "mythic_crystallizer_recipe_" + i,
         MachineName,
         [],                // 无物品输入

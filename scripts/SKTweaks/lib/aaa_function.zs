@@ -24,24 +24,37 @@ import crafttweaker.liquid.ILiquidStack;
 import native.com.blamejared.compat.thaumcraft.handlers.ThaumCraft;
 import native.thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.aspect.CTAspectStack;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+// global Get_CustomData_int as function(IData, string, int)int = function(data as IData, key as string, default as int) as int {
 //==========================================================================配方注册函数==========================================================================
-function Recipe_Builder_SK_Chance(
+global Recipe_Builder_SK_Chance as function(
+    string,
+    string,
+    IIngredient[],
+    double[],
+    ILiquidStack[],
+    double[],
+    IIngredient[],
+    double[],
+    ILiquidStack[],
+    double[],
+    long,long,long
+)void = function(   
     recipeName as string,
     machineName as string,
-    inputs as crafttweaker.item.IIngredient[],
+    inputs as IIngredient[],
     inputChances as double[],          // 可留空 []
-    fluidInputs as crafttweaker.liquid.ILiquidStack[],
+    fluidInputs as ILiquidStack[],
     fluidInputChances as double[],      // 可留空 []
-    outputs as crafttweaker.item.IIngredient[],
+    outputs as IIngredient[],
     outputChances as double[],          // 可留空 []
-    fluidOutputs as crafttweaker.liquid.ILiquidStack[],
+    fluidOutputs as ILiquidStack[],
     fluidOutputChances as double[],     // 可留空 []
-    
     time as long,
     energyinput as long,
     energyOutput as long
-) as void 
-{
+)as void{
     val builder = RecipeBuilder.newBuilder(recipeName, machineName, time);
     builder.setMaxThreads(1);
     // 能量输入
@@ -58,7 +71,6 @@ function Recipe_Builder_SK_Chance(
             builder.addItemInput(item).setChance(chance);
         }
     }
-
     // 流体输入
     for i in 0 to fluidInputs.length{
         val fluid = fluidInputs[i];
@@ -70,152 +82,154 @@ function Recipe_Builder_SK_Chance(
         }
         
     }
-
     // 物品输出
     for i in 0 to outputs.length{
         val item = outputs[i];
         val chance = (outputChances.length > i) ? outputChances[i] : 1.0;
         builder.addItemOutput(item).setChance(chance);
     }
-
     // 流体输出
     for i in 0 to fluidOutputs.length{
         val fluid = fluidOutputs[i];
         val chance = (fluidOutputChances.length > i) ? fluidOutputChances[i] : 1.0;
         builder.addFluidOutput(fluid).setChance(chance);
     }
-
     // 能量输出
     if (energyOutput > 0){
         builder.addEnergyPerTickOutput(energyOutput);
     }
-
-
-
     builder.build();
-}
-// 普通配方
-
-function Recipe_Builder_SK(
+};
+global Recipe_Builder_SK as function(
+    string,
+    string,
+    IIngredient[],
+    ILiquidStack[],
+    IIngredient[],
+    ILiquidStack[],
+    long,
+    long,
+    long
+) void = function(
     recipeName as string,
     machineName as string,
-    inputs as crafttweaker.item.IIngredient[],
-    fluidInputs as crafttweaker.liquid.ILiquidStack[],
-    outputs as crafttweaker.item.IIngredient[],
-    fluidOutputs as crafttweaker.liquid.ILiquidStack[],
+    inputs as IIngredient[],
+    fluidInputs as ILiquidStack[],
+    outputs as IIngredient[],
+    fluidOutputs as ILiquidStack[],
     time as long,
     energyInput as long,
     energyOutput as long
-) as void 
-{
+) as void {
     val builder = RecipeBuilder.newBuilder(recipeName, machineName, time);
     builder.setMaxThreads(1);
-    if(energyInput > 0) {
+    if (energyInput > 0) {
         builder.addEnergyPerTickInput(energyInput);
     }
     for item in inputs {
         builder.addItemInput(item);
     }
-
     for fluid in fluidInputs {
         builder.addFluidInput(fluid);
     }
-
     for item in outputs {
         builder.addItemOutput(item);
     }
-
     for fluid in fluidOutputs {
         builder.addFluidOutput(fluid);
     }
-
-    // 能量输出
-    if(energyOutput > 0) {
+    if (energyOutput > 0) {
         builder.addEnergyPerTickOutput(energyOutput);
     }
-    // builder.addPreCheckHandler(function(event as RecipeCheckEvent){
-    //     scripts.SKTweaks.lib.Real_Parallels.SK_Real_Parallels(event.controller,event.activeRecipe);
-        
-    // });
-
     builder.build();
-}
-//
-function Recipe_Builder_SK_Chance_With_Mana(
+};
+global Recipe_Builder_SK_Chance_With_Mana as function(
+    string,
+    string,
+    IIngredient[],
+    double[],
+    ILiquidStack[],
+    double[],
+    IIngredient[],
+    double[],
+    ILiquidStack[],
+    double[],
+    long,
+    long,
+    long
+) void = function(
     recipeName as string,
     machineName as string,
-    inputs as crafttweaker.item.IIngredient[],
-    inputChances as double[],          // 可留空 []
-    fluidInputs as crafttweaker.liquid.ILiquidStack[],
-    fluidInputChances as double[],      // 可留空 []
-    outputs as crafttweaker.item.IIngredient[],
-    outputChances as double[],          // 可留空 []
-    fluidOutputs as crafttweaker.liquid.ILiquidStack[],
-    fluidOutputChances as double[],     // 可留空 []+
-    
+    inputs as IIngredient[],
+    inputChances as double[],
+    fluidInputs as ILiquidStack[],
+    fluidInputChances as double[],
+    outputs as IIngredient[],
+    outputChances as double[],
+    fluidOutputs as ILiquidStack[],
+    fluidOutputChances as double[],
     time as long,
     ManaInput as long,
     energyOutput as long
-) as void 
-{
+) as void {
     val builder = RecipeBuilder.newBuilder(recipeName, machineName, time);
     builder.setMaxThreads(1);
-    // 魔力输入
     if (ManaInput > 0) {
-        builder.addManaInput(ManaInput,false);
+        builder.addManaInput(ManaInput, false);
     }
     // 物品输入
-    for i in 0 to inputs.length{
+    for i in 0 to inputs.length {
         val item = inputs[i];
         val chance = (inputChances.length > i) ? inputChances[i] : 1.0;
-        if chance == 0.0 {
+        if (chance == 0.0) {
             builder.addItemInput(item).setChance(chance).setParallelizeUnaffected(true);
         } else {
             builder.addItemInput(item).setChance(chance);
         }
-        // builder.addItemInput(item).setChance(chance);
     }
-
     // 流体输入
-    for i in 0 to fluidInputs.length{
+    for i in 0 to fluidInputs.length {
         val fluid = fluidInputs[i];
         val chance = (fluidInputChances.length > i) ? fluidInputChances[i] : 1.0;
-        // builder.addFluidInput(fluid).setChance(chance);
-        if chance == 0.0{
+        if (chance == 0.0) {
             builder.addFluidInput(fluid).setChance(chance).setParallelizeUnaffected(true);
-        }else{
+        } else {
             builder.addFluidInput(fluid).setChance(chance);
         }
     }
-
     // 物品输出
-    for i in 0 to outputs.length{
+    for i in 0 to outputs.length {
         val item = outputs[i];
         val chance = (outputChances.length > i) ? outputChances[i] : 1.0;
         builder.addItemOutput(item).setChance(chance);
     }
-
     // 流体输出
-    for i in 0 to fluidOutputs.length{
+    for i in 0 to fluidOutputs.length {
         val fluid = fluidOutputs[i];
         val chance = (fluidOutputChances.length > i) ? fluidOutputChances[i] : 1.0;
         builder.addFluidOutput(fluid).setChance(chance);
     }
-
-    // 能量输出
-    if (energyOutput > 0){
+    if (energyOutput > 0) {
         builder.addEnergyPerTickOutput(energyOutput);
     }
-    
     builder.build();
-}
+};
 
-// 使用 addAspectInput 的函数（MMCE 原生），支持多要素
-function Recipe_Builder_SK_Aspect(
+// ====== 1. 使用 addAspectInput ======
+global Recipe_Builder_SK_Aspect as function(
+    string,          // recipeName
+    string,          // machineName
+    IIngredient[],   // inputs
+    IIngredient[],   // outputs
+    long,            // time
+    long,            // energyInput
+    string[],        // aspects
+    int[]            // aspectAmounts
+) void = function(
     recipeName as string,
     machineName as string,
-    inputs as crafttweaker.item.IIngredient[],
-    outputs as crafttweaker.item.IIngredient[],
+    inputs as IIngredient[],
+    outputs as IIngredient[],
     time as long,
     energyInput as long,
     aspects as string[],
@@ -232,19 +246,27 @@ function Recipe_Builder_SK_Aspect(
     for item in outputs {
         builder.addItemOutput(item);
     }
-    for i in 0 to aspects.length{
+    for i in 0 to aspects.length {
         builder.addAspectInput(aspects[i], aspectAmounts[i]);
     }
-    
     builder.build();
-}
+};
 
-// 使用 addEssentiaInput 的函数（MMCE Addons）
-function Recipe_Builder_SK_Essentia(
+// ====== 2. 使用 addEssentiaInput ======
+global Recipe_Builder_SK_Essentia as function(
+    string,          // recipeName
+    string,          // machineName
+    IIngredient[],   // inputs
+    IIngredient[],   // outputs
+    long,            // time
+    long,            // energyInput
+    string[],        // aspects
+    int[]            // aspectAmounts
+) void = function(
     recipeName as string,
     machineName as string,
-    inputs as crafttweaker.item.IIngredient[],
-    outputs as crafttweaker.item.IIngredient[],
+    inputs as IIngredient[],
+    outputs as IIngredient[],
     time as long,
     energyInput as long,
     aspects as string[],
@@ -261,294 +283,170 @@ function Recipe_Builder_SK_Essentia(
     for item in outputs {
         builder.addItemOutput(item);
     }
-    for i in 0 to aspects.length{
+    for i in 0 to aspects.length {
         builder.addEssentiaInput(aspects[i], aspectAmounts[i]);
     }
-    
     builder.build();
-}
-//==========================================================================
-// 通用配方构建函数（支持所有主流输入/输出类型）
-//==========================================================================
-/**
- * @param recipeName                        配方注册名
- * @param machineName                       机器注册名
- * @param time                              加工时间（tick）
- * @param itemInputs                        物品输入数组
- * @param itemInputChances                  物品输入概率数组（与 inputs 对应，缺省为 1.0）
- * @param fluidInputs                       流体输入数组
- * @param fluidInputChances                 流体输入概率数组
- * @param itemOutputs                       物品输出数组
- * @param itemOutputChances                 物品输出概率数组
- * @param fluidOutputs                      流体输出数组
- * @param fluidOutputChances                流体输出概率数组
- * @param energyInput                       每 tick 能量输入（0 表示无）
- * @param energyOutput                      每 tick 能量输出（0 表示无）
- * @param manaInputs                        魔力输入数组（单次）
- * @param manaOutputs                       魔力输出数组（单次）
- * @param starlightInputs                   星能输入数组（单次）
- * @param starlightOutputs                  星能输出数组（单次）
- * @param Input_Aspects_or_Essentia_Name    要素/源质输入数组（字符串格式，如 "ignis"）
- * @param Input_Aspects_or_Essentia_Amount  对应要素数量数组
- * @param Output_Aspects_or_Essentia_Name   要素/源质输出数组（字符串格式，如 "ignis"）
- * @param Output_Aspects_or_Essentia_Amount 对应要素数量数组
- * @param gasInputs                         气体输入数组（IGasStack，需安装 Mekanism）
- * @param gasInputChances                   气体输入概率数组
- * @param gasOutputs                        气体输出数组
- * @param gasOutputChances                  气体输出概率数组
- * @param radiationInput                    辐射输入（float）
- * @param radiationOutput                   辐射输出（float）
- * @param visInput                          灵气输入（long）
- * @param fluxInput                         咒波输入（long）
- * @param visOutput                         灵气输出（long）
- * @param fluxOutput                        咒波输出（long）
- * @param isParallelized                    是否允许并行（true/false）
- * @param recipeTooltips                    工具提示字符串数组（可选）
- * @param MaxThreads                        一种配方占据的最大线程数
- */
-// function Recipe_Builder_SK_Universal(
-//     recipeName as string,
-//     machineName as string,
-//     time as long,
-//     // 物品
-//     itemInputs as crafttweaker.item.IIngredient[],
-//     itemInputChances as double[],
-//     itemOutputs as crafttweaker.item.IIngredient[],
-//     itemOutputChances as double[],
-//     // 流体
-//     fluidInputs as crafttweaker.liquid.ILiquidStack[],
-//     fluidInputChances as double[],
-//     fluidOutputs as crafttweaker.liquid.ILiquidStack[],
-//     fluidOutputChances as double[],
-//     // 能量
-//     energyInput as long,
-//     energyOutput as long,
-//     // // 魔力（植物魔法）
-//     // manaInputs as int,
-//     // manaInputs_bool as bool,  //中断时是否吞材料？ 目前写false
-//     // manaOutputs as int[],
-//     // manaOutputs_bool as bool[], //中断时是否吞材料？ 目前写false
-//     // 星能（星辉魔法）
-//     starlightInputs as long,
-//     starlightOutputs as long,
-//     // 神秘时代：要素或源质 (Aspect or Essentia)
-//     Input_Aspects_or_Essentia_Name as string[],
-//     Input_Aspects_or_Essentia_Amount as long[],
-//     Output_Aspects_or_Essentia_Name as string[],
-//     Output_Aspects_or_Essentia_Amount as long[],
-//     // 气体（Mekanism）
-//     // gasInputs as crafttweaker.gas.IGasStack[],
-//     // gasInputChances as double[],
-//     // gasOutputs as crafttweaker.gas.IGasStack[],
-//     // gasOutputChances as double[],
-//     // 辐射（核科技）
-//     radiationInput as float,
-//     radiationInput_Radis as int,
-//     radiationOutput as float,
-//     radiationOutput_Radis as int,
-//     // 灵气与咒波（神秘时代）
-//     visInput as long,
-//     fluxInput as long,
-//     visOutput as long,
-//     fluxOutput as long,
-//     // 其他设置
-//     isParallelized as bool,
-//     recipeTooltips as string[],
-//     MaxThreads as int
-// ) as void {
-//     val builder = RecipeBuilder.newBuilder(recipeName, machineName, time);
-    
-//     // 并行化
-//     builder.setParallelized(isParallelized);
-//     builder.setMaxThreads(MaxThreads);
-//     // 工具提示
-//     for tooltip in recipeTooltips {
-//         builder.addRecipeTooltip(tooltip);
-//     }
-    
-//     // 能量输入/输出
-//     if (energyInput > 0) {
-//         builder.addEnergyPerTickInput(energyInput);
-//     }
-//     if (energyOutput > 0) {
-//         builder.addEnergyPerTickOutput(energyOutput);
-//     }
-    
-//     // 物品输入（带概率）
-//     for i in 0 to itemInputs.length {
-//         val item = itemInputs[i];
-//         val chance = (i < itemInputChances.length) ? itemInputChances[i] : 1.0;
-//         builder.addItemInput(item).setChance(chance);
-//     }
-//     // 物品输出（带概率）
-//     for i in 0 to itemOutputs.length {
-//         val item = itemOutputs[i];
-//         val chance = (i < itemOutputChances.length) ? itemOutputChances[i] : 1.0;
-//         builder.addItemOutput(item).setChance(chance);
-//     }
-    
-//     // 流体输入/输出
-//     for i in 0 to fluidInputs.length {
-//         val fluid = fluidInputs[i];
-//         val chance = (i < fluidInputChances.length) ? fluidInputChances[i] : 1.0;
-//         builder.addFluidInput(fluid).setChance(chance);
-//     }
-//     for i in 0 to fluidOutputs.length {
-//         val fluid = fluidOutputs[i];
-//         val chance = (i < fluidOutputChances.length) ? fluidOutputChances[i] : 1.0;
-//         builder.addFluidOutput(fluid).setChance(chance);
-//     }
-    
-//     // 魔力（植物魔法）
-//     if{manaInputs>0} {
-//         builder.addManaInput(mana,manaInputs_bool);
-//     }
-//     // if{manaOutputs>0} {
-//     //     builder.addManaOutput(mana,manaOutputs_bool);
-//     // }
-    
-//     // 星能（星辉魔法）
-//     for starlight in starlightInputs {
-//         builder.addStarlightInput(starlight);
-//     }
-//     for starlight in starlightOutputs {
-//         builder.addStarlightOutput(starlight);
-//     }
-    
-//     // 神秘时代要素
-//     for i in 0 to Input_Aspects_or_Essentia_Name.length {
-//         if (i < Input_Aspects_or_Essentia_Amount.length) {
-//             builder.addAspectInput(Input_Aspects_or_Essentia_Name[i], Input_Aspects_or_Essentia_Amount[i]);
-//             builder.addEssentiaInput(Input_Aspects_or_Essentia_Name[i], Input_Aspects_or_Essentia_Amount[i]);
-//         }
-//     }
-//     for i in 0 to Output_Aspects_or_Essentia_Name.length {
-//         if (i < Output_Aspects_or_Essentia_Amount.length) {
-//             builder.addAspectOutput(Output_Aspects_or_Essentia_Name[i], Output_Aspects_or_Essentia_Amount[i]);
-//             builder.addEssentiaOutput(Output_Aspects_or_Essentia_Name[i], Output_Aspects_or_Essentia_Amount[i]);
-//         }
-//     }
-//     // 气体（Mekanism）
-//     // for i in 0 to gasInputs.length {
-//     //     val gas = gasInputs[i];
-//     //     val chance = (i < gasInputChances.length) ? gasInputChances[i] : 1.0;
-//     //     builder.addGasInput(gas).setChance(chance);
-//     // }
-//     // for i in 0 to gasOutputs.length {
-//     //     val gas = gasOutputs[i];
-//     //     val chance = (i < gasOutputChances.length) ? gasOutputChances[i] : 1.0;
-//     //     builder.addGasOutput(gas).setChance(chance);
-//     // }
-    
-//     // 辐射（核科技）
-//     if (radiationInput > 0) {
-//         builder.addRadiationInput(radiationInput,radiationInput_Radis);
-//     }
-//     if (radiationOutput > 0) {
-//         builder.addRadiationOutput(radiationOutput,radiationOutput_Radis);
-//     }
-    
-//     // 灵气与咒波（神秘时代）
-//     if (visInput > 0) {
-//         builder.addVisInput(visInput);
-//     }
-//     if (fluxInput > 0) {
-//         builder.addFluxInput(fluxInput);
-//     }
-//     if (visOutput > 0) {
-//         builder.addVisOutput(visOutput);
-//     }
-//     if (fluxOutput > 0) {
-//         builder.addFluxOutput(fluxOutput);
-//     }
-//     // 构建配方
-//     builder.build();
-// }
-function Sequenced_Assembler_Recipe_Builder(
+};
+global Sequenced_Assembler_Recipe_Builder as function(
+    string,          // recipeName
+    string,          // machineName
+    string,          // ItemTagName
+    string,          // FluidTagName
+    IIngredient[],   // inputs
+    ILiquidStack[],  // fluidInputs
+    IIngredient[],   // outputs
+    ILiquidStack[],  // fluidOutputs
+    long,            // time
+    long             // energyInput
+) void = function(
     recipeName as string,
     machineName as string,
     ItemTagName as string,
     FluidTagName as string,
-    inputs as crafttweaker.item.IIngredient[],
-    fluidInputs as crafttweaker.liquid.ILiquidStack[],
-    outputs as crafttweaker.item.IIngredient[],
-    fluidOutputs as crafttweaker.liquid.ILiquidStack[],
+    inputs as IIngredient[],
+    fluidInputs as ILiquidStack[],
+    outputs as IIngredient[],
+    fluidOutputs as ILiquidStack[],
     time as long,
     energyInput as long
-) as void 
-{
+) as void {
     val builder = RecipeBuilder.newBuilder(recipeName, machineName, time);
     var RealItemTagName = (ItemTagName == "") ? "sequenced_assembler_item_" : ItemTagName;
     var RealFluidTagName = (FluidTagName == "") ? "sequenced_assembler_fluid_" : FluidTagName;
     builder.setMaxThreads(1);
-    if(energyInput > 0) {
+    if (energyInput > 0) {
         builder.addEnergyPerTickInput(energyInput);
     }
-    for i,item in inputs {
-        builder.addItemInput(item).setTag(RealItemTagName+(i+1));
+    for i, item in inputs {
+        builder.addItemInput(item).setTag(RealItemTagName + (i + 1));
     }
-
-    for i,fluid in fluidInputs {
-        builder.addFluidInput(fluid).setTag(RealFluidTagName+(i+1));
+    for i, fluid in fluidInputs {
+        builder.addFluidInput(fluid).setTag(RealFluidTagName + (i + 1));
     }
-
     for item in outputs {
         builder.addItemOutput(item);
     }
-
     for fluid in fluidOutputs {
         builder.addFluidOutput(fluid);
     }
     builder.addRecipeTooltip("§c配方需要§6顺序输入§c！！§r");
     builder.setMaxThreads(1);
     builder.build();
-}
+};
 
-// 读取 int 值
-function Get_CustomData_int(data as IData, key as string, default as int) as int {
+//===========================================IData读取===========================================
+// int
+global Get_CustomData_int as function(IData, string, int)int = function(data as IData, key as string, default as int) as int {
     if (isNull(data)) return default;
     val value = data.memberGet(key);
     if (isNull(value)) return default;
     return value.asInt();
-}
-
-// 读取 long 值
-function Get_CustomData_long(data as IData, key as string, default as long) as long {
+};
+// long
+global Get_CustomData_long as function(IData, string, long)long = function(data as IData, key as string, default as long) as long {
     if (isNull(data)) return default;
     val value = data.memberGet(key);
     if (isNull(value)) return default;
     return value.asLong();
-}
-
-// 读取 float 值
-function Get_CustomData_float(data as IData, key as string, default as float) as float {
+};
+// float
+global Get_CustomData_float as function(IData, string, float)float = function(data as IData, key as string, default as float) as float {
     if (isNull(data)) return default;
     val value = data.memberGet(key);
     if (isNull(value)) return default;
     return value.asFloat();
-}
-
-// 读取 string 值
-function Get_CustomData_string(data as IData, key as string, default as string) as string {
+};
+// string
+global Get_CustomData_string as function(IData, string, string)string = function(data as IData, key as string, default as string) as string {
     if (isNull(data)) return default;
     val value = data.memberGet(key);
     if (isNull(value)) return default;
     return value.asString();
-}
-
-// 读取 bool 值
-function Get_CustomData_bool(data as IData, key as string, default as bool) as bool {
+};
+// bool
+global Get_CustomData_bool as function(IData, string, bool)bool = function(data as IData, key as string, default as bool) as bool {
     if (isNull(data)) return default;
     val value = data.memberGet(key);
     if (isNull(value)) return default;
     return value.asBool();
-}
-
-// 读取 double 值
-function Get_CustomData_double(data as IData, key as string, default as double) as double {
+};
+// double
+global Get_CustomData_double as function(IData, string, double)double = function(data as IData, key as string, default as double) as double {
     if (isNull(data)) return default;
     val value = data.memberGet(key);
     if (isNull(value)) return default;
     return value.asDouble();
-}
+};
 
+//===========================================IData读取===========================================
+//===========================================IData写入===========================================
+// int
+global Write_CustomData_int as function(IData, string, int)IData = function(data as IData, key as string, value as int) as IData {
+    var newData = data;
+    if (isNull(newData)) newData = {} as IData;
+    return newData + ({ key: value } as IData);
+};
+// long
+global Write_CustomData_long as function(IData, string, long)IData = function(data as IData, key as string, value as long) as IData {
+    var newData = data;
+    if (isNull(newData)) newData = {} as IData;
+    return newData + ({ key: value } as IData);
+};
+// float
+global Write_CustomData_float as function(IData, string, float)IData = function(data as IData, key as string, value as float) as IData {
+    var newData = data;
+    if (isNull(newData)) newData = {} as IData;
+    return newData + ({ key: value } as IData);
+};
+// string
+global Write_CustomData_string as function(IData, string, string)IData = function(data as IData, key as string, value as string) as IData {
+    var newData = data;
+    if (isNull(newData)) newData = {} as IData;
+    return newData + ({ key: value } as IData);
+};
+// double
+global Write_CustomData_double as function(IData, string, double)IData = function(data as IData, key as string, value as double) as IData {
+    var newData = data;
+    if (isNull(newData)) newData = {} as IData;
+    return newData + ({ key: value } as IData);
+};
+// bool
+global Write_CustomData_bool as function(IData, string, bool)IData = function(data as IData, key as string, value as bool) as IData {
+    var newData = data;
+    if (isNull(newData)) newData = {} as IData;
+    return newData + ({ key: value } as IData);
+};
+//===========================================IData写入===========================================
+// 在公共库文件（如 aaa_function.zs）中添加此函数
+global getOffsetPos as function(IMachineController, int, int, int)IBlockPos = function(
+    ctrl as IMachineController,
+    left as int,   // 左偏移（正=左，负=右）
+    up as int,     // 上偏移（正=上，负=下）
+    front as int   // 前偏移（正=前，负=后）
+) as IBlockPos {
+    val pos = ctrl.pos;
+    val facing = ctrl.facing;
+
+    // 左方向：绕 Y 轴逆时针旋转 90°（通过三次顺时针旋转实现）
+    val leftDir = facing.rotateY().rotateY().rotateY();
+
+    var result = pos;
+
+    // 上下偏移
+    if (up > 0) result = result.up(up);
+    else if (up < 0) result = result.down(-up);
+
+    // 左右偏移
+    if (left > 0) result = result.getOffset(leftDir, -left);
+    else if (left < 0) result = result.getOffset(leftDir.opposite, left);
+
+    // 前后偏移
+    if (front > 0) result = result.getOffset(facing.opposite, -front);
+    else if (front < 0) result = result.getOffset(facing, front);
+
+    return result;
+};
+// global getItemFromString as function(string)IItemStack = function(itemName as string) as IItemStack {
+//     return itemUtils.getItem(itemName);
+// };

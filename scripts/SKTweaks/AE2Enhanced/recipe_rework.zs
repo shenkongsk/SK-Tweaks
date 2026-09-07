@@ -417,7 +417,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:central_me_interfa
 	[<contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>, <divinerpg:eden_block>, <divinerpg:eden_block>, <divinerpg:eden_block>, <contenttweaker:mythic_machine_case>, <contenttweaker:first_order_mythic_fractal>, <contenttweaker:mythic_machine_case>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:mythic_machine_case>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:supertranslucent_catalyst>, <contenttweaker:mythic_machine_case>, <appliedenergistics2:quartz_vibrant_glass>]
 ]);
-// scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+// Recipe_Builder_SK_Chance(
 //     "stable_spacetime_manifold_made",
 //     "mythic_excavation_lattice",
 //     // inputs - chances
@@ -439,7 +439,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:central_me_interfa
 //     0,
 //     0
 // );
-// scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+// Recipe_Builder_SK(
 //     "differential_form_stabilizer_made",
 //     "relativistic_collapser",
 //     // inputs
@@ -464,7 +464,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:central_me_interfa
 //     1000000000,
 //     0
 // );
-// scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+// Recipe_Builder_SK(
 //     "conformal_invariant_charge_made",
 //     "dyson_abater",
 //     // inputs
@@ -564,7 +564,7 @@ BlackHole.addRecipe(
 	]
 );
 // 奇点处理仓
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "singularity_chamber_make",
     "me_mythic_assembler",
     // inputs

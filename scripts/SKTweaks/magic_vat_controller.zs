@@ -1,6 +1,6 @@
 import mods.modularmachinery.RecipeBuilder;
 
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "magic_vat_controller_make",
     "me_mythic_assembler",
     // inputs

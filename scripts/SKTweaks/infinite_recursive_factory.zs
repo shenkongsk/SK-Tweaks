@@ -90,7 +90,7 @@ RecipeBuilder.newBuilder("parallel_upgrade", MACHINE, 1)
         map["parallelUpgrades"] = current + 1;
         ctrl.customData = data;
     })
-    .addRecipeTooltip("§b[§6并行安装§b]§r","消耗一个升级","为机器增加 §c256 层并行数量")
+    .addRecipeTooltip("§b[§6并行安装§b]§r","消耗一个升级","为机器增加 §c256 并行数")
     .setThreadName("并行安装")
     .build();
 // ===================== 并行升级配方 =====================
@@ -117,7 +117,7 @@ RecipeBuilder.newBuilder("parallel_downgrade", MACHINE, 1)
         ctrl.customData = data;
     })
     .addItemOutput(<avaritiaitem:cosmic_balance>*1)
-    .addRecipeTooltip("§b[§6并行卸载§b]§r","消耗一张纸","减少 §c256 并行数量","并返还一个升级")
+    .addRecipeTooltip("§b[§6并行卸载§b]§r","消耗一张纸","减少 §c256 并行数","并返还一个升级")
     .setThreadName("并行卸载")
     .build();
 // ===================== 并行降级配方 =====================

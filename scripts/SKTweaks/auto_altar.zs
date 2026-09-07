@@ -1029,7 +1029,7 @@ var Recipe_Mana_Inputs = [
 for i in 0 to Recipe_Inputs.length{
     var RecipeName = "auto_altar_sk_recipe_builder_"+i;
     var machineName = "auto_altar";
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance_With_Mana(
+    Recipe_Builder_SK_Chance_With_Mana(
         RecipeName,
         machineName,
         Recipe_Inputs[i],

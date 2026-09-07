@@ -30,7 +30,13 @@ val MachineName = [
     "mythical_generator_first_order",
     "mythical_generator_second_order",
     "quantum_catalytic_reactor_array",
-    "solar_array"
+    "solar_array",
+    "numeron_network",
+    "mythic_fractal_core_1",
+    "mythic_fractal_core_2",
+    "mythic_fractal_core_3",
+    "mythic_fractal_core_4",
+    "mythic_fractal_core_5"
 ];
 for item in MachineName {
     MachineModifier.setMachinePrefix(item, "§6§kp§eSKT§6§kp§r");

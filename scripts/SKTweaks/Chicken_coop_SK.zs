@@ -7,7 +7,7 @@ defined_chicken.addItemOutput(<contenttweaker:defined_egg>*1);
 defined_chicken.build();
 
 
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "defined_chicken_make",
     "plasmatic_condenser",
     // inputs

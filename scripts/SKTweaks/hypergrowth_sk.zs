@@ -25,7 +25,7 @@
 //     var inputItem = getSeed(name);
 //     var outputItem = getEssence(name);
     
-//     scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+//     Recipe_Builder_SK_Chance(
 //         "hypergrowth_sk_" + name,           // 配方名称（用名称代替索引）
 //         "hypergrowth_insolator",            // 机器名称
 //         [inputItem],                        // 输入物品数组

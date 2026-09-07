@@ -55,7 +55,7 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <mmceaddition:input_assembly>, 
 	[null, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, null]
 ]);
 // 虚拟装配器
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "SK_virtual_assembler_make",
     "me_mythic_assembler",
     // inputs

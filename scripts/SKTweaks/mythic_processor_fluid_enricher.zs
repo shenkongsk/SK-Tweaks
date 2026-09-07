@@ -319,7 +319,7 @@ val fluidOutputs = [
     <liquid:matter_of_creative_inquiry>*10000
 ];
 for i in 0 to itemInputs.length{
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    Recipe_Builder_SK(
         "mythic_enricher_recipe_" + i,
         MachineName,
         [itemInputs[i]],   // 物品输入

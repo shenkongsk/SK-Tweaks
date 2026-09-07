@@ -4,6 +4,7 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.MachineModifier;
 import mods.modularmachinery.RecipeCheckEvent;
 import mods.modularmachinery.FactoryRecipeStartEvent;
+import mods.modularmachinery.RecipeStartEvent;
 import mods.modularmachinery.FactoryRecipeFinishEvent;
 import mods.modularmachinery.FactoryRecipeThread;
 import mods.modularmachinery.IMachineController;
@@ -37,18 +38,18 @@ definer_sk_1
 //                 world.setBlockState(<blockstate:contenttweaker:defined_block>,targetPos);
 //             }
 //         })
-  .addStartHandler(function(event as RecipeCheckEvent) {
+  .addFactoryStartHandler(function(event as FactoryRecipeStartEvent) {
       val ctrl = event.controller;
       val world = ctrl.world;
-      if (Math.random() < 0.1) {
-          var offsetY = 0;
-          if (Math.random() < 0.5) {
-              offsetY = 4;
-          } else {
-              offsetY = 6;
-          }
-          val targetPos = ctrl.pos.up(offsetY).getOffset(ctrl.facing.opposite, 4);
-          world.setBlockState(<blockstate:contenttweaker:defined_block>, targetPos);
+      if (Math.random() < 0.3) {
+            var offsetY = 0;
+            if (Math.random() < 0.5) {
+                offsetY = 4;
+            } else {
+                offsetY = 6;
+            }
+            val targetPos = getOffsetPos(ctrl, 0, offsetY, -4);
+            world.setBlockState(<blockstate:contenttweaker:defined_block>, targetPos);
       }
   })
   .addItemInput(<contenttweaker:defined_egg>*16)
@@ -66,17 +67,17 @@ var definer_sk_2 = RecipeBuilder.newBuilder("definer_sk_2_recipe",MACHINE,400);
 definer_sk_2
   .addDimensionInput(174)
   .addEnergyPerTickInput(400000000)
-  .addStartHandler(function(event as RecipeCheckEvent) {
+  .addFactoryStartHandler(function(event as FactoryRecipeStartEvent) {
       val ctrl = event.controller;
       val world = ctrl.world;
-      if (Math.random() < 0.3) {
-          var offsetY = 0;
-          if (Math.random() < 0.5) {
-              offsetY = 4;
-          } else {
-              offsetY = 6;
-          }
-          val targetPos = ctrl.pos.up(offsetY).getOffset(ctrl.facing.opposite, 4);
+      if (Math.random() < 0.6) {
+            var offsetY = 0;
+            if (Math.random() < 0.5) {
+                offsetY = 4;
+            } else {
+                offsetY = 6;
+            }
+          val targetPos = getOffsetPos(ctrl, 0, offsetY, -4);
           world.setBlockState(<blockstate:contenttweaker:defined_block>, targetPos);
       }
   })

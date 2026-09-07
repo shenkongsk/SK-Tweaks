@@ -1,6 +1,6 @@
 import mods.modularmachinery.RecipeBuilder;
 
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "mythical_generator_first_order_controller",
     "me_mythic_assembler",
     // inputs

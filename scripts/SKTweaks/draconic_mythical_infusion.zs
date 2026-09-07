@@ -47,7 +47,7 @@ function Draconic_Fusion_Recipe_Builder(
     val Machine_Name = "draconic_mythical_infusion";
     val Time_Consume = (timeinput == 0) ? 500 : timeinput;
     val Energy_Per_Tick = energyinput/Time_Consume;
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    Recipe_Builder_SK(
         recipeName,
         Machine_Name,
         inputs,

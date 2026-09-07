@@ -1,5 +1,5 @@
 import mods.modularmachinery.RecipeBuilder;
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "machine_mana_pool_controller_make",
     "me_mythic_assembler",
     // inputs

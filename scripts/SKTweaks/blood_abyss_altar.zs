@@ -54,7 +54,7 @@ function Blood_Alter_SK_Recipe_Builder(
     val Machine_Name = "blood_abyss_altar";
     val Process_Time = 100 as long;
     val Energy_Input = 2000000 as long;
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    Recipe_Builder_SK(
         RecipeName,
         Machine_Name,
         inputs,

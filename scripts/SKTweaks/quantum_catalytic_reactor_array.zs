@@ -200,7 +200,7 @@ for i in 0 to Recipe_Input_Item.length{
     // if (Recipe_Energy_Input.length > i && Recipe_Energy_Input[i] > 0) {
     //     Energy_Input = Recipe_Energy_Input[i];
     // }
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+    Recipe_Builder_SK_Chance(
         "quantum_catalytic_reactor_array_recipe_" + i,
         MACHINE,
         // item inputs - chances

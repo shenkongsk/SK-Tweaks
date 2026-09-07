@@ -1,5 +1,4 @@
 #loader crafttweaker reloadable
-import scripts.SKTweaks.lib.aaa_function;
 
 // =====================================================================================================
 // 工作台合成	↓
@@ -63,7 +62,7 @@ recipes.addShaped("upgradebus_1",<modularmachinery:blockupgradebus>, [
 // 多方块合成	↓
 // =====================================================================================================
 // 创造源质原件 
-aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
 	"creative_essense_cell_make",
 	"creation_altar",
 	[
@@ -88,7 +87,7 @@ aaa_function.Recipe_Builder_SK(
 	0
 );
 // 以太金属板
-aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
 	"etherium_plate_make",
 	"mythic_processor_compactor",
 	[
@@ -104,7 +103,7 @@ aaa_function.Recipe_Builder_SK(
 	0
 );
 // 解缚恒星锭
-aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
 	"unleashed_star_ingot_make",
 	"fractallite_furnace",
 	[
@@ -131,7 +130,7 @@ aaa_function.Recipe_Builder_SK(
 // 无限水和无限熔岩原件
 val infinite_water_cell = <cells:creative_fluid_cell>.withTag({CreativeFluidFilters: [{FluidName: "water", Amount: 1}], display: {Name: "§b无限水原件", Lore: ["§f感觉不如水槽......", "§8但是，这个提供的水更多"]}});
 val infinite_lava_cell = <cells:creative_fluid_cell>.withTag({CreativeFluidFilters: [{FluidName: "lava", Amount: 1}], display: {Name: "§c无限熔岩原件", Lore: ["§c§m感觉不如机械动力......"]}});
-aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
 	"infinite_water_cell_make",
 	"creation_altar",
 	[
@@ -150,7 +149,7 @@ aaa_function.Recipe_Builder_SK(
 	800000,
 	0
 );
-aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
 	"infinite_lava_cell_make",
 	"creation_altar",
 	[

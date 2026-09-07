@@ -27,7 +27,7 @@ val recipes = [
 ];
 
 for i, recipe in recipes {
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    Recipe_Builder_SK(
     "whispering_starlight_make_"+i,
     MachineName,
     [],

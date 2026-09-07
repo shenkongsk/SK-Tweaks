@@ -22,6 +22,7 @@ import mods.ctutils.utils.Math;
 import native.java.math.BigInteger;
 import mods.modularmachinery.MachineUpgradeHelper;
 import mods.modularmachinery.MachineUpgradeBuilder;
+import mods.modularmachinery.ActiveMachineRecipe;
 // import novaeng.DreamEnergyCore;
 // import novaeng.NovaEngUtils;
 // 没有新星核心纯手搓了，性能问题的话，你完全可以用龙球）
@@ -35,7 +36,7 @@ val MACHINE = "dream_energy_core";
 MachineModifier.setMaxThreads(MACHINE,0);
 MachineModifier.addCoreThread(MACHINE,FactoryRecipeThread.createCoreThread("梦之输入模块"));
 MachineModifier.addCoreThread(MACHINE,FactoryRecipeThread.createCoreThread("梦之输出模块"));
-MachineModifier.addCoreThread(MACHINE,FactoryRecipeThread.createCoreThread("梦之充能模块"));
+MachineModifier.addCoreThread(MACHINE,FactoryRecipeThread.createCoreThread("梦之聚合模块"));
 
 // val maxenergy = 9223372036854775807 as long;
 val energyin = 1000000 as long;
@@ -114,7 +115,8 @@ RecipeBuilder.newBuilder("EnergyOutput_Dream", MACHINE, 1)
     // })
     .addPreCheckHandler(function(event as RecipeCheckEvent) {
         val data = event.controller.customData;
-        var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
+        // var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
+        var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
         // 读取速度倍率
         var speedOut = 1.0;
         val speedOutVal = data.memberGet("speed_out");
@@ -254,7 +256,11 @@ MMEvents.onControllerGUIRender(MACHINE,function(event as ControllerGUIRenderEven
     info += "§3║§d▸ 能量聚合：§r" + chargeWorking;
     info += "§3║§b▸ 当前输入：§6" + formatNumber(energy_speed_in) + " RF/t";
     info += "§3║§b▸ 当前输出：§6" + formatNumber(energy_speed_out) + " RF/t";
-    
+    var Parallel = 256;
+    var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
+    if(current.compareTo(BigInteger("10000000000")) >= 0) Parallel *= 4;
+    if(current.compareTo(BigInteger("1000000000000000")) >= 0) Parallel *= 64;
+    info += "§3║§b▸ 聚合并行数：§6" + Parallel;
     // 模式 & 附加信息
     // var mode = ctrl.isWorking ? "§aASYNC" : "§7IDLE";
     // info += "§3║§b▸ 工作模式：§f" + mode;
@@ -376,21 +382,27 @@ function Dream_Core_Hyper_Charge(
     }
     builder.addPreCheckHandler(function(event as RecipeCheckEvent) {
         var data = event.controller.customData;
-        var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
+        // var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
+        var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
         if (current.compareTo(EnergyInput) < 0) {
             event.setFailed("机器存储能量不足！");
         }
+        var Parallel = 256;
+        if(current.compareTo(BigInteger("10000000000")) >= 0) Parallel *= 4;
+        if(current.compareTo(BigInteger("1000000000000000")) >= 0) Parallel *= 64;
+        event.activeRecipe.maxParallelism = Parallel;
     });
     builder.addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
         var data = event.controller.customData;
         if (isNull(data)) data = {} as IData;
-        var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
+        // var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
+        var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
         val newEnergy = current.subtract(EnergyInput);
         val newData = data + ({ "energy": newEnergy.toString() } as IData);
         event.controller.customData = newData;
     });
-    builder.setThreadName("梦之充能模块");
-    builder.addRecipeTooltip("§c梦之充能模块：","§e需要RF：§6§l"+formatBigNumber(EnergyInput));
+    builder.setThreadName("梦之聚合模块");
+    builder.addRecipeTooltip("§c梦之聚合模块：","§e需要RF：§6§l"+formatBigNumber(EnergyInput));
     builder.build();
 
 }

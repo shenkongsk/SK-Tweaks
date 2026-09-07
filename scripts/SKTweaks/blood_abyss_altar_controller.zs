@@ -1,6 +1,6 @@
 #loader crafttweaker reloadable
 import mods.modularmachinery.RecipeBuilder;
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "blood_abyss_altar_controller_make",
     "creation_altar",
     // inputs
@@ -34,7 +34,7 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     10240000,
     0
 );
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "small_blood_abyss_altar_controller_make",
     "me_mythic_assembler",
     // inputs

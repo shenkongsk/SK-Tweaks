@@ -1,5 +1,5 @@
 import mods.modularmachinery.RecipeBuilder;
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+Recipe_Builder_SK_Chance(
     "second_order_fluid",
     "mythical_generator_second_order",
     // inputs - chances

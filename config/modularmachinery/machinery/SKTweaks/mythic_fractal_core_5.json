@@ -1,0 +1,1010 @@
+{
+    "registryname": "mythic_fractal_core_5",
+    "localizedname": "§8五阶神话分形核心",
+    "requires-blueprint": false,
+    "color": "bebebe",
+    "has-factory": true,
+    "factory-only": true,
+    "parts": [
+        {
+            "x": 0,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 11,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 15,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 12,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 5,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 10,
+            "z": 3,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 9,
+            "z": 4,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "generalized_input_fluid"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 13,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 14,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "divinerpg:terran_lamp@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 16,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 11,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 12,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 7,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 16,
+            "z": 3,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 12,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 13,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 14,
+            "z": 6,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 14,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "generalized_input_item"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 14,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 15,
+            "z": 6,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 13,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 15,
+            "z": 2,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "generalized_output_fluid"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 15,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 12,
+            "z": 6,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 12,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 15,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "minecraft:beacon@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 14,
+            "z": 2,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 14,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 13,
+            "z": 6,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "divinerpg:terran_lamp@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 15,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 13,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 16,
+            "z": 5,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "divinerpg:terran_lamp@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 10,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 13,
+            "z": 2,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 6,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 7,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 11,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 11,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 12,
+            "z": 2,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 11,
+            "z": 6,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 15,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 11,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 11,
+            "z": 2,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 12,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 7,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 14,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 12,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 7,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 7,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 13,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 15,
+            "z": 5,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 16,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "twilightforest:aurora_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "twilightforest:aurora_pillar@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "generalized_output_item"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 13,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "aoa3:jade_block"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "divinerpg:terran_lamp@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 17,
+            "z": 4,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 11,
+            "z": 3,
+            "elements": [
+                "tconstruct:clear_stained_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "twilightforest:aurora_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 14,
+            "z": 4,
+            "elements": [
+                "divinerpg:skythern_block"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "twilightforest:aurora_slab@1"
+            ]
+        }
+    ]
+}

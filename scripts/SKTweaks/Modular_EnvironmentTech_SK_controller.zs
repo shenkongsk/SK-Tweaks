@@ -1,6 +1,6 @@
 import mods.modularmachinery.RecipeBuilder;
 
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "deep_void_excavator_make",
     "me_mythic_assembler",
     // inputs

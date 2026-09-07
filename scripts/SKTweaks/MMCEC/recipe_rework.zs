@@ -1,5 +1,4 @@
 #loader crafttweaker reloadable
-import scripts.SKTweaks.lib.aaa_function;
 
 // 无线通量输入仓
 mods.extendedcrafting.TableCrafting.addShaped(2, <mmce_complement:flux_input_hatch>, [

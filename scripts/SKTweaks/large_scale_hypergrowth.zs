@@ -166,7 +166,8 @@ val Hypergrowth_Input = [
     [<contenttweaker:tier_iii_defined_seed>],
     [<contenttweaker:tier_iv_defined_seed>],
     [<contenttweaker:tier_v_defined_seed>],
-    [<contenttweaker:tier_vi_defined_seed>]
+    [<contenttweaker:tier_vi_defined_seed>],
+    [<mysticalagriculture:manasteel_seeds>]
 ];
 
 val Essenses_Output = [
@@ -275,7 +276,8 @@ val Essenses_Output = [
     [<mysticalagriculture:crafting:2> * 32],
     [<mysticalagriculture:crafting:3> * 16],
     [<mysticalagriculture:crafting:4> * 8],
-    [<mysticalagradditions:insanium> * 2]
+    [<mysticalagradditions:insanium> * 2],
+    [<mysticalagriculture:manasteel_essence> * 64]
 ];
 
 for i in 0 to Hypergrowth_Input.length {

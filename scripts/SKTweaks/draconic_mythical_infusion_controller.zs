@@ -1,5 +1,5 @@
 import mods.modularmachinery.RecipeBuilder;
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "draconic_mythical_infusion_factory_controller",
     "me_mythic_assembler",
     // inputs
@@ -27,7 +27,7 @@ scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
     12800000,
     0
 );
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "small_draconic_mythical_infusion_controller",
     "me_mythic_assembler",
     // inputs

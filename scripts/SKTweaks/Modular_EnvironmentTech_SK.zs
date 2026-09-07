@@ -319,7 +319,7 @@ function buildMinerRecipe(
         val world = ctrl.world;
         val pos = ctrl.pos;
         val facing = ctrl.facing;
-        val targetPos = ctrl.pos.up(3).getOffset(facing.opposite, 2);
+        val targetPos = getOffsetPos(ctrl, 0, 3, -2);
         val blockState = world.getBlockState(targetPos);
         // 获取方块 ID 和 meta
         val blockId = blockState.block.definition.id;
@@ -392,9 +392,12 @@ function buildMinerRecipe(
         var data = ctrl.customData;
         if (isNull(data)) data = {} as IData;
         // data = data + { "selectedId": selectedId };
-        var oldmultiplier = (isNull(data.memberGet("outputMultiplier")) ? 0 : data.memberGet("outputMultiplier")) as int;
-        var oldSpeed = (isNull(data.memberGet("Upgrade_Speed")) ? 0 : data.memberGet("Upgrade_Speed")) as int;
-        var oldFortune = (isNull(data.memberGet("Upgrade_Fortune")) ? 0 : data.memberGet("Upgrade_Fortune")) as int;
+        // var oldmultiplier = (isNull(data.memberGet("outputMultiplier")) ? 0 : data.memberGet("outputMultiplier")) as int;
+        var oldmultiplier = Get_CustomData_int(data, "outputMultiplier", 0);
+        // var oldSpeed = (isNull(data.memberGet("Upgrade_Speed")) ? 0 : data.memberGet("Upgrade_Speed")) as int;
+        var oldSpeed = Get_CustomData_int(data, "Upgrade_Speed", 0);
+        // var oldFortune = (isNull(data.memberGet("Upgrade_Fortune")) ? 0 : data.memberGet("Upgrade_Fortune")) as int;
+        var oldFortune = Get_CustomData_int(data, "Upgrade_Fortune", 0);
         data = data + {
             "selectedId": selectedId,
             "lensMeta": meta,
@@ -454,31 +457,37 @@ val colorNames = [
 MMEvents.onControllerGUIRender(MACHINE, function(event as ControllerGUIRenderEvent) {
     val ctrl = event.controller;
     if (isNull(ctrl)) return;
-
-    // ---- 从 customData 读取数据 ----
     val data = ctrl.customData;
-    var lensMeta = -1;            // -1 表示无透镜
-    var lensBlock = "";
-    var outputMultiplier = 0;    // 默认倍率
-    var Upgrade_Speed_Amount = 0;
-    var Upgrade_Fortune_Amount = 0;
+    // var lensMeta = -1;            // -1 表示无透镜
+    // var lensBlock = "";
+    // var outputMultiplier = 0;    // 默认倍率
+    // var Upgrade_Speed_Amount = 0;
+    // var Upgrade_Fortune_Amount = 0;
 
-    if (!isNull(data)) {
-        val metaVal = data.memberGet("lensMeta");
-        if (!isNull(metaVal)) lensMeta = metaVal as int;
+    // if (!isNull(data)) {
+    //     val metaVal = data.memberGet("lensMeta");
+    //     if (!isNull(metaVal)) lensMeta = metaVal as int;
 
-        val blockVal = data.memberGet("lensBlock");
-        if (!isNull(blockVal)) lensBlock = blockVal as string;
+    //     val blockVal = data.memberGet("lensBlock");
+    //     if (!isNull(blockVal)) lensBlock = blockVal as string;
 
-        val multiVal = data.memberGet("outputMultiplier");
-        if (!isNull(multiVal)) outputMultiplier = multiVal as int;
+    //     val multiVal = data.memberGet("outputMultiplier");
+    //     if (!isNull(multiVal)) outputMultiplier = multiVal as int;
 
-        val speedVal = data.memberGet("Upgrade_Speed");
-        if (!isNull(speedVal)) Upgrade_Speed_Amount = speedVal as int;
+    //     val speedVal = data.memberGet("Upgrade_Speed");
+    //     if (!isNull(speedVal)) Upgrade_Speed_Amount = speedVal as int;
 
-        val fortuneVal = data.memberGet("Upgrade_Fortune");
-        if (!isNull(fortuneVal)) Upgrade_Fortune_Amount = fortuneVal as int;
-    }
+    //     val fortuneVal = data.memberGet("Upgrade_Fortune");
+    //     if (!isNull(fortuneVal)) Upgrade_Fortune_Amount = fortuneVal as int;
+        
+    // }
+    // ==================改成全局函数==================
+    var lensMeta = Get_CustomData_int(data, "lensMeta", -1);
+    var lensBlock = Get_CustomData_string(data, "lensBlock", "");
+    var outputMultiplier = Get_CustomData_int(data, "outputMultiplier", 0);
+    var Upgrade_Speed_Amount = Get_CustomData_int(data, "Upgrade_Speed", 0);
+    var Upgrade_Fortune_Amount = Get_CustomData_int(data, "Upgrade_Fortune", 0);
+    // ==================改成全局函数==================
 
     // ---- 判断透镜类型并获取颜色名称 ----
     var colorName = "§c未检测到透镜";
@@ -547,21 +556,53 @@ MMEvents.onControllerGUIRender(MACHINE, function(event as ControllerGUIRenderEve
 });
 // ===================== GUI 显示 =====================
 
+// val fortuneUpgradeRecipe = RecipeBuilder.newBuilder("upgrade_for_deep_miner_fortune", MACHINE, 1);
+// fortuneUpgradeRecipe
+//     .addItemInput(<environmentaltech:modifier_luck>)   // 消耗时运升级物品
+//     .addPreCheckHandler(function(event as RecipeCheckEvent) {
+//         val ctrl = event.controller;
+//         val data = ctrl.customData;
+//         if (isNull(data)) {
+//             // 如果没有 customData，则升级数为 0，允许执行
+//             return;
+//         }
+//         val fortune = data.memberGet("Upgrade_Fortune") as int;
+//         if (isNull(fortune)) {
+//             // 没有该键，默认为 0
+//             return;
+//         }
+//         if (fortune >= 64) {
+//             event.setFailed("§c时运升级已满！");
+//         }
+//     })
+//     .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
+//         val ctrl = event.controller;
+//         var data = ctrl.customData;
+//         if (isNull(data)) {
+//             data = {} as IData;
+//         }
+//         // 读取当前时运升级数，不存在则默认为 0
+//         var currentFortune = (isNull(data.memberGet("Upgrade_Fortune")) ? 0 : data.memberGet("Upgrade_Fortune")) as int;
+//         var currentMultiplier = (isNull(data.memberGet("outputMultiplier")) ? 0 : data.memberGet("outputMultiplier")) as int;
+//         // 增加 1
+//         val newFortune = currentFortune + 1;
+//         val newMultiplier = currentMultiplier + 2;
+//         // 合并更新数据
+//         data = data + { "Upgrade_Fortune": newFortune };
+//         data = data + { "outputMultiplier": newMultiplier};
+        
+//         ctrl.customData = data;
+//     })
+//     .addRecipeTooltip("§a消耗一个§6幸运强化部件§a", "增加 §61§a 级时运升级", "最大 §664§a 级")
+//     .setThreadName("升级核心")   // 可选，指定线程名
+//     .build();
+// 上面是没用全局函数的
 val fortuneUpgradeRecipe = RecipeBuilder.newBuilder("upgrade_for_deep_miner_fortune", MACHINE, 1);
 fortuneUpgradeRecipe
-    .addItemInput(<environmentaltech:modifier_luck>)   // 消耗时运升级物品
+    .addItemInput(<environmentaltech:modifier_luck>)
     .addPreCheckHandler(function(event as RecipeCheckEvent) {
-        val ctrl = event.controller;
-        val data = ctrl.customData;
-        if (isNull(data)) {
-            // 如果没有 customData，则升级数为 0，允许执行
-            return;
-        }
-        val fortune = data.memberGet("Upgrade_Fortune") as int;
-        if (isNull(fortune)) {
-            // 没有该键，默认为 0
-            return;
-        }
+        // 读取当前时运升级数，默认 0，无需判空
+        val fortune = Get_CustomData_int(event.controller.customData, "Upgrade_Fortune", 0);
         if (fortune >= 64) {
             event.setFailed("§c时运升级已满！");
         }
@@ -569,23 +610,24 @@ fortuneUpgradeRecipe
     .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
         val ctrl = event.controller;
         var data = ctrl.customData;
-        if (isNull(data)) {
-            data = {} as IData;
-        }
-        // 读取当前时运升级数，不存在则默认为 0
-        var currentFortune = (isNull(data.memberGet("Upgrade_Fortune")) ? 0 : data.memberGet("Upgrade_Fortune")) as int;
-        var currentMultiplier = (isNull(data.memberGet("outputMultiplier")) ? 0 : data.memberGet("outputMultiplier")) as int;
-        // 增加 1
+        if (isNull(data)) data = {} as IData;
+
+        // 读取当前值（默认 0）
+        val currentFortune = Get_CustomData_int(data, "Upgrade_Fortune", 0);
+        val currentMultiplier = Get_CustomData_int(data, "outputMultiplier", 0);
+
         val newFortune = currentFortune + 1;
         val newMultiplier = currentMultiplier + 2;
-        // 合并更新数据
-        data = data + { "Upgrade_Fortune": newFortune };
-        data = data + { "outputMultiplier": newMultiplier};
-        
+
+        // 一次性更新两个字段
+        data = data + {
+            "Upgrade_Fortune": newFortune,
+            "outputMultiplier": newMultiplier
+        } as IData;
         ctrl.customData = data;
     })
     .addRecipeTooltip("§a消耗一个§6幸运强化部件§a", "增加 §61§a 级时运升级", "最大 §664§a 级")
-    .setThreadName("升级核心")   // 可选，指定线程名
+    .setThreadName("升级核心")
     .build();
 // val speedUpgradeRecipe = RecipeBuilder.newBuilder("upgrade_for_deep_miner_speed", MACHINE, 1);
 // speedUpgradeRecipe

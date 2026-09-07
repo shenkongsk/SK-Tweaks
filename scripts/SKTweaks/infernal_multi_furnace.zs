@@ -41,7 +41,7 @@ for i in 0 to Origin_Recipe_Inputs.length - 1 {
     val inputs = Origin_Recipe_Inputs[i];
     val outputs = Origin_Recipe_Outputs[i];
     var energy = 10000;
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+    Recipe_Builder_SK_Chance(
         "infernal_multi_origin_auto_builder_" + i,
         "infernal_multi_furnace",
         inputs,
@@ -118,7 +118,7 @@ for i in 0 to Recipe_Inputs.length{
     val outputs = Recipe_Outputs[i];
     val chances = Recipe_Chances[i];
     var energy = 10000; // 根据需求调整
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+    Recipe_Builder_SK_Chance(
         "infernal_multi_auto_builder_" + i,
         "infernal_multi_furnace",
         inputs,

@@ -13,7 +13,7 @@ function machine_daisy_recipe_builder(
 {
     var time = 200;
     var energy = 5000;
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    Recipe_Builder_SK(
         recipeName,
         "machine_daisy",
         inputs,

@@ -27,7 +27,7 @@ function fluix_reactor_recipe_builder(
 {
     var time = 20;
     var energy = 400000;
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+    Recipe_Builder_SK(
         recipeName,
         "fluix_reactor",
         inputs,

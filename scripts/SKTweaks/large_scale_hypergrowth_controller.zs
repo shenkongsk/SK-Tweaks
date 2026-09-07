@@ -1,6 +1,6 @@
 #loader crafttweaker reloadable
 import mods.modularmachinery.RecipeBuilder;
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "large_scale_hypergrowth_insolator_make",
     "creation_altar",
     // inputs

@@ -1,5 +1,5 @@
 import mods.modularmachinery.RecipeBuilder;
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "quantum_catalytic_reactor_array_factory_controller_make",
     "me_mythic_assembler",
     // inputs

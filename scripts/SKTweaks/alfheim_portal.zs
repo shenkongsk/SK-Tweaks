@@ -43,7 +43,7 @@ function alfheim_trade_recipe_builder(
 {
     var Time_Consume = 40;
     var Energy_Input = 1024000;
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance(
+    Recipe_Builder_SK_Chance(
         recipename,
         "alfheim_portal",
         // item inputs - chances

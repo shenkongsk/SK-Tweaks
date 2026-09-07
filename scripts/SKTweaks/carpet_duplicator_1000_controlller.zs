@@ -1,6 +1,6 @@
 #loader crafttweaker reloadable
 import mods.modularmachinery.RecipeBuilder;
-scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK(
+Recipe_Builder_SK(
     "carpet_duplicator_1000_factory_controller_make",
     "me_mythic_assembler",
     // inputs

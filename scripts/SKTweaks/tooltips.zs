@@ -7,3 +7,7 @@
 
 <aoa3:yellow_shyre_bricks_stairs>.addTooltip(format.red("你知道这玩意哪能找到..."));
 <aoa3:yellow_shyre_bricks_stairs>.addTooltip(format.red("寻找结构..."));
+
+<modularmachinery:mechanized_coop_controller>.addTooltip(format.red("MMCE Addition新功能！"));
+<modularmachinery:mechanized_coop_controller>.addTooltip(format.red("不消耗的配方可以合并输出！"));
+<modularmachinery:mechanized_coop_controller>.addTooltip(format.red("让鸡舍可以实现“伪”多线程！"));

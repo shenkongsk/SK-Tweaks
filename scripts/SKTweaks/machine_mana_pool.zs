@@ -18,7 +18,7 @@ function Machine_Mana_Pool_Recipe_Builder(
     val Mana_Input = 8000;
     val Process_Time = 30;
     val MACHINE_NAME = "machine_mana_pool";
-    scripts.SKTweaks.lib.aaa_function.Recipe_Builder_SK_Chance_With_Mana(
+    Recipe_Builder_SK_Chance_With_Mana(
         recipeName,
         MACHINE_NAME,
         //

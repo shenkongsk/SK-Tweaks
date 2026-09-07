@@ -12,7 +12,12 @@
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockenergyoutputhatch",
         "generalized_output_fluid",
-        "modularmachinery:blockfluidinputhatch"
+        "modularmachinery:blockfluidinputhatch",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "casings_decorative": [
         "modularmachinery:blockcasing"
@@ -21,7 +26,10 @@
         "modularmachinery:blockinputbus",
         "mmceaddition:input_assembly",
         "modularmachinery:blockfluidinputhatch",
-        "generalized_output_fluid"
+        "generalized_output_fluid",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "fluid_both_io": [
         "modularmachinery:blockfluidoutputhatch",
@@ -31,15 +39,22 @@
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockinputbus",
         "mmceaddition:input_assembly",
-        "modularmachinery:blockmefluidinputbus"
+        "modularmachinery:blockmefluidinputbus",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "fluxormanainput": [
         "modularmachineryaddons:blockfluxproviderinput",
-        "modularmachinery:blockmanaproviderinput"
+        "modularmachinery:blockmanaproviderinput",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii"
     ],
     "generalized_input_essentia": [
         "modularmachinery:blockaspectproviderinput",
-        "modularmachineryaddons:blockmeessentiainputbus"
+        "modularmachineryaddons:blockmeessentiainputbus",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii"
     ],
     "single_item_input": [
         "modularmachinery:blockinputbus@0",
@@ -94,7 +109,11 @@
         "modularmachineryaddons:blocksingularityiteminputbus@0",
         "modularmachineryaddons:blocksingularityiteminputbus@1",
         "modularmachineryaddons:blocksingularityiteminputbus@2",
-        "modularmachineryaddons:blocksingularityiteminputbus@3"
+        "modularmachineryaddons:blocksingularityiteminputbus@3",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "generalized_input_item": [
         "modularmachinery:blockinputbus",
@@ -104,7 +123,12 @@
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "modularmachineryaddons:blocksingularityiteminputbus"
     ],
     "warren_extractor_output": [
         "modularmachinery:blockmeitemoutputbus",
@@ -112,7 +136,8 @@
         "modularmachineryaddons:blocksingularityitemoutputbus@1",
         "modularmachineryaddons:blocksingularityitemoutputbus@2",
         "modularmachineryaddons:blocksingularityitemoutputbus@3",
-        "mmceaddition:me_async_item_output_bus"
+        "mmceaddition:me_async_item_output_bus",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "generalized_output_will": [
         "modularmachinery:blockwillprovideroutput",
@@ -124,7 +149,8 @@
         "modularmachineryaddons:blocksingularityitemoutputbus@1",
         "modularmachineryaddons:blocksingularityitemoutputbus@2",
         "modularmachineryaddons:blocksingularityitemoutputbus@3",
-        "mmceaddition:me_async_item_output_bus"
+        "mmceaddition:me_async_item_output_bus",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "generalized_output_item": [
         "modularmachinery:blockoutputbus",
@@ -134,7 +160,10 @@
         "mmceaddition:me_async_item_output_bus",
         "mmceaddition:me_output_assembly",
         "mmceaddition:virtual_parallel_hatch",
-        "modularmachinery:blockparallelcontroller"
+        "modularmachinery:blockparallelcontroller",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "infusinator_output_item": [
         "modularmachinery:blockoutputbus",
@@ -143,20 +172,25 @@
         "modularmachineryaddons:blocksingularityitemoutputbus@1",
         "modularmachineryaddons:blocksingularityitemoutputbus@2",
         "modularmachineryaddons:blocksingularityitemoutputbus@3",
-        "mmceaddition:me_async_item_output_bus"
+        "mmceaddition:me_async_item_output_bus",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "arkencrusher_output_item": [
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockmeitemoutputbus",
         "modularmachineryaddons:blocksingularityitemoutputbus",
-        "mmceaddition:me_async_item_output_bus"
+        "mmceaddition:me_async_item_output_bus",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "generalized_output_fluid": [
         "modularmachinery:blockfluidoutputhatch",
         "mmceaddition:me_async_fluid_output_hatch",
         "mmceaddition:me_output_assembly",
         "modularmachinery:blockmefluidoutputbus",
-        "modularmachinery:blockparallelcontroller"
+        "modularmachinery:blockparallelcontroller",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "generalized_input_fluid": [
         "modularmachinery:blockfluidinputhatch",
@@ -165,7 +199,10 @@
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "excavation_matrix_hatches": [
         "modularmachinery:blockfluidinputhatch",
@@ -181,7 +218,12 @@
         "modularmachineryaddons:blocksingularityiteminputbus@0",
         "mmceaddition:me_pattern_assembly",
         "mmceaddition:virtual_parallel_hatch",
-        "modularmachinery:blockparallelcontroller"
+        "modularmachinery:blockparallelcontroller",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "infinity_furnace_hatches": [
         "modularmachinery:blockfluidinputhatch",
@@ -201,7 +243,12 @@
         "mmceaddition:me_output_assembly",
         "mmceaddition:me_pattern_assembly",
         "mmceaddition:virtual_parallel_hatch",
-        "modularmachinery:blockparallelcontroller"
+        "modularmachinery:blockparallelcontroller",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "generalized_rainbow_leaves": [
         "twilightforest:twilight_leaves@7",
@@ -211,7 +258,8 @@
     "berserker_forge_input": [
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockinputbus@0",
-        "modularmachineryaddons:blocksingularityiteminputbus@0"
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "divine_combiner_io": [
         "aoa3:dark_bricks",
@@ -230,7 +278,12 @@
         "mmceaddition:me_pattern_assembly",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "mmceaddition:me_async_item_output_bus"
+        "mmceaddition:me_async_item_output_bus",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "excavation_reactor_input": [
         "modularmachinery:blockinputbus",
@@ -241,7 +294,12 @@
         "modularmachineryaddons:blocksingularityiteminputbus@0",
         "mmceaddition:me_async_item_output_bus",
         "mmceaddition:me_output_assembly",
-        "modularmachinery:blockmeitemoutputbus"
+        "modularmachinery:blockmeitemoutputbus",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "plasmatic_condenser_io": [
         "modularmachinery:blockoutputbus",
@@ -252,7 +310,11 @@
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "anyfloatingflower": [
         "botania:miniisland",
@@ -271,7 +333,12 @@
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "both_item_fluid_output": [
         "modularmachinery:blockfluidoutputhatch",
@@ -283,7 +350,8 @@
         "mmceaddition:me_async_fluid_output_hatch",
         "mmceaddition:me_async_item_output_bus",
         "mmceaddition:me_output_assembly",
-        "modularmachinery:blockfluidinputhatch"
+        "modularmachinery:blockfluidinputhatch",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "creation_altar_output": [
         "modularmachinery:blockfluidoutputhatch",
@@ -294,13 +362,15 @@
         "modularmachineryaddons:blocksingularityitemoutputbus",
         "mmceaddition:me_async_fluid_output_hatch",
         "mmceaddition:me_output_assembly",
-        "mmceaddition:me_async_item_output_bus"
+        "mmceaddition:me_async_item_output_bus",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "token_totem_output": [
         "modularmachinery:blockfluidoutputhatch",
         "modularmachinery:blockenergyoutputhatch",
         "modularmachinery:blockmefluidoutputbus",
-        "mmceaddition:me_async_fluid_output_hatch"
+        "mmceaddition:me_async_fluid_output_hatch",
+        "mmce_complement:me_connection_share_hatch"
     ],
     "thaumic_replicator_hatches": [
         "modularmachinery:blockfluidoutputhatch",
@@ -314,7 +384,9 @@
         "modularmachineryaddons:blockmeessentiainputbus",
         "mmceaddition:me_async_item_output_bus",
         "mmceaddition:me_output_assembly",
-        "mmceaddition:me_async_fluid_output_hatch"
+        "mmceaddition:me_async_fluid_output_hatch",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "mythic_processor_item_input": [
         "modularmachinery:blockinputbus",
@@ -326,7 +398,11 @@
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "terrestrial_cauldron_item_input": [
         "modularmachinery:blockinputbus",
@@ -336,7 +412,11 @@
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "dragonfire_item_input": [
         "modularmachinery:blockinputbus",
@@ -349,12 +429,19 @@
         "modularmachinery:blockmepatternprovider",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "treeoflife_item_input": [
         "modularmachinery:blockinputbus",
         "mmceaddition:input_assembly",
-        "modularmachineryaddons:blocksingularityiteminputbus"
+        "modularmachineryaddons:blocksingularityiteminputbus",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus"
     ],
     "apiary_decoration_soil": [
         "minecraft:grass",
@@ -535,7 +622,12 @@
         "modularmachinery:blockmepatternprovider",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage",
-        "modularmachinery:blockfluidinputhatch"
+        "modularmachinery:blockfluidinputhatch",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ],
     "contenttweaker:mythic_coil_t1@0": [
         "contenttweaker:mythic_coil_t1@0",
@@ -560,6 +652,8 @@
     "patterninputs": [
         "mmceaddition:me_pattern_assembly",
         "modularmachinery:blockmepatternprovider",
-        "modularmachinery:blockmepatternmirrorimage"
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii"
     ]
 }
