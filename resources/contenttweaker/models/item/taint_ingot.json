@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "contenttweaker:items/taint_ingot"
+    "layer0": "contenttweaker:items/SKTweaks/taint_ingot"
   }
 }
