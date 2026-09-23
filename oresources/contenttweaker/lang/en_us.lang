@@ -4347,7 +4347,14 @@ tile.contenttweaker.core_cosmos.name=§dCosmos Core
 tile.contenttweaker.core_dark.name=§5Dark Core
 tile.contenttweaker.core_pure.name=§fPure Core
 tile.contenttweaker.core_eternal.name=§6§lEternal Core
-
+tile.contenttweaker.zero_point_spatial_core.name=§bZero Point Spatial Core
+tile.contenttweaker.one_power_resonate_core.name=§aOne Power Resonate Core
+tile.contenttweaker.binding_resonate_core.name=§5Binding Resonate Core
+tile.contenttweaker.leashed_star_casing.name=§6Leashed Star Casing
+tile.contenttweaker.leashed_star_conduit.name=§6Leashed Star Conduit
+tile.contenttweaker.dark_matter_frame.name=§5Dark Matter Frame
+tile.contenttweaker.balanced_machine_conduit.name=§fBalanced Machine Conduit
+tile.contenttweaker.balanced_machine_frame.name=§fBalanced Machine Frame
 
 item.contenttweaker.summon_shigure_kirara.name=Callstone Of Shigure Kirara
 item.contenttweaker.summon_IridumSky.name=Callstone Of IridumSky
@@ -4384,3 +4391,20 @@ item.contenttweaker.ingot_of_harmony.name=§6One Power Ingot of Harmony
 item.contenttweaker.destined_ingot.name=§6§lDestined Ingot
 item.contenttweaker.aerial_automaton.name=§bAerial Automaton
 item.contenttweaker.triune_homunculus.name=§6Triune Homunculus
+item.contenttweaker.negentropy_dimensional_fractal_minus_first_order.name=§9Negentropy Dimensional Fractal §r- §6§lMinus One
+item.contenttweaker.negentropy_dimensional_fractal_minus_second_order.name=§9Negentropy Dimensional Fractal §r- §6§lMinus Two
+item.contenttweaker.negentropy_dimensional_fractal_minus_third_order.name=§9Negentropy Dimensional Fractal §r- §6§lMinus Three
+item.contenttweaker.negentropy_dimensional_fractal_minus_fourth_order.name=§9Negentropy Dimensional Fractal §r- §6§lMinus Four
+item.contenttweaker.negentropy_dimensional_fractal_minus_fifth_order.name=§9Negentropy Dimensional Fractal §r- §6§lMinus Five
+item.contenttweaker.zero_point_fractal.name=§7§lZero Point Fractal
+item.contenttweaker.paradoxical_star.name=§dParadoxical Star
+item.contenttweaker.eternal_piece.name=§6Eternal Piece
+item.contenttweaker.hyperdense_matter.name=§4§lHyperdense Matter
+item.contenttweaker.everfree_steel_ingot.name=§5Everfree Stell Ingot
+item.contenttweaker.fractal_containment_vessel.name=§dFractal Containment Vessel
+item.contenttweaker.solid_time.name=§eSolid Time
+
+fluid.stable_time=§cStable Time
+fluid.stable_space=§cStable Space
+fluid.asended_adenosinetriphosphate=§3Asended Adenosinetriphosphate
+fluid.pure_dream_energy=§9Pure Dream Energy
