@@ -311,7 +311,8 @@ function buildMinerRecipe(
     val builder = RecipeBuilder.newBuilder(recipeName, machineName, processTime);
     builder.addEnergyPerTickInput(energyPerTick);
     builder.addItemInput(iteminput).setChance(0.0);
-    builder.addItemOutput(placeholder);
+    // builder.addItemOutput(placeholder);
+    builder.addItemOutput(<minecraft:stone>);
     
     // 预检查：加权随机选择，只存储 ID 字符串
     builder.addPreCheckHandler(function(event as RecipeCheckEvent) {
@@ -436,6 +437,7 @@ function buildMinerRecipe(
             return stack*(outputMultiplier); // 可以根据需要调整数量
         }
     });
+    builder.setPreViewNBT({ench: [{lvl: 1 as short, id: 51 as short}], HideFlags: 1, display: {Lore: ["§e根据放入的虚空矿机来进行不同模式的采矿"], Name: "§b虚空采掘"}} as IData);
     builder.setMaxThreads(1); // 设置最大线程数为 1，确保线程安全
     builder.setThreadName("深度采掘核心");
     builder.build();
@@ -541,7 +543,7 @@ MMEvents.onControllerGUIRender(MACHINE, function(event as ControllerGUIRenderEve
         extra += "§a未放置有效透镜，无额外权重加成";
     }
     // extra += "§a速度升级数量：§b" + Upgrade_Speed_Amount + "/16";
-    extra += "§a时运升级数量：§b" + Upgrade_Fortune_Amount + "/64";
+    extra += "§a时运升级数量：§b" + Upgrade_Fortune_Amount + "/16";
     if(outputMultiplier==0){
         outputMultiplier=1;
     }
@@ -554,56 +556,14 @@ MMEvents.onControllerGUIRender(MACHINE, function(event as ControllerGUIRenderEve
     extra += "§a当前产出倍率：§b" + (outputMultiplier) + " x";
     event.extraInfo = extra;
 });
-// ===================== GUI 显示 =====================
 
-// val fortuneUpgradeRecipe = RecipeBuilder.newBuilder("upgrade_for_deep_miner_fortune", MACHINE, 1);
-// fortuneUpgradeRecipe
-//     .addItemInput(<environmentaltech:modifier_luck>)   // 消耗时运升级物品
-//     .addPreCheckHandler(function(event as RecipeCheckEvent) {
-//         val ctrl = event.controller;
-//         val data = ctrl.customData;
-//         if (isNull(data)) {
-//             // 如果没有 customData，则升级数为 0，允许执行
-//             return;
-//         }
-//         val fortune = data.memberGet("Upgrade_Fortune") as int;
-//         if (isNull(fortune)) {
-//             // 没有该键，默认为 0
-//             return;
-//         }
-//         if (fortune >= 64) {
-//             event.setFailed("§c时运升级已满！");
-//         }
-//     })
-//     .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
-//         val ctrl = event.controller;
-//         var data = ctrl.customData;
-//         if (isNull(data)) {
-//             data = {} as IData;
-//         }
-//         // 读取当前时运升级数，不存在则默认为 0
-//         var currentFortune = (isNull(data.memberGet("Upgrade_Fortune")) ? 0 : data.memberGet("Upgrade_Fortune")) as int;
-//         var currentMultiplier = (isNull(data.memberGet("outputMultiplier")) ? 0 : data.memberGet("outputMultiplier")) as int;
-//         // 增加 1
-//         val newFortune = currentFortune + 1;
-//         val newMultiplier = currentMultiplier + 2;
-//         // 合并更新数据
-//         data = data + { "Upgrade_Fortune": newFortune };
-//         data = data + { "outputMultiplier": newMultiplier};
-        
-//         ctrl.customData = data;
-//     })
-//     .addRecipeTooltip("§a消耗一个§6幸运强化部件§a", "增加 §61§a 级时运升级", "最大 §664§a 级")
-//     .setThreadName("升级核心")   // 可选，指定线程名
-//     .build();
-// 上面是没用全局函数的
 val fortuneUpgradeRecipe = RecipeBuilder.newBuilder("upgrade_for_deep_miner_fortune", MACHINE, 1);
 fortuneUpgradeRecipe
     .addItemInput(<environmentaltech:modifier_luck>)
     .addPreCheckHandler(function(event as RecipeCheckEvent) {
         // 读取当前时运升级数，默认 0，无需判空
         val fortune = Get_CustomData_int(event.controller.customData, "Upgrade_Fortune", 0);
-        if (fortune >= 64) {
+        if (fortune >= 16) {
             event.setFailed("§c时运升级已满！");
         }
     })
@@ -626,44 +586,10 @@ fortuneUpgradeRecipe
         } as IData;
         ctrl.customData = data;
     })
-    .addRecipeTooltip("§a消耗一个§6幸运强化部件§a", "增加 §61§a 级时运升级", "最大 §664§a 级")
+    .addRecipeTooltip("§a消耗一个§6幸运强化部件§a", "增加 §61§a 级时运升级", "最大 §616§a 级")
     .setThreadName("升级核心")
     .build();
-// val speedUpgradeRecipe = RecipeBuilder.newBuilder("upgrade_for_deep_miner_speed", MACHINE, 1);
-// speedUpgradeRecipe
-//     .addItemInput(<environmentaltech:modifier_speed>)
-//     .addPreCheckHandler(function(event as RecipeCheckEvent) {
-//         val ctrl = event.controller;
-//         val data = ctrl.customData;
-//         if (isNull(data)) return;
-//         val speed = data.memberGet("Upgrade_Speed") as int;
-//         if (!isNull(speed) && speed >= 16) {
-//             event.setFailed("§c速度升级已满！");
-//         }
-//     })
-//     .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
-//         val ctrl = event.controller;
-//         var data = ctrl.customData;
-//         if (isNull(data)) data = {} as IData;
 
-//         var currentSpeed = (isNull(data.memberGet("Upgrade_Speed")) ? 0 : data.memberGet("Upgrade_Speed")) as int;
-//         val newSpeed = currentSpeed + 1;
-
-//         // 计算新速度因子：使用 CTUtils 的 Math.pow
-        
-//         val perLevelFactor = pow(0.05, 1.0 / 16.0) as float;
-//         var currentFactor = (isNull(data.memberGet("SpeedFactor")) ? 1.0 : data.memberGet("SpeedFactor")) as float;
-//         val newFactor = currentFactor * perLevelFactor;
-
-//         data = data + {
-//             "Upgrade_Speed": newSpeed,
-//             "SpeedFactor": newFactor
-//         };
-//         ctrl.customData = data;
-//     })
-//     .addRecipeTooltip("§a消耗一个§6速度升级模块§a", "增加 §61§a 级速度升级", "最大 §616§a 级")
-//     .setThreadName("升级核心")
-//     .build();
 <divinerpg:mortum_log>.addTooltip(format.gold("特殊深度虚空采掘透镜：原木"));
 <botania:pylon:1>.addTooltip(format.gold("特殊深度虚空采掘透镜：树苗"));
 <botania:pylon>.addTooltip(format.gold("特殊深度虚空采掘透镜：树叶"));

@@ -71,7 +71,7 @@ HDC.addTooltip(format.green("多方块结构："));
 HDC.addTooltip(format.green("   仓储中枢 ME 接口 × 1"));
 HDC.addTooltip(format.green("   仓储中枢裸奇点核心 × 5"));
 HDC.addTooltip(format.green("   仓储中枢度规稳定锚 × 14"));
-mods.extendedcrafting.TableCrafting.addShaped(4, HDC, [
+mods.extendedcrafting.TableCrafting.addShaped(HDC, [
 	[null, null, null, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, null, null, null], 
 	[null, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, null], 
 	[null, <contenttweaker:radiant_meatballium_reinforced_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <dankstorage:dank_7>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, null], 
@@ -82,14 +82,14 @@ mods.extendedcrafting.TableCrafting.addShaped(4, HDC, [
 	[null, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, null], 
 	[null, null, null, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, <contenttweaker:radiant_meatballium_reinforced_casing>, null, null, null]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(2, HDC_Casing, [
+mods.extendedcrafting.TableCrafting.addShaped(HDC_Casing, [
 	[<twilightforest:castle_brick>, <twilightforest:castle_brick>, <appliedenergistics2:quartz_glass>, <twilightforest:castle_brick>, <twilightforest:castle_brick>], 
 	[<twilightforest:castle_brick>, <appliedenergistics2:quartz_glass>, <techreborn:lightning_rod>, <appliedenergistics2:quartz_glass>, <twilightforest:castle_brick>], 
 	[<appliedenergistics2:quartz_glass>, <cells:singularity_processor:2>, <appliedenergistics2:material:47>, <cells:singularity_processor:1>, <appliedenergistics2:quartz_glass>], 
 	[<twilightforest:castle_brick>, <appliedenergistics2:quartz_glass>, <cells:singularity_processor>, <appliedenergistics2:quartz_glass>, <twilightforest:castle_brick>], 
 	[<twilightforest:castle_brick>, <twilightforest:castle_brick>, <appliedenergistics2:quartz_glass>, <twilightforest:castle_brick>, <twilightforest:castle_brick>]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(3, HDC_Singularity, [
+mods.extendedcrafting.TableCrafting.addShaped(HDC_Singularity, [
 	[null, null, <nuclearcraft:fission_block>, <nuclearcraft:fission_block>, <nuclearcraft:fission_block>, null, null], 
 	[null, <nuclearcraft:fission_block>, <contenttweaker:dense_alchemical_shielding>, <contenttweaker:dense_alchemical_shielding>, <contenttweaker:dense_alchemical_shielding>, <nuclearcraft:fission_block>, null], 
 	[<nuclearcraft:fission_block>, <contenttweaker:dense_alchemical_shielding>, <contenttweaker:sanitized_dark_matter>, <contenttweaker:sanitized_dark_matter>, <contenttweaker:sanitized_dark_matter>, <contenttweaker:dense_alchemical_shielding>, <nuclearcraft:fission_block>], 
@@ -98,7 +98,7 @@ mods.extendedcrafting.TableCrafting.addShaped(3, HDC_Singularity, [
 	[null, <nuclearcraft:fission_block>, <contenttweaker:dense_alchemical_shielding>, <contenttweaker:dense_alchemical_shielding>, <contenttweaker:dense_alchemical_shielding>, <nuclearcraft:fission_block>, null], 
 	[null, null, <nuclearcraft:fission_block>, <nuclearcraft:fission_block>, <nuclearcraft:fission_block>, null, null]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(2, HDC_Interface, [
+mods.extendedcrafting.TableCrafting.addShaped(HDC_Interface, [
 	[null, <appliedenergistics2:quartz_vibrant_glass>, <modularmachinery:blockmeiteminputbus>, <appliedenergistics2:quartz_vibrant_glass>, null], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quartz_vibrant_glass>], 
@@ -116,7 +116,7 @@ SCC.addTooltip(format.green("   恒定张量场外壳 × 144"));
 SCC.addTooltip(format.green("   因果锚定核心 × 343"));
 SCC.addTooltip(format.green("   恒定旋量场外壳 × 366"));
 SCC.addTooltip(format.green("   超因果合成接口 × 1"));
-mods.extendedcrafting.TableCrafting.addShaped(4, SCC, [
+mods.extendedcrafting.TableCrafting.addShaped(SCC, [
 	[null, null, null, <draconicevolution:particle_generator:2>, SCC_CAC, <draconicevolution:particle_generator:2>, null, null, null], 
 	[null, null, <appliedenergistics2:spatial_pylon>, <appliedenergistics2:crafting_storage_64k>, <contenttweaker:eden_core>, <appliedenergistics2:crafting_storage_64k>, <appliedenergistics2:spatial_pylon>, null, null], 
 	[null, <appliedenergistics2:spatial_pylon>, <appliedenergistics2:crafting_storage_64k>, <vajra:magnetron>, <vajra:magnetron>, <vajra:magnetron>, <appliedenergistics2:crafting_storage_64k>, <appliedenergistics2:spatial_pylon>, null], 
@@ -127,7 +127,7 @@ mods.extendedcrafting.TableCrafting.addShaped(4, SCC, [
 	[null, null, <appliedenergistics2:spatial_pylon>, <appliedenergistics2:crafting_storage_64k>, <contenttweaker:eden_core>, <appliedenergistics2:crafting_storage_64k>, <appliedenergistics2:spatial_pylon>, null, null], 
 	[null, null, null, <draconicevolution:particle_generator:2>, SCC_CAC, <draconicevolution:particle_generator:2>, null, null, null]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(3, SCC_CAC*32, [
+mods.extendedcrafting.TableCrafting.addShaped(SCC_CAC*32, [
 	[null, null, SCC_Casing_Spinor, SCC_Casing_Spinor, SCC_Casing_Spinor, null, <contenttweaker:stellar_alloy_shaft>], 
 	[null, SCC_Casing_Spinor, <contenttweaker:meatballium_ingot>, <ae2enhanced:hyperdimensional_singularity_core>, <contenttweaker:meatballium_ingot>, SCC_Casing_Spinor, null], 
 	[SCC_Casing_Spinor, <contenttweaker:meatballium_ingot>, <ae2enhanced:hyperdimensional_singularity_core>, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:hyperdimensional_singularity_core>, <contenttweaker:meatballium_ingot>, SCC_Casing_Tensor], 
@@ -136,14 +136,14 @@ mods.extendedcrafting.TableCrafting.addShaped(3, SCC_CAC*32, [
 	[null, SCC_Casing_Tensor, <contenttweaker:meatballium_ingot>, <ae2enhanced:hyperdimensional_singularity_core>, <contenttweaker:meatballium_ingot>, SCC_Casing_Tensor, null], 
 	[<contenttweaker:stellar_alloy_shaft>, null, SCC_Casing_Tensor, SCC_Casing_Tensor, SCC_Casing_Tensor, null, null]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(2, SCC_Interface, [
+mods.extendedcrafting.TableCrafting.addShaped(SCC_Interface, [
 	[null, <ae2enhanced:causal_anchor_core>, <modularmachinery:blockmeiteminputbus>, SCC_CAC, null], 
 	[<ae2enhanced:causal_anchor_core>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <ae2enhanced:causal_anchor_core>], 
 	[<ae2enhanced:causal_anchor_core>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_ring>, <ae2enhanced:causal_anchor_core>], 
 	[<ae2enhanced:causal_anchor_core>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <ae2enhanced:causal_anchor_core>], 
 	[null, <ae2enhanced:causal_anchor_core>, <modularmachinery:blockmeitemoutputbus>, <ae2enhanced:causal_anchor_core>, null]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(3, SCC_Casing_Tensor*8,  [
+mods.extendedcrafting.TableCrafting.addShaped(SCC_Casing_Tensor*8,  [
 	[<ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>], 
 	[<ore:turfMoon>, <divinerpg:arcanium_block>, <ore:ingotSednanite>, <ore:ingotSednanite>, <ore:ingotSednanite>, <divinerpg:arcanium_block>, <ore:turfMoon>], 
 	[<ore:turfMoon>, <ore:ingotSednanite>, <fluxnetworks:fluxcore>, <fluxnetworks:fluxcore>, <fluxnetworks:fluxcore>, <ore:ingotSednanite>, <ore:turfMoon>], 
@@ -152,7 +152,7 @@ mods.extendedcrafting.TableCrafting.addShaped(3, SCC_Casing_Tensor*8,  [
 	[<ore:turfMoon>, <divinerpg:arcanium_block>, <ore:ingotSednanite>, <ore:ingotSednanite>, <ore:ingotSednanite>, <divinerpg:arcanium_block>, <ore:turfMoon>], 
 	[<ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(3, SCC_Casing_Spinor*8,  [
+mods.extendedcrafting.TableCrafting.addShaped(SCC_Casing_Spinor*8,  [
 	[<ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>], 
 	[<ore:turfMoon>, <ore:blockFiery>, <ore:ingotSednanite>, <ore:ingotSednanite>, <ore:ingotSednanite>, <ore:blockFiery>, <ore:turfMoon>], 
 	[<ore:turfMoon>, <ore:ingotSednanite>, <fluxnetworks:fluxcore>, <fluxnetworks:fluxcore>, <fluxnetworks:fluxcore>, <ore:ingotSednanite>, <ore:turfMoon>], 
@@ -173,35 +173,35 @@ ASC.addTooltip(format.green("   装配枢纽 ME 接口 × 3"));
 ASC.addTooltip(format.green("   装配枢纽外壳 × 180"));
 ASC.addTooltip(format.green("   装配枢纽内壁 × 128"));
 ASC.addTooltip(format.green("   装配枢纽稳定器 × 32"));
-mods.extendedcrafting.TableCrafting.addShaped(2, ASC, [
+mods.extendedcrafting.TableCrafting.addShaped(ASC, [
 	[ASC_Casing, <appliedenergistics2:molecular_assembler>, ASC_Stabilizer, <appliedenergistics2:molecular_assembler>, ASC_Casing], 
 	[<appliedenergistics2:molecular_assembler>, <appliedenergistics2:molecular_assembler>, ASC_Inner_Wall, <appliedenergistics2:molecular_assembler>, <appliedenergistics2:molecular_assembler>], 
 	[ASC_Stabilizer, ASC_Inner_Wall,<appliedenergistics2:material:47>, ASC_Inner_Wall, ASC_Stabilizer], 
 	[<appliedenergistics2:molecular_assembler>, <appliedenergistics2:molecular_assembler>, ASC_Inner_Wall, <appliedenergistics2:molecular_assembler>, <appliedenergistics2:molecular_assembler>], 
 	[ASC_Casing, <appliedenergistics2:molecular_assembler>, ASC_Stabilizer, <appliedenergistics2:molecular_assembler>, ASC_Casing]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(2, ASC_Stabilizer*8, [
+mods.extendedcrafting.TableCrafting.addShaped(ASC_Stabilizer*8, [
 	[null, <appliedenergistics2:quartz_vibrant_glass>, ASC_Casing, <appliedenergistics2:quartz_vibrant_glass>, null], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:plateAdvanced>, ASC_Inner_Wall, <ore:plateAdvanced>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[ASC_Casing, ASC_Inner_Wall, <appliedenergistics2:material:47>, ASC_Inner_Wall, ASC_Casing], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:plateAdvanced>, ASC_Inner_Wall, <ore:plateAdvanced>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[null, <appliedenergistics2:quartz_vibrant_glass>, ASC_Casing, <appliedenergistics2:quartz_vibrant_glass>, null]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(2, ASC_Inner_Wall*4, [
+mods.extendedcrafting.TableCrafting.addShaped(ASC_Inner_Wall*4, [
 	[<appliedenergistics2:quartz_vibrant_glass>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<extendedcrafting:material:2>, <threng:material:2>, <threng:material:2>, <threng:material:2>, <extendedcrafting:material:2>], 
 	[<extendedcrafting:material:2>, <threng:material:2>, <threng:material:2>, <threng:material:2>, <extendedcrafting:material:2>], 
 	[<extendedcrafting:material:2>, <threng:material:2>, <threng:material:2>, <threng:material:2>, <extendedcrafting:material:2>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <extendedcrafting:material:2>, <appliedenergistics2:quartz_vibrant_glass>]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(2, ASC_Casing*8, [
+mods.extendedcrafting.TableCrafting.addShaped(ASC_Casing*8, [
 	[<ore:plateBasic>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, <ore:plateBasic>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <techreborn:machine_casing:2>, <techreborn:machine_casing:2>, <techreborn:machine_casing:2>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <techreborn:machine_casing:2>, <ore:plateAdvanced>, <techreborn:machine_casing:2>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <techreborn:machine_casing:2>, <techreborn:machine_casing:2>, <techreborn:machine_casing:2>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<ore:plateBasic>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, <ore:plateBasic>]
 ]);
-mods.extendedcrafting.TableCrafting.addShaped(2, ASC_Interface, [
+mods.extendedcrafting.TableCrafting.addShaped(ASC_Interface, [
 	[null, <ae2enhanced:assembly_casing>, <modularmachinery:blockmeiteminputbus>, <ae2enhanced:assembly_casing>, null], 
 	[<ae2enhanced:assembly_casing>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <ae2enhanced:assembly_casing>], 
 	[<ae2enhanced:assembly_casing>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_ring>, <ae2enhanced:assembly_casing>], 
@@ -215,7 +215,7 @@ BlackHole.addRecipe(<ae2enhanced:upgrade_card:3>, [<appliedenergistics2:material
 // 能量优化模块
 BlackHole.addRecipe(<ae2enhanced:upgrade_card:2>, [<appliedenergistics2:material:47>, <draconicevolution:draconic_ingot>]);
 // 时空膨胀模块
-mods.extendedcrafting.TableCrafting.addShaped(1, <ae2enhanced:upgrade_card:1>, [
+mods.extendedcrafting.TableCrafting.addShaped(<ae2enhanced:upgrade_card:1>, [
 	[<contenttweaker:tainted_sentient_meatball>, <appliedenergistics2:material:47>, <contenttweaker:tainted_sentient_meatball>], 
 	[<contenttweaker:wrought_iron_plate>, <contenttweaker:innerved_sky_stone>, <contenttweaker:wrought_iron_plate>], 
 	[<contenttweaker:tainted_sentient_meatball>, <contenttweaker:wrought_iron_plate>, <contenttweaker:tainted_sentient_meatball>]
@@ -230,7 +230,7 @@ mods.extendedcrafting.TableCrafting.addShaped(1, <ae2enhanced:upgrade_card:1>, [
 // 	[null, null, <ore:nuggetNetherStar>, null, null]
 // ]);
 // 智能样板接口
-mods.extendedcrafting.TableCrafting.addShaped(2, <ae2enhanced:smart_pattern_interface>, [
+mods.extendedcrafting.TableCrafting.addShaped(<ae2enhanced:smart_pattern_interface>, [
 	[null, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:quartz_vibrant_glass>, null], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:nuggetNetherStar>, <ore:nuggetNetherStar>, <ore:nuggetNetherStar>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <ore:nuggetNetherStar>, <modularmachinery:blockmepatternprovider>, <ore:nuggetNetherStar>, <appliedenergistics2:quartz_vibrant_glass>], 
@@ -244,7 +244,7 @@ recipes.addShaped("ae2e_RF_node", <ae2enhanced:network_access_node>, [
 	[<ore:ingotSednanite>, <appliedenergistics2:energy_acceptor>, <ore:ingotSednanite>]
 ]);
 // 区块供电节点
-mods.extendedcrafting.TableCrafting.addShaped(4, <ae2enhanced:chunk_power_node>, [
+mods.extendedcrafting.TableCrafting.addShaped(<ae2enhanced:chunk_power_node>, [
 	[null, null, null, null, <contenttweaker:blue_matter>, null, null, null, null], 
 	[null, null, null, null, <contenttweaker:blue_matter>, null, null, null, null], 
 	[null, null, null, null, <minecraft:beacon>, null, null, null, null], 
@@ -587,4 +587,15 @@ Recipe_Builder_SK(
     20, // 1 秒
     800000,
     0
+);
+// 爵士元素锭
+BlackHole.addRecipe(
+	<contenttweaker:barathosynium_ingot>*8,
+	[
+		<aoa3:blazium_block>*1,
+		<aoa3:varsium_block>*1,
+		<aoa3:baronyte_block>*1,
+		<tconstruct:shard>.withTag({Material: "barathosynium"})*1,
+		<contenttweaker:primordial_star>*1
+	]
 );

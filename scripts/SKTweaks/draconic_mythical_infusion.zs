@@ -35,17 +35,17 @@ MachineModifier.setInternalParallelism("draconic_mythical_infusion", 64);
 function Draconic_Fusion_Recipe_Builder(
     recipeName as string,
 
-    inputs as crafttweaker.item.IIngredient[],
-    fluidInputs as crafttweaker.liquid.ILiquidStack[],
+    inputs as IIngredient[],
+    fluidInputs as ILiquidStack[],
 
-    outputs as crafttweaker.item.IIngredient[],
-    fluidOutputs as crafttweaker.liquid.ILiquidStack[],
+    outputs as IIngredient[],
+    fluidOutputs as ILiquidStack[],
 
     energyinput as long,
     timeinput as int
 )as void{
     val Machine_Name = "draconic_mythical_infusion";
-    val Time_Consume = (timeinput == 0) ? 500 : timeinput;
+    val Time_Consume = (timeinput == 0) ? 100 : timeinput;
     val Energy_Per_Tick = energyinput/Time_Consume;
     Recipe_Builder_SK(
         recipeName,
@@ -150,7 +150,8 @@ var Recipe_Inputs = [
     [<contenttweaker:sextuple_compressed_alchemical_condensate>*1, <draconicevolution:draconic_block>*7, <ore:ingotBloodInfusedIron>*1],
     [<draconicevolution:draconic_ingot>*4,<draconicevolution:chaotic_core>,<draconicevolution:reactor_part:3>,<draconicevolution:reactor_part:4>,<draconicevolution:draconic_energy_core>],
     [<aoa3:rune_shrine>*1,<contenttweaker:cuendillar_plate>*8,<contenttweaker:one_power_unleashed_emerald>*2],
-    [<contenttweaker:catalyst_of_universal_balance>,<contenttweaker:quasar_charged_core_of_definition>*2,<contenttweaker:threefold_stellar_ingot>*2,<contenttweaker:self_confined_neutrino_plasma>*4]
+    [<contenttweaker:catalyst_of_universal_balance>,<contenttweaker:quasar_charged_core_of_definition>*2,<contenttweaker:threefold_stellar_ingot>*2,<contenttweaker:self_confined_neutrino_plasma>*4],
+    [<contenttweaker:matter_inflorescence>*8,<ore:blockGhoulish>*8,<ore:blockGhastly>*8,<extrabotany:material:6>*4,<contenttweaker:impetus_crystal>*1]
 ];
 var Recipe_Outputs = [
     [<draconicevolution:crafting_injector:2>*1],
@@ -242,7 +243,8 @@ var Recipe_Outputs = [
     [<contenttweaker:sextuple_compressed_alchemical_innervation>*2],
     [<draconicevolution:reactor_component>*1],
     [<contenttweaker:cuendillar_seal>*4],
-    [<contenttweaker:time_lords_core_of_definition>]
+    [<contenttweaker:time_lords_core_of_definition>],
+    [<contenttweaker:dream_cluster>*256]
 ];
 var Recipe_Energy as long[] = [
     256000 as long,     // 1. 注射器升级 (draconicevolution:crafting_injector,1,2)
@@ -335,6 +337,7 @@ var Recipe_Energy as long[] = [
     128000000 as long,    // 88. 反应堆稳定器
     8000000000 as long,    // 89. cuendillar_seal*4
     8000000000 as long,    // 90. 时间领主定义核心
+    80000000 as long,       // 91.幻梦团簇*256
 
 ];
 // 上三个列表长度一样，下面循环读取时一起读取

@@ -84,7 +84,7 @@ val Recipe_Ore as IIngredient[][IIngredient[]]$orderly = {
     [<ore:oreAstralStarmetal>] : [<astralsorcery:itemcraftingcomponent:1>*8,<minecraft:iron_ingot>*2],
     [<ore:oreOpal>] : [<bewitchment:opal>*8,<thermalfoundation:material:772>*2],
     [<ore:oreSilver>] : [<thermalfoundation:material:130>*8,<thermalfoundation:material:131>*2],
-    [<ore:oreSalt>] : [<bewitchment:salt>*4,<thermalfoundation:material:131>*2],
+    [<ore:oreSalt>] : [<bewitchment:salt>*24,<thermalfoundation:material:131>*2],
     [<ore:oreAmethyst>] : [<biomesoplenty:gem>*8],
     [<ore:oreRuby>] : [<biomesoplenty:gem:1>*8,<techreborn:smalldust:43>*4],
     [<ore:orePeridot>] : [<biomesoplenty:gem:2>*8],
@@ -150,7 +150,16 @@ val Recipe_Ore as IIngredient[][IIngredient[]]$orderly = {
     [<ore:oreMyrmitite>] : [<contenttweaker:material_part:82>*16],
     [<ore:oreOgerite>] : [<contenttweaker:material_part:118>*16],
     [<ore:oreRhenium>] : [<contenttweaker:material_part:76>*16],
-    [<ore:oreGarnet>] : [<bewitchment:garnet>*8]
+    [<ore:oreGarnet>] : [<bewitchment:garnet>*8],
+    [<ore:oreElectrotine>] : [<projectred-core:resource_item:105>*16],
+    [<ore:oreSulfur>] : [<thermalfoundation:material:771>*16],
+    [<ore:oreDivineMolten>] : [<divinerpg:molten_stone>*8],
+    [<ore:oreDivineCorrupted>] : [<divinerpg:corrupted_stone>*8],
+    [<ore:oreDivineShadow>] : [<divinerpg:shadow_stone>*8],
+    [<ore:oreDivineJungle>] : [<divinerpg:jungle_stone>*8],
+    [<ore:oreDivineIce>] : [<divinerpg:ice_stone>*8],
+    [<ore:oreDivineEnder>] : [<divinerpg:ender_stone>*8],
+    [<ore:oreDivineTerran>] : [<divinerpg:terran_stone>*8]
 };
 
 // ======================================GUI显示======================================

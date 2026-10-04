@@ -9,7 +9,7 @@ import crafttweaker.item.IItemStack;
 // 你猜我为什么写这个
 val validCodes as string[] = [
     "我不想努力了",
-    "aeddddd是祝",
+    "aedddd是祝",
     "来点轮椅发电",
     "这是什么",
     "群友手办",

@@ -10,7 +10,7 @@ import mods.modularmachinery.RecipeModifierBuilder;
 import mods.modularmachinery.ActiveMachineRecipe;
 import mods.modularmachinery.RecipeAdapterBuilder;
 import mods.modularmachinery.MachineModifier;
-
+import native.java.math.BigInteger;
 import mods.modularmachinery.MMEvents;
 import mods.modularmachinery.FactoryRecipeThread;
 import mods.modularmachinery.FactoryRecipeTickEvent;
@@ -20,12 +20,16 @@ import mods.modularmachinery.ControllerGUIRenderEvent;
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
+import mods.modularmachinery.MachineController;
+import mods.modularmachinery.RecipeFinishEvent;
 // 神秘时代相关
 import native.com.blamejared.compat.thaumcraft.handlers.ThaumCraft;
 import native.thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.aspect.CTAspectStack;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
+
 // global Get_CustomData_int as function(IData, string, int)int = function(data as IData, key as string, default as int) as int {
 //==========================================================================配方注册函数==========================================================================
 global Recipe_Builder_SK_Chance as function(
@@ -444,9 +448,241 @@ global getOffsetPos as function(IMachineController, int, int, int)IBlockPos = fu
     // 前后偏移
     if (front > 0) result = result.getOffset(facing.opposite, -front);
     else if (front < 0) result = result.getOffset(facing, front);
-
     return result;
 };
-// global getItemFromString as function(string)IItemStack = function(itemName as string) as IItemStack {
-//     return itemUtils.getItem(itemName);
+// ==================================梦核相关=================================
+global formatBigNumber_not_recursive as function(BigInteger) string = function(value as BigInteger) as string {
+    if (isNull(value)) return "0";
+    val zero = BigInteger("0");
+    if (value.compareTo(zero) == 0) return "0";
+
+    var isNeg = value.compareTo(zero) < 0;
+    var v = value;
+    if (isNeg) {
+        v = zero.subtract(value);   // 代替 negate()
+    }
+
+    val thousand = BigInteger.valueOf(1000);
+    val units = ["", "K", "M", "G", "T", "P", "E", "Z", "Y"];
+    var idx = 0;
+    var absVal = v;
+    while (absVal.compareTo(thousand) >= 0 && idx < units.length - 1) {
+        absVal = absVal.divide(thousand);
+        idx = idx + 1;
+    }
+
+    val prefix = isNeg ? "-" : "";
+
+    if (idx == units.length - 1 && absVal.compareTo(thousand) >= 0) {
+        val str = v.toString();
+        val len = str.length;
+        val exponent = len - 1;
+        var mantissa = str.substring(0, 1);
+        if (len > 1) {
+            mantissa = mantissa + "." + str.substring(1, 2);
+        } else {
+            mantissa = mantissa + ".0";
+        }
+        return prefix + mantissa + "E" + exponent;
+    }
+
+    if (idx == 0) {
+        return prefix + absVal.toString();
+    }
+
+    var divisor = BigInteger("1");
+    for i in 0 to (idx - 2) {
+        divisor = divisor.multiply(thousand);
+    }
+    val scaled = v.divide(divisor);
+    val fracPart = scaled.mod(thousand);
+
+    if (fracPart.compareTo(zero) == 0) {
+        return prefix + absVal.toString() + units[idx];
+    }
+    val decimal = fracPart.divide(BigInteger.valueOf(100));
+    return prefix + absVal.toString() + "." + decimal.toString() + units[idx];
+};
+
+// 检查控制器是否存在
+global Check_DE_Core_Exist as function(IMachineController)bool = function(ctrl as IMachineController) as bool {
+    val data = ctrl.customData;
+    if (isNull(data)) return false;
+    val decoreX = data.memberGet("DECore_X");
+    if (isNull(decoreX)) return false;
+    val x = decoreX as int;
+    val y = Get_CustomData_int(data, "DECore_Y", 0);
+    val z = Get_CustomData_int(data, "DECore_Z", 0);
+    val dim = Get_CustomData_int(data, "DECore_Dim", 0);
+    val cworld = IWorld.getFromID(dim);
+    val decoreCtrl = MachineController.getControllerAt(cworld, x, y, z);
+    if (isNull(decoreCtrl)) {
+        val cleared = data - "DECore_X" - "DECore_Y" - "DECore_Z" - "DECore_Dim";
+        ctrl.customData = cleared;
+        return false;
+    }
+    return true;
+};
+
+// 检查控制器能量够不够一次
+global Get_DE_Energy as function(IMachineController)BigInteger = function(ctrl as IMachineController) as BigInteger {
+    val data = ctrl.customData;
+    if (isNull(data)) return  BigInteger("0");
+    val decoreX = Get_CustomData_int(data, "DECore_X", 0);
+    val decoreY = Get_CustomData_int(data, "DECore_Y", 0);
+    val decoreZ = Get_CustomData_int(data, "DECore_Z", 0);
+    val decoreDim = Get_CustomData_int(data, "DECore_Dim", 0);
+    val cworld = IWorld.getFromID(decoreDim);
+    val decoreCtrl = MachineController.getControllerAt(cworld, decoreX, decoreY, decoreZ);
+    if (isNull(decoreCtrl)) return  BigInteger("0");
+    val deData = decoreCtrl.customData;
+    if (isNull(deData)) return  BigInteger("0");
+    val energy = Get_CustomData_string(deData, "energy", "0");
+    return BigInteger(energy);
+};
+
+// global DE_Energy_PreCheck as function(RecipeCheckEvent,BigInteger)bool = function(event as RecipeCheckEvent, EnergyInput as BigInteger) as bool {
+//     val ctrl = event.controller;
+//     if((Check_DE_Core_Exist(ctrl) == false)) {
+//         event.setFailed("未连接梦之能量核心！");
+//         return false;
+//     }
+//     if((Get_DE_Energy(ctrl).compareTo(EnergyInput) < 0)) {
+//         event.setFailed("能量不足！");
+//         return false;
+//     }
+//     return true;
 // };
+
+// 综合检查
+global DE_Energy_PreCheck as function(RecipeCheckEvent, BigInteger) bool = function(event as RecipeCheckEvent, EnergyInput as BigInteger) as bool {
+    val ctrl = event.controller as IMachineController;
+    if (!Check_DE_Core_Exist(ctrl)) {
+        event.setFailed("未连接梦之能量核心！");
+        return false;
+    }
+    if (EnergyInput.compareTo(BigInteger("0")) <= 0) return true;
+
+    val energy = Get_DE_Energy(ctrl);
+    if (energy.compareTo(EnergyInput) < 0) {
+        event.setFailed("能量不足！");
+        return false;
+    }
+
+    val maxPossibleParallel = energy.divide(EnergyInput).longValue();
+
+    val activeRecipe = event.activeRecipe;
+    if (!isNull(activeRecipe)) {
+        var machineParallel = activeRecipe.maxParallelism;
+        if (machineParallel <= 0) machineParallel = 1;
+        var finalParallel = maxPossibleParallel as int;
+        if (finalParallel > machineParallel) finalParallel = machineParallel;
+        activeRecipe.maxParallelism = finalParallel;
+    }
+    // 拿不到 activeRecipe 时，至少保证单次能量够，不阻止配方启动
+
+    return true;
+};
+
+// 梦核能量IO
+global DE_Energy_IO as function(IMachineController,BigInteger)void = function(ctrl as IMachineController,EnergyIO as BigInteger) as void {
+    // 只能在配方完成时调用（一次性）
+    // 不是每tick调用一次
+    val data = ctrl.customData;
+    if (isNull(data)) return;
+    val decoreX = Get_CustomData_int(data, "DECore_X", 0);
+    val decoreY = Get_CustomData_int(data, "DECore_Y", 0);
+    val decoreZ = Get_CustomData_int(data, "DECore_Z", 0);
+    val decoreDim = Get_CustomData_int(data, "DECore_Dim", 0);
+    val cworld = IWorld.getFromID(decoreDim);
+    val decoreCtrl = MachineController.getControllerAt(cworld, decoreX, decoreY, decoreZ);
+    if (isNull(decoreCtrl)) return;
+    val deData = decoreCtrl.customData;
+    if (isNull(deData)) return;
+    val energy = BigInteger(Get_CustomData_string(deData, "energy", "0"));
+    val newEnergy = energy.add(EnergyIO);
+    var newData = deData + ({ "energy": newEnergy.toString() } as IData);
+    decoreCtrl.customData = newData;
+};
+
+// 梦核连接后的配方
+global Recipe_DE_Builder_SK as function(
+    string,
+    string,
+    IIngredient[],
+    ILiquidStack[],
+    IIngredient[],
+    ILiquidStack[],
+    long,
+    BigInteger,
+    BigInteger,
+    string
+) void = function(
+    recipeName as string,
+    machineName as string,
+    inputs as IIngredient[],
+    fluidInputs as ILiquidStack[],
+    outputs as IIngredient[],
+    fluidOutputs as ILiquidStack[],
+    time as long,
+    energyInput as BigInteger,
+    energyOutput as BigInteger,
+    ControllerType as string
+) as void {
+    val builder = RecipeBuilder.newBuilder(recipeName, machineName, time);
+    var Energy_tooltip = "";
+    if (energyInput.compareTo(BigInteger("0"))>0) {
+        Energy_tooltip = "§e需要 RF：§6" + formatBigNumber_not_recursive(energyInput);
+    }
+    if (energyOutput.compareTo(BigInteger("0"))>0) {
+        Energy_tooltip = "§eRF 输出：§6" + formatBigNumber_not_recursive(energyOutput);
+    }
+    builder.setMaxThreads(1);
+    for item in inputs {
+        builder.addItemInput(item);
+    }
+    for fluid in fluidInputs {
+        builder.addFluidInput(fluid);
+    }
+    for item in outputs {
+        builder.addItemOutput(item);
+    }
+    for fluid in fluidOutputs {
+        builder.addFluidOutput(fluid);
+    }
+    builder.addPreCheckHandler(function(event as RecipeCheckEvent) {
+        DE_Energy_PreCheck(event, energyInput);
+    });
+    if(ControllerType == "factory"){
+        builder.addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
+            var parallel = 1;
+            val activeRecipe = event.activeRecipe;
+            if (!isNull(activeRecipe)) {
+                parallel = activeRecipe.parallelism;
+                if (parallel <= 0) parallel = 1;
+            }
+            DE_Energy_IO(
+                event.controller,
+                (energyOutput.subtract(energyInput)).multiply(BigInteger.valueOf(parallel as long))
+            );
+        });
+    }else{
+        builder.addFinishHandler(function(event as RecipeFinishEvent) {
+            var parallel = 1;
+            val activeRecipe = event.activeRecipe;
+            if (!isNull(activeRecipe)) {
+                parallel = activeRecipe.parallelism;
+                if (parallel <= 0) parallel = 1;
+            }
+            DE_Energy_IO(
+                event.controller,
+                (energyOutput.subtract(energyInput)).multiply(BigInteger.valueOf(parallel as long))
+            );
+        });
+    }
+    builder.addRecipeTooltip(
+        "§a梦之§b能量核心§6连接:",
+        Energy_tooltip
+        );
+    builder.build();
+};

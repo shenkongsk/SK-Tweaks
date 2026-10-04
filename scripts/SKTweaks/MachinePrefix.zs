@@ -2,7 +2,7 @@ import mods.modularmachinery.MachineModifier;
 
 MachineModifier.setMachinePrefix("advanced_liquid_conversion_machine", "§6§kp§dNE§6§kp§r");
 MachineModifier.setMachinePrefix("dream_energy_core", "§6§kp§dNE§6§kp§r");
-val MachineName = [
+val MachineName as string[] = [
     "meatballium_crucible",
     "magic_vat",
     "infernal_multi_furnace",
@@ -36,7 +36,10 @@ val MachineName = [
     "mythic_fractal_core_2",
     "mythic_fractal_core_3",
     "mythic_fractal_core_4",
-    "mythic_fractal_core_5"
+    "mythic_fractal_core_5",
+    "infinite_seeker_brain_in_a_vat",
+    "large_fridge",              // 第七章
+    "astral_compressor"          // 第十章
 ];
 for item in MachineName {
     MachineModifier.setMachinePrefix(item, "§6§kp§eSKT§6§kp§r");

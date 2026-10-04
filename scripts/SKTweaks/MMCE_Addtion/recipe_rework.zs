@@ -33,7 +33,7 @@ recipes.addShaped("SK_me_output_assembly",<mmceaddition:me_output_assembly>, [
 	[<modularmachinery:blockcasing:4>, <mmceaddition:me_async_fluid_output_hatch>, <modularmachinery:blockcasing:4>]
 ]);
 // 样板总成
-mods.extendedcrafting.TableCrafting.addShaped(2,<mmceaddition:me_pattern_assembly>, [
+mods.extendedcrafting.TableCrafting.addShaped(<mmceaddition:me_pattern_assembly>, [
 	[null, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, <ae2enhanced:hyperdimensional_casing>, null], 
 	[<ae2enhanced:hyperdimensional_casing>, <mmce_complement:me_pattern_provider_ii>, <modularmachineryaddons:blockdimensionproviderinput>, <mmce_complement:me_pattern_provider_ii>, <ae2enhanced:hyperdimensional_casing>], 
 	[<ae2enhanced:hyperdimensional_casing>, <cells:singularity_processor:1>, <mmceaddition:input_assembly>, <cells:singularity_processor>, <ae2enhanced:hyperdimensional_casing>], 
@@ -47,7 +47,7 @@ recipes.addShaped("SK_virtual_parallel_hatch",<mmceaddition:virtual_parallel_hat
 	[<ore:plateIron>, <appliedenergistics2:creative_energy_cell>, <ore:plateIron>]
 ]);
 // 输入总成
-mods.extendedcrafting.TableCrafting.addShaped(2, <mmceaddition:input_assembly>, [
+mods.extendedcrafting.TableCrafting.addShaped(<mmceaddition:input_assembly>, [
 	[null, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, <ae2enhanced:assembly_stabilizer>, null], 
 	[<ae2enhanced:assembly_stabilizer>, <cells:singularity_processor:2>, <cells:singularity_processor:1>, <cells:singularity_processor>, <ae2enhanced:assembly_stabilizer>], 
 	[<ae2enhanced:assembly_stabilizer>, <modularmachinery:blockmeiteminputbus>, <cells:hyper_density_component:2>, <modularmachinery:blockmefluidinputbus>, <ae2enhanced:assembly_stabilizer>], 

@@ -36,4 +36,5 @@ test_recipe_multi_sk
         var world = ctrl.world;
         world.setBlockState(<blockstate:contenttweaker:defined_block>, pos);
     })
+    // .addOutputs(testpattern)
     .build();
