@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SK-Tweaks · 私货说明 | 肉丸工艺：次元飞升</title>
+  <title>SK-Tweaks · Unofficial Addon | MeatballCraft: Dimensional Ascension</title>
   <style>
     :root {
       --bg: #0d1117;
@@ -41,7 +41,7 @@
       background-attachment: fixed;
     }
 
-    /* ==================== 左侧导航栏 ==================== */
+    /* ==================== Sidebar ==================== */
     .sidebar {
       position: fixed;
       left: 0;
@@ -190,7 +190,7 @@
       transform: none;
     }
 
-    /* 移动端按钮 & 遮罩 */
+    /* Mobile toggle & backdrop */
     .menu-toggle {
       display: none;
       position: fixed;
@@ -229,7 +229,7 @@
       display: block;
     }
 
-    /* ==================== 主内容 ==================== */
+    /* ==================== Main ==================== */
     .main {
       margin-left: var(--sidebar-w);
     }
@@ -240,7 +240,7 @@
       padding: 32px 28px 80px;
     }
 
-    /* ============ 头部 ============ */
+    /* ============ Hero ============ */
     .hero {
       position: relative;
       padding: 40px 34px;
@@ -314,7 +314,7 @@
       margin-right: 6px;
     }
 
-    /* ============ 提示框 ============ */
+    /* ============ Alerts ============ */
     .alert {
       margin-top: 18px;
       padding: 16px 20px;
@@ -365,7 +365,7 @@
       color: #dbe4ee;
     }
 
-    /* ============ 通用区块 ============ */
+    /* ============ Sections ============ */
     section {
       margin-top: 52px;
     }
@@ -390,7 +390,7 @@
       background: linear-gradient(180deg, var(--amber), #ff8f6b);
     }
 
-    /* ============ 章节 ============ */
+    /* ============ Chapters ============ */
     .chapter {
       margin-top: 38px;
       scroll-margin-top: 24px;
@@ -468,7 +468,7 @@
       --ch: #8b949e;
     }
 
-    /* ============ 卡片 ============ */
+    /* ============ Cards ============ */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -538,7 +538,6 @@
 
     .alert {
       font-size: 17.5px;
-      /* 所有提示框共用 */
     }
 
     .tag {
@@ -563,7 +562,7 @@
       background: rgba(126, 231, 135, .08);
     }
 
-    /* ============ 面板与列表 ============ */
+    /* ============ Panel & Lists ============ */
     .panel {
       border: 1px solid var(--border);
       border-radius: 14px;
@@ -674,7 +673,7 @@
       color: var(--text);
     }
 
-    /* ============ 鸣谢 ============ */
+    /* ============ Credits ============ */
     .credits {
       display: flex;
       flex-wrap: wrap;
@@ -697,7 +696,7 @@
       transform: translateY(-2px);
     }
 
-    /* ============ 页脚 ============ */
+    /* ============ Footer ============ */
     footer {
       margin-top: 70px;
       padding-top: 22px;
@@ -707,7 +706,7 @@
       color: var(--muted);
     }
 
-    /* ==================== 响应式 ==================== */
+    /* ==================== Responsive ==================== */
     @media (max-width:920px) {
       .sidebar {
         width: 274px;
@@ -753,11 +752,11 @@
 
 <body>
 
-  <!-- 移动端菜单按钮 -->
-  <button class="menu-toggle" id="menuToggle" aria-label="打开目录">☰</button>
+  <!-- Mobile menu button -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
   <div class="backdrop" id="backdrop"></div>
 
-  <!-- ==================== 左侧导航 ==================== -->
+  <!-- ==================== Sidebar ==================== -->
   <aside class="sidebar" id="sidebar">
     <div class="side-brand">
       <div class="side-logo">SK</div>
@@ -768,348 +767,352 @@
     </div>
 
     <nav class="side-nav">
-      <div class="nav-label">说明</div>
-      <a href="#notice" class="nav-link" style="--ch:#ffb454"><span class="nav-dot"></span>使用须知</a>
+      <div class="nav-label">Notice</div>
+      <a href="#notice" class="nav-link" style="--ch:#ffb454"><span class="nav-dot"></span>Notice</a>
 
-      <div class="nav-label">可用机器 · 按章节</div>
-      <a href="#ch2" class="nav-link" style="--ch:#79c0ff"><span class="nav-dot"></span>第二章</a>
-      <a href="#ch3" class="nav-link" style="--ch:#56d4dd"><span class="nav-dot"></span>第三章</a>
-      <a href="#ch4" class="nav-link" style="--ch:#7ee787"><span class="nav-dot"></span>第四章</a>
-      <a href="#ch5" class="nav-link" style="--ch:#ffb454"><span class="nav-dot"></span>第五章</a>
-      <a href="#ch7" class="nav-link" style="--ch:#ff9f68"><span class="nav-dot"></span>第七章</a>
-      <a href="#ch8" class="nav-link" style="--ch:#ff7b9c"><span class="nav-dot"></span>第八章</a>
-      <a href="#ch9" class="nav-link" style="--ch:#d2a8ff"><span class="nav-dot"></span>第九章</a>
-      <a href="#ch10" class="nav-link" style="--ch:#ffd76e"><span class="nav-dot"></span>第十章</a>
-      <a href="#chx" class="nav-link" style="--ch:#8b949e"><span class="nav-dot"></span>第 ? 章</a>
+      <div class="nav-label">Available Machines · by Chapter</div>
+      <a href="#ch2" class="nav-link" style="--ch:#79c0ff"><span class="nav-dot"></span>Chapter 2</a>
+      <a href="#ch3" class="nav-link" style="--ch:#56d4dd"><span class="nav-dot"></span>Chapter 3</a>
+      <a href="#ch4" class="nav-link" style="--ch:#7ee787"><span class="nav-dot"></span>Chapter 4</a>
+      <a href="#ch5" class="nav-link" style="--ch:#ffb454"><span class="nav-dot"></span>Chapter 5</a>
+      <a href="#ch7" class="nav-link" style="--ch:#ff9f68"><span class="nav-dot"></span>Chapter 7</a>
+      <a href="#ch8" class="nav-link" style="--ch:#ff7b9c"><span class="nav-dot"></span>Chapter 8</a>
+      <a href="#ch9" class="nav-link" style="--ch:#d2a8ff"><span class="nav-dot"></span>Chapter 9</a>
+      <a href="#ch10" class="nav-link" style="--ch:#ffd76e"><span class="nav-dot"></span>Chapter 10</a>
+      <a href="#chx" class="nav-link" style="--ch:#8b949e"><span class="nav-dot"></span>Chapter ?</a>
 
-      <div class="nav-label">其他</div>
-      <a href="#recipes" class="nav-link" style="--ch:#79c0ff"><span class="nav-dot"></span>加入配方</a>
-      <a href="#changes" class="nav-link" style="--ch:#7ee787"><span class="nav-dot"></span>改动汇总</a>
-      <a href="#credits" class="nav-link" style="--ch:#ff7b9c"><span class="nav-dot"></span>特别鸣谢</a>
+      <div class="nav-label">Other</div>
+      <a href="#recipes" class="nav-link" style="--ch:#79c0ff"><span class="nav-dot"></span>Added Recipes</a>
+      <a href="#changes" class="nav-link" style="--ch:#7ee787"><span class="nav-dot"></span>Modification Overview</a>
+      <a href="#credits" class="nav-link" style="--ch:#ff7b9c"><span class="nav-dot"></span>Special Acknowledgements</a>
     </nav>
 
-    <a href="#top" class="nav-link back-top">↑ 回到顶部</a>
+    <a href="#top" class="nav-link back-top">↑ Back to Top</a>
   </aside>
 
-  <!-- ==================== 主内容 ==================== -->
+  <!-- ==================== Main ==================== -->
   <div class="main">
     <div class="wrap" id="top">
 
-      <!-- 头部 -->
+      <!-- Hero -->
       <header class="hero">
-        <div class="hero-badge">Minecraft 整合包 · 私货 DLC</div>
+        <div class="hero-badge">Minecraft Modpack · Unofficial Addon</div>
         <h1>SK-Tweaks</h1>
-        <p class="hero-sub">一些为我的世界整合包 <b>肉丸工艺 —— 次元飞升</b> 所制作的 DLC（私货）</p>
+        <p class="hero-sub">Some extra tweaks for Minecraft Modpack <b>MeatballCraft: Dimensional Ascension</b></p>
         <div class="meta">
-          <span class="meta-item"><b>目前适配版本</b><span class="sub_numbers">0.18.6.4</span></span>
-          <span class="meta-item"><b>DLC 版本</b><span class="sub_numbers">2.1.3</span></span>
+          <span class="meta-item"><b>Compatible Version</b><span class="sub_numbers">0.18.6.4</span></span>
+          <span class="meta-item"><b>DLC Version</b><span class="sub_numbers">2.1.3</span></span>
         </div>
 
         <div class="alert warn">
-          <span class="alert-title">⚠ 安装提示</span>
-          <p><b>自 DLC 版本 2.0.4 后，新增 mods 文件夹，安装时请注意。</b></p>
-          <p>使用方法：解压在 minecraft 文件夹即可，部分文件需要点击“替换”，部分mod需要手动下载！</p>
-          <p>请看完 <b>Readme</b> 再进游戏！！！</p>
+          <span class="alert-title">⚠ Installation Notice</span>
+          <p><b>After DLC v2.0.4, a mods folder was added. Please pay attention when installing.</b></p>
+          <p>Installation: Extract all files directly into your .minecraft folder, replace existing files when prompted.
+            Some mods need to be downloaded manually!</p>
+          <p>Please read the full <b>Readme</b> before starting the game!!!</p>
         </div>
 
         <div class="alert danger">
-          <span class="alert-title">⛔ 重要警告</span>
-          <p><b>如果你想取得任何形式的 Tooltip，请不要使用这个私货！！！</b></p>
-          <p><b>如果你想取得任何形式的 Tooltip，请不要使用这个私货！！！</b></p>
-          <p><b>如果你想取得任何形式的 Tooltip，请不要使用这个私货！！！</b></p>
+          <span class="alert-title">⛔ Important Warning</span>
+          <p><b>DO NOT install this tweak pack if you want to get any of the Tooltip!!!</b></p>
+          <p><b>DO NOT install this tweak pack if you want to get any of the Tooltip!!!</b></p>
+          <p><b>DO NOT install this tweak pack if you want to get any of the Tooltip!!!</b></p>
         </div>
       </header>
 
-      <!-- 使用须知 -->
+      <!-- Notice -->
       <section id="notice">
-        <h2 class="sec-title">使用须知</h2>
+        <h2 class="sec-title">Notice</h2>
         <div class="panel">
           <ul class="clean">
-            <li>这个只是肉丸工艺的一个私货（二次修改），请不要在不恰当的场合与原版玩家讨论私货问题。</li>
-            <li>使用私货的情况下，遇到 bug 请不要直接去到原作者 <b>Sainagh</b> 的 Github 处或者 Curseforge 处反馈，以免引起误会。</li>
-            <li>使用私货的存档请不要去 Discord 上申请任何形式的 tooltip！！！如果想要 tooltip，请尽量使用纯净版本的整合包！！！</li>
+            <li>This is an unofficial addon (secondary modification) for MeatballCraft. Please do not discuss this
+              unofficial content with original pack players in inappropriate occasions.</li>
+            <li>If you encounter bugs while playing with this pack, please <b>do not report issues</b> to the original
+              author <b>Sainagh</b> on Github or Curseforge to avoid unnecessary misunderstanding.</li>
+            <li>Saves with this pack are <b>not</b> eligible for official tooltip assistance on Discord. <b>Please use
+                the original pure modpack if you need official tooltip support.</b></li>
           </ul>
         </div>
       </section>
 
-      <!-- 可用机器 -->
+      <!-- Machines -->
       <section id="machines">
-        <h2 class="sec-title">可用机器</h2>
+        <h2 class="sec-title">Available Machines</h2>
 
-        <!-- 第二章 -->
+        <!-- Chapter 2 -->
         <div class="chapter ch-2" id="ch2">
           <div class="chapter-head">
             <span class="chapter-num">02</span>
-            <h3>第二章</h3>
-            <span class="chapter-count">6 台</span>
+            <h3>Chapter 2</h3>
+            <span class="chapter-count">6 machines</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>先进液体转换装置</h4>
-              <div class="tags"><span class="tag tag-src">来自 新星工程</span></div>
-              <p>炽焰和极寒制作。</p>
+              <h4>Advanced Liquid Convertor</h4>
+              <div class="tags"><span class="tag tag-src">From Nova Engineering</span></div>
+              <p>Offers new recipes for Blazing Pyrotheum and Gelid Cryotheum.</p>
             </article>
             <article class="card">
-              <h4>魔力酿造缸</h4>
-              <p>模块化 EIO 酿液桶。</p>
+              <h4>Magic Vat</h4>
+              <p>Multiblock version of Vat from EIO.</p>
             </article>
             <article class="card">
-              <h4>大型反应仓</h4>
-              <p>模块化 AE 反应仓。</p>
+              <h4>Fluix Reactor</h4>
+              <p>Offers some recipes for AE2 crystals.</p>
             </article>
             <article class="card">
-              <h4>大型炼狱熔炉</h4>
-              <p>模块化神秘炼狱熔炉。</p>
+              <h4>Large Infernal Furnace</h4>
+              <p>Multiblock version of Infernal Furnace from Thaumcraft.</p>
             </article>
             <article class="card">
-              <h4>大型催化室</h4>
-              <p>模块化神秘催化室。</p>
+              <h4>Large Catalyzation Chamber</h4>
+              <p>Multiblock version of Catalyzation Chamber from Thaumcraft.</p>
             </article>
             <article class="card">
-              <h4>源数网络（以及其附属模块）</h4>
-              <p>多方块矿处。</p>
+              <h4>Numeron Network (and submodules)</h4>
+              <p>Ore-processing multiblock.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第三章 -->
+        <!-- Chapter 3 -->
         <div class="chapter ch-3" id="ch3">
           <div class="chapter-head">
             <span class="chapter-num">03</span>
-            <h3>第三章</h3>
-            <span class="chapter-count">1 台</span>
+            <h3>Chapter 3</h3>
+            <span class="chapter-count">1 machine</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>自动化符文祭坛</h4>
-              <div class="tags"><span class="tag tag-credit">整合自 科科科胖</span></div>
-              <p>模块化符文祭坛。</p>
+              <h4>Auto Rune Altar</h4>
+              <div class="tags"><span class="tag tag-credit">Credit: 科科科胖</span></div>
+              <p>Multiblock version of Rune Altar from Botania.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第四章 -->
+        <!-- Chapter 4 -->
         <div class="chapter ch-4" id="ch4">
           <div class="chapter-head">
             <span class="chapter-num">04</span>
-            <h3>第四章</h3>
-            <span class="chapter-count">2 台</span>
+            <h3>Chapter 4</h3>
+            <span class="chapter-count">2 machines</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>机械白雏菊</h4>
-              <p>模块化白雏菊。</p>
+              <h4>Machine Daisy</h4>
+              <p>Multiblock version of Pure Daisy from Botania.</p>
             </article>
             <article class="card">
-              <h4>一阶神话资源坩埚</h4>
-              <p>一键产出所有第四章所需的矿机流体。</p>
+              <h4>Tier 1 Mythic Resource Crucible</h4>
+              <p>Manufacture all types of fluids required by the Void Resources Miners in Chapter 4.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第五章 -->
+        <!-- Chapter 5 -->
         <div class="chapter ch-5" id="ch5">
           <div class="chapter-head">
             <span class="chapter-num">05</span>
-            <h3>第五章</h3>
-            <span class="chapter-count">12 台</span>
+            <h3>Chapter 5</h3>
+            <span class="chapter-count">12 machines</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>神话魔力池</h4>
-              <p>模块化魔力池。</p>
+              <h4>Mythic Mana Pool</h4>
+              <p>Multiblock version of Mana Pool from Botania.</p>
             </article>
             <article class="card">
-              <h4>亚尔夫海姆传送枢纽</h4>
-              <p>模块化精灵门。</p>
+              <h4>Alfheim Transit Nexus</h4>
+              <p>Multiblock version of Elf Trade.</p>
             </article>
             <article class="card">
-              <h4>二阶神话资源坩埚</h4>
-              <p>一键产出所有第五章所需的矿机流体。</p>
+              <h4>Tier 2 Mythic Resource Crucible</h4>
+              <p>Manufacture all types of fluids required by the Void Resources Miners in Chapter 5.</p>
             </article>
             <article class="card">
-              <h4>神话太阳能阵列</h4>
-              <p>模块化太阳能板，可加速（催化剂形式）。</p>
+              <h4>Mythic Solar Array</h4>
+              <p>Modular solar panel, speed boostable via catalysts (temporal bee etc.).</p>
             </article>
             <article class="card">
-              <h4>肉丸素反应堆</h4>
-              <p>提供了一些 NC 多方块的便捷配方。</p>
+              <h4>Meatballium Crucible</h4>
+              <p>Offers convenient recipes from NuclearCraft multiblocks (molten salt reactor etc.).</p>
             </article>
             <article class="card">
-              <h4>维度钻探器</h4>
-              <p>多方块 IE 斗轮挖掘机。</p>
+              <h4>Dimensional Drill</h4>
+              <p>Multiblock IE Excavator (Can detect chunk vein).</p>
             </article>
             <article class="card">
-              <h4>自动炼金塔</h4>
-              <p>模块化神秘炼金塔。</p>
+              <h4>Auto Thaumatorium</h4>
+              <p>Multiblock version of Thaumatorium from Thaumcraft.</p>
             </article>
             <article class="card">
-              <h4>小型血之祭坛</h4>
-              <p>炼狱星枢的前置机器，配方较慢。</p>
+              <h4>Small Blood Abyss Altar</h4>
+              <p>Pre-structure of Blood Abyss Altar, slower recipes.</p>
             </article>
             <article class="card">
-              <h4>小型聚合祭坛</h4>
-              <p>觉醒注能装置的前置机器，配方较慢。</p>
+              <h4>Small Draconic Mythical Awakener</h4>
+              <p>Pre-structure of Draconic Mythical Infuser, slower recipes.</p>
             </article>
             <article class="card">
-              <h4>神话处理器：溶解器</h4>
-              <p>第五章神话处理器系列。</p>
+              <h4>Mythic Processor: Fluid Enricher</h4>
+              <p>Chapter 5 Mythic Processor series.</p>
             </article>
             <article class="card">
-              <h4>神话处理器：结晶器</h4>
-              <p>第五章神话处理器系列。</p>
+              <h4>Mythic Processor: Crystallizer</h4>
+              <p>Chapter 5 Mythic Processor series.</p>
             </article>
             <article class="card">
-              <h4>梦之能量核心</h4>
-              <div class="tags"><span class="tag tag-src">来自 新星工程</span></div>
-              <p>储存能量多方块，可存储 <b>无限能量</b>。</p>
+              <h4>Dream Energy Core</h4>
+              <div class="tags"><span class="tag tag-src">From Nova Engineering</span></div>
+              <p>Energy storage multiblock, can store <b>unlimited energy</b>.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第七章 -->
+        <!-- Chapter 7 -->
         <div class="chapter ch-7" id="ch7">
           <div class="chapter-head">
             <span class="chapter-num">07</span>
-            <h3>第七章</h3>
-            <span class="chapter-count">3 台</span>
+            <h3>Chapter 7</h3>
+            <span class="chapter-count">3 machines</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>觉醒注能装置</h4>
-              <p>模块化龙之研究聚合装置。</p>
+              <h4>Draconic Mythical Awakener</h4>
+              <p>Multiblock version of Fusion Crafting from Draconic Evolution.</p>
             </article>
             <article class="card">
-              <h4>深度虚空采掘机</h4>
-              <p>增强版环境科技。</p>
+              <h4>Deep Void Excavator</h4>
+              <p>Enhanced version of Void Miners from Environmental Tech.</p>
             </article>
             <article class="card">
-              <h4>稍微大一点的冰箱</h4>
-              <p>多方块超冷却器。</p>
+              <h4>Slightly-Larger Fridge</h4>
+              <p>Supercooler multi.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第八章 -->
+        <!-- Chapter 8 -->
         <div class="chapter ch-8" id="ch8">
           <div class="chapter-head">
             <span class="chapter-num">08</span>
-            <h3>第八章</h3>
-            <span class="chapter-count">2 台</span>
+            <h3>Chapter 8</h3>
+            <span class="chapter-count">2 machines</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>炼狱星枢</h4>
-              <p>模块化血之祭坛 + 高级屠龙者熔炉。</p>
+              <h4>Infernal Stellar Nexus</h4>
+              <p>Multiblock version of Blood Altar from BloodMagic + advanced recipes from Dragon Slayer Forge.</p>
             </article>
             <article class="card">
-              <h4>多线程源质结晶器</h4>
-              <p>第八章源质处理设备。</p>
+              <h4>Large Essentia Crystallizer</h4>
+              <p>Chapter 8 Essentia processing device.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第九章 -->
+        <!-- Chapter 9 -->
         <div class="chapter ch-9" id="ch9">
           <div class="chapter-head">
             <span class="chapter-num">09</span>
-            <h3>第九章</h3>
-            <span class="chapter-count">2 台</span>
+            <h3>Chapter 9</h3>
+            <span class="chapter-count">2 machines</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>量子催化反应阵列</h4>
-              <p>提供了一键出一些化学材料的配方。</p>
+              <h4>Quantum Catalytic Reactor</h4>
+              <p>Manufacture various chemical materials in one step.</p>
             </article>
             <article class="card">
-              <h4>再定义器</h4>
-              <p>定义增产。</p>
+              <h4>Re-Definer</h4>
+              <p>Better recipe for Defined Ingots.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第十章 -->
+        <!-- Chapter 10 -->
         <div class="chapter ch-10" id="ch10">
           <div class="chapter-head">
             <span class="chapter-num">10</span>
-            <h3>第十章</h3>
-            <span class="chapter-count">4 台</span>
+            <h3>Chapter 10</h3>
+            <span class="chapter-count">4 machines</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>大型养鸡场</h4>
-              <p>32 线程鸡舍。</p>
+              <h4>Large Chicken Coop</h4>
+              <p>32-thread chicken coop.</p>
             </article>
             <article class="card">
-              <h4>超速生长催生器</h4>
-              <p>多线程超速生长装置。</p>
+              <h4>Large Hyper Insolator</h4>
+              <p>Multi-thread hyper growth device.</p>
             </article>
             <article class="card">
-              <h4>寰宇递归工厂</h4>
-              <p>可以用物品升级其并行数量。</p>
+              <h4>Infinite Recursive Factory</h4>
+              <p>Parallelism can be upgraded with items.</p>
             </article>
             <article class="card">
-              <h4>无尽递归之脑</h4>
-              <p>大脑袋线简化。</p>
+              <h4>Infinite Seeker Brain</h4>
+              <p>BrainLine multi.</p>
             </article>
           </div>
         </div>
 
-        <!-- 第 ? 章 -->
+        <!-- Chapter ? -->
         <div class="chapter ch-x" id="chx">
           <div class="chapter-head">
             <span class="chapter-num">?</span>
-            <h3>第 ? 章</h3>
-            <span class="chapter-count">1 台</span>
+            <h3>Chapter ?</h3>
+            <span class="chapter-count">1 machine</span>
           </div>
           <div class="grid">
             <article class="card">
-              <h4>AF-0001-地毯复制机</h4>
-              <p>可以复制地毯的机器。地毯的颜色和数量可以配置。</p>
+              <h4>AF-0001-Carpet Duplicator</h4>
+              <p>Machine that can duplicate carpets. Carpet color and quantity can be configured.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- 加入配方 -->
+      <!-- Added Recipes -->
       <section id="recipes">
-        <h2 class="sec-title">加入配方</h2>
+        <h2 class="sec-title">Added Recipes</h2>
 
         <div class="panel">
           <div class="grid">
             <article class="card">
-              <h4>ME 机械样板供应器</h4>
+              <h4>ME Machinery Pattern Provider</h4>
               <div class="tags">
-                <span class="tag tag-credit">整合自 忆昔</span>
-                <span class="tag">第三章</span>
+                <span class="tag tag-credit">Credit: 忆昔</span>
+                <span class="tag">Chapter 3</span>
               </div>
             </article>
             <article class="card">
-              <h4>ME 机械样板镜像</h4>
-              <div class="tags"><span class="tag">第三章</span></div>
+              <h4>ME Machinery Pattern Mirage</h4>
+              <div class="tags"><span class="tag">Chapter 3</span></div>
             </article>
             <article class="card">
-              <h4>并行控制仓</h4>
+              <h4>Parallel Controller</h4>
               <div class="tags">
-                <span class="tag tag-credit">整合自 科科科胖</span>
-                <span class="tag">第三章</span>
+                <span class="tag tag-credit">Credit: 科科科胖</span>
+                <span class="tag">Chapter 3</span>
               </div>
             </article>
           </div>
 
           <div class="sub-block">
-            <div class="sub-title">AE2Enhanced 配方修改</div>
+            <div class="sub-title">AE2Enhanced Recipe Rework</div>
             <p>
-              修改了部分 AE2E 的配方，并且新增了<b>阶段并行卡</b>。需要安装 <b>AE2Enhanced</b> 生效，
-              以及 <b>AE2-UEL：v0.56.7+</b>。
+              This modifies some recipes of <b>AE2Enhanced</b>, and creates new <b>parallel cards</b>.
+              <b>AE2Enhanced</b> is required for it to work, alongside <b>AE2-UEL v0.56.7+</b>.
             </p>
 
             <ul class="clean" style="margin-top:14px;">
-              <li><b>阶段并行卡</b>：在 JEI 中搜索 <b>装配枢纽并行升级</b></li>
+              <li><b>Parallel Cards</b>: Search <b>装配枢纽并行升级</b> in JEI.</li>
             </ul>
 
             <div class="note">
-              <b>相关链接：</b><br>
+              <b>Relevant Links:</b><br>
               <a class="link" href="https://www.mcmod.cn/class/26679.html" target="_blank" rel="noopener">MCMOD</a> ·
               <a class="link" href="https://www.curseforge.com/minecraft/mc-mods/ae2enhanced" target="_blank"
                 rel="noopener">CurseForge</a> ·
@@ -1117,44 +1120,44 @@
             </div>
 
             <div class="note">
-              <b>若不想使用：</b>删除文件夹 <code>scripts\SKTweaks\AE2Enhanced</code>
+              <b>If you do not wish to use this tweak:</b> Delete the folder <code>scripts\SKTweaks\AE2Enhanced</code>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 改动汇总 -->
+      <!-- Modification Overview -->
       <section id="changes">
-        <h2 class="sec-title">模组改动分类汇总</h2>
+        <h2 class="sec-title">Modification Overview</h2>
 
         <div class="panel">
-          <h4>一、肉丸原版改动</h4>
+          <h4>1. MeatballCraft Adjustments</h4>
           <ul class="clean">
-            <li><b>终极能源输入/输出仓</b>：储能和输入/输出速率调高，通量网络连接时建议开启速率限制。</li>
-            <li><b>ME 神话装配室</b>：支持全部能源输入仓。</li>
-            <li><b>神话机器 —— 化学反应器</b>：支持 ME 机械输入/输出。</li>
-            <li><b>多方块源质冶炼厂</b>：可放置机械源质输出总线。</li>
-            <li><b>能源输入仓</b>：接口可以使用机械外壳替换。</li>
-            <li><b>盐复极化器</b>：结构添加并行控制器。</li>
-            <li><b>神圣余烬蜂箱</b>：补上了一些蜜蜂的配方。</li>
-            <li><b>定义器</b>：增加样板供应器。</li>
-            <li><b>EIO 的传送手杖</b>：减少传送冷却。</li>
-            <li><b>创造源质储存原件</b>：添加了配方。</li>
-            <li><b>ME 神话装配室</b>：目前可以合成带控制器名字的纸。</li>
-            <li><b>三一碎片</b>：添加了焦黑浇筑站配方。</li>
-            <li><b>定义增产</b>：新增定义鸡及一系列配方。</li>
+            <li><b>Ultimate Energy I/O Port</b>: Increased energy storage & transfer speed (a lot). Make sure you enable
+              speed limit when it's connected to flux networks.</li>
+            <li><b>ME Mythic Assembler</b>: Support all types of energy input ports.</li>
+            <li><b>Mythic Chemical Reactor</b>: Compatible with ME machinery input & output buses.</li>
+            <li><b>Mechanized Essentia Smeltery</b>: Allow ME output buses.</li>
+            <li><b>Energy buses</b>: Can be replaced with machine casing.</li>
+            <li><b>Sacred Cinders Apiary</b>: Add some new recipes.</li>
+            <li><b>Definer 3.0</b>: Added pattern provider support.</li>
+            <li><b>EIO Staff of Travelling</b>: Reduced teleport cooldown time.</li>
+            <li><b>Creative ME Essentia Storage Cell</b>: Added a recipe.</li>
+            <li><b>ME Mythic Assembler</b>: Now can assemble paper with controller name.</li>
+            <li><b>Trinity Shard</b>: Added a recipe of Seared Caster.</li>
+            <li><b>More Defined</b>: Added Defined Chicken and some recipes.</li>
           </ul>
 
-          <h4>二、Bug 修复</h4>
+          <h4>2. Bug Fixes</h4>
           <ul class="clean">
-            <li>暂无 bug 修复。</li>
+            <li>Nothing yet.</li>
           </ul>
         </div>
       </section>
 
-      <!-- 鸣谢 -->
+      <!-- Credits -->
       <section id="credits">
-        <h2 class="sec-title">特别鸣谢</h2>
+        <h2 class="sec-title">Special Acknowledgements</h2>
         <div class="credits">
           <span>aedddd</span>
           <span>流光通明 / Circulate233</span>
@@ -1170,7 +1173,7 @@
       </section>
 
       <footer>
-        SK-Tweaks · 肉丸工艺：次元飞升 私货说明 · DLC 版本 2.1.3
+        SK-Tweaks · MeatballCraft: Dimensional Ascension Unofficial Addon · DLC Version 2.1.3
       </footer>
 
     </div>
@@ -1178,7 +1181,7 @@
 
   <script>
     (function () {
-      /* ---------- 移动端侧栏开关 ---------- */
+      /* ---------- Mobile sidebar toggle ---------- */
       var sidebar = document.getElementById('sidebar');
       var toggle = document.getElementById('menuToggle');
       var backdrop = document.getElementById('backdrop');
@@ -1194,7 +1197,7 @@
       });
       backdrop.addEventListener('click', closeSidebar);
 
-      /* ---------- 滚动高亮当前章节 ---------- */
+      /* ---------- Scroll highlight ---------- */
       var links = [].slice.call(document.querySelectorAll('.side-nav .nav-link'));
       var items = links.map(function (l) {
         return { link: l, el: document.querySelector(l.getAttribute('href')) };
@@ -1219,7 +1222,7 @@
         if (active) active.link.classList.add('active');
       }
 
-      /* ---------- 点击后关闭移动端侧栏 ---------- */
+      /* ---------- Close mobile sidebar on link click ---------- */
       document.querySelectorAll('.sidebar a').forEach(function (a) {
         a.addEventListener('click', function () {
           if (window.innerWidth <= 920) closeSidebar();
