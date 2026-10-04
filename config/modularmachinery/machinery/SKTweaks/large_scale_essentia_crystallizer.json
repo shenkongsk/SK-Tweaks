@@ -1,6 +1,6 @@
 {
     "registryname": "large_scale_essentia_crystallizer",
-    "localizedname": "§5集成源质结晶工厂",
+    "localizedname": "§5Large Essentia Crystallizer",
     "requires-blueprint": false,
     "has-factory": true,
     "factory-only": true,

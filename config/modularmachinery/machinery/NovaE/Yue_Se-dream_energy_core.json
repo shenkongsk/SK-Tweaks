@@ -1,6 +1,6 @@
 {
     "registryname": "dream_energy_core",
-    "localizedname": "§b梦之§a能量核心",
+    "localizedname": "§bDream§aEnergy Core",
     "failure-action": "still",
     "color": "4FA0C6",
     "hide-components-when-formed": true,

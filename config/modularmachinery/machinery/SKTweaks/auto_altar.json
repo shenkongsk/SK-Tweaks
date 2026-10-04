@@ -1,7 +1,7 @@
     {
         "registryname": "auto_altar",
         "parallel": true,
-        "localizedname": "自动化符文祭坛",
+        "localizedname": "§aAuto Rune Altar",
         "requires-blueprint": false,
         "color": "e0e0e0",
         "modifiers": [

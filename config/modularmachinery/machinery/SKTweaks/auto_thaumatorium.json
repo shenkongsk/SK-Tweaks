@@ -1,7 +1,7 @@
 {
     "registryname": "auto_thaumatorium",
     "parallel": true,
-    "localizedname": "§6自动炼金塔",
+    "localizedname": "§6Auto Thaumatorium",
     "requires-blueprint": false,
     "color": "241D31",
     "modifiers": [

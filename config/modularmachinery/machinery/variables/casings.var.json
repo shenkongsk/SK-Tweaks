@@ -16,6 +16,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "mmce_complement:me_fluid_inventory_input_bus"
     ],
@@ -29,7 +30,8 @@
         "generalized_output_fluid",
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
-        "mmce_complement:me_fluid_inventory_input_bus"
+        "mmce_complement:me_fluid_inventory_input_bus",
+        "mmce_complement:me_full_exposure_assembly"
     ],
     "fluid_both_io": [
         "modularmachinery:blockfluidoutputhatch",
@@ -40,6 +42,7 @@
         "modularmachinery:blockinputbus",
         "mmceaddition:input_assembly",
         "modularmachinery:blockmefluidinputbus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_fluid_inventory_input_bus"
@@ -113,6 +116,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus"
     ],
     "generalized_input_item": [
@@ -127,6 +131,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "modularmachineryaddons:blocksingularityiteminputbus"
     ],
@@ -161,9 +166,7 @@
         "mmceaddition:me_output_assembly",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
-        "mmce_complement:me_connection_share_hatch",
-        "mmce_complement:me_ore_dict_input_bus",
-        "mmce_complement:me_item_inventory_input_bus"
+        "mmce_complement:me_connection_share_hatch"
     ],
     "infusinator_output_item": [
         "modularmachinery:blockoutputbus",
@@ -173,9 +176,7 @@
         "modularmachineryaddons:blocksingularityitemoutputbus@2",
         "modularmachineryaddons:blocksingularityitemoutputbus@3",
         "mmceaddition:me_async_item_output_bus",
-        "mmce_complement:me_connection_share_hatch",
-        "mmce_complement:me_ore_dict_input_bus",
-        "mmce_complement:me_item_inventory_input_bus"
+        "mmce_complement:me_connection_share_hatch"
     ],
     "arkencrusher_output_item": [
         "modularmachinery:blockoutputbus",
@@ -202,7 +203,8 @@
         "modularmachinery:blockmepatternmirrorimage",
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
-        "mmce_complement:me_fluid_inventory_input_bus"
+        "mmce_complement:me_fluid_inventory_input_bus",
+        "mmce_complement:me_full_exposure_assembly"
     ],
     "excavation_matrix_hatches": [
         "modularmachinery:blockfluidinputhatch",
@@ -222,6 +224,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "mmce_complement:me_fluid_inventory_input_bus"
     ],
@@ -247,6 +250,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "mmce_complement:me_fluid_inventory_input_bus"
     ],
@@ -282,6 +286,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "mmce_complement:me_fluid_inventory_input_bus"
     ],
@@ -298,6 +303,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "mmce_complement:me_fluid_inventory_input_bus"
     ],
@@ -314,6 +320,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus"
     ],
     "anyfloatingflower": [
@@ -337,6 +344,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "mmce_complement:me_fluid_inventory_input_bus"
     ],
@@ -396,12 +404,14 @@
         "modularmachineryaddons:blocksingularityiteminputbus@1",
         "modularmachineryaddons:blocksingularityiteminputbus@2",
         "modularmachinery:blockmepatternprovider",
+        "mmceaddition:me_pattern_assembly",
         "mmceaddition:virtual_parallel_hatch",
         "modularmachinery:blockparallelcontroller",
         "modularmachinery:blockmepatternmirrorimage",
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus"
     ],
     "terrestrial_cauldron_item_input": [
@@ -416,6 +426,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus"
     ],
     "dragonfire_item_input": [
@@ -433,6 +444,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus"
     ],
     "treeoflife_item_input": [
@@ -441,6 +453,7 @@
         "modularmachineryaddons:blocksingularityiteminputbus",
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus"
     ],
     "apiary_decoration_soil": [
@@ -626,6 +639,7 @@
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii",
         "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
         "mmce_complement:me_item_inventory_input_bus",
         "mmce_complement:me_fluid_inventory_input_bus"
     ],
@@ -655,5 +669,24 @@
         "modularmachinery:blockmepatternmirrorimage",
         "mmce_complement:me_connection_share_hatch",
         "mmce_complement:me_pattern_provider_ii"
+    ],
+    "both_item_fluid_input_no_para": [
+        "modularmachinery:blockfluidinputhatch",
+        "modularmachinery:blockinputbus",
+        "mmceaddition:input_assembly",
+        "modularmachinery:blockmefluidinputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachineryaddons:blocksingularityiteminputbus@0",
+        "mmceaddition:me_async_item_output_bus",
+        "mmceaddition:me_output_assembly",
+        "mmceaddition:me_pattern_assembly",
+        "modularmachinery:blockmepatternprovider",
+        "modularmachinery:blockmepatternmirrorimage",
+        "mmce_complement:me_connection_share_hatch",
+        "mmce_complement:me_pattern_provider_ii",
+        "mmce_complement:me_ore_dict_input_bus",
+        "mmce_complement:me_full_exposure_assembly",
+        "mmce_complement:me_item_inventory_input_bus",
+        "mmce_complement:me_fluid_inventory_input_bus"
     ]
 }

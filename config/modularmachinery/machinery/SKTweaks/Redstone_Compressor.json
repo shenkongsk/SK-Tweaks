@@ -1,6 +1,6 @@
 {
     "registryname": "redstone_compressor",
-    "localizedname": "红石压缩机",
+    "localizedname": "Redstone Compressor",
     "requires-blueprint": false,
     "color": "778899",
     "parts": [

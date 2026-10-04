@@ -1,6 +1,6 @@
 {
     "registryname": "fluix_reactor",
-    "localizedname": "§5大型反应仓",
+    "localizedname": "§5Fluix Reactor",
     "requires-blueprint": false,
     "color": "9F009F",
     "has-factory": true,

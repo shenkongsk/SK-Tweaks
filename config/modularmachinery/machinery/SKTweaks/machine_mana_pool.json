@@ -1,6 +1,6 @@
 {
     "registryname": "machine_mana_pool",
-    "localizedname": "§d神话魔力池",
+    "localizedname": "§dMythic Mana Pool",
     "requires-blueprint": false,
     "color": "cc00cc",
     "modifiers": [

@@ -1,6 +1,6 @@
 {
     "registryname": "quantum_catalytic_reactor_array",
-    "localizedname": "§3量子催化反应阵列",
+    "localizedname": "§3Quantum Catalytic Reactor",
     "requires-blueprint": false,
     "has-factory": true,
     "factory-only": true,

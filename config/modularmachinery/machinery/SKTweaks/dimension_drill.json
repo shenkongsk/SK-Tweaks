@@ -1,6 +1,6 @@
 {
     "registryname": "dimension_drill",
-    "localizedname": "§b维度钻探器",
+    "localizedname": "§bDimensional Drill",
     "color": "e0e0e0",
     "has-factory": true,
     "factory-only": true,

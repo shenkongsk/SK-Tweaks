@@ -1,6 +1,6 @@
 {
     "registryname": "solar_array",
-    "localizedname": "§6神话太阳能阵列",
+    "localizedname": "§6Mythic Solar Array",
     "color": "000000",
     "requires-blueprint": false,
     "parts": [
@@ -497,7 +497,8 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "generalized_input_item"
+                "modularmachinery:blockparallelcontroller@0",
+                "modularmachinery:blockparallelcontroller@1"
             ]
         },
         {

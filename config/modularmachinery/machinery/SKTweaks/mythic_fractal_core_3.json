@@ -1,6 +1,6 @@
 {
     "registryname": "mythic_fractal_core_3",
-    "localizedname": "§d三阶神话分形核心",
+    "localizedname": "§dThird Mythic Fractal Core",
     "requires-blueprint": false,
     "color": "bb01f4",
     "has-factory": true,

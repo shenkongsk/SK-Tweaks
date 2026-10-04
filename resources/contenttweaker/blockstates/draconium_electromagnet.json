@@ -1,0 +1,26 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/draconium_electromagnet",
+      "particle": "contenttweaker:blocks/draconium_electromagnet"
+    },
+    "model": "base:storage",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [
+      {}
+    ],
+    "inventory": [
+      {}
+    ],
+    "working_state=idle": {
+      "model": "contenttweaker:draconium_electromagnet_idle"
+    },
+    "working_state=working": {
+      "model": "contenttweaker:draconium_electromagnet_working"
+    }
+  }
+}

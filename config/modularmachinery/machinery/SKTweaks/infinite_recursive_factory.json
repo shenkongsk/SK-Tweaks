@@ -1,6 +1,6 @@
 {
     "registryname": "infinite_recursive_factory",
-    "localizedname": "§9§l寰宇§3§l递归§b§l工厂§f",
+    "localizedname": "§9§lInfinite§3§lRecursive§b§lFactory§f",
     "requires-blueprint": false,
     "has-factory": true,
     "factory-only": true,

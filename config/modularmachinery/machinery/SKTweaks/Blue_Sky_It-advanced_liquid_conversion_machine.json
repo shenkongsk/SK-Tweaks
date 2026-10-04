@@ -1,62 +1,10 @@
 {
     "registryname": "advanced_liquid_conversion_machine",
-    "localizedname": "§b先进液体转化装置",
+    "localizedname": "§bAdvanced Liquid Convertor",
     "failure-action": "still",
     "requires-blueprint": false,
     "color": "55FF55",
     "modifiers": [
-        {
-            "elements": "modularmachinery:blockfluidinputhatch@7",
-            "x": -1,
-            "y": 1,
-            "z": 0,
-            "description": "将机器右上方流体输入仓换为真空流体输入仓以降低5%流体消耗",
-            "modifier": {
-                "io": "input",
-                "target": "modularmachinery:fluid",
-                "operation": 1,
-                "multiplier": 0.95
-            }
-        },
-        {
-            "elements": "modularmachinery:blockfluidinputhatch@7",
-            "x": 1,
-            "y": 0,
-            "z": 0,
-            "description": "将机器左方流体输入仓换为真空流体输入仓以降低5%流体消耗",
-            "modifier": {
-                "io": "input",
-                "target": "modularmachinery:fluid",
-                "operation": 1,
-                "multiplier": 0.95
-            }
-        },
-        {
-            "elements": "modularmachinery:blockfluidinputhatch@7",
-            "x": 1,
-            "y": 1,
-            "z": 0,
-            "description": "将机器左上方输入仓换为真空流体输入仓以提高5%流体产出",
-            "modifier": {
-                "io": "output",
-                "target": "modularmachinery:fluid",
-                "operation": 1,
-                "multiplier": 1.05
-            }
-        },
-        {
-            "elements": "modularmachinery:blockfluidoutputhatch@7",
-            "x": -1,
-            "y": 0,
-            "z": 0,
-            "description": "将机器右方输出仓换为真空流体输出仓以提高5%流体产出",
-            "modifier": {
-                "io": "output",
-                "target": "modularmachinery:fluid",
-                "operation": 1,
-                "multiplier": 1.05
-            }
-        },
         {
             "elements": "minecraft:bedrock",
             "x": -1,
@@ -111,10 +59,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "modularmachinery:blockfluidinputhatch",
-                "modularmachinery:blockmegasinputbus",
-                "modularmachinery:blockmefluidinputbus",
-                "modularmachinery:blockmepatternprovider"
+                "both_item_fluid_input_no_para"
             ]
         },
         {
@@ -282,10 +227,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "modularmachinery:blockfluidinputhatch",
-                "modularmachinery:blockmegasinputbus",
-                "modularmachinery:blockmefluidinputbus",
-                "modularmachinery:blockmepatternprovider"
+                "both_item_fluid_input_no_para"
             ]
         },
         {
@@ -334,10 +276,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "modularmachinery:blockfluidinputhatch",
-                "modularmachinery:blockmegasinputbus",
-                "modularmachinery:blockmefluidinputbus",
-                "modularmachinery:blockmepatternprovider"
+                "both_item_fluid_input_no_para"
             ]
         },
         {

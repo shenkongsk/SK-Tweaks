@@ -1,6 +1,6 @@
 {
     "registryname": "pyrolyse_oven",
-    "localizedname": "§c热解炉",
+    "localizedname": "§cPyrolyse Oven",
     "requires-blueprint": false,
     "color": "5B2200",
     "parts": [

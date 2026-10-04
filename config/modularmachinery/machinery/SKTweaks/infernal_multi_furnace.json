@@ -1,17 +1,9 @@
 {
     "registryname": "infernal_multi_furnace",
-    "localizedname": "§4大型炼狱熔炉",
+    "localizedname": "§4Large Infernal Furnace",
     "requires-blueprint": false,
     "color": "920000",
     "parts": [
-        {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "elements": [
-                "modularmachinery:machine_mana_pool_controller@2"
-            ]
-        },
         {
             "x": 1,
             "y": 3,

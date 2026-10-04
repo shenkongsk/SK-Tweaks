@@ -1,6 +1,6 @@
 {
     "registryname": "numeron_network",
-    "localizedname": "§b源数网络",
+    "localizedname": "§bNumeron NetWork",
     "requires-blueprint": false,
     "has-factory": true,
     "factory-only": true,

@@ -1,6 +1,6 @@
 {
     "registryname": "catalyzation_multi_chamber",
-    "localizedname": "§9大型催化室",
+    "localizedname": "§9Large Catalyzation Chamber",
     "requires-blueprint": false,
     "color": "240e87",
     "parts": [

@@ -1,7 +1,7 @@
     {
         "registryname": "carpet_duplicator_1000",
         "parallel": true,
-        "localizedname": "§4AF§7-§40001§7-§e地毯复制机§r",
+        "localizedname": "§4AF§7-§40001§7-§eCarpet Duplicator§r",
         "requires-blueprint": false,
         "has-factory": true,
         "factory-only": true,

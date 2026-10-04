@@ -1,6 +1,6 @@
 {
     "registryname": "advanced_transposer",
-    "localizedname": "§d奥秘流体转置机",
+    "localizedname": "§dArcane Fluid Transposer",
     "color": "ADA899",
     "requires-blueprint": false,
     "modifiers": [

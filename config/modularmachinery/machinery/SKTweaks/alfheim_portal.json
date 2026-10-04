@@ -1,6 +1,6 @@
 {
     "registryname": "alfheim_portal",
-    "localizedname": "§a亚尔夫海姆传送枢纽",
+    "localizedname": "§aAlfheim Transit Nexus",
     "color": "55FF55",
     "requires-blueprint": false,
     "has-factory": true,

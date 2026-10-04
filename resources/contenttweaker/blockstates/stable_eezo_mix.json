@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "forge:fluid",
+    "custom": {
+      "fluid": "stable_eezo_mix"
+    }
+  },
+  "variants": {
+    "normal": [{}]
+  }
+}
