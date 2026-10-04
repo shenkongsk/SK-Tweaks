@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SK-Tweaks · 私货说明 | 肉丸工艺：次元飞升</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --card: #1b222c;
+      --card-hover: #232c38;
+      --border: #2a323d;
+      --text: #f4f9fd;
+      --muted: #c1ccd8;
+      --amber: #ffb454;
+      --green: #7ee787;
+      --red: #ff7b72;
+      --blue: #79c0ff;
+      --sidebar-w: 238px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      line-height: 1.75;
+      background:
+        radial-gradient(1100px 550px at 15% -10%, #1a2531 0%, transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, #241d2e 0%, transparent 55%),
+        var(--bg);
+      background-attachment: fixed;
+    }
+
+    /* ==================== 左侧导航栏 ==================== */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: var(--sidebar-w);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 20px 12px 22px;
+      background: rgba(14, 19, 26, .94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      z-index: 50;
+    }
+
+    .sidebar::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .sidebar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+      background: #2f3a47;
+      border-radius: 99px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb:hover {
+      background: #3d4a5a;
+    }
+
+    .side-brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 4px 10px 16px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .side-logo {
+      width: 38px;
+      height: 38px;
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      color: #1a1206;
+      background: linear-gradient(140deg, #ffd76e, #ffb454 55%, #ff8f6b);
+      box-shadow: 0 4px 14px -5px rgba(255, 180, 84, .7);
+    }
+
+    .side-name {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .01em;
+      color: var(--text);
+      line-height: 1.25;
+    }
+
+    .side-ver {
+      font-size: 11.5px;
+      color: var(--muted);
+      letter-spacing: .04em;
+    }
+
+    .nav-label {
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #5d6875;
+      padding: 16px 12px 7px;
+      font-weight: 600;
+    }
+
+    .nav-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7.5px 12px;
+      border-radius: 9px;
+      font-size: 13.5px;
+      color: var(--muted);
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      transition: background .16s, color .16s, border-color .16s, transform .16s;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, .055);
+      transform: translateX(2px);
+    }
+
+    .nav-link.active {
+      color: var(--ch, var(--amber));
+      background: rgba(255, 255, 255, .07);
+      border-left-color: var(--ch, var(--amber));
+      font-weight: 600;
+    }
+
+    .nav-dot {
+      width: 5px;
+      height: 5px;
+      flex: none;
+      border-radius: 50%;
+      background: var(--ch, var(--muted));
+      opacity: .65;
+      transition: .18s;
+    }
+
+    .nav-link:hover .nav-dot {
+      opacity: 1;
+    }
+
+    .nav-link.active .nav-dot {
+      opacity: 1;
+      box-shadow: 0 0 9px var(--ch, var(--amber));
+      transform: scale(1.25);
+    }
+
+    .back-top {
+      margin-top: auto;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 9px 12px;
+      font-size: 12.5px;
+      color: var(--muted);
+      letter-spacing: .04em;
+    }
+
+    .back-top:hover {
+      border-color: var(--amber);
+      color: var(--amber);
+      transform: none;
+    }
+
+    /* 移动端按钮 & 遮罩 */
+    .menu-toggle {
+      display: none;
+      position: fixed;
+      top: 14px;
+      left: 14px;
+      z-index: 60;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(20, 26, 34, .94);
+      backdrop-filter: blur(10px);
+      color: var(--text);
+      font-size: 17px;
+      cursor: pointer;
+      transition: .18s;
+    }
+
+    .menu-toggle:hover {
+      border-color: var(--amber);
+      color: var(--amber);
+    }
+
+    .backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 45;
+      background: rgba(0, 0, 0, .55);
+      backdrop-filter: blur(2px);
+    }
+
+    .backdrop.show {
+      display: block;
+    }
+
+    /* ==================== 主内容 ==================== */
+    .main {
+      margin-left: var(--sidebar-w);
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 28px 80px;
+    }
+
+    /* ============ 头部 ============ */
+    .hero {
+      position: relative;
+      padding: 40px 34px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: linear-gradient(150deg, #1a222d 0%, #141a22 55%, #1d1a24 100%);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20% auto auto;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(255, 180, 84, .18), transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      border: 1px solid rgba(255, 180, 84, .35);
+      background: rgba(255, 180, 84, .08);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 46px);
+      letter-spacing: .02em;
+      background: linear-gradient(100deg, #ffd76e, #ffb454 45%, #ff8f6b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-sub {
+      margin: 10px 0 22px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .hero-sub b {
+      color: #c9d3de;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .meta-item {
+      font-size: 13.5px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 7px 14px;
+    }
+
+    .meta-item b {
+      color: var(--text);
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    /* ============ 提示框 ============ */
+    .alert {
+      margin-top: 18px;
+      padding: 16px 20px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      font-size: 14.5px;
+    }
+
+    .alert-title {
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .alert.danger {
+      border-color: rgba(255, 123, 114, .4);
+      background: linear-gradient(180deg, rgba(255, 123, 114, .10), rgba(255, 123, 114, .03));
+    }
+
+    .alert.danger .alert-title {
+      color: var(--red);
+    }
+
+    .alert.warn {
+      border-color: rgba(255, 180, 84, .4);
+      background: linear-gradient(180deg, rgba(255, 180, 84, .10), rgba(255, 180, 84, .03));
+    }
+
+    .alert.warn .alert-title {
+      color: var(--amber);
+    }
+
+    .alert p {
+      margin: 6px 0;
+      color: var(--muted);
+    }
+
+    .alert p:first-of-type {
+      margin-top: 0;
+    }
+
+    .alert p:last-child {
+      margin-bottom: 0;
+    }
+
+    .alert p b {
+      color: #dbe4ee;
+    }
+
+    /* ============ 通用区块 ============ */
+    section {
+      margin-top: 52px;
+    }
+
+    .sec-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 24px;
+    }
+
+    .sec-title::before {
+      content: "";
+      width: 4px;
+      height: 22px;
+      border-radius: 2px;
+      background: linear-gradient(180deg, var(--amber), #ff8f6b);
+    }
+
+    /* ============ 章节 ============ */
+    .chapter {
+      margin-top: 38px;
+      scroll-margin-top: 24px;
+    }
+
+    .chapter-head {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding-left: 2px;
+    }
+
+    .chapter-num {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      color: var(--ch, var(--amber));
+      opacity: .55;
+      letter-spacing: -.02em;
+    }
+
+    .chapter-head h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .chapter-count {
+      margin-left: auto;
+      font-size: 12.5px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 2px 11px;
+      background: var(--panel);
+      white-space: nowrap;
+    }
+
+    .ch-2 {
+      --ch: #79c0ff;
+    }
+
+    .ch-3 {
+      --ch: #56d4dd;
+    }
+
+    .ch-4 {
+      --ch: #7ee787;
+    }
+
+    .ch-5 {
+      --ch: #ffb454;
+    }
+
+    .ch-7 {
+      --ch: #ff9f68;
+    }
+
+    .ch-8 {
+      --ch: #ff7b9c;
+    }
+
+    .ch-9 {
+      --ch: #d2a8ff;
+    }
+
+    .ch-10 {
+      --ch: #ffd76e;
+    }
+
+    .ch-x {
+      --ch: #8b949e;
+    }
+
+    /* ============ 卡片 ============ */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      position: relative;
+      padding: 18px 18px 16px 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--card);
+      transition: .2s;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--ch, var(--amber));
+      opacity: .75;
+    }
+
+    .card:hover {
+      background: var(--card-hover);
+      border-color: var(--ch, var(--amber));
+      transform: translateY(-3px);
+      box-shadow: 0 10px 26px -12px rgba(0, 0, 0, .85);
+    }
+
+    .card h4 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: .01em;
+    }
+
+    .sub_numbers {
+      color: #ffb454;
+      font-family: "Consolas", "Courier New", monospace;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .card p {
+      margin: 8px 0 0;
+      font-size: 13.8px;
+      color: var(--muted);
+    }
+
+    .card p b {
+      color: #c9d3de;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+
+    .alert {
+      font-size: 17.5px;
+      /* 所有提示框共用 */
+    }
+
+    .tag {
+      font-size: 11.5px;
+      padding: 2px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, .04);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .tag-src {
+      color: var(--blue);
+      border-color: rgba(121, 192, 255, .35);
+      background: rgba(121, 192, 255, .08);
+    }
+
+    .tag-credit {
+      color: var(--green);
+      border-color: rgba(126, 231, 135, .32);
+      background: rgba(126, 231, 135, .08);
+    }
+
+    /* ============ 面板与列表 ============ */
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--panel);
+      padding: 22px 24px;
+    }
+
+    .panel h4 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    .panel h4:not(:first-child) {
+      margin-top: 26px;
+    }
+
+    ul.clean {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul.clean li {
+      position: relative;
+      padding: 8px 0 8px 20px;
+      font-size: 14.2px;
+      color: #c9d3de;
+      border-bottom: 1px dashed rgba(255, 255, 255, .06);
+    }
+
+    ul.clean li:last-child {
+      border-bottom: none;
+    }
+
+    ul.clean li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 17px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--amber);
+      opacity: .75;
+    }
+
+    ul.clean li b {
+      color: var(--text);
+    }
+
+    .note {
+      margin-top: 14px;
+      font-size: 13.5px;
+      color: var(--muted);
+      padding: 12px 16px;
+      border-left: 3px solid var(--amber);
+      background: rgba(255, 180, 84, .06);
+      border-radius: 0 10px 10px 0;
+    }
+
+    .note b {
+      color: #dbe4ee;
+    }
+
+    .note code {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 12.8px;
+      color: var(--amber);
+      background: rgba(255, 180, 84, .10);
+      border: 1px solid rgba(255, 180, 84, .22);
+      padding: 1px 7px;
+      border-radius: 6px;
+    }
+
+    a.link {
+      color: var(--blue);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(121, 192, 255, .35);
+    }
+
+    a.link:hover {
+      border-bottom-color: var(--blue);
+    }
+
+    .sub-block {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .02);
+    }
+
+    .sub-block>.sub-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--amber);
+      margin-bottom: 10px;
+    }
+
+    .sub-block p {
+      margin: 0;
+      font-size: 14.2px;
+      color: #c9d3de;
+    }
+
+    .sub-block p b {
+      color: var(--text);
+    }
+
+    /* ============ 鸣谢 ============ */
+    .credits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .credits span {
+      font-size: 13.5px;
+      padding: 7px 15px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: #ffb454;
+      transition: .18s;
+    }
+
+    .credits span:hover {
+      border-color: var(--amber);
+      color: var(--text);
+      transform: translateY(-2px);
+    }
+
+    /* ============ 页脚 ============ */
+    footer {
+      margin-top: 70px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ==================== 响应式 ==================== */
+    @media (max-width:920px) {
+      .sidebar {
+        width: 274px;
+        transform: translateX(-100%);
+        transition: transform .28s cubic-bezier(.4, 0, .2, 1);
+        box-shadow: 6px 0 30px -10px rgba(0, 0, 0, .9);
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .main {
+        margin-left: 0;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .wrap {
+        padding: 74px 16px 70px;
+      }
+
+      .hero {
+        padding: 28px 20px;
+      }
+
+      .panel {
+        padding: 18px;
+      }
+
+      .card {
+        padding: 16px 16px 14px 18px;
+      }
+
+      .sec-title {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 移动端菜单按钮 -->
+  <button class="menu-toggle" id="menuToggle" aria-label="打开目录">☰</button>
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- ==================== 左侧导航 ==================== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="side-brand">
+      <div class="side-logo">SK</div>
+      <div>
+        <div class="side-name">SK-Tweaks</div>
+        <div class="side-ver">DLC 2.1.2</div>
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <div class="nav-label">说明</div>
+      <a href="#notice" class="nav-link" style="--ch:#ffb454"><span class="nav-dot"></span>使用须知</a>
+
+      <div class="nav-label">可用机器 · 按章节</div>
+      <a href="#ch2" class="nav-link" style="--ch:#79c0ff"><span class="nav-dot"></span>第二章</a>
+      <a href="#ch3" class="nav-link" style="--ch:#56d4dd"><span class="nav-dot"></span>第三章</a>
+      <a href="#ch4" class="nav-link" style="--ch:#7ee787"><span class="nav-dot"></span>第四章</a>
+      <a href="#ch5" class="nav-link" style="--ch:#ffb454"><span class="nav-dot"></span>第五章</a>
+      <a href="#ch7" class="nav-link" style="--ch:#ff9f68"><span class="nav-dot"></span>第七章</a>
+      <a href="#ch8" class="nav-link" style="--ch:#ff7b9c"><span class="nav-dot"></span>第八章</a>
+      <a href="#ch9" class="nav-link" style="--ch:#d2a8ff"><span class="nav-dot"></span>第九章</a>
+      <a href="#ch10" class="nav-link" style="--ch:#ffd76e"><span class="nav-dot"></span>第十章</a>
+      <a href="#chx" class="nav-link" style="--ch:#8b949e"><span class="nav-dot"></span>第 ? 章</a>
+
+      <div class="nav-label">其他</div>
+      <a href="#recipes" class="nav-link" style="--ch:#79c0ff"><span class="nav-dot"></span>加入配方</a>
+      <a href="#changes" class="nav-link" style="--ch:#7ee787"><span class="nav-dot"></span>改动汇总</a>
+      <a href="#credits" class="nav-link" style="--ch:#ff7b9c"><span class="nav-dot"></span>特别鸣谢</a>
+    </nav>
+
+    <a href="#top" class="nav-link back-top">↑ 回到顶部</a>
+  </aside>
+
+  <!-- ==================== 主内容 ==================== -->
+  <div class="main">
+    <div class="wrap" id="top">
+
+      <!-- 头部 -->
+      <header class="hero">
+        <div class="hero-badge">Minecraft 整合包 · 私货 DLC</div>
+        <h1>SK-Tweaks</h1>
+        <p class="hero-sub">一些为我的世界整合包 <b>肉丸工艺 —— 次元飞升</b> 所制作的 DLC（私货）</p>
+        <div class="meta">
+          <span class="meta-item"><b>目前适配版本</b><span class="sub_numbers">0.18.6.4</span></span>
+          <span class="meta-item"><b>DLC 版本</b><span class="sub_numbers">2.1.2</span></span>
+        </div>
+
+        <div class="alert warn">
+          <span class="alert-title">⚠ 安装提示</span>
+          <p><b>自 DLC 版本 2.0.4 后，新增 mods 文件夹，安装时请注意。</b></p>
+          <p>使用方法：解压在 minecraft 文件夹即可，部分文件需要点击“替换”，部分mod需要手动下载！</p>
+          <p>请看完 <b>Readme</b> 再进游戏！！！</p>
+        </div>
+
+        <div class="alert danger">
+          <span class="alert-title">⛔ 重要警告</span>
+          <p><b>如果你想取得任何形式的 Tooltip，请不要使用这个私货！！！</b></p>
+          <p><b>如果你想取得任何形式的 Tooltip，请不要使用这个私货！！！</b></p>
+          <p><b>如果你想取得任何形式的 Tooltip，请不要使用这个私货！！！</b></p>
+        </div>
+      </header>
+
+      <!-- 使用须知 -->
+      <section id="notice">
+        <h2 class="sec-title">使用须知</h2>
+        <div class="panel">
+          <ul class="clean">
+            <li>这个只是肉丸工艺的一个私货（二次修改），请不要在不恰当的场合与原版玩家讨论私货问题。</li>
+            <li>使用私货的情况下，遇到 bug 请不要直接去到原作者 <b>Sainagh</b> 的 Github 处或者 Curseforge 处反馈，以免引起误会。</li>
+            <li>使用私货的存档请不要去 Discord 上申请任何形式的 tooltip！！！如果想要 tooltip，请尽量使用纯净版本的整合包！！！</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 可用机器 -->
+      <section id="machines">
+        <h2 class="sec-title">可用机器</h2>
+
+        <!-- 第二章 -->
+        <div class="chapter ch-2" id="ch2">
+          <div class="chapter-head">
+            <span class="chapter-num">02</span>
+            <h3>第二章</h3>
+            <span class="chapter-count">6 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>先进液体转换装置</h4>
+              <div class="tags"><span class="tag tag-src">来自 新星工程</span></div>
+              <p>炽焰和极寒制作。</p>
+            </article>
+            <article class="card">
+              <h4>魔力酿造缸</h4>
+              <p>模块化 EIO 酿液桶。</p>
+            </article>
+            <article class="card">
+              <h4>大型反应仓</h4>
+              <p>模块化 AE 反应仓。</p>
+            </article>
+            <article class="card">
+              <h4>大型炼狱熔炉</h4>
+              <p>模块化神秘炼狱熔炉。</p>
+            </article>
+            <article class="card">
+              <h4>大型催化室</h4>
+              <p>模块化神秘催化室。</p>
+            </article>
+            <article class="card">
+              <h4>源数网络（以及其附属模块）</h4>
+              <p>多方块矿处。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第三章 -->
+        <div class="chapter ch-3" id="ch3">
+          <div class="chapter-head">
+            <span class="chapter-num">03</span>
+            <h3>第三章</h3>
+            <span class="chapter-count">1 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>自动化符文祭坛</h4>
+              <div class="tags"><span class="tag tag-credit">整合自 科科科胖</span></div>
+              <p>模块化符文祭坛。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第四章 -->
+        <div class="chapter ch-4" id="ch4">
+          <div class="chapter-head">
+            <span class="chapter-num">04</span>
+            <h3>第四章</h3>
+            <span class="chapter-count">2 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>机械白雏菊</h4>
+              <p>模块化白雏菊。</p>
+            </article>
+            <article class="card">
+              <h4>一阶神话资源坩埚</h4>
+              <p>一键产出所有第四章所需的矿机流体。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第五章 -->
+        <div class="chapter ch-5" id="ch5">
+          <div class="chapter-head">
+            <span class="chapter-num">05</span>
+            <h3>第五章</h3>
+            <span class="chapter-count">12 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>神话魔力池</h4>
+              <p>模块化魔力池。</p>
+            </article>
+            <article class="card">
+              <h4>亚尔夫海姆传送枢纽</h4>
+              <p>模块化精灵门。</p>
+            </article>
+            <article class="card">
+              <h4>二阶神话资源坩埚</h4>
+              <p>一键产出所有第五章所需的矿机流体。</p>
+            </article>
+            <article class="card">
+              <h4>神话太阳能阵列</h4>
+              <p>模块化太阳能板，可加速（催化剂形式）。</p>
+            </article>
+            <article class="card">
+              <h4>肉丸素反应堆</h4>
+              <p>提供了一些 NC 多方块的便捷配方。</p>
+            </article>
+            <article class="card">
+              <h4>维度钻探器</h4>
+              <p>多方块 IE 斗轮挖掘机。</p>
+            </article>
+            <article class="card">
+              <h4>自动炼金塔</h4>
+              <p>模块化神秘炼金塔。</p>
+            </article>
+            <article class="card">
+              <h4>小型血之祭坛</h4>
+              <p>炼狱星枢的前置机器，配方较慢。</p>
+            </article>
+            <article class="card">
+              <h4>小型聚合祭坛</h4>
+              <p>觉醒注能装置的前置机器，配方较慢。</p>
+            </article>
+            <article class="card">
+              <h4>神话处理器：溶解器</h4>
+              <p>第五章神话处理器系列。</p>
+            </article>
+            <article class="card">
+              <h4>神话处理器：结晶器</h4>
+              <p>第五章神话处理器系列。</p>
+            </article>
+            <article class="card">
+              <h4>梦之能量核心</h4>
+              <div class="tags"><span class="tag tag-src">来自 新星工程</span></div>
+              <p>储存能量多方块，可存储 <b>无限能量</b>。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第七章 -->
+        <div class="chapter ch-7" id="ch7">
+          <div class="chapter-head">
+            <span class="chapter-num">07</span>
+            <h3>第七章</h3>
+            <span class="chapter-count">2 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>觉醒注能装置</h4>
+              <p>模块化龙之研究聚合装置。</p>
+            </article>
+            <article class="card">
+              <h4>深度虚空采掘机</h4>
+              <p>增强版环境科技。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第八章 -->
+        <div class="chapter ch-8" id="ch8">
+          <div class="chapter-head">
+            <span class="chapter-num">08</span>
+            <h3>第八章</h3>
+            <span class="chapter-count">2 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>炼狱星枢</h4>
+              <p>模块化血之祭坛 + 高级屠龙者熔炉。</p>
+            </article>
+            <article class="card">
+              <h4>多线程源质结晶器</h4>
+              <p>第八章源质处理设备。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第九章 -->
+        <div class="chapter ch-9" id="ch9">
+          <div class="chapter-head">
+            <span class="chapter-num">09</span>
+            <h3>第九章</h3>
+            <span class="chapter-count">2 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>量子催化反应阵列</h4>
+              <p>提供了一键出一些化学材料的配方。</p>
+            </article>
+            <article class="card">
+              <h4>再定义器</h4>
+              <p>定义增产。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第十章 -->
+        <div class="chapter ch-10" id="ch10">
+          <div class="chapter-head">
+            <span class="chapter-num">10</span>
+            <h3>第十章</h3>
+            <span class="chapter-count">3 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>大型养鸡场</h4>
+              <p>32 线程鸡舍。</p>
+            </article>
+            <article class="card">
+              <h4>超速生长催生器</h4>
+              <p>多线程超速生长装置。</p>
+            </article>
+            <article class="card">
+              <h4>寰宇递归工厂</h4>
+              <p>可以用物品升级其并行数量。</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 第 ? 章 -->
+        <div class="chapter ch-x" id="chx">
+          <div class="chapter-head">
+            <span class="chapter-num">?</span>
+            <h3>第 ? 章</h3>
+            <span class="chapter-count">1 台</span>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <h4>AF-0001-地毯复制机</h4>
+              <p>可以复制地毯的机器。地毯的颜色和数量可以配置。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 加入配方 -->
+      <section id="recipes">
+        <h2 class="sec-title">加入配方</h2>
+
+        <div class="panel">
+          <div class="grid">
+            <article class="card">
+              <h4>ME 机械样板供应器</h4>
+              <div class="tags">
+                <span class="tag tag-credit">整合自 忆昔</span>
+                <span class="tag">第三章</span>
+              </div>
+            </article>
+            <article class="card">
+              <h4>ME 机械样板镜像</h4>
+              <div class="tags"><span class="tag">第三章</span></div>
+            </article>
+            <article class="card">
+              <h4>并行控制仓</h4>
+              <div class="tags">
+                <span class="tag tag-credit">整合自 科科科胖</span>
+                <span class="tag">第三章</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="sub-block">
+            <div class="sub-title">AE2Enhanced 配方修改</div>
+            <p>
+              修改了部分 AE2E 的配方，并且新增了<b>阶段并行卡</b>。需要安装 <b>AE2Enhanced</b> 生效，
+              以及 <b>AE2-UEL：v0.56.7+</b>。
+            </p>
+
+            <ul class="clean" style="margin-top:14px;">
+              <li><b>阶段并行卡</b>：在 JEI 中搜索 <b>装配枢纽并行升级</b></li>
+            </ul>
+
+            <div class="note">
+              <b>相关链接：</b><br>
+              <a class="link" href="https://www.mcmod.cn/class/26679.html" target="_blank" rel="noopener">MCMOD</a> ·
+              <a class="link" href="https://www.curseforge.com/minecraft/mc-mods/ae2enhanced" target="_blank"
+                rel="noopener">CurseForge</a> ·
+              <a class="link" href="https://github.com/aeddddd/AE2Enhanced" target="_blank" rel="noopener">GitHub</a>
+            </div>
+
+            <div class="note">
+              <b>若不想使用：</b>删除文件夹 <code>scripts\SKTweaks\AE2Enhanced</code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 改动汇总 -->
+      <section id="changes">
+        <h2 class="sec-title">模组改动分类汇总</h2>
+
+        <div class="panel">
+          <h4>一、肉丸原版改动</h4>
+          <ul class="clean">
+            <li><b>终极能源输入/输出仓</b>：储能和输入/输出速率调高，通量网络连接时建议开启速率限制。</li>
+            <li><b>ME 神话装配室</b>：支持全部能源输入仓。</li>
+            <li><b>神话机器 —— 化学反应器</b>：支持 ME 机械输入/输出。</li>
+            <li><b>多方块源质冶炼厂</b>：可放置机械源质输出总线。</li>
+            <li><b>能源输入仓</b>：接口可以使用机械外壳替换。</li>
+            <li><b>盐复极化器</b>：结构添加并行控制器。</li>
+            <li><b>神圣余烬蜂箱</b>：补上了一些蜜蜂的配方。</li>
+            <li><b>定义器</b>：增加样板供应器。</li>
+            <li><b>EIO 的传送手杖</b>：减少传送冷却。</li>
+            <li><b>创造源质储存原件</b>：添加了配方。</li>
+            <li><b>ME 神话装配室</b>：目前可以合成带控制器名字的纸。</li>
+            <li><b>三一碎片</b>：添加了焦黑浇筑站配方。</li>
+            <li><b>定义增产</b>：新增定义鸡及一系列配方。</li>
+          </ul>
+
+          <h4>二、Bug 修复</h4>
+          <ul class="clean">
+            <li>暂无 bug 修复。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 鸣谢 -->
+      <section id="credits">
+        <h2 class="sec-title">特别鸣谢</h2>
+        <div class="credits">
+          <span>aedddd</span>
+          <span>流光通明 / Circulate233</span>
+          <span>梦瑞云 / Evelia_Fate</span>
+          <span>Hikari_Nova</span>
+          <span>mc_Edwin</span>
+          <span>Nyonio</span>
+          <span>Puzitsa</span>
+          <span>大S劳斯 / Sainagh</span>
+          <span>瓜子神教大主教 / x_zhangjun</span>
+          <span>ZY</span>
+        </div>
+      </section>
+
+      <footer>
+        SK-Tweaks · 肉丸工艺：次元飞升 私货说明 · DLC 版本 2.1.2
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      /* ---------- 移动端侧栏开关 ---------- */
+      var sidebar = document.getElementById('sidebar');
+      var toggle = document.getElementById('menuToggle');
+      var backdrop = document.getElementById('backdrop');
+
+      function closeSidebar() {
+        sidebar.classList.remove('open');
+        backdrop.classList.remove('show');
+      }
+
+      toggle.addEventListener('click', function () {
+        sidebar.classList.toggle('open');
+        backdrop.classList.toggle('show');
+      });
+      backdrop.addEventListener('click', closeSidebar);
+
+      /* ---------- 滚动高亮当前章节 ---------- */
+      var links = [].slice.call(document.querySelectorAll('.side-nav .nav-link'));
+      var items = links.map(function (l) {
+        return { link: l, el: document.querySelector(l.getAttribute('href')) };
+      }).filter(function (o) { return o.el; });
+
+      var tops = [];
+
+      function measure() {
+        tops = items.map(function (o) {
+          return { link: o.link, top: o.el.getBoundingClientRect().top + window.pageYOffset };
+        });
+      }
+
+      function onScroll() {
+        if (!tops.length) return;
+        var y = window.pageYOffset + 140;
+        var active = tops[0];
+        for (var i = 0; i < tops.length; i++) {
+          if (tops[i].top <= y) active = tops[i];
+        }
+        links.forEach(function (l) { l.classList.remove('active'); });
+        if (active) active.link.classList.add('active');
+      }
+
+      /* ---------- 点击后关闭移动端侧栏 ---------- */
+      document.querySelectorAll('.sidebar a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          if (window.innerWidth <= 920) closeSidebar();
+        });
+      });
+
+      measure();
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', function () { measure(); onScroll(); });
+      window.addEventListener('load', function () { measure(); onScroll(); });
+    })();
+  </script>
+
+</body>
+
+</html>
