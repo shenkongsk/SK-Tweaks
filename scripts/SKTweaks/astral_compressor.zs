@@ -27,77 +27,62 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.modularmachinery.RecipeFinishEvent;
 val MACHINE = "astral_compressor";
 
-// // 从已经连接的梦核获取能量
-// function  AC_Recipe_Builder(
-//     RecipeName as string,
-//     ItemInputs as IIngredient[],
-//     FluidInputs as ILiquidStack[],
-//     ItemOutputs as IIngredient[],
-//     FluidOutputs as ILiquidStack[],
-//     EnergyInput as BigInteger,
-//     Time as int
-// )as void {
-//     val builder = RecipeBuilder.newBuilder("astral_compressor", RecipeName,Time);
-//     for item in ItemInputs {
-//         builder.addItemInput(item);
-//     }
-//     for fluid in FluidInputs {
-//         builder.addFluidInput(fluid);
-//     }
-//     // PreCheck：检查梦核连接 + 能量是否够
-//     builder.addPreCheckHandler(function(event as RecipeCheckEvent) {
-//         DE_Energy_PreCheck(event, EnergyInput);
-//     });
+val Recipe_Item_In as IIngredient[][] = [
+    [
+        <contenttweaker:modular_neutronium_casing>*55,
+        <contenttweaker:gravitational_time_crystal>*1
+    ],
+    [
+        <contenttweaker:miniature_quasar>,
+        <contenttweaker:quasar_stabilizer>*64,
+        <glassential:glass_ethereal_reverse>*24,
+        <contenttweaker:quasar_burst_director>*16,
+        <contenttweaker:quasar_screen>*1
+    ],
+    [<divinerpg:dream_grass>*640],
+    [
+        <contenttweaker:slightly_dense_pebble>*64,
+        <contenttweaker:hyper_dense_dirt>*64
+    ]
+];
 
-//     builder.addFinishHandler(function(event as RecipeFinishEvent) {
-//         val ctrl = event.controller;
-//         // Consume_DE_Core_Energy(ctrl, EnergyInput);
-//     });
+val Recipe_Item_Out as IIngredient[][] = [
+    [<contenttweaker:time_crystal_lattice>*1],
+    [<contenttweaker:directed_miniature_quasar>*1],
+    [<contenttweaker:hyper_dense_dirt>*1],
+    [<contenttweaker:hyperdense_matter>*8]
+];
 
-//     builder.addRecipeTooltip(
-//         "§b需要梦核能量：§6" + EnergyInput.toString(),
-//         "§7时间：" + Time + " tick"
-//     );
 
-//     builder.build();
-// }
-// Recipe_DE_Builder_SK(
-//     "testrecipe_sadasd",
-//     "astral_compressor",
-//     [
-//         <minecraft:stone>
-//     ],
-//     [
-//         <liquid:water> * 1000
-//     ],
-//     [
-//         <minecraft:diamond>
-//     ],
-//     [
-//         <liquid:lava> * 1000
-//     ],
-//     200,
-//     BigInteger("1000000000000"),
-//     BigInteger("0"),
-//     ""
-// );
-// Recipe_DE_Builder_SK(
-//     "testrecipe_sasdsdsddasd",
-//     "astral_compressor",
-//     [
-//         <minecraft:bedrock>
-//     ],
-//     [
-//         <liquid:water> * 1000
-//     ],
-//     [
-//         <minecraft:diamond>
-//     ],
-//     [
-//         <liquid:lava> * 10000
-//     ],
-//     200,
-//     BigInteger("0"),
-//     BigInteger("100000000"),
-//     ""
-// );
+val Recipe_Fluid_In as ILiquidStack[][] = [
+    [],
+    [],
+    [<liquid:blockfluiddirt>*536870912],
+    [<liquid:black_hole_juice>*20]
+];
+
+val Recipe_Fluid_Out as ILiquidStack[][] = [
+    [],[],[],[]
+];
+
+val Recipe_Energy as string[] = [
+    "10000000000",
+    "10000000000",
+    "400000000000",
+    "800000000000"
+];
+
+for i in 0 to Recipe_Item_In.length{
+    Recipe_DE_Builder_SK(
+        "astral_compressor_recipe" + i,
+        "astral_compressor",
+        Recipe_Item_In[i],
+        Recipe_Fluid_In[i],
+        Recipe_Item_Out[i],
+        Recipe_Fluid_Out[i],
+        500,
+        BigInteger(Recipe_Energy[i]),
+        BigInteger("0"),
+        ""
+    );
+}

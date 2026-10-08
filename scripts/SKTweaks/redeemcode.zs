@@ -33,7 +33,7 @@ val codeRewards as IItemStack[][] = [
 
 // ---------- 使用列表存储已使用记录 ----------
 global usedCodes as [string] = [];
-
+// 其实退出重进就再能领一次
 val redeemCommand as ZenCommand = ZenCommand.create("SKT_redeemcode");
 
 redeemCommand.getCommandUsage = function(sender) {

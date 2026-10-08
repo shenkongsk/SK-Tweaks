@@ -340,6 +340,18 @@ Recipe_Builder_SK(
 	60000,
 	0
 );
+// 4x
+Recipe_Builder_SK(
+	"liquid_dirt_recipe_4",
+	"mythic_processor_melter",
+	[<ore:compressed4xDirt>*1],
+	[],
+	[],
+	[<liquid:blockfluiddirt>*944784],
+	2,
+	60000,
+	0
+);
 // 
 // =====================================================================================================
 // 多方块合成	↑
@@ -377,7 +389,7 @@ Recipe_Builder_SK(
 // =====================================================================================================
 
 // ==================不要动这里的神秘代码不然大S老师的脚本会炸掉==================
-val creationdivinelattice = RecipeBuilder.newBuilder("wtfweishenmebuneng","creation_altar",10);
+// val creationdivinelattice = RecipeBuilder.newBuilder("wtfweishenmebuneng","creation_altar",10);
 // creationdivinelattice.addEnergyPerTickInput(400000);
 // creationdivinelattice.addFluidInput(<fluid:harmonic_draconian_lattice>*5000);
 // creationdivinelattice.addFluidInput(<fluid:infinite_divine_wish>*5000);
@@ -386,5 +398,5 @@ val creationdivinelattice = RecipeBuilder.newBuilder("wtfweishenmebuneng","creat
 // creationdivinelattice.addItemInput(<contenttweaker:divine_ironwood_ingot>);
 // creationdivinelattice.addFluidOutput(<liquid:harmonic_divine_lattice>*5000);
 // creationdivinelattice.addRecipeTooltip("test");
-creationdivinelattice.build();
+// creationdivinelattice.build();
 // ==================不要动这里的神秘代码不然大S老师的脚本会炸掉==================

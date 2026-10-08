@@ -22,7 +22,7 @@ import mods.modularmachinery.StatedMachineComponentBuilder;
 // static SKT as CreativeTab = VanillaFactory.createCreativeTab("§dSKTweaks", <minecraft:nether_star>);
 // SKT.register();
 static SKT as CreativeTab = VanillaFactory.createCreativeTab(
-    "SKT",<item:tardis:tardis_coral>
+    "SKT",<item:contenttweaker:eternal_glory>
 );
 SKT.register();
 function simple_register_item(
@@ -65,15 +65,20 @@ var ItemList = [
     "negentropy_dimensional_fractal_minus_third_order",
     "negentropy_dimensional_fractal_minus_fourth_order", 
     "negentropy_dimensional_fractal_minus_fifth_order",
-    "zero_point_fractal",    // 零点分形,
+    "zero_point_fractal",    // 零点分形
     "cryotheum_myrmex_coolant_cell", // 极寒恐蚁冷却单元
     "naquadriah_ingot",  //高能硅岩金属
     "exotic_dross",   // 异域残渣
     "alfheim_ingot",   // 亚尔夫海姆锭
-    "hyperdimensional_conponent",   // 超维度组件
+    "hyperdimensional_component",   // 超维度组件
     "hyper_dense_dirt",   // 超致密泥土
-    "dream_energy_link_card" // 梦之能量连接卡
-    
+    "dream_energy_link_card", // 梦之能量连接卡
+    "everloving_rune",// 永爱符文
+    "all_might_rune",    // 欧尔麦特符文
+    "saligia",// 原罪
+    "everloving_matirx", // 永爱矩阵
+    "shadow_crystal", // 暗影水晶
+    "purecrystal"   // 纯净水晶
 ];
 for i in 0 to ItemList.length {
     simple_register_item(ItemList[i]);

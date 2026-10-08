@@ -38,8 +38,7 @@ val MachineName as string[] = [
     "mythic_fractal_core_4",
     "mythic_fractal_core_5",
     "infinite_seeker_brain_in_a_vat",
-    "large_fridge",              // 第七章
-    "astral_compressor"          // 第十章
+    "large_fridge"              // 第七章
 ];
 for item in MachineName {
     MachineModifier.setMachinePrefix(item, "§6§kp§eSKT§6§kp§r");
