@@ -566,7 +566,7 @@ var DCHC_Outputs = [
     [<techreborn:dynamiccell>.withTag({Fluid: {FluidName: "pure_dream_energy", Amount: 1000}})]
 ];
 var DCHC_Energy = [
-    "10000"
+    "10000",
     "100000000000000000",
     "1000000000000000"
 ];
