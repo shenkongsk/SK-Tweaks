@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "contenttweaker:items/eternal_piece"
+    "layer0": "contenttweaker:items/SKTweaks/eternal_piece"
   }
 }
