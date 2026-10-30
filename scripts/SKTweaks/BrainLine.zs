@@ -144,11 +144,11 @@ Recipe_Builder_SK(
     [
         <liquid:essence_of_sane_thoughts>*200,
         <liquid:recursive_iced_coffee>*200,
-        <liquid:pure_dream_energy>*100
+        <liquid:pure_dream_energy>*250
     ],
     [],
     [
-        <liquid:asended_adenosinetriphosphate>*50
+        <liquid:asended_adenosinetriphosphate>*20
     ],
     20,
     16384000,
@@ -165,10 +165,10 @@ Recipe_Builder_SK(
         <nuclearcraft:foursmore>*256,
     ],
     [
-        <liquid:essence_of_sane_thoughts>*200,
-        <liquid:recursive_iced_coffee>*200,
-        <liquid:pure_dream_energy>*1000,
-        <liquid:black_hole_juice>*50
+        <liquid:essence_of_sane_thoughts>*800,
+        <liquid:recursive_iced_coffee>*800,
+        <liquid:pure_dream_energy>*5000,
+        <liquid:black_hole_juice>*100
     ],
     [],
     [

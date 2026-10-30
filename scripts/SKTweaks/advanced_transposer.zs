@@ -1,66 +1,69 @@
 #loader crafttweaker reloadable
 #priority 1
-import mods.modularmachinery.Sync;
-import mods.modularmachinery.MMEvents;
 import mods.modularmachinery.RecipeBuilder;
-import mods.modularmachinery.MachineController;
 import mods.modularmachinery.IMachineController;
-import mods.modularmachinery.RecipeCheckEvent;
-import mods.modularmachinery.IngredientArrayBuilder;
-import mods.modularmachinery.ControllerGUIRenderEvent;
-import mods.modularmachinery.RecipeModifierBuilder;
-
-import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-import mods.modularmachinery.RecipeAdapterBuilder;
+import crafttweaker.data.IData;
+import native.net.minecraftforge.fluids.FluidRegistry;
+import native.net.minecraftforge.fluids.Fluid;
+import native.crafttweaker.api.minecraft.CraftTweakerMC;
 
+val MACHINE = "advanced_transposer";
+val fluidMap = FluidRegistry.getRegisteredFluids();
+for fluidKey, fluid in fluidMap {
+    val fluidName = fluid.getName();
+    val nativeFS = FluidRegistry.getFluidStack(fluidName, 1000);
+    if (isNull(nativeFS)) continue;
+    val fluidStack1000 = CraftTweakerMC.getILiquidStack(nativeFS) as ILiquidStack;
+    if (isNull(fluidStack1000)) continue;
+    // ============ 1. 桶装（forge:bucketfilled, 1000 mB） ============
+    val bucketStack = <forge:bucketfilled>.withTag({
+        "FluidName": fluidName,
+        "Amount": 1000
+    } as IData);
+    if (!isNull(bucketStack)) {
+        RecipeBuilder.newBuilder("bucket_fill_" + fluidKey.replace(":", "_"), MACHINE, 20)
+            .addItemInput(<minecraft:bucket>)
+            .addFluidInput(fluidStack1000)
+            .addItemOutput(bucketStack)
+            .build();
+    }
 
-// // RecipeBuilder.newBuilder("fluid_bottling", "me_fluid_bottler", 5)
-// //     // 输入1000mB的流体（这里以liquid_pe为例，实际支持任何流体）
-// //     .addInput(<liquid:liquid_pe> * 1000)
-// //     // 输入1个空桶
-// //     .addInput(<minecraft:bucket>)
-// //     // 输出一个占位用的空桶，后续通过 Modifier 修改它的NBT
-// //     .addOutput(<minecraft:bucket>)
-// //     .addItemModifier(function(ctrl as IMachineController, oldItem as IItemStack) as IItemStack {
-// //         // 1. 获取输入的流体类型
-// //         // 2. 构造盛装流体的桶的NBT
-// //         // Forge的标准流体桶NBT格式: {FluidName: "xxx", Amount: 1000}
-// //     })
-// //     .addRecipeTooltip("输入1000mB流体+空桶", "输出对应流体的桶", "自动读取输入流体类型")
-// //     .build();
-// function FluidTransposer(
-//     Fluid_Storage as IItemStack,
-//     Fluid as ILiquidStack
-// )as any[] {
-//     var C_ID = Fluid_Storage.definition.id;
-//     var FluidAmount;
-//     // 1.原版桶
-//     if(C_ID == "minecraft:bucket"){
-//         FluidAmount = 1000; 
-//         return[
-//             <forge:bucketfilled>.withTag({
-//                 "FluidName": Fluid.name,
-//                 "Amount": FluidAmount
-//             }),
-//             FluidAmount
-//         ];
-//     // 2.OB蓄水槽
-//     }else if(C_ID == "openblocks:tank"){
-//         FluidAmount = 16000;
-//         return[
-//             <openblocks:tank>.withTag({
-//                 "tank": {
-//                     "FluidName": Fluid.name,
-//                     "Amount": FluidAmount
-//                 }
-//             }),
-//             FluidAmount
-//         ];
-//     }
-//     return [<minecraft:bucket>,1000]; //如果输入的不符合上述条件，则输出空桶
-// }
-// FluidTransposer(<minecraft:bucket>, <liquid:liquid_pe>);
+    // ============ 2. 蓄水槽（openblocks:tank, 16000 mB） ============
+    val nativeFS16 = FluidRegistry.getFluidStack(fluidName, 16000);
+    if (!isNull(nativeFS16)) {
+        val fluidStack16000 = CraftTweakerMC.getILiquidStack(nativeFS16) as ILiquidStack;
+        if (!isNull(fluidStack16000)) {
+            val tankStack = <openblocks:tank>.withTag({
+                "tank": {
+                    "FluidName": fluidName,
+                    "Amount": 16000
+                }
+            } as IData);
+            if (!isNull(tankStack)) {
+                RecipeBuilder.newBuilder("tank_fill_" + fluidKey.replace(":", "_"), MACHINE, 20)
+                    .addItemInput(<openblocks:tank>)
+                    .addFluidInput(fluidStack16000)
+                    .addItemOutput(tankStack)
+                    .build();
+            }
+        }
+    }
 
-// //[<forge:bucketfilled>.withTag({FluidName: "liquid_pe", Amount: 1000}),1000]
+    // ============ 3. 流体单元（techreborn:dynamiccell, 1000 mB） ============
+    val cellStack = <techreborn:dynamiccell>.withTag({
+        "Fluid": {
+            "FluidName": fluidName,
+            "Amount": 1000
+        }
+    } as IData);
+    if (!isNull(cellStack)) {
+        RecipeBuilder.newBuilder("cell_fill_" + fluidKey.replace(":", "_"), MACHINE, 20)
+            .addItemInput(<techreborn:dynamiccell>)
+            .addFluidInput(fluidStack1000)
+            .addItemOutput(cellStack)
+            .build();
+    }
+}
+

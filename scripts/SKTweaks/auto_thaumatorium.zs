@@ -12,8 +12,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 
-MachineModifier.setInternalParallelism("auto_thaumatorium", 32);
-<modularmachinery:auto_thaumatorium_controller>.addTooltip(format.gold("内置32并行！"));
+MachineModifier.setInternalParallelism("auto_thaumatorium", 256);
+<modularmachinery:auto_thaumatorium_controller>.addTooltip(format.gold("内置256并行！"));
 RecipeAdapterBuilder.create("modularmachinery:auto_thaumatorium", "thaumcraft:crucible").build();
 
 function Thaumatorium_Recipe_Builder(

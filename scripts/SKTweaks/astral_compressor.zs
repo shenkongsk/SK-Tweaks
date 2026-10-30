@@ -42,7 +42,12 @@ val Recipe_Item_In as IIngredient[][] = [
     [<divinerpg:dream_grass>*640],
     [
         <contenttweaker:slightly_dense_pebble>*64,
-        <contenttweaker:hyper_dense_dirt>*64
+        <contenttweaker:hyper_dense_dirt>*128
+    ],
+    [
+        <botania:rune:9>*819200,<botania:rune:10>*819200,<botania:rune:11>*819200,<botania:rune:12>*819200,<botania:rune:13>*819200,<botania:rune:14>*819200,<botania:rune:15>*819200,
+        <botania:livingrock>*819200,
+        <contenttweaker:everloving_rune>*1
     ]
 ];
 
@@ -50,7 +55,8 @@ val Recipe_Item_Out as IIngredient[][] = [
     [<contenttweaker:time_crystal_lattice>*1],
     [<contenttweaker:directed_miniature_quasar>*1],
     [<contenttweaker:hyper_dense_dirt>*1],
-    [<contenttweaker:hyperdense_matter>*8]
+    [<contenttweaker:hyperdense_matter>*8],
+    [<contenttweaker:saligia>]
 ];
 
 
@@ -58,31 +64,33 @@ val Recipe_Fluid_In as ILiquidStack[][] = [
     [],
     [],
     [<liquid:blockfluiddirt>*536870912],
-    [<liquid:black_hole_juice>*20]
+    [<liquid:black_hole_juice>*20],
+    [<liquid:black_hole_juice>*100]
 ];
 
 val Recipe_Fluid_Out as ILiquidStack[][] = [
-    [],[],[],[]
+    [],[],[],[],[]
 ];
 
 val Recipe_Energy as string[] = [
     "10000000000",
     "10000000000",
-    "400000000000",
-    "800000000000"
+    "40000000000",
+    "800000000000",
+    "1000000000"
 ];
 
 for i in 0 to Recipe_Item_In.length{
     Recipe_DE_Builder_SK(
         "astral_compressor_recipe" + i,
         "astral_compressor",
-        Recipe_Item_In[i],
-        Recipe_Fluid_In[i],
-        Recipe_Item_Out[i],
-        Recipe_Fluid_Out[i],
+        Recipe_Item_In[i],[],
+        Recipe_Fluid_In[i],[],
+        Recipe_Item_Out[i],[],
+        Recipe_Fluid_Out[i],[],
         500,
         BigInteger(Recipe_Energy[i]),
-        BigInteger("0"),
+        BigInteger.ZERO,
         ""
     );
 }

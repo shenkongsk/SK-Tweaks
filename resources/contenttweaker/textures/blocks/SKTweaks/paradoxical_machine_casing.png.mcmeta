@@ -1,0 +1,10 @@
+{
+  "ctm": {
+    "ctm_version": 1,
+    "type": "ctm",
+    "textures": [
+      "contenttweaker:blocks/SKTweaks/paradoxical_machine_casing_ctm"
+    ],
+    "layer": "SOLID"
+  }
+}

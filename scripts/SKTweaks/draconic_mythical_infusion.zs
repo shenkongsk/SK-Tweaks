@@ -151,7 +151,7 @@ var Recipe_Inputs = [
     [<draconicevolution:draconic_ingot>*4,<draconicevolution:chaotic_core>,<draconicevolution:reactor_part:3>,<draconicevolution:reactor_part:4>,<draconicevolution:draconic_energy_core>],
     [<aoa3:rune_shrine>*1,<contenttweaker:cuendillar_plate>*8,<contenttweaker:one_power_unleashed_emerald>*2],
     [<contenttweaker:catalyst_of_universal_balance>,<contenttweaker:quasar_charged_core_of_definition>*2,<contenttweaker:threefold_stellar_ingot>*2,<contenttweaker:self_confined_neutrino_plasma>*4],
-    [<contenttweaker:matter_inflorescence>*8,<ore:blockGhoulish>*8,<ore:blockGhastly>*8,<extrabotany:material:6>*4,<contenttweaker:impetus_crystal>*1]
+    [<contenttweaker:matter_inflorescence>*8,<ore:blockGhoulish>*8,<ore:blockGhastly>*8,<extrabotany:material:6>*4,<contenttweaker:lothlorien_silt>*16,<contenttweaker:impetus_gemstone>*1]
 ];
 var Recipe_Outputs = [
     [<draconicevolution:crafting_injector:2>*1],
@@ -244,7 +244,7 @@ var Recipe_Outputs = [
     [<draconicevolution:reactor_component>*1],
     [<contenttweaker:cuendillar_seal>*4],
     [<contenttweaker:time_lords_core_of_definition>],
-    [<contenttweaker:dream_cluster>*256]
+    [<contenttweaker:dream_cluster>*64]
 ];
 var Recipe_Energy as long[] = [
     256000 as long,     // 1. 注射器升级 (draconicevolution:crafting_injector,1,2)

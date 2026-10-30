@@ -2,7 +2,7 @@ import mods.modularmachinery.RecipeBuilder;
 
 Recipe_Builder_SK(
     "deep_void_excavator_make",
-    "me_mythic_assembler",
+    "creation_altar",
     // inputs
     [
         <environmentaltech:structure_frame_6>*128,

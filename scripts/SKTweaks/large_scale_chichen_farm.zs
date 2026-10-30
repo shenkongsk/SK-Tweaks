@@ -138,7 +138,8 @@ val Chicken_Input = [
     [<chickens:spawn_egg>.withTag({ChickenType: {id: "chickens:redstonechicken"}})*1],
     [<chickens:spawn_egg>.withTag({ChickenType: {id: "contenttweaker:lovely_chicken"}})*1],
     [<minecraft:egg>*1],
-    [<hatchery:hatcheryegg>*1]
+    [<hatchery:hatcheryegg>*1],
+    [<contenttweaker:terrestrial_animator_7>*1]
 ];
 
 val Egg_Output = [
@@ -219,7 +220,8 @@ val Egg_Output = [
     [<minecraft:redstone>*128],
     [<contenttweaker:lovely_egg>*32],
     [<minecraft:egg>*64],
-    [<minecraft:egg>*128]
+    [<minecraft:egg>*128],
+    [<extrautils2:compressedcobblestone:5>*4]
 ];
 
 for i in 0 to Chicken_Input.length{

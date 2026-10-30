@@ -4,17 +4,17 @@ import mods.modularmachinery.FactoryRecipeThread;
 import mods.modularmachinery.MMEvents;
 import mods.modularmachinery.ControllerGUIRenderEvent;
 
-MachineModifier.setInternalParallelism("fluix_reactor", 16);
-MachineModifier.setMaxThreads("fluix_reactor",0);
+MachineModifier.setInternalParallelism("fluix_reactor", 64);
+MachineModifier.setMaxThreads("fluix_reactor",3);
 // 设置16倍的最大并行数
 val MACHINE = "fluix_reactor";
-val threadA = FactoryRecipeThread.createCoreThread("反应仓I");
-val threadB = FactoryRecipeThread.createCoreThread("反应仓II");
-val threadC = FactoryRecipeThread.createCoreThread("反应仓III");
-MachineModifier.addCoreThread(MACHINE, threadA);
-MachineModifier.addCoreThread(MACHINE, threadB);
-MachineModifier.addCoreThread(MACHINE, threadC);
-<modularmachinery:fluix_reactor_factory_controller>.addTooltip(format.gold("内置16并行！"));
+// val threadA = FactoryRecipeThread.createCoreThread("反应仓I");
+// val threadB = FactoryRecipeThread.createCoreThread("反应仓II");
+// val threadC = FactoryRecipeThread.createCoreThread("反应仓III");
+// MachineModifier.addCoreThread(MACHINE, threadA);
+// MachineModifier.addCoreThread(MACHINE, threadB);
+// MachineModifier.addCoreThread(MACHINE, threadC);
+<modularmachinery:fluix_reactor_factory_controller>.addTooltip(format.gold("内置64并行！"));
 <modularmachinery:fluix_reactor_factory_controller>.addTooltip(format.gold("内置3个线程！"));
 
 

@@ -44,36 +44,6 @@ val energyout = 1000000 as long;
 // 能量输入配方
 RecipeBuilder.newBuilder("EnergyInput_Dream", MACHINE, 1)
     .addEnergyPerTickInput(energyin)
-    // .addPreCheckHandler(function(event as RecipeCheckEvent) {
-    //     val data = event.controller.customData;
-    //     var energy = isNull(data) ? 0 as long : (isNull(data.energy) ? 0 as long : data.energy as long);
-    //     // 读取 speed 值，默认为 1.0
-    //     var speed = 1.0;
-    //     if (!isNull(data)) {
-    //         val speedVal = data.memberGet("speed");
-    //         if (!isNull(speedVal)) speed = speedVal as double;
-    //     }
-    //     val actualInput = (energyin * speed) as long;
-    //     if ((energy + actualInput) > maxenergy) {
-    //         event.setFailed("能量存储已达极限！");
-    //     }
-    // })
-    // .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
-    //     var data = event.controller.customData;
-    //     if (isNull(data)) data = {} as IData;
-    //     var energy = isNull(data.energy) ? "0" as string  : data.energy as string;
-    //     // 读取 speedIn 值，默认为 1.0
-    //     var speedIn = 1.0;
-    //     val speedInVal = data.memberGet("speedIn");
-    //     if (!isNull(speedInVal)) speedIn = speedInVal as double;
-    //     // 计算实际输入量
-    //     val actualInput = BigInteger.valueOf(energyin * speedIn);
-    //     val newEnergy = BigInteger(energy).add(actualInput);
-    //     val newEnergy_bigint_str = newEnergy.toString();
-    //     // 使用 IData 合并（推荐）
-    //     val newData = data + ({ "energy": newEnergy_bigint_str } as IData);
-    //     event.controller.customData = newData;
-    // })
         .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
         var data = event.controller.customData;
         if (isNull(data)) data = {} as IData;
@@ -81,7 +51,6 @@ RecipeBuilder.newBuilder("EnergyInput_Dream", MACHINE, 1)
         var speedIn = 1.0;
         val speedInVal = data.memberGet("speed_in");
         if (!isNull(speedInVal)) speedIn = speedInVal as double;
-        // 缩放法计算实际输入量
         val actualInput = BigInteger.valueOf(energyin)
                 .multiply(BigInteger.valueOf((speedIn * 1000) as long))
                 .divide(BigInteger.valueOf(1000));
@@ -96,32 +65,12 @@ RecipeBuilder.newBuilder("EnergyInput_Dream", MACHINE, 1)
 // 能量输出配方
 RecipeBuilder.newBuilder("EnergyOutput_Dream", MACHINE, 1)
     .addEnergyPerTickOutput(energyout)
-    // .addPreCheckHandler(function(event as RecipeCheckEvent) {
-    //     val data = event.controller.customData;
-    //     // var energy = isNull(data) ? 0 as long : (isNull(data.energy) ? 0 as long : data.energy as long);
-    //     var energy = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
-    //     if (energy.compareTo(BigInteger.valueOf(energyout)) < 0) {
-    //         event.setFailed("能量不够输出！");
-    //     }
-    // })
-    // .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
-    //     var data = event.controller.customData;
-    //     if (isNull(data)) data = {} as IData;
-    //     var energystr = isNull(data.energy) ? "0" as string : data.energy as string;
-    //     var energy = BigInteger(energystr);
-    //     var newEnergy = energy.subtract(BigInteger.valueOf(energyout));
-    //     var newData = data + ({ "energy": newEnergy.toString() } as IData);
-    //     event.controller.customData = newData;
-    // })
     .addPreCheckHandler(function(event as RecipeCheckEvent) {
         val data = event.controller.customData;
-        // var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
         var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
-        // 读取速度倍率
         var speedOut = 1.0;
         val speedOutVal = data.memberGet("speed_out");
         if (!isNull(speedOutVal)) speedOut = speedOutVal as double;
-        // 计算实际需要扣减的量
         val required = BigInteger.valueOf(energyout)
                 .multiply(BigInteger.valueOf((speedOut * 1000) as long))
                 .divide(BigInteger.valueOf(1000));
@@ -165,38 +114,6 @@ function formatNumber(value as long) as string {
         return "" + ((value / 1000000000000000) as float / 1000) + "E";
     }
 }
-// ======================== 格式化 BigInteger（带单位，超 Y 用科学计数法） ========================
-// function formatBigNumber(value as BigInteger) as string {
-//     if (isNull(value)) return "0";
-//     if (value.compareTo(BigInteger.ZERO) == 0) return "0";
-//     if (value.compareTo(BigInteger.ZERO) < 0) return "-" + formatBigNumber(value.negate());
-//     if (isNull(value) || value.compareTo(BigInteger.ZERO) == 0) return "0";
-//     val units = ["", "K", "M", "G", "T", "P", "E", "Z", "Y"];
-//     var idx = 0;
-//     var absVal = value;
-//     while (absVal.compareTo(BigInteger.valueOf(1000)) >= 0 && idx < units.length - 1) {
-//         absVal = absVal.divide(BigInteger.valueOf(1000));
-//         idx = idx + 1;
-//     }
-//     // 超过 Y 用科学计数法
-//     if (idx == units.length - 1 && absVal.compareTo(BigInteger.valueOf(1000)) >= 0) {
-//         val str = value.toString();
-//         val len = str.length();
-//         val exponent = len - 1;
-//         var mantissa = str.substring(0, 1);
-//         if (len > 1) mantissa = mantissa + "." + str.substring(1, 2);
-//         else mantissa = mantissa + ".0";
-//         return mantissa + "E" + exponent;
-//     }
-//     // 正常带单位显示
-//     val remainder = value.mod(BigInteger.valueOf(1000));
-//     if (remainder.compareTo(BigInteger.ZERO) > 0) {
-//         val decimal = remainder.multiply(BigInteger.valueOf(10)).divide(BigInteger.valueOf(1000));
-//         return absVal.toString() + "." + decimal.toString() + units[idx];
-//     } else {
-//         return absVal.toString() + units[idx];
-//     }
-// }
 function formatBigNumber(value as BigInteger) as string {
     if (isNull(value)) return "0";
     val zero = BigInteger.ZERO;
@@ -290,13 +207,6 @@ MMEvents.onControllerGUIRender(MACHINE,function(event as ControllerGUIRenderEven
     info += "§3║§b▸ 当前输入：§6" + formatNumber(energy_speed_in) + " RF/t";
     info += "§3║§b▸ 当前输出：§6" + formatNumber(energy_speed_out) + " RF/t";
     info += "§3║§d▸ 当前聚合最大并行数：§6" + chargeParallel+ "§cx";
-    // var Parallel = 256;
-    // var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
-    // if(current.compareTo(BigInteger("10000000000")) >= 0) Parallel *= 4;
-    // if(current.compareTo(BigInteger("1000000000000000")) >= 0) Parallel *= 64;
-    // info += "§3║§b▸ 聚合并行数：§6" + Parallel;
-    // var mode = ctrl.isWorking ? "§aASYNC" : "§7IDLE";
-    // info += "§3║§b▸ 工作模式：§f" + mode;
     info += "§3║§b▸ CPU 负载：§6" + (ctrl.isWorking ? (Math.random() * 20 + 10) as int : 0) + "%";
 
     
@@ -352,28 +262,6 @@ MMEvents.onMachinePostTick(MACHINE, function(event as MachineTickEvent) {
     writeSmartInterfaceDataToCustomData(event, minSpeed, maxSpeed);
 });
 
-// function writeSmartInterfaceDataToCustomData(event as MachineTickEvent, minSpeed as double, maxSpeed as double) {
-//     val ctrl = event.controller;
-//     var data = ctrl.customData;
-//     if (isNull(data)) data = {} as IData;
-//     val map = data.asMap();
-//     val nullable = ctrl.getSmartInterfaceData("speed");
-//     var speed = isNull(nullable) ? 1.0 : (nullable.value as double);
-
-//     // 限幅并同步更新 speed 变量
-//     if (speed < minSpeed) {
-//         speed = 1.0;
-//         if (!isNull(nullable)) nullable.value = 1.0;
-//     } else if (speed > maxSpeed) {
-//         speed = maxSpeed;
-//         if (!isNull(nullable)) nullable.value = maxSpeed;
-//     }
-
-//     map["speed"] = speed;
-//     ctrl.customData = data;
-//     ctrl.addPermanentModifier("receive", RecipeModifierBuilder.create("modularmachinery:energy", "input", speed, 1, false).build());
-//     ctrl.addPermanentModifier("extract", RecipeModifierBuilder.create("modularmachinery:energy", "output", speed, 1, false).build());
-// }
 function writeSmartInterfaceDataToCustomData(event as MachineTickEvent, minSpeed as double, maxSpeed as double) {
     val ctrl = event.controller;
     var data = ctrl.customData;
@@ -399,45 +287,47 @@ function writeSmartInterfaceDataToCustomData(event as MachineTickEvent, minSpeed
     ctrl.addPermanentModifier("extract", RecipeModifierBuilder.create("modularmachinery:energy", "output", speedOut, 1, false).build());
 }
 
-// function Dream_Core_Hyper_Charge(
-//     RecipeName as string,
-//     ItemInputs as IIngredient[],
-//     ItemOutputs as IIngredient[],
-//     EnergyInput as BigInteger,
-//     time as long
-// )as void{
-//     val builder = RecipeBuilder.newBuilder(RecipeName, "dream_energy_core", time);
-//     for item in ItemInputs {
-//         builder.addItemInput(item);
-//     }
-//     for item in ItemOutputs {
-//         builder.addItemOutput(item);
-//     }
-//     builder.addPreCheckHandler(function(event as RecipeCheckEvent) {
-//         var data = event.controller.customData;
-//         // var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
-//         var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
-//         if (current.compareTo(EnergyInput) < 0) {
-//             event.setFailed("机器存储能量不足！");
-//         }
-//         // var Parallel = 256;
-//         // if(current.compareTo(BigInteger("10000000000")) >= 0) Parallel *= 4;
-//         // if(current.compareTo(BigInteger("1000000000000000")) >= 0) Parallel *= 64;
-//         // event.activeRecipe.maxParallelism = Parallel;
-//     });
-//     builder.addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent) {
-//         var data = event.controller.customData;
-//         if (isNull(data)) data = {} as IData;
-//         // var current = (isNull(data) || isNull(data.memberGet("energy"))) ? BigInteger("0") : BigInteger(data.memberGet("energy") as string);
-//         var current = BigInteger(Get_CustomData_string(data, "energy", "0"));
-//         val newEnergy = current.subtract(EnergyInput);
-//         val newData = data + ({ "energy": newEnergy.toString() } as IData);
-//         event.controller.customData = newData;
-//     });
-//     builder.setThreadName("梦之聚合模块");
-//     builder.addRecipeTooltip("§c梦之聚合模块：","§e需要：§6§l"+formatBigNumber(EnergyInput) +" §eRF");
-//     builder.build();
 
+// function DE_Core_Parallel_Limit(event as RecipeCheckEvent, EnergyInput as BigInteger) as bool {
+//     val ctrl = event.controller as IMachineController;
+//     val data = ctrl.customData;
+//     if (isNull(data)) {
+//         event.setFailed("机器没有自定义数据！");
+//         return false;
+//     }
+//     if (EnergyInput.compareTo(BigInteger.ZERO) <= 0) {
+//         return true;
+//     }
+//     val current = BigInteger(Get_CustomData_string(data, "energy", "0"));
+//     if (current.compareTo(EnergyInput) < 0) {
+//         event.setFailed("机器存储能量不足！");
+//         return false;
+//     }
+//     var tierParallel = 4;
+
+//     if (current.compareTo(BigInteger("1000000000")) >= 0) {
+//         tierParallel *= 8;   // ≥ 1G  → 32
+//     }
+//     if (current.compareTo(BigInteger("1000000000000")) >= 0) {
+//         tierParallel *= 8;   // ≥ 1T  → 256
+//     }
+//     if (current.compareTo(BigInteger("1000000000000000")) >= 0) {
+//         tierParallel *= 8;   // ≥ 1P  → 2048
+//     }
+//     if (current.compareTo(BigInteger("1000000000000000000")) >= 0) {
+//         tierParallel *= 8;   // ≥ 1E  → 16384
+//     }
+//     val maxByEnergy = current.divide(EnergyInput).longValue();
+//     var finalParallel = tierParallel;
+//     if (maxByEnergy < finalParallel) {
+//         finalParallel = maxByEnergy as int;
+//     }
+//     if (finalParallel < 1) finalParallel = 1;
+//     val activeRecipe = event.activeRecipe;
+//     if (!isNull(activeRecipe)) {
+//         activeRecipe.maxParallelism = finalParallel;
+//     }
+//     return true;
 // }
 function DE_Core_Parallel_Limit(event as RecipeCheckEvent, EnergyInput as BigInteger) as bool {
     val ctrl = event.controller as IMachineController;
@@ -446,59 +336,40 @@ function DE_Core_Parallel_Limit(event as RecipeCheckEvent, EnergyInput as BigInt
         event.setFailed("机器没有自定义数据！");
         return false;
     }
-
-    // 配方不需要能量，直接通过
-    if (EnergyInput.compareTo(BigInteger("0")) <= 0) {
+    if (EnergyInput.compareTo(BigInteger.ZERO) <= 0) {
         return true;
     }
-
     val current = BigInteger(Get_CustomData_string(data, "energy", "0"));
-
-    // 能量不足单次，直接失败
     if (current.compareTo(EnergyInput) < 0) {
         event.setFailed("机器存储能量不足！");
         return false;
     }
 
-    // ============ 按能量等级计算并行 ============
-    var tierParallel = 4;   // 基础并行
+    var tierParallel = 4;
+    if (current.compareTo(BigInteger("1000000000")) >= 0) tierParallel *= 8;
+    if (current.compareTo(BigInteger("1000000000000")) >= 0) tierParallel *= 8;
+    if (current.compareTo(BigInteger("1000000000000000")) >= 0) tierParallel *= 8;
+    if (current.compareTo(BigInteger("1000000000000000000")) >= 0) tierParallel *= 8;
 
-    if (current.compareTo(BigInteger("1000000000")) >= 0) {
-        tierParallel *= 8;   // ≥ 1G  → 32
-    }
-    if (current.compareTo(BigInteger("1000000000000")) >= 0) {
-        tierParallel *= 8;   // ≥ 1T  → 256
-    }
-    if (current.compareTo(BigInteger("1000000000000000")) >= 0) {
-        tierParallel *= 8;   // ≥ 1P  → 2048
-    }
-    if (current.compareTo(BigInteger("1000000000000000000")) >= 0) {
-        tierParallel *= 8;   // ≥ 1E  → 16384
+    val maxByEnergy = current.divide(EnergyInput);
+    var finalParallelBig = BigInteger.valueOf(tierParallel as long);
+    if (maxByEnergy.compareTo(finalParallelBig) < 0) {
+        finalParallelBig = maxByEnergy;
     }
 
-    // ============ 和能量能支撑的最大并行取较小值 ============
-    val maxByEnergy = current.divide(EnergyInput).longValue();
-
-    var finalParallel = tierParallel;
-    if (maxByEnergy < finalParallel) {
-        finalParallel = maxByEnergy as int;
+    var finalParallel = 1;
+    if (finalParallelBig.compareTo(BigInteger.valueOf(1)) >= 0) {
+        if (finalParallelBig.compareTo(BigInteger.valueOf(2147483647)) > 0) {
+            finalParallel = 2147483647;
+        } else {
+            finalParallel = finalParallelBig.intValue();
+        }
     }
-    if (finalParallel < 1) finalParallel = 1;
 
-    // ============ 写入 activeRecipe ============
     val activeRecipe = event.activeRecipe;
     if (!isNull(activeRecipe)) {
         activeRecipe.maxParallelism = finalParallel;
-
-        print("[DreamCore] 储能=" + current.toString()
-            + " 单次=" + EnergyInput.toString()
-            + " 等级并行=" + tierParallel
-            + " 能量上限并行=" + maxByEnergy
-            + " 最终并行=" + finalParallel);
-    } else {
-        print("[DreamCore] activeRecipe 为 null，无法限制并行！");
     }
-
     return true;
 }
 function Dream_Core_Hyper_Charge(
@@ -567,8 +438,8 @@ var DCHC_Outputs = [
 ];
 var DCHC_Energy = [
     "10000",
-    "100000000000000000",
-    "1000000000000000"
+    "9223372036854775807",
+    "10000000000000000"
 ];
 var DCHC_Time = [
     2000,

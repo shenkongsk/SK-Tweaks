@@ -53,54 +53,7 @@ function registerFluid(
     fluid.gaseous = gaseous;
     fluid.register();
 }
-// registerFluid(
-//     "stable_space",
-//     0xdf5403,
-//     300,
-//     1000,
-//     1000,
-//     8,
-//     false,
-//     false,
-//     1,
-//     false
-// );
-// registerFluid(
-//     "stable_time",
-//     0x0357df,
-//     300,
-//     1000,
-//     1000,
-//     8,
-//     false,
-//     false,
-//     1,
-//     false
-// );
-// registerFluid(
-//     "asended_adenosinetriphosphate",
-//     0x5edb3b,
-//     300,
-//     1000,
-//     1000,
-//     8,
-//     false,
-//     false,
-//     1,
-//     false
-// );
-// registerFluid(
-//     "pure_dream_energy",
-//     0x03dfa1,
-//     300,
-//     1000,
-//     1000,
-//     16,
-//     false,
-//     false,
-//     1,
-//     false
-// );
+
 val fluid_name as int[string]$orderly = {
     "stable_space" : 0xdf5403,
     "stable_time": 0x0357df,
@@ -109,14 +62,13 @@ val fluid_name as int[string]$orderly = {
     "infinite_eezo_mix" : 0x03dfa1,
     "stable_eezo_mix" : 0x03dfa1,
     "pure_eezo_mix" : 0x03dfa1,
-    // // 更多低语
-    // "whisper_of_chinesesword" : 0xD83A20,
-    // "whisper_of_x_zhangjun" : 0xF19E40,
-    // "whisper_of_nerdyspider" : 0xA1817F,
-    // "whisper_of_zy" : 0x6CBDFF,
-    // "whisper_of_sainagh" : 0x4A0600,
-    // // 更多低语
-    "mythical_mix" : 0x03dfa1
+    "mythical_mix" : 0x03dfa1,
+    "actualizing_ink" : 0x0b1a71,   //显化墨水
+    "negative_mass_exotic_fluid" : 0xbbfdb5,   //负性奇异流体
+    "arcanium_slurry": 0x03b3df,   //秘金混浆(DRPG)
+    "neuro_electric_trace" : 0x005d8f,   //神经电蚀残迹
+    "limbo_gel": 0x660025,    //灵薄狱凝胶
+    "metastable_chronophasic_flux" : 0x034c9f
 };
 for fluid,color in fluid_name {
     registerFluid(

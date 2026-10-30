@@ -1,7 +1,7 @@
 import mods.modularmachinery.RecipeBuilder;
 Recipe_Builder_SK(
     "draconic_mythical_infusion_factory_controller",
-    "me_mythic_assembler",
+    "creation_altar",
     // inputs
     [
         <modularmachinery:small_draconic_mythical_infusion_controller>*64,

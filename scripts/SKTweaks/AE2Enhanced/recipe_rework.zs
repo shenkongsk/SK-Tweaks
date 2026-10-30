@@ -56,7 +56,8 @@ var recipe_remove as IItemStack[] = [
 	<ae2enhanced:yellow_stripes_block_b>,
 	<ae2enhanced:chunk_mana_node>,
 	<ae2enhanced:compressed_chunk_mana_node>,
-	<ae2enhanced:singularity_chamber>
+	<ae2enhanced:singularity_chamber>,
+	<ae2enhanced:upgrade_card:5>
 ];
 for i in recipe_remove{
 	recipes.remove(i);
@@ -598,4 +599,31 @@ BlackHole.addRecipe(
 		<tconstruct:shard>.withTag({Material: "barathosynium"})*1,
 		<contenttweaker:primordial_star>*1
 	]
+);
+// 时线分歧模块
+Recipe_Builder_SK_Chance(
+    "upgradecard_5_make",
+    "creation_altar",
+    [
+		<ae2enhanced:conformal_invariant_charge>*16,
+		<ae2enhanced:virtual_parallel_card>.withTag({Tier: 0})*8
+	],[],
+    [],[],
+    [<ae2enhanced:upgrade_card:5>],[0.5],
+    [],[],
+    20,
+    2147483647,
+    0
+);
+// 共形不变荷
+Recipe_Builder_SK_Chance(
+    "conformal_invariant_charge_make",
+    "mythic_excavation_lattice",
+    [<contenttweaker:fractallite_quantum>],[],
+    [<liquid:neutron>*1000],[],
+    [<ae2enhanced:conformal_invariant_charge>],[0.025],
+    [],[],
+    20,
+    0,
+    0
 );

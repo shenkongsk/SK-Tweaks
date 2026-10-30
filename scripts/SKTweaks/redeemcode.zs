@@ -16,7 +16,8 @@ val validCodes as string[] = [
     "流体清理",
     "增进友谊",
     "酷炫方块",
-    "肉丸人的真面目"
+    "肉丸人的真面目",
+    "MMCE"
 ];
 
 val codeRewards as IItemStack[][] = [
@@ -28,7 +29,8 @@ val codeRewards as IItemStack[][] = [
     [<cyclicmagic:ender_water>.withTag({Unbreakable: 1 as byte, display: {Name: "§b反物质蒸发器", Lore: ["§l§6不毁"]}, HideFlags: 4}) * 1],
     [<thermalexpansion:florb>.withTag({Fluid: "liquid_fertilizer", display: {Lore: ["§d右键丢出"], Name: "§f流体球 （巧克力）§8§m（确信）"}}) * 64],
     [<appliedenergistics2:facade>.withTag({item: "avaritia:block_resource", damage: 1, display: {Name: "§d无尽块 - 1/6"}}) * 6],
-    [<minecraft:skull:3>.withTag({SkullOwner: {Name: "sainagh", Id: "493f29bb-b31b-39fa-b972-fec5d901113a"}}) * 1,<extrabotany:cosmetic:9>*1]
+    [<minecraft:skull:3>.withTag({SkullOwner: {Name: "sainagh", Id: "493f29bb-b31b-39fa-b972-fec5d901113a"}}) * 1,<extrabotany:cosmetic:9>*1],
+    [<minecraft:written_book>.withTag({author: "shenkong1234567", title: "建议不要打开", pages: ["{\"text\":\"冷知识：\\n实际上普通控制器（MMCE）也能代替指定控制器成型，所以实际上你可以不做指定控制器，而是用普通控制器（虽然会很卡）\"}"]})]
 ];
 
 // ---------- 使用列表存储已使用记录 ----------

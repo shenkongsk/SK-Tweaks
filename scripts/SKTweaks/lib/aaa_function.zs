@@ -22,6 +22,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.modularmachinery.MachineController;
 import mods.modularmachinery.RecipeFinishEvent;
+import mods.modularmachinery.MachineUpgradeHelper;
+import mods.modularmachinery.MachineUpgradeBuilder;
 // 神秘时代相关
 import native.com.blamejared.compat.thaumcraft.handlers.ThaumCraft;
 import native.thaumcraft.api.ThaumcraftApiHelper;
@@ -338,7 +340,37 @@ global Sequenced_Assembler_Recipe_Builder as function(
     builder.setMaxThreads(1);
     builder.build();
 };
-
+global Register_Machine_Upgrade_SK as function(
+    string,
+    IItemStack,
+    string[],
+    string,
+    string[],
+    int
+) void = function(
+    upgradeId as string,           // 升级内部 ID，如 "seventh_one_upgrade"
+    bindingItem as IItemStack,     // 绑定物品，如 <contenttweaker:seventh_one>
+    machineNames as string[],      // 兼容机器数组，如 ["the_sevens"]
+    langKey as string,             // 本地化 key，如 "new.upgrade.seventh_one"
+    descriptions as string[],      // 描述文本数组
+    maxStack as int                // 最大堆叠数，通常填 1
+) as void {
+    // 1. 注册绑定物品
+    MachineUpgradeHelper.registerSupportedItem(bindingItem);
+    // 2. 创建升级
+    val builder = MachineUpgradeBuilder.newBuilder(upgradeId, langKey, 1.0f, maxStack);
+    // 逐个添加描述（varargs 不支持直接传数组）
+    for desc in descriptions {
+        builder.addDescriptions(desc);
+    }
+    // 逐个添加兼容机器（varargs 不支持直接传数组）
+    for machine in machineNames {
+        builder.addCompatibleMachines(machine);
+    }
+    builder.buildAndRegister();
+    // 3. 把物品绑定到升级上
+    MachineUpgradeHelper.addFixedUpgrade(bindingItem, upgradeId);
+};
 //===========================================IData读取===========================================
 // int
 global Get_CustomData_int as function(IData, string, int)int = function(data as IData, key as string, default as int) as int {
@@ -385,44 +417,43 @@ global Get_CustomData_double as function(IData, string, double)double = function
 
 //===========================================IData读取===========================================
 //===========================================IData写入===========================================
-// int
-global Write_CustomData_int as function(IData, string, int)IData = function(data as IData, key as string, value as int) as IData {
-    var newData = data;
-    if (isNull(newData)) newData = {} as IData;
-    return newData + ({ key: value } as IData);
-};
-// long
-global Write_CustomData_long as function(IData, string, long)IData = function(data as IData, key as string, value as long) as IData {
-    var newData = data;
-    if (isNull(newData)) newData = {} as IData;
-    return newData + ({ key: value } as IData);
-};
-// float
-global Write_CustomData_float as function(IData, string, float)IData = function(data as IData, key as string, value as float) as IData {
-    var newData = data;
-    if (isNull(newData)) newData = {} as IData;
-    return newData + ({ key: value } as IData);
-};
-// string
-global Write_CustomData_string as function(IData, string, string)IData = function(data as IData, key as string, value as string) as IData {
-    var newData = data;
-    if (isNull(newData)) newData = {} as IData;
-    return newData + ({ key: value } as IData);
-};
-// double
-global Write_CustomData_double as function(IData, string, double)IData = function(data as IData, key as string, value as double) as IData {
-    var newData = data;
-    if (isNull(newData)) newData = {} as IData;
-    return newData + ({ key: value } as IData);
-};
-// bool
-global Write_CustomData_bool as function(IData, string, bool)IData = function(data as IData, key as string, value as bool) as IData {
-    var newData = data;
-    if (isNull(newData)) newData = {} as IData;
-    return newData + ({ key: value } as IData);
-};
+// // int
+// global Write_CustomData_int as function(IData, string, int)IData = function(data as IData, key as string, value as int) as IData {
+//     var newData = data;
+//     if (isNull(newData)) newData = {} as IData;
+//     return newData + ({ key: value } as IData);
+// };
+// // long
+// global Write_CustomData_long as function(IData, string, long)IData = function(data as IData, key as string, value as long) as IData {
+//     var newData = data;
+//     if (isNull(newData)) newData = {} as IData;
+//     return newData + ({ key: value } as IData);
+// };
+// // float
+// global Write_CustomData_float as function(IData, string, float)IData = function(data as IData, key as string, value as float) as IData {
+//     var newData = data;
+//     if (isNull(newData)) newData = {} as IData;
+//     return newData + ({ key: value } as IData);
+// };
+// // string
+// global Write_CustomData_string as function(IData, string, string)IData = function(data as IData, key as string, value as string) as IData {
+//     var newData = data;
+//     if (isNull(newData)) newData = {} as IData;
+//     return newData + ({ key: value } as IData);
+// };
+// // double
+// global Write_CustomData_double as function(IData, string, double)IData = function(data as IData, key as string, value as double) as IData {
+//     var newData = data;
+//     if (isNull(newData)) newData = {} as IData;
+//     return newData + ({ key: value } as IData);
+// };
+// // bool
+// global Write_CustomData_bool as function(IData, string, bool)IData = function(data as IData, key as string, value as bool) as IData {
+//     var newData = data;
+//     if (isNull(newData)) newData = {} as IData;
+//     return newData + ({ key: value } as IData);
+// };
 //===========================================IData写入===========================================
-// 在公共库文件（如 aaa_function.zs）中添加此函数
 global getOffsetPos as function(IMachineController, int, int, int)IBlockPos = function(
     ctrl as IMachineController,
     left as int,   // 左偏移（正=左，负=右）
@@ -541,19 +572,6 @@ global Get_DE_Energy as function(IMachineController)BigInteger = function(ctrl a
     return BigInteger(energy);
 };
 
-// global DE_Energy_PreCheck as function(RecipeCheckEvent,BigInteger)bool = function(event as RecipeCheckEvent, EnergyInput as BigInteger) as bool {
-//     val ctrl = event.controller;
-//     if((Check_DE_Core_Exist(ctrl) == false)) {
-//         event.setFailed("未连接梦之能量核心！");
-//         return false;
-//     }
-//     if((Get_DE_Energy(ctrl).compareTo(EnergyInput) < 0)) {
-//         event.setFailed("能量不足！");
-//         return false;
-//     }
-//     return true;
-// };
-
 // 综合检查
 global DE_Energy_PreCheck as function(RecipeCheckEvent, BigInteger) bool = function(event as RecipeCheckEvent, EnergyInput as BigInteger) as bool {
     val ctrl = event.controller as IMachineController;
@@ -609,10 +627,10 @@ global DE_Energy_IO as function(IMachineController,BigInteger)void = function(ct
 global Recipe_DE_Builder_SK as function(
     string,
     string,
-    IIngredient[],
-    ILiquidStack[],
-    IIngredient[],
-    ILiquidStack[],
+    IIngredient[],double[],
+    ILiquidStack[],double[],
+    IIngredient[],double[],
+    ILiquidStack[],double[],
     long,
     BigInteger,
     BigInteger,
@@ -620,10 +638,10 @@ global Recipe_DE_Builder_SK as function(
 ) void = function(
     recipeName as string,
     machineName as string,
-    inputs as IIngredient[],
-    fluidInputs as ILiquidStack[],
-    outputs as IIngredient[],
-    fluidOutputs as ILiquidStack[],
+    inputs as IIngredient[],inputChances as double[],
+    fluidInputs as ILiquidStack[],fluidInputChances as double[],
+    outputs as IIngredient[],outputChances as double[],
+    fluidOutputs as ILiquidStack[],fluidOutputChances as double[],
     time as long,
     energyInput as BigInteger,
     energyOutput as BigInteger,
@@ -638,17 +656,38 @@ global Recipe_DE_Builder_SK as function(
         Energy_tooltip = "§eRF 输出：§6" + formatBigNumber_not_recursive(energyOutput);
     }
     builder.setMaxThreads(1);
-    for item in inputs {
-        builder.addItemInput(item);
+        // 物品输入
+    for i in 0 to inputs.length{
+        val item = inputs[i];
+        val chance = (inputChances.length > i) ? inputChances[i] : 1.0;
+        if chance == 0.0 {
+            builder.addItemInput(item).setChance(chance).setParallelizeUnaffected(true);
+        } else {
+            builder.addItemInput(item).setChance(chance);
+        }
     }
-    for fluid in fluidInputs {
-        builder.addFluidInput(fluid);
+    // 流体输入
+    for i in 0 to fluidInputs.length{
+        val fluid = fluidInputs[i];
+        val chance = (fluidInputChances.length > i) ? fluidInputChances[i] : 1.0;
+        if chance == 0.0{
+            builder.addFluidInput(fluid).setChance(chance).setParallelizeUnaffected(true);
+        }else{
+            builder.addFluidInput(fluid).setChance(chance);
+        }
+        
     }
-    for item in outputs {
-        builder.addItemOutput(item);
+    // 物品输出
+    for i in 0 to outputs.length{
+        val item = outputs[i];
+        val chance = (outputChances.length > i) ? outputChances[i] : 1.0;
+        builder.addItemOutput(item).setChance(chance);
     }
-    for fluid in fluidOutputs {
-        builder.addFluidOutput(fluid);
+    // 流体输出
+    for i in 0 to fluidOutputs.length{
+        val fluid = fluidOutputs[i];
+        val chance = (fluidOutputChances.length > i) ? fluidOutputChances[i] : 1.0;
+        builder.addFluidOutput(fluid).setChance(chance);
     }
     builder.addPreCheckHandler(function(event as RecipeCheckEvent) {
         DE_Energy_PreCheck(event, energyInput);

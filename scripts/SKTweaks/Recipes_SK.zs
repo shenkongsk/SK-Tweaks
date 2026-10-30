@@ -1,5 +1,6 @@
 #loader crafttweaker reloadable
 import mods.modularmachinery.RecipeBuilder;
+import native.java.math.BigInteger;
 // =====================================================================================================
 // 工作台合成	↓
 // =====================================================================================================
@@ -64,7 +65,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:balanced_machine_c
 	[<contenttweaker:hungering_machine_case>, <contenttweaker:balanced_machine_frame>, <contenttweaker:balanced_machine_casing>, <contenttweaker:balanced_machine_casing>, <contenttweaker:balanced_machine_casing>, <contenttweaker:balanced_machine_frame>, <contenttweaker:hungering_machine_case>]
 ]);
 // 暗物质框架
-mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:dark_matter_frame>, [
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:dark_matter_frame>*8, [
 	[<contenttweaker:sashimi_of_the_gate_of_darkness>, <tconstruct:large_plate>.withTag({Material: "rebalanced_dark_matter"}), <contenttweaker:sashimi_of_the_gate_of_darkness>, <tconstruct:large_plate>.withTag({Material: "rebalanced_dark_matter"}), <contenttweaker:sashimi_of_the_gate_of_darkness>], 
 	[<tconstruct:large_plate>.withTag({Material: "rebalanced_dark_matter"}), <contenttweaker:dark_matter_node>, <contenttweaker:dust_of_infinite_wishes>, <contenttweaker:dark_matter_node>, <tconstruct:large_plate>.withTag({Material: "rebalanced_dark_matter"})], 
 	[<contenttweaker:sashimi_of_the_gate_of_darkness>, <contenttweaker:dust_of_infinite_wishes>, <contenttweaker:hyperdense_matter>, <contenttweaker:dust_of_infinite_wishes>, <contenttweaker:sashimi_of_the_gate_of_darkness>], 
@@ -86,6 +87,18 @@ mods.extendedcrafting.TableCrafting.addShaped(<mmce_complement:machine_glass>*64
 	[<bigreactors:turbineglass>, <ore:plateadvancedAlloy>, <ore:ingotTerrasteel>, <ore:ingotTerrasteel>, <ore:ingotTerrasteel>, <ore:plateadvancedAlloy>, <bigreactors:turbineglass>], 
 	[<bigreactors:turbineglass>, <tconstruct:large_plate>.withTag({Material: "terrasteel"}), <ore:plateadvancedAlloy>, <ore:plateadvancedAlloy>, <ore:plateadvancedAlloy>, <tconstruct:large_plate>.withTag({Material: "terrasteel"}), <bigreactors:turbineglass>], 
 	[<bigreactors:turbineglass>, <bigreactors:turbineglass>, <bigreactors:turbineglass>, <bigreactors:turbineglass>, <bigreactors:turbineglass>, <bigreactors:turbineglass>, <bigreactors:turbineglass>]
+]);
+// 戴森释能模块
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:module_dyson_discharge>, [
+	[<ore:blockInfinity>, <ore:blockCrystalMatrix>, <ore:blockCrystalMatrix>, <contenttweaker:dyson_collector>, <contenttweaker:miniature_star>, <contenttweaker:dyson_collector>, <ore:blockCrystalMatrix>, <ore:blockCrystalMatrix>, <ore:blockInfinity>], 
+	[<ore:blockCrystalMatrix>, <contenttweaker:dyson_collector>, <contenttweaker:dyson_collector>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:miniature_star>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:dyson_collector>, <contenttweaker:dyson_collector>, <ore:blockCrystalMatrix>], 
+	[<ore:blockCrystalMatrix>, <contenttweaker:dyson_collector>, <contenttweaker:miniature_star>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:hyperuranion_conduit>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:miniature_star>, <contenttweaker:dyson_collector>, <ore:blockCrystalMatrix>], 
+	[<contenttweaker:dyson_collector>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:ascended_spatial_chassis>, <techreborn:creative_solar_panel>, <contenttweaker:hyperuranion_conduit>, <techreborn:creative_solar_panel>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:dyson_collector>], 
+	[<contenttweaker:miniature_star>, <contenttweaker:miniature_star>, <contenttweaker:hyperuranion_conduit>, <contenttweaker:hyperuranion_conduit>, <contenttweaker:mythic_excavation_computer>, <contenttweaker:hyperuranion_conduit>, <contenttweaker:hyperuranion_conduit>, <contenttweaker:miniature_star>, <contenttweaker:miniature_star>], 
+	[<contenttweaker:dyson_collector>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:ascended_spatial_chassis>, <techreborn:creative_solar_panel>, <contenttweaker:hyperuranion_conduit>, <techreborn:creative_solar_panel>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:dyson_collector>], 
+	[<ore:blockCrystalMatrix>, <contenttweaker:dyson_collector>, <contenttweaker:miniature_star>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:hyperuranion_conduit>, <contenttweaker:ascended_spatial_chassis>, <contenttweaker:miniature_star>, <contenttweaker:dyson_collector>, <ore:blockCrystalMatrix>], 
+	[<ore:blockCrystalMatrix>, <contenttweaker:dyson_collector>, <contenttweaker:dyson_collector>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:miniature_star>, <contenttweaker:gravity_manipulator_device>, <contenttweaker:dyson_collector>, <contenttweaker:dyson_collector>, <ore:blockCrystalMatrix>], 
+	[<ore:blockInfinity>, <ore:blockCrystalMatrix>, <ore:blockCrystalMatrix>, <contenttweaker:dyson_collector>, <contenttweaker:miniature_star>, <contenttweaker:dyson_collector>, <ore:blockCrystalMatrix>, <ore:blockCrystalMatrix>, <ore:blockInfinity>]
 ]);
 // =====================================================================================================
 // 工作台合成	↑
@@ -138,30 +151,30 @@ Recipe_Builder_SK(
 	0
 );
 // 解缚恒星锭
-Recipe_Builder_SK(
-	"unleashed_star_ingot_make",
-	"fractallite_furnace",
-	[
-		<contenttweaker:eternal_glory>*1,
-		<contenttweaker:trinity_ingot>*1,
-		<botania:brewflask>.withTag({brewKey: "warpWard"})*1,
-		<contenttweaker:star_core>*4,
-		<contenttweaker:ingot_of_shadesmar>*16,
-		<contenttweaker:sunstruck_gem>*64
+// Recipe_Builder_SK(
+// 	"unleashed_star_ingot_make",
+// 	"fractallite_furnace",
+// 	[
+// 		<contenttweaker:eternal_glory>*1,
+// 		<contenttweaker:trinity_ingot>*1,
+// 		<botania:brewflask>.withTag({brewKey: "warpWard"})*1,
+// 		<contenttweaker:star_core>*4,
+// 		<contenttweaker:ingot_of_shadesmar>*16,
+// 		<contenttweaker:sunstruck_gem>*64
 		
-	],
-	[
-		<liquid:black_hole_juice>*10
-	],
-	[
-		<contenttweaker:eternal_glory>*1,
-		<contenttweaker:unleashed_star_ingot>*4
-	],
-	[],
-	600,
-	0,
-	0
-);
+// 	],
+// 	[
+// 		<liquid:black_hole_juice>*10
+// 	],
+// 	[
+// 		<contenttweaker:eternal_glory>*1,
+// 		<contenttweaker:unleashed_star_ingot>*4
+// 	],
+// 	[],
+// 	600,
+// 	0,
+// 	0
+// );
 // 无限水和无限熔岩原件
 val infinite_water_cell = <cells:creative_fluid_cell>.withTag({CreativeFluidFilters: [{FluidName: "water", Amount: 1}], display: {Name: "§b无限水原件", Lore: ["§f感觉不如水槽......", "§8但是，这个提供的水更多"]}});
 val infinite_lava_cell = <cells:creative_fluid_cell>.withTag({CreativeFluidFilters: [{FluidName: "lava", Amount: 1}], display: {Name: "§c无限熔岩原件", Lore: ["§c§m感觉不如机械动力......"]}});
@@ -352,6 +365,25 @@ Recipe_Builder_SK(
 	60000,
 	0
 );
+// 4x * 100
+Recipe_Builder_SK_Chance(
+	"liquid_dirt_recipe_4_100",
+	"forge_of_the_wyvern",
+	[
+		<contenttweaker:undead_soil>*1,
+		<ore:compressed4xDirt>*100
+	],
+	[0.0,1.0],
+	[],
+	[],
+	[],
+	[],
+	[<liquid:blockfluiddirt>*94478400],
+	[],
+	2,
+	0,
+	0
+);
 // 
 // =====================================================================================================
 // 多方块合成	↑
@@ -384,6 +416,21 @@ Recipe_Builder_SK(
 	10000000,
 	0
 );
+// 戴森释能
+Recipe_DE_Builder_SK(
+    "dyson_discharge_1",
+    "gate_of_rainboom",
+    [<contenttweaker:module_dyson_discharge>,<contenttweaker:charged_dyson_capacitor>],[0.0,1.0],
+    [],[],
+    [<contenttweaker:dyson_capacitor>],[],
+    [],[],
+    2,
+    BigInteger.ZERO,
+    BigInteger("40960000000000"),
+    "factory"
+);
+// 奥秘流体转置
+mods.botania.ManaInfusion.addInfusion(<modularmachinery:advanced_transposer_controller>*1, <modularmachinery:mythic_processor_infuser_controller>, 10000);
 // =====================================================================================================
 // 增产配方	↓
 // =====================================================================================================

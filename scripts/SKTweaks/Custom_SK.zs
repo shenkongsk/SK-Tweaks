@@ -34,8 +34,16 @@ function simple_register_item(
     item.creativeTab = <creativetab:SKT>;
     item.register();
 }
-
-var ItemList = [
+function simple_register_item_single(
+    name as string
+) {
+    var item = VanillaFactory.createItem(name);
+    item.maxStackSize = 1;      // ← 堆叠 1
+    item.beaconPayment = false;
+    item.creativeTab = <creativetab:SKT>;
+    item.register();
+}
+val ItemList = [
     "eezo_ore",
     "refined_eezo",
     "eezo_energy_unit",
@@ -78,11 +86,56 @@ var ItemList = [
     "saligia",// 原罪
     "everloving_matirx", // 永爱矩阵
     "shadow_crystal", // 暗影水晶
-    "purecrystal"   // 纯净水晶
+    "purecrystal",   // 纯净水晶
+    "helicopter_alloy_ingot", // 耐摔合金锭
+    "cleansed_harmonic_element", // 净化和谐元素
+    "harmonic_star", // 和谐之星
+    "cursed_taint_element", // 诅咒腐化元素
+    "taint_star", // 腐化之星
+    "module_dyson_discharge",    // 戴森释能模块
+    "seventh_one", // 七皇之剑
+    "whisper_tuner", // 低语调谐器
+    "alfheim_rift_scanner", // 亚尔夫海姆裂隙扫描器
+    "turbid_eezo_dust",   // 混浊零素尘
+    "impure_eezo_ash",     // 含杂零素尘
+    "eezo_filter_cake",      // 零素筛饼
+    "eezo_crystal",         // 零素水晶
+    "eezo_cluster",         // 零素簇
+    "zero_ash_echo",        // 零烬回响
+    "zero_bloom_dust",      // 零华微尘
+    "bottled_lightening"    // 瓶装闪电
 ];
 for i in 0 to ItemList.length {
     simple_register_item(ItemList[i]);
 }
+val ItemList_Single = [
+    "shield_breaker"
+];
+for i in 0 to ItemList_Single.length {
+    simple_register_item_single(ItemList_Single[i]);
+}
+// function simple_register_block(
+//     name as string,
+//     istransparent as bool,
+//     isbeacon as bool,
+//     iswitherProof as bool,
+//     BlockHardness as float,
+//     BlockLayer as string
+// ) {
+//     var block = VanillaFactory.createBlock(name, <blockmaterial:iron>);
+//     block.blockHardness = BlockHardness;
+//     block.blockResistance = 5.0;
+//     block.beaconBase = isbeacon;
+//     block.toolClass = "pickaxe";
+//     block.toolLevel = 2;
+//     block.blockSoundType = <soundtype:metal>;
+//     block.slipperiness = 0.6;
+//     block.creativeTab = <creativetab:SKT>;
+//     block.translucent = istransparent;
+//     block.witherProof = iswitherProof;
+//     block.blockLayer = BlockLayer;
+//     block.register();
+// }
 function simple_register_block(
     name as string,
     istransparent as bool,
@@ -100,18 +153,31 @@ function simple_register_block(
     block.blockSoundType = <soundtype:metal>;
     block.slipperiness = 0.6;
     block.creativeTab = <creativetab:SKT>;
-    block.translucent = istransparent;
     block.witherProof = iswitherProof;
-    block.blockLayer = BlockLayer;
+    if (!isNull(BlockLayer)){
+        if (istransparent) {
+            block.blockLayer = "CUTOUT_MIPPED"; 
+            block.translucent = true;
+            block.fullBlock = false; 
+            block.lightOpacity = 0; 
+        } else {
+            block.blockLayer = "SOLID";
+            block.translucent = false;
+            block.fullBlock = true;
+        }
+    }else{
+        block.blockLayer = BlockLayer;
+    }
+
     block.register();
 }
 // 七结局核心
-simple_register_block("core_astral",true,true,true,9.0,"TRANSLUCENT");
+simple_register_block("core_astral",true,true,true,9.0,"CUTOUT_MIPPED");
 simple_register_block("core_avartia",false,true,true,9.0,"SOLID");
 simple_register_block("core_blackhole",false,true,true,9.0,"SOLID");
 simple_register_block("core_cosmos",false,true,true,9.0,"SOLID");
 simple_register_block("core_dark",false,true,true,9.0,"SOLID");
-simple_register_block("core_pure",false,true,true,9.0,"SOLID");
+simple_register_block("core_pure",true,true,true,9.0,"CUTOUT_MIPPED");
 simple_register_block("core_eternal",false,true,true,9.0,"SOLID");
 // 零点空间核心
 simple_register_block("zero_point_spatial_core",false,false,true,15.0,"SOLID");
@@ -139,5 +205,12 @@ simple_register_block("hyperdimensional_beam",false,false,true,40.0,"SOLID");
 simple_register_block("twisting_control_component",false,false,true,40.0,"SOLID");
 // 异域能量组件
 simple_register_block("exotic_energy_component",false,false,true,40.0,"SOLID");
+// 悖论机械外壳
+simple_register_block("paradoxical_machine_casing",false,false,true,30.0,"SOLID");
+// 苍穹玻璃
+simple_register_block("skaia_glass",true,false,true,30.0,"CUTOUT_MIPPED");
 StatedMachineComponentBuilder.newBuilder("my_machine_casing")
     .build();
+
+
+
